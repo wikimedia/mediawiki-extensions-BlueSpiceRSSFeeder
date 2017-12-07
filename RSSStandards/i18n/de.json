@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Mglaser",
+			"Metalhead64"
+		]
+	},
+	"bs-rssstandards-desc": "RSS-Feeds zu verschiedenen Bereichen des Wikis",
+	"bs-rssstandards-desc-rc": "Überblick über die letzten Änderungen des Wikis.",
+	"bs-rssstandards-title-page": "Seite",
+	"bs-rssstandards-desc-page": "Feed mit einem Überblick der letzten Änderungen auf einer Seite.",
+	"bs-rssstandards-title-own": "Eigene Beiträge",
+	"bs-rssstandards-desc-own": "Feed mit einem Überblick der letzten Änderungen von eigenen Beiträgen.",
+	"bs-rssstandards-title-cat": "Kategorie",
+	"bs-rssstandards-desc-cat": "Feed mit einem Überblick der letzten Änderungen in einer Kategorie.",
+	"bs-rssstandards-title-watch": "Beobachtungsliste",
+	"bs-rssstandards-desc-watch": "Feed mit einem Überblick ihrer beobachteten Seiten.",
+	"bs-rssstandards-link-text-watch": "Änderungen {{PLURAL:$1|des letzten Tages|der letzten $1 Tage}}",
+	"bs-rssstandards-desc-ns": "Feed mit einem Überblick der letzten Änderungen in einem Namensraum.",
+	"bs-rssstandards-changes-from": "Änderung {{GENDER:$1|von}}: $1",
+	"apihelp-bs-rss-standards-pages-store-description": "Gibt eine Liste verfügbarer Seiten für RSSFeeder zurück",
+	"apihelp-bs-rss-standards-pages-store-summary": "Gibt eine Liste mit verfügbaren Seiten für RSSFeeder zurück"
+}

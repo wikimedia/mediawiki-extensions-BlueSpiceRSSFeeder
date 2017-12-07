@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"SuperPuperSteve",
+			"Okras",
+			"Striking Blue",
+			"Kaganer",
+			"Facenapalm"
+		]
+	},
+	"bs-rssstandards-desc": "Строит каналы RSS на основе различных опций",
+	"bs-rssstandards-desc-rc": "Лента с обзором последних изменений в вики",
+	"bs-rssstandards-title-page": "Страница",
+	"bs-rssstandards-desc-page": "Лента с обзором последних изменений на странице.",
+	"bs-rssstandards-title-own": "Мой вклад",
+	"bs-rssstandards-desc-own": "Лента с обзором вашего собственного вклада в вики.",
+	"bs-rssstandards-title-cat": "Категория",
+	"bs-rssstandards-desc-cat": "Лента с обзором последних изменений в категории.",
+	"bs-rssstandards-title-watch": "Список наблюдения",
+	"bs-rssstandards-desc-watch": "Лента с обзором страниц из вашего списка наблюдения.",
+	"bs-rssstandards-link-text-watch": "Изменения за {{PLURAL:$1|последний день|последние $1 дня|последние $1 дней}}.",
+	"bs-rssstandards-desc-ns": "Лента с обзором последних изменений в пространстве имён.",
+	"bs-rssstandards-changes-from": "Правки {{GENDER:$1|участника|учасьницы}}: $1",
+	"apihelp-bs-rss-standards-pages-store-description": "Возвращает список доступных страниц для RSSFeeder",
+	"apihelp-bs-rss-standards-pages-store-summary": "Вернуть список доступных страниц для RSSFeeder"
+}

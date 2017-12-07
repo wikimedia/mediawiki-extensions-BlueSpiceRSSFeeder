@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Okras",
+			"Striking Blue",
+			"Facenapalm"
+		]
+	},
+	"bs-rssfeeder-desc": "Расширение, позволяющее выводить RSS для каждого расширения, имеющего функцию buildRss",
+	"rssfeeder": "Формировальщик RSS",
+	"apihelp-bs-rssfeeder-tasks-description": "Предоставляет общие задачи для RSSFeeder",
+	"apihelp-bs-rssfeeder-tasks-summary": "Предоставляет общие задачи для RSSFeeder",
+	"bs-rssfeeder-pagetext": "Вы можете подписаться на следующие RSS-каналы:",
+	"bs-rssfeeder-recent-changes": "Свежие правки",
+	"bs-rssfeeder-pages": "Страница",
+	"bs-rssfeeder-submit": "Показать",
+	"bs-rssfeeder-rss": "RSS-канал",
+	"bs-rssfeeder-rss-desc": "Создайте свой собственный RSS-канал",
+	"bs-extjs-rssfeeder-rss-title": "URL-адрес RSS",
+	"bs-rssfeeder-invalid-url": "Пожалуйста, укажите корректный URL.",
+	"action-rssfeeder-viewspecialpage": "просмотр служебной страницы «{{int:rssfeeder}}»"
+}

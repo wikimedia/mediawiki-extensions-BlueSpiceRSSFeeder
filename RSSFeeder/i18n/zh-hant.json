@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cwlin0416",
+			"EagerLin",
+			"LNDDYL"
+		]
+	},
+	"bs-rssfeeder-desc": "建立您自己的 RSS feed",
+	"rssfeeder": "RSS feeder",
+	"bs-rssfeeder-pagetext": "您可以訂閱下列 RSS feeds：",
+	"bs-rssfeeder-recent-changes": "最近變更",
+	"bs-rssfeeder-pages": "頁面",
+	"bs-rssfeeder-submit": "顯示",
+	"bs-rssfeeder-rss": "RSS feed",
+	"bs-rssfeeder-rss-desc": "建立您自己的 RSS feed",
+	"bs-extjs-rssfeeder-rss-title": "RSS URL"
+}

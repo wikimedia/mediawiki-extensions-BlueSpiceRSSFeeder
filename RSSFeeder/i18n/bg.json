@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"StanProg"
+		]
+	},
+	"bs-rssfeeder-desc": "Разширение, което предоставя като изход валиден RSS за всяко разширение с функция buildRss",
+	"rssfeeder": "Генератор на RSS емисии",
+	"apihelp-bs-rssfeeder-tasks-description": "Предоставя общи задачи за RSSFeeder",
+	"apihelp-bs-rssfeeder-tasks-summary": "Предоставя общи задачи за RSSFeeder",
+	"bs-rssfeeder-pagetext": "Можете да се запишете за следните RSS-канали:",
+	"bs-rssfeeder-recent-changes": "Последни промени",
+	"bs-rssfeeder-pages": "Страница",
+	"bs-rssfeeder-submit": "Показване",
+	"bs-rssfeeder-rss": "RSS емисия",
+	"bs-rssfeeder-rss-desc": "Създаване на собствена RSS емисия",
+	"bs-extjs-rssfeeder-rss-title": "URL-адрес на RSS",
+	"bs-rssfeeder-invalid-url": "Моля, въведете валиден URL-адрес.",
+	"action-rssfeeder-viewspecialpage": "преглед на специалната страница „{{int:rssfeeder}}“"
+}

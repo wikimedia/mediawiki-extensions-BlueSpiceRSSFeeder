@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Metalhead64"
+		]
+	},
+	"bs-rssfeeder-desc": "Ergänzt eine Erweiterung zur Ausgabe von gültigem RSS für jede Erweiterung mit buildRss-Funktion",
+	"rssfeeder": "RSS Feeder",
+	"apihelp-bs-rssfeeder-tasks-description": "Bietet allgemeine Aufgaben für den RSSFeeder",
+	"bs-rssfeeder-pagetext": "Folgende RSS-Feeds stehen zur Verfügung:",
+	"bs-rssfeeder-recent-changes": "Letzte Änderungen",
+	"bs-rssfeeder-pages": "Seite",
+	"bs-rssfeeder-submit": "Anzeigen",
+	"bs-rssfeeder-rss": "RSS-Feed",
+	"bs-rssfeeder-rss-desc": "Erstelle deinen eigenen RSS-Feed",
+	"bs-extjs-rssfeeder-rss-title": "RSS-URL",
+	"bs-rssfeeder-invalid-url": "Bitte gib eine gültige URL an.",
+	"action-rssfeeder-viewspecialpage": "die Spezialseite „{{int:rssfeeder}}“ anzusehen"
+}

@@ -1,0 +1,44 @@
+{
+	"name": "RSSStandards",
+	"license-name": "GPL-3.0",
+	"version": "3.0.0-alpha",
+	"url": "https://help.bluespice.com/index.php/RSSStandards",
+	"author": "Sebastian Ulbricht",
+	"descriptionmsg": "bs-rssstandards-desc",
+	"type": "bluespice",
+	"bsgExtensions": {
+		"RSSStandards": {
+			"className": "RSSStandards",
+			"extPath": "/BlueSpiceExtensions/RSSStandards"
+		}
+	},
+	"APIModules": {
+		"bs-rss-standards-pages-store": "ApiRSSStandardsPagesStore"
+	},
+	"MessagesDirs": {
+		"RSSStandards": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"RSSStandards": "RSSStandards.class.php",
+		"ApiRSSStandardsPagesStore": "includes/api/ApiRSSStandardsPagesStore.php"
+	},
+	"ResourceModules": {
+		"ext.bluespice.rssStandards": {
+			"scripts": "bluespice.rssStandards.js",
+			"dependencies": [
+				"ext.bluespice.extjs"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceExtensions/RSSStandards/resources"
+	},
+	"Hooks": {
+		"UnitTestsList": "RSSStandards::onUnitTestsList"
+	},
+	"load_composer_autoloader" : true,
+	"manifest_version": 1
+}

@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"Selven"
+		]
+	},
+	"apihelp-bs-rssfeeder-tasks-description": "Fornisce attività comuni per il RSSFeeder",
+	"apihelp-bs-rssfeeder-tasks-summary": "Fornisce attività comuni per il RSSFeeder",
+	"bs-rssfeeder-pagetext": "Puoi iscriverti ai seguenti feed RSS:",
+	"bs-rssfeeder-recent-changes": "Ultime modifiche",
+	"bs-rssfeeder-pages": "Pagina",
+	"bs-rssfeeder-submit": "Mostra",
+	"bs-rssfeeder-rss": "Feed RSS",
+	"bs-rssfeeder-rss-desc": "Crea il tuo feed RSS",
+	"bs-extjs-rssfeeder-rss-title": "URL RSS",
+	"bs-rssfeeder-invalid-url": "Indica un URL valido.",
+	"action-rssfeeder-viewspecialpage": "visualizzare la pagina speciale \"{{int:rssfeeder}}\""
+}

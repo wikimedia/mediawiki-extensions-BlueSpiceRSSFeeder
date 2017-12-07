@@ -1,0 +1,53 @@
+{
+	"name": "RSSFeeder",
+	"license-name": "GPL-3.0",
+	"version": "3.0.0-alpha",
+	"url": "https://help.bluespice.com/index.php/RSSFeeder",
+	"author": "Sebastian Ulbricht",
+	"descriptionmsg": "bs-rssfeeder-desc",
+	"type": "bluespice",
+	"bsgExtensions": {
+		"RSSFeeder": {
+			"className": "RSSFeeder",
+			"extPath": "/BlueSpiceExtensions/RSSFeeder"
+		}
+	},
+	"SpecialPages": {
+		"RSSFeeder": "SpecialRSSFeeder"
+	},
+	"APIModules": {
+		"bs-rssfeeder-tasks": "BSApiTasksRSSFeeder"
+	},
+	"MessagesDirs": {
+		"RSSFeeder": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"RSSFeederAlias": "languages/SpecialRSSFeeder.alias.php"
+	},
+	"AutoloadClasses": {
+		"RSSFeeder": "RSSFeeder.class.php",
+		"SpecialRSSFeeder": "includes/specials/SpecialRSSFeeder.class.php",
+		"RSSCreator": "includes/RSSCreator.class.php",
+		"RSSItemCreator": "includes/RSSCreator.class.php",
+		"BSApiTasksRSSFeeder": "includes/api/BSApiTasksRSSFeeder.php"
+	},
+	"ResourceModules": {
+		"ext.bluespice.rssFeeder": {
+			"styles": "bluespice.rssFeeder.css",
+			"messages": [
+				"bs-extjs-rssfeeder-rss-title"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceExtensions/RSSFeeder/resources"
+	},
+	"Hooks": {
+		"UnitTestsList": "RSSFeeder::onUnitTestsList"
+	},
+	"load_composer_autoloader" : true,
+	"manifest_version": 1
+}

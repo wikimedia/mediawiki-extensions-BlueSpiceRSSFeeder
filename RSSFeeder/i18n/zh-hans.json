@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226"
+		]
+	},
+	"bs-rssfeeder-desc": "为每个有buildRss-function功能的扩展输出有效RSS的扩展",
+	"rssfeeder": "RSS订阅器",
+	"apihelp-bs-rssfeeder-tasks-description": "为RSSFeeder提供一般任务",
+	"apihelp-bs-rssfeeder-tasks-summary": "为RSSFeeder提供一般任务",
+	"bs-rssfeeder-pagetext": "您可通过下面的RSS订阅源订阅：",
+	"bs-rssfeeder-recent-changes": "最近更改",
+	"bs-rssfeeder-pages": "页面",
+	"bs-rssfeeder-submit": "显示",
+	"bs-rssfeeder-rss": "RSS订阅源",
+	"bs-rssfeeder-rss-desc": "创建您自己的RSS订阅源",
+	"bs-extjs-rssfeeder-rss-title": "RSS URL",
+	"bs-rssfeeder-invalid-url": "请提供有效的URL。",
+	"action-rssfeeder-viewspecialpage": "查看特殊页面“{{int:rssfeeder}}”"
+}

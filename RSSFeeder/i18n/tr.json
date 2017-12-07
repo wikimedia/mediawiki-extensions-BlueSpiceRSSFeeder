@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sayginer",
+			"MrSchipunov"
+		]
+	},
+	"bs-extjs-rssfeeder-rss-title": "RSS URL",
+	"bs-rssfeeder-invalid-url": "Geçerli bir URL veriniz."
+}

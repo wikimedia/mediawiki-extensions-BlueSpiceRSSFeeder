@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vitorvicentevalente",
+			"Hamilton Abreu"
+		]
+	},
+	"bs-rssstandards-desc": "Gera <i>feeds</i> RSS com base em diversas opções",
+	"bs-rssstandards-desc-rc": "<i>Feed</i> que resume as mudanças recentes na wiki",
+	"bs-rssstandards-title-page": "Página",
+	"bs-rssstandards-desc-page": "<i>Feed</i> que resume as mudanças recentes de uma página",
+	"bs-rssstandards-title-own": "Contribuições próprias",
+	"bs-rssstandards-desc-own": "<i>Feed</i> que resume as suas contribuições na wiki.",
+	"bs-rssstandards-title-cat": "Categoria",
+	"bs-rssstandards-desc-cat": "<i>Feed</i> que resume as mudanças recentes de uma categoria.",
+	"bs-rssstandards-title-watch": "Páginas vigiadas",
+	"bs-rssstandards-desc-watch": "<i>Feed</i> que resume as suas páginas vigiadas.",
+	"bs-rssstandards-link-text-watch": "Mudanças recentes {{PLURAL:$1|no último dia|nos últimos $1 dias}}.",
+	"bs-rssstandards-desc-ns": "<i>Feed</i> que resume as mudanças recentes num espaço nominal.",
+	"bs-rssstandards-changes-from": "Alterações {{GENDER:$1|de}}: $1",
+	"apihelp-bs-rss-standards-pages-store-description": "Devolve uma lista das páginas disponíveis no RSSFeeder",
+	"apihelp-bs-rss-standards-pages-store-summary": "Devolver lista das páginas disponíveis para o RSSFeeder"
+}

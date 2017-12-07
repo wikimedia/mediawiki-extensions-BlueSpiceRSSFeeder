@@ -1,0 +1,39 @@
+#RSSFeederForm fieldset {
+	border: none;
+	padding: 5px;
+	margin: 10px;
+}
+#RSSFeederForm legend {
+	padding: 0px;
+	margin: 0px;
+	margin-left: -5px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+#RSSFeederForm button {
+	/*@embed*/
+	background-image: url(images/bs-icon-rss.png);
+	background-repeat: no-repeat;
+	background-position: 4px center;
+	padding-left: 20px;
+	width: 90px;
+	cursor: pointer;
+	height: 24px;
+	border: 1px solid #8393C3;
+	display: inline-block;
+	float: right;
+}
+#RSSFeederForm label {
+	display: inline-block;
+	width: 150px;
+	zoom: 1;
+}
+#RSSFeederForm label.label_use_auto_width {
+	width: auto;
+}
+#RSSFeederForm select {
+	width: 250px;
+}
+#divFeedPage {
+	display: inline-block;
+}

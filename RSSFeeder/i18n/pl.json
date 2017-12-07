@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"bs-rssfeeder-recent-changes": "Ostatnie zmiany",
+	"bs-rssfeeder-pages": "Strona",
+	"bs-rssfeeder-submit": "Pokaż",
+	"bs-rssfeeder-rss": "Kanał RSS",
+	"bs-extjs-rssfeeder-rss-title": "URL RSS",
+	"bs-rssfeeder-invalid-url": "Wpisz poprawny adres URL.",
+	"action-rssfeeder-viewspecialpage": "zobacz stronę specjalną „{{int:rssfeeder}}”"
+}

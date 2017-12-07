@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"bs-rssstandards-title-page": "Strona",
+	"bs-rssstandards-title-own": "Wkład własny",
+	"bs-rssstandards-title-cat": "Kategoria",
+	"bs-rssstandards-title-watch": "Obserwowane",
+	"bs-rssstandards-link-text-watch": "Ostatnie zmiany w {{PLURAL:$1|ostatnim dniu|ostatnich $1 dniach}}."
+}

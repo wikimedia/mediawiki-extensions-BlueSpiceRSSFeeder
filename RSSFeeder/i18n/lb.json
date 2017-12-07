@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"rssfeeder": "RSS Feeder",
+	"bs-rssfeeder-pagetext": "Dir kënnt Iech an dës RSS-Feeds aschreiwen:",
+	"bs-rssfeeder-recent-changes": "Rezent Ännerungen",
+	"bs-rssfeeder-pages": "Säit",
+	"bs-rssfeeder-submit": "Weisen",
+	"bs-extjs-rssfeeder-rss-title": "RSS-URL",
+	"bs-rssfeeder-invalid-url": "Gitt w.e.g. en valabel URL un.",
+	"action-rssfeeder-viewspecialpage": "d'Spezialsäit \"{{int:rssfeeder}}\" ze kucken"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "mediawiki/blue-spice-r-s-s-feeder",
+	"type": "mediawiki-extension",
+	"description": "An extension to output valid RSS for every extension, which has a buildRss-function",
+	"license": "GPL-3.0",
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}

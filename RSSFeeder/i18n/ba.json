@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Рустам Нурыев",
+			"Sagan"
+		]
+	},
+	"bs-rssfeeder-desc": "Был өҫтәмә  buildRss функцияһы булған киңәйтеү өсөн RSS ҡулланырға рхсәт бирә.",
+	"rssfeeder": "RSS канал",
+	"bs-rssfeeder-pagetext": "Һеҙ RSS-каналына яҙыла алаһығыҙ:",
+	"bs-rssfeeder-recent-changes": "Һуңғы үҙгәртеүҙәр",
+	"bs-rssfeeder-pages": "Бит",
+	"bs-rssfeeder-submit": "Күрһәтергә",
+	"bs-rssfeeder-rss": "RSS-канал",
+	"bs-rssfeeder-rss-desc": "Үҙегеҙгә RSS-канал эшләгәгеҙ",
+	"bs-extjs-rssfeeder-rss-title": "URL-адрес RSS"
+}

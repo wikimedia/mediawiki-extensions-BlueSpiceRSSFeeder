@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"SPQRobin",
+			"Esketti",
+			"Siebrand",
+			"MrLeopold"
+		]
+	},
+	"bs-rssfeeder-desc": "Een uitbreiding van de output geldig RSS voor elke extensie, die heeft een buildRss-functie",
+	"rssfeeder": "RSS-invoer",
+	"apihelp-bs-rssfeeder-tasks-description": "Biedt algemene taken aan voor de RSSFeeder",
+	"bs-rssfeeder-pagetext": "U kunt zich abonneren op de volgende RSS-feeds:",
+	"bs-rssfeeder-recent-changes": "Recente wijzigingen",
+	"bs-rssfeeder-pages": "Pagina",
+	"bs-rssfeeder-submit": "Weergeven",
+	"bs-rssfeeder-rss": "RSS-invoer",
+	"bs-rssfeeder-rss-desc": "Maak uw eigen RSS-feed",
+	"bs-extjs-rssfeeder-rss-title": "RSS-URL",
+	"bs-rssfeeder-invalid-url": "Geef alstublieft een geldige URL op."
+}
