@@ -1,0 +1,14 @@
+==RSSStandards.class.php==
+
+'BeforeWatchlist':
+$nondefaults:
+ $user:
+ &$hookSql:
+
+==RSSStandards.class.php==
+
+'BeforeWatchlist':
+$nondefaults:
+ $user:
+ &$hookSql:
+

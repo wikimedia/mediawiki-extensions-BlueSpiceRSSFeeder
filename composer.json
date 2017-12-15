@@ -1,0 +1,15 @@
+{
+	"name": "mediawiki/blue-spice-r-s-s-feeder",
+	"type": "mediawiki-extension",
+	"description": "Create your own RSS feed",
+	"license": "GPL-3.0",
+	"require": {
+		"composer/installers": "~1.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"BS\\RSSFeeder\\": "src",
+			"BS\\RSSFeeder\\Tests\\": "tests/phpunit"
+		}
+	}
+}

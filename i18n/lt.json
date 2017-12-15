@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eitvys200"
+		]
+	},
+	"bs-rssfeeder-pagetext": "Galite prenumeruoti šiuos RSS srautus:",
+	"bs-rssfeeder-recent-changes": "Naujausi keitimai",
+	"bs-rssfeeder-pages": "Puslapis",
+	"bs-rssfeeder-submit": "Rodyti",
+	"bs-rssfeeder-rss": "RSS srautas",
+	"bs-rssfeeder-rss-desc": "Sukurti savo RSS srautą",
+	"bs-extjs-rssfeeder-rss-title": "RSS URL",
+	"bs-rssfeeder-invalid-url": "Prašome nurodyti teisingą URL.",
+	"action-rssfeeder-viewspecialpage": "žiūrėti specialų puslapį „{{int:rssfeeder}}“",
+	"bs-rssstandards-desc": "Sukuria RSS srautus remdamasis skirtingais nustatymais",
+	"bs-rssstandards-desc-rc": "Srautas su viki naujausių pakeitimų apžvalga",
+	"bs-rssstandards-title-page": "Puslapis",
+	"bs-rssstandards-desc-page": "Srautas su puslapio naujausių pakeitimų apžvalga.",
+	"bs-rssstandards-title-own": "Savas indelis",
+	"bs-rssstandards-desc-own": "Srautas su savo indėlio viki apžvalga.",
+	"bs-rssstandards-title-cat": "Kategorija",
+	"bs-rssstandards-desc-cat": "Srautas su naujausių kategorijos pakeitimų apžvalga.",
+	"bs-rssstandards-title-watch": "Stebimų sąrašas",
+	"bs-rssstandards-desc-watch": "Srautas su stebimųjų puslapių apžvalga.",
+	"bs-rssstandards-link-text-watch": "Naujausi pakeitimai per {{PLURAL:$1|dieną|$1 dienas}}.",
+	"bs-rssstandards-changes-from": "{{GENDER:$1|Pakeitimai}}: $1"
+}

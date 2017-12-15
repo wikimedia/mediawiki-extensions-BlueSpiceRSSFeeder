@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yatalu",
+			"Shirayuki",
+			"Otokoume"
+		]
+	},
+	"bs-rssfeeder-desc": "buildRss 関数を持つ拡張機能それぞれについて有効な RSS フィードを出力する拡張機能",
+	"rssfeeder": "RSSフィーダー",
+	"bs-rssfeeder-pagetext": "以下の RSS フィードを購読できます:",
+	"bs-rssfeeder-recent-changes": "最近の更新",
+	"bs-rssfeeder-pages": "ページ",
+	"bs-rssfeeder-submit": "表示",
+	"bs-rssfeeder-rss": "RSS フィード",
+	"bs-rssfeeder-rss-desc": "自身のRSSフェードを作成",
+	"bs-extjs-rssfeeder-rss-title": "RSS の URL",
+	"bs-rssstandards-desc": "さまざまな指定に基づいて RSS フィードを構築する",
+	"bs-rssstandards-desc-rc": "ウィキの最近の更新の概要を含むフィード",
+	"bs-rssstandards-title-page": "ページ",
+	"bs-rssstandards-desc-page": "ページの最近の更新の概要を含むフィード。",
+	"bs-rssstandards-title-own": "自身の投稿記録",
+	"bs-rssstandards-desc-own": "あなた自身の投稿記録の概要を含むフィード。",
+	"bs-rssstandards-title-cat": "カテゴリ",
+	"bs-rssstandards-desc-cat": "カテゴリの最近の更新の概要を含むフィード。",
+	"bs-rssstandards-title-watch": "ウォッチリスト",
+	"bs-rssstandards-desc-watch": "ウォッチリストに登録しているページの概要を含むフィード。",
+	"bs-rssstandards-link-text-watch": "過去{{PLURAL:$1|1日|$1日間}}の最近の更新",
+	"bs-rssstandards-desc-ns": "名前空間の最近の更新の概要を含むフィード。",
+	"bs-rssstandards-changes-from": "$1 {{GENDER:$1|によって}}変更"
+}

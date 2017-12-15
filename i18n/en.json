@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephan Muggli <muggli@hallowelt.biz>"
+		]
+	},
+	"bs-rssfeeder-desc": "An extension to output valid RSS for every extension, which has a buildRss-function",
+	"rssfeeder": "RSS feeder",
+	"apihelp-bs-rssfeeder-tasks-description": "Provides common tasks for the RSSFeeder",
+	"apihelp-bs-rssfeeder-tasks-summary": "Provides common tasks for the RSSFeeder",
+	"bs-rssfeeder-pagetext": "You can subscribe to the following RSS feeds:",
+	"bs-rssfeeder-recent-changes": "Recent changes",
+	"bs-rssfeeder-pages": "Page",
+	"bs-rssfeeder-submit": "Show",
+	"bs-rssfeeder-rss": "RSS feed",
+	"bs-rssfeeder-rss-desc": "Create your own RSS feed",
+	"bs-extjs-rssfeeder-rss-title": "RSS URL",
+	"bs-rssfeeder-invalid-url": "Please provide a valid URL.",
+	"action-rssfeeder-viewspecialpage":"view the special page \"{{int:rssfeeder}}\"",
+	"bs-rssstandards-desc": "Builds RSS feeds based on different options",
+	"bs-rssstandards-desc-rc": "Feed with an overview over the recent changes in the wiki",
+	"bs-rssstandards-title-page": "Page",
+	"bs-rssstandards-desc-page": "Feed with an overview over recent changes of a page.",
+	"bs-rssstandards-title-own": "Own contributions",
+	"bs-rssstandards-desc-own": "Feed with an overview over your own made contributions to the wiki.",
+	"bs-rssstandards-title-cat": "Category",
+	"bs-rssstandards-desc-cat": "Feed with an overview over recent changes in a category.",
+	"bs-rssstandards-title-watch": "Watchlist",
+	"bs-rssstandards-desc-watch": "Feed with an overview over your watched pages.",
+	"bs-rssstandards-link-text-watch": "Recent changes of the last {{PLURAL:$1|day|$1 days}}.",
+	"bs-rssstandards-desc-ns": "Feed with an overview over the recent changes in a namespace.",
+	"bs-rssstandards-changes-from": "Changes {{GENDER:$1|by}}: $1",
+	"apihelp-bs-rss-standards-pages-store-description": "Return List of available Pages for RSSFeeder",
+	"apihelp-bs-rss-standards-pages-store-summary": "Return List of available Pages for RSSFeeder"
+}

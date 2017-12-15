@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Banjo",
+			"Elisardojm"
+		]
+	},
+	"bs-rssfeeder-desc": "Unha extensión para obter RSS válidos para cada extensión, que ten unha función buildRss",
+	"rssfeeder": "Fonte de novas RSS",
+	"apihelp-bs-rssfeeder-tasks-description": "Proporciona tarefas comúns para o RSSFeeder",
+	"apihelp-bs-rssfeeder-tasks-summary": "Proporciona tarefas comúns para o RSSFeeder",
+	"bs-rssfeeder-pagetext": "Pode subscribirse ás seguintes canles RSS:",
+	"bs-rssfeeder-recent-changes": "Cambios recentes",
+	"bs-rssfeeder-pages": "Páxina",
+	"bs-rssfeeder-submit": "Mostrar",
+	"bs-rssfeeder-rss": "Fonte de novas RSS",
+	"bs-rssfeeder-rss-desc": "Crear a súa propia fonte de novas RSS",
+	"bs-extjs-rssfeeder-rss-title": "URL do RSS",
+	"bs-rssfeeder-invalid-url": "Por favor, indique unha URL válida.",
+	"action-rssfeeder-viewspecialpage": "ver a páxina especial \"{{int:rssfeeder}}\"",
+	"bs-rssstandards-desc": "Xera canles RSS baseados en diferentes opcións",
+	"bs-rssstandards-desc-rc": "Canle que resume os cambios recentes da wiki",
+	"bs-rssstandards-title-page": "Páxina",
+	"bs-rssstandards-desc-page": "Canle que resume os cambios recentes dunha páxina.",
+	"bs-rssstandards-title-own": "Contribucións propias",
+	"bs-rssstandards-desc-own": "Canle que resume as súas contribucións á wiki.",
+	"bs-rssstandards-title-cat": "Categoría",
+	"bs-rssstandards-desc-cat": "Canle que resume os cambios recentes dunha categoría.",
+	"bs-rssstandards-title-watch": "Lista de vixilancia",
+	"bs-rssstandards-desc-watch": "Canle que resume as súas páxinas vixiadas.",
+	"bs-rssstandards-link-text-watch": "Cambios recentes {{PLURAL:$1|do último día|dos últimos $1 días}}.",
+	"bs-rssstandards-desc-ns": "Canle que resume os cambios recentes dun espazo de nomes.",
+	"bs-rssstandards-changes-from": "Cambios {{GENDER:$1|de}}: $1",
+	"apihelp-bs-rss-standards-pages-store-description": "Devolve a Lista das Páxinas dispoñibles para o RSSFeeder",
+	"apihelp-bs-rss-standards-pages-store-summary": "Devolver a lista das páxinas dispoñibles para o RSSFeeder"
+}

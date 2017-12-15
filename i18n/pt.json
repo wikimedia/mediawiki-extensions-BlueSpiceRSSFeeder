@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vitorvicentevalente",
+			"Nemo bis",
+			"Hamilton Abreu"
+		]
+	},
+	"bs-rssfeeder-desc": "Uma extensão para obter RSS válido, para qualquer extensão que tenha uma função buildRSS",
+	"rssfeeder": "<i>Feeder</i> RSS",
+	"apihelp-bs-rssfeeder-tasks-description": "Fornece tarefas comuns para o RSSFeeder",
+	"apihelp-bs-rssfeeder-tasks-summary": "Fornece tarefas comuns para o RSSFeeder",
+	"bs-rssfeeder-pagetext": "Pode subscrever os seguintes <i>feeds</i> RSS:",
+	"bs-rssfeeder-recent-changes": "Mudanças recentes",
+	"bs-rssfeeder-pages": "Página",
+	"bs-rssfeeder-submit": "Mostrar",
+	"bs-rssfeeder-rss": "<i>Feed</i> RSS",
+	"bs-rssfeeder-rss-desc": "Criar o seu próprio <i>feed</i> RSS",
+	"bs-extjs-rssfeeder-rss-title": "URL do RSS",
+	"bs-rssfeeder-invalid-url": "Por favor, forneça um URL válido.",
+	"action-rssfeeder-viewspecialpage": "ver a página especial \"{{int:rssfeeder}}\"",
+	"bs-rssstandards-desc": "Gera <i>feeds</i> RSS com base em diversas opções",
+	"bs-rssstandards-desc-rc": "<i>Feed</i> que resume as mudanças recentes na wiki",
+	"bs-rssstandards-title-page": "Página",
+	"bs-rssstandards-desc-page": "<i>Feed</i> que resume as mudanças recentes de uma página",
+	"bs-rssstandards-title-own": "Contribuições próprias",
+	"bs-rssstandards-desc-own": "<i>Feed</i> que resume as suas contribuições na wiki.",
+	"bs-rssstandards-title-cat": "Categoria",
+	"bs-rssstandards-desc-cat": "<i>Feed</i> que resume as mudanças recentes de uma categoria.",
+	"bs-rssstandards-title-watch": "Páginas vigiadas",
+	"bs-rssstandards-desc-watch": "<i>Feed</i> que resume as suas páginas vigiadas.",
+	"bs-rssstandards-link-text-watch": "Mudanças recentes {{PLURAL:$1|no último dia|nos últimos $1 dias}}.",
+	"bs-rssstandards-desc-ns": "<i>Feed</i> que resume as mudanças recentes num espaço nominal.",
+	"bs-rssstandards-changes-from": "Alterações {{GENDER:$1|de}}: $1",
+	"apihelp-bs-rss-standards-pages-store-description": "Devolve uma lista das páginas disponíveis no RSSFeeder",
+	"apihelp-bs-rss-standards-pages-store-summary": "Devolver lista das páginas disponíveis para o RSSFeeder"
+}

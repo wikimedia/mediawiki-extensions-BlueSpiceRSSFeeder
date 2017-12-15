@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Shirayuki",
+			"Beta16",
+			"Umherirrender"
+		]
+	},
+	"bs-rssfeeder-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of rss feeder extension",
+	"rssfeeder": "{{doc-special|RSS feeder}}",
+	"apihelp-bs-rssfeeder-tasks-description": "Describes an API endpoint that provides common tasks for the RSSFeeder\n{{doc-apihelp-description|bs-rssfeeder-tasks}}",
+	"apihelp-bs-rssfeeder-tasks-summary": "Describes an API endpoint that provides common tasks for the RSSFeeder\n{{doc-apihelp-summary|bs-rssfeeder-tasks}}",
+	"bs-rssfeeder-pagetext": "Headline on special page for RSS feeds section:",
+	"bs-rssfeeder-recent-changes": "Headline for recent changes\n{{Identical|Recent changes}}",
+	"bs-rssfeeder-pages": "Headline for page\n{{Identical|Page}}",
+	"bs-rssfeeder-submit": "Button label for show\n{{Identical|Show}}",
+	"bs-rssfeeder-rss": "Used in [[Special:AdminDashboard]] and [[Special:UserDashboard]], headline for rss feed portlet.\n{{Identical|RSS feed}}",
+	"bs-rssfeeder-rss-desc": "Used in [[Special:AdminDashboard]] and [[Special:UserDashboard]], description of rss feed portlet",
+	"bs-extjs-rssfeeder-rss-title": "Used in [[Special:AdminDashboard]] and [[Special:UserDashboard]], label for rss URL.",
+	"bs-rssfeeder-invalid-url": "Error message when URL is not provided in the API",
+	"action-rssfeeder-viewspecialpage": "placeholder to describe that view of special page \"{{int:rssfeeder}}\" is restricted for the current user.\n\n{{Doc-action|rssfeeder-viewspecialpage}}",
+	"bs-rssstandards-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of rss standars extension",
+	"bs-rssstandards-desc-rc": "Description of recent changes RSS feed from this wiki.\n{{Related|Bs-rssstandards-desc}}",
+	"bs-rssstandards-title-page": "Headline for page RSS feed\\n{{Identical|Page}}",
+	"bs-rssstandards-desc-page": "Description of recent changes RSS feed from one specific page.\n{{Related|Bs-rssstandards-desc}}",
+	"bs-rssstandards-title-own": "Headline for own contributions RSS feed\\n{{Identical|Own contributions}}",
+	"bs-rssstandards-desc-own": "Description of RSS feed for your own made contributions to the wiki.\n{{Related|Bs-rssstandards-desc}}",
+	"bs-rssstandards-title-cat": "Headline for category RSS feed\\n{{Identical|Category}}",
+	"bs-rssstandards-desc-cat": "Description of recent changes RSS feed from one specific category.\n{{Related|Bs-rssstandards-desc}}",
+	"bs-rssstandards-title-watch": "Headline for watchlist RSS feed\\n{{Identical|Watchlist}}",
+	"bs-rssstandards-desc-watch": "Description of RSS feed of your watchted pages.\n{{Related|Bs-rssstandards-desc}}",
+	"bs-rssstandards-link-text-watch": "Option for recent changes RSS feed to specify the date range of the feed.\n\nParameters:\n* $1 - timespan in days till now (starting from 1 day till 365 days in steps)",
+	"bs-rssstandards-desc-ns": "Description of recent changes RSS feed from one specific namespace.\n{{Related|Bs-rssstandards-desc}}",
+	"bs-rssstandards-changes-from": "Text message for changes by: $1\\n*$1 is the username of the user who made the changes - use for GENDER distinction",
+	"apihelp-bs-rss-standards-pages-store-description": "API Help description message for page list in RSSFeeder\n{{doc-apihelp-description|bs-rss-standards-pages-store}}",
+	"apihelp-bs-rss-standards-pages-store-summary": "API Help description message for page list in RSSFeeder\n{{doc-apihelp-summary|bs-rss-standards-pages-store}}"
+}

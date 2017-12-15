@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Macofe",
+			"Fitoschido"
+		]
+	},
+	"bs-rssfeeder-desc": "Una extensión para obtener RSS válidos de cada una de las extensiones que incluyan la función «buildRSS»",
+	"rssfeeder": "Canales RSS",
+	"apihelp-bs-rssfeeder-tasks-description": "Proporciona tareas comunes para RSSFeeder",
+	"bs-rssfeeder-pagetext": "Puedes suscribirte a los siguientes canales RSS:",
+	"bs-rssfeeder-recent-changes": "Cambios recientes",
+	"bs-rssfeeder-pages": "Página",
+	"bs-rssfeeder-submit": "Mostrar",
+	"bs-rssfeeder-rss": "Suministro RSS",
+	"bs-rssfeeder-rss-desc": "Crea tu propio suministro RSS",
+	"bs-extjs-rssfeeder-rss-title": "URL de RSS",
+	"bs-rssfeeder-invalid-url": "Proporciona un URL válido.",
+	"action-rssfeeder-viewspecialpage": "ver la página especial «{{int:rssfeeder}}»",
+	"bs-rssstandards-desc": "Genera suministros RSS basados en diferentes opciones",
+	"bs-rssstandards-desc-rc": "Suministro que resume los cambios recientes del wiki",
+	"bs-rssstandards-title-page": "Página",
+	"bs-rssstandards-desc-page": "Suministro que resume los cambios recientes de una página.",
+	"bs-rssstandards-title-own": "Contribuciones propias",
+	"bs-rssstandards-desc-own": "Suministro que resume tus contribuciones al wiki.",
+	"bs-rssstandards-title-cat": "Categoría",
+	"bs-rssstandards-desc-cat": "Suministro que resume los cambios recientes de una categoría.",
+	"bs-rssstandards-title-watch": "Lista de seguimiento",
+	"bs-rssstandards-desc-watch": "Suministro que resume tus páginas en seguimiento.",
+	"bs-rssstandards-link-text-watch": "Cambios recientes {{PLURAL:$1|del último día|de los últimos $1 días}}.",
+	"bs-rssstandards-desc-ns": "Suministro que resume los cambios recientes de un espacio de nombres.",
+	"bs-rssstandards-changes-from": "Cambios {{GENDER:$1|de}}: $1",
+	"apihelp-bs-rss-standards-pages-store-description": "Devolver una lista de las páginas disponibles para RSSFeeder",
+	"apihelp-bs-rss-standards-pages-store-summary": "Devolver una lista de las páginas disponibles para RSSFeeder"
+}
