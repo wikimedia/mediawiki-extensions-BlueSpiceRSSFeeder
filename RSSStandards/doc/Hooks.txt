@@ -1,7 +1,0 @@
-==RSSStandards.class.php==
-
-'BeforeWatchlist':
-$nondefaults:
- $user:
- &$hookSql:
-

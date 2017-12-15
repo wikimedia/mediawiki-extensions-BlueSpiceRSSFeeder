@@ -1,4 +1,0 @@
-==RSSFeeder.class.php==
-
-'BSRSSFeederGetRegisteredFeeds':
-&$aFeeds
