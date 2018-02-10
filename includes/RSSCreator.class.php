@@ -146,12 +146,10 @@ class RSSCreator {
 	 * @param string $description the description of the channel
 	 */
     protected function __construct($title, $link, $description) {
-        wfProfileIn( 'BS::'.__METHOD__ );
         $this->channel['title']       = $title;
         $this->channel['link']        = $link;
         $this->channel['description'] = $description;
         $this->dom = new DOMDocument('1.0');
-        wfProfileOut( 'BS::'.__METHOD__ );
     }
     
 	/**

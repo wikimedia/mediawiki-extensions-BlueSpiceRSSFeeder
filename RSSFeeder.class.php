@@ -40,7 +40,6 @@ class RSSFeeder extends BsExtensionMW {
 	 * initialise the extension
 	 */
 	protected function initExt() {
-		wfProfileIn( 'BS::'.__METHOD__ );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalPortlets' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalConfig' );
 		$this->setHook( 'BSDashboardsUserDashboardPortalPortlets' );
@@ -51,8 +50,6 @@ class RSSFeeder extends BsExtensionMW {
 		$this->setHook( 'BeforePageDisplay' );
 
 		$this->mCore->registerPermission( 'rssfeeder-viewspecialpage', array('user'), array( 'type' => 'global' ) );
-
-		wfProfileOut( 'BS::'.__METHOD__ );
 	}
 
 	public static function getRSS( $iCount, $sUrl ) {
