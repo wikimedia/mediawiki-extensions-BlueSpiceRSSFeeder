@@ -25,7 +25,7 @@
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"BlueSpiceRSSFeeder": "languages/SpecialRSSFeeder.alias.php"
+		"BlueSpiceRSSFeederAlias": "languages/SpecialRSSFeeder.alias.php"
 	},
 	"AutoloadClasses": {
 		"RSSFeeder": "RSSFeeder.class.php",
