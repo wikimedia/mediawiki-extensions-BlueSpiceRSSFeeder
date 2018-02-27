@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sagan",
+			"Рустам Нурыев"
+		]
+	},
+	"bs-rssfeeder-desc": "Был өҫтәмә  buildRss функцияһы булған киңәйтеү өсөн RSS ҡулланырға рхсәт бирә.",
+	"rssfeeder": "RSS канал",
+	"bs-rssfeeder-pagetext": "Һеҙ RSS-каналына яҙыла алаһығыҙ:",
+	"bs-rssfeeder-recent-changes": "Һуңғы үҙгәртеүҙәр",
+	"bs-rssfeeder-pages": "Бит",
+	"bs-rssfeeder-submit": "Күрһәтергә",
+	"bs-rssfeeder-rss": "RSS-канал",
+	"bs-rssfeeder-rss-desc": "Үҙегеҙгә RSS-канал эшләгәгеҙ",
+	"bs-extjs-rssfeeder-rss-title": "URL-адрес RSS",
+	"bs-rssstandards-desc": "Төрлө опция нигеҙендә RSS каналын төҙөй",
+	"bs-rssstandards-desc-rc": "Викилағы һуңғы үҙгәрештәргә күҙәтеү яҙалған таҫма",
+	"bs-rssstandards-title-page": "Бит",
+	"bs-rssstandards-desc-page": "Биттә һуңғы үҙгәрештәргә күҙәтеү яҙылған таҫма",
+	"bs-rssstandards-title-own": "Минең өлөшөм",
+	"bs-rssstandards-desc-own": "Викила һеҙҙең өлөштө күрһәткән таҫма",
+	"bs-rssstandards-title-cat": "Категория",
+	"bs-rssstandards-desc-cat": "Категорияла һуңғы үҙгәрештәргә күҙәтеү яҙылған таҫма",
+	"bs-rssstandards-title-watch": "Күҙәтеү исемлеге",
+	"bs-rssstandards-desc-watch": "Һеҙҙең күҙәтеү исемлегенә байҡау таҫмаһы",
+	"bs-rssstandards-link-text-watch": "{{PLURAL:$1|}}{{PLURAL:$1|Һуңғы көн|һуңғы $1 көндә}}ге үҙгәртеүҙәр.",
+	"bs-rssstandards-desc-ns": "Исемдәр арауығында һуңғы үҙгәрештәргә күҙәтеү яҙылған таҫма",
+	"bs-rssstandards-changes-from": "{{GENDER:$1|Ҡатнашыусы}}: төҙәтеүе $1"
+}

@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alojz.tic",
+			"Skalcaa"
+		]
+	},
+	"bs-rssfeeder-desc": "Razširitev, ki izgradi veljaven RSS za vsako razširitev, ki vsebuje funkcijo buildRss.",
+	"rssfeeder": "Vir RSS",
+	"bs-rssfeeder-pagetext": "Naročite se lahko na naslednje vire RSS:",
+	"bs-rssfeeder-recent-changes": "Nedavne spremembe",
+	"bs-rssfeeder-pages": "Stran",
+	"bs-rssfeeder-submit": "Prikaži",
+	"bs-rssfeeder-rss": "Vir RSS",
+	"bs-rssfeeder-rss-desc": "Ustvarite svoj vir RSS",
+	"bs-extjs-rssfeeder-rss-title": "Povezava RSS",
+	"bs-rssstandards-title-page": "Stran",
+	"bs-rssstandards-title-cat": "Kategorija"
+}

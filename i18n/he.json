@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eladk",
+			"Guycn2"
+		]
+	},
+	"bs-rssfeeder-desc": "הרחבה המשמשת לכיבוי rss תקף עבור כל הרחבה, שיש לה buildRss-function",
+	"bs-rssstandards-desc": "בונה הזנות RSS המבוססות על אפשרויות שונות",
+	"bs-rssstandards-title-page": "דף",
+	"bs-rssstandards-title-cat": "קטגוריה",
+	"bs-rssstandards-title-watch": "רשימת מעקב",
+	"apihelp-bs-rss-standards-pages-store-description": "להחזיר רשימה של הדפים הזמינים עבור RSSFeeder"
+}

@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fohanno"
+		]
+	},
+	"bs-rssfeeder-desc": "Krouiñ ho kwazh RSS deoc'h-c'hwi",
+	"bs-rssfeeder-recent-changes": "Kemmoù graet nevez zo",
+	"bs-rssfeeder-pages": "Pajenn",
+	"bs-rssfeeder-submit": "Diskouez",
+	"bs-rssfeeder-rss": "Gwazh RSS",
+	"bs-rssfeeder-rss-desc": "Krouiñ ho kwazh RSS deoc'h-c'hwi",
+	"bs-extjs-rssfeeder-rss-title": "URL ar wazh RSS",
+	"bs-rssstandards-title-page": "Pajenn",
+	"bs-rssstandards-title-cat": "Rummad",
+	"bs-rssstandards-title-watch": "Roll evezhiañ",
+	"bs-rssstandards-changes-from": "Kemmoù {{GENDER:$1|gant}}: $1"
+}

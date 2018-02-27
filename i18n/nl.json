@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Esketti",
+			"MrLeopold",
+			"SPQRobin",
+			"Siebrand"
+		]
+	},
+	"bs-rssfeeder-desc": "Een uitbreiding van de output geldig RSS voor elke extensie, die heeft een buildRss-functie",
+	"rssfeeder": "RSS-invoer",
+	"apihelp-bs-rssfeeder-tasks-description": "Biedt algemene taken aan voor de RSSFeeder",
+	"bs-rssfeeder-pagetext": "U kunt zich abonneren op de volgende RSS-feeds:",
+	"bs-rssfeeder-recent-changes": "Recente wijzigingen",
+	"bs-rssfeeder-pages": "Pagina",
+	"bs-rssfeeder-submit": "Weergeven",
+	"bs-rssfeeder-rss": "RSS-invoer",
+	"bs-rssfeeder-rss-desc": "Maak uw eigen RSS-feed",
+	"bs-extjs-rssfeeder-rss-title": "RSS-URL",
+	"bs-rssfeeder-invalid-url": "Geef alstublieft een geldige URL op.",
+	"bs-rssstandards-desc": "Bouwt RSS feeds op basis van verschillende opties",
+	"bs-rssstandards-desc-rc": "Diervoeders met een overzicht over de recente wijzigingen in de wiki",
+	"bs-rssstandards-title-page": "Pagina",
+	"bs-rssstandards-desc-page": "Diervoeders met een overzicht over de recente wijzigingen van een pagina.",
+	"bs-rssstandards-title-own": "Eigen bijdragen",
+	"bs-rssstandards-desc-own": "Diervoeders met een overzicht van uw eigen bijdragen aan de wiki.",
+	"bs-rssstandards-title-cat": "Categorie",
+	"bs-rssstandards-desc-cat": "Diervoeders met een overzicht over de recente veranderingen in een categorie.",
+	"bs-rssstandards-title-watch": "Volglijst",
+	"bs-rssstandards-desc-watch": "Diervoeders met een overzicht van uw bekeken pagina ' s.",
+	"bs-rssstandards-link-text-watch": "Recente wijzigingen van de laatste {{PLURAL:$1|dag|$1 dagen}}.",
+	"bs-rssstandards-desc-ns": "Diervoeders met een overzicht over de recente veranderingen in een naamruimte.",
+	"bs-rssstandards-changes-from": "Wijzigingen {{GENDER:$1|door}}: $1",
+	"apihelp-bs-rss-standards-pages-store-description": "Toon lijst van beschikbare pagina's voor RSSFeeder"
+}

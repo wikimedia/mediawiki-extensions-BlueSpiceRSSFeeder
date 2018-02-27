@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alirezaaa",
+			"Huji"
+		]
+	},
+	"bs-rssfeeder-desc": "یک افزونه که برای هر افزونه‌ای که قابلیت buildRss داشته باشد یک خوراک آراس‌اس می‌سازد",
+	"rssfeeder": "خوراک‌دهنده آراس‌اس",
+	"bs-rssfeeder-pagetext": "شما می‌توانید به خوراک‌های آراس‌اس زیر مشترک شوید:",
+	"bs-rssfeeder-recent-changes": "تغییرات اخیر",
+	"bs-rssfeeder-pages": "صفحه",
+	"bs-rssfeeder-submit": "نمایش",
+	"bs-rssfeeder-rss": "خوراک آراس‌اس",
+	"bs-rssfeeder-rss-desc": "ایجاد خوراک آراس‌اس خودتان",
+	"bs-extjs-rssfeeder-rss-title": "نشانی آراس‌اس",
+	"bs-rssstandards-desc": "خوراک‌های آراس‌اس بر پایه گزینه‌های مختلف می‌سازد",
+	"bs-rssstandards-desc-rc": "خوراک همراه یک نمای کلی از تغییرات اخیر در ویکی",
+	"bs-rssstandards-title-page": "صفحه",
+	"bs-rssstandards-desc-page": "خوراک همراه یک نمای کلی از تغییرات اخیر یک صفحه",
+	"bs-rssstandards-title-own": "مشارکت‌کنندگان خود",
+	"bs-rssstandards-desc-own": "خوراک همراه یک نمای کلی از مشارکت‌های خودتان در ویکی",
+	"bs-rssstandards-title-cat": "رده",
+	"bs-rssstandards-desc-cat": "خوراک همراه یک نمای کلی از تغییرات اخیر یک رده",
+	"bs-rssstandards-title-watch": "فهرست پی‌گیری",
+	"bs-rssstandards-desc-watch": "خوراک همراه یک نمای کلی از صفحات پی‌گیری‌تان",
+	"bs-rssstandards-link-text-watch": "تغییرات اخیر آخرین {{PLURAL:$1|روز|$1 روز}}.",
+	"bs-rssstandards-desc-ns": "خوراک همراه یک نمای کلی از تغییرات اخیر یک فضای نام.",
+	"bs-rssstandards-changes-from": "تغییرات {{GENDER:$1|توسط}}: $1"
+}

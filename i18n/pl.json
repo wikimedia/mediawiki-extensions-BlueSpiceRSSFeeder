@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"bs-rssfeeder-recent-changes": "Ostatnie zmiany",
+	"bs-rssfeeder-pages": "Strona",
+	"bs-rssfeeder-submit": "Pokaż",
+	"bs-rssfeeder-rss": "Kanał RSS",
+	"bs-extjs-rssfeeder-rss-title": "URL RSS",
+	"bs-rssfeeder-invalid-url": "Wpisz poprawny adres URL.",
+	"action-rssfeeder-viewspecialpage": "zobacz stronę specjalną „{{int:rssfeeder}}”",
+	"bs-rssstandards-title-page": "Strona",
+	"bs-rssstandards-title-own": "Wkład własny",
+	"bs-rssstandards-title-cat": "Kategoria",
+	"bs-rssstandards-title-watch": "Obserwowane",
+	"bs-rssstandards-link-text-watch": "Ostatnie zmiany w {{PLURAL:$1|ostatnim dniu|ostatnich $1 dniach}}."
+}

@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mykola Swarnyk",
+			"Olion",
+			"Piramidion",
+			"Ата"
+		]
+	},
+	"bs-rssfeeder-desc": "Розширення, що дозволяє виводити RSS тим розширенням, які мають функцію buildRss",
+	"rssfeeder": "Канал RSS",
+	"apihelp-bs-rssfeeder-tasks-description": "Забезпечує типові завдання для RSSFeeder",
+	"apihelp-bs-rssfeeder-tasks-summary": "Забезпечує типові завдання для RSSFeeder",
+	"bs-rssfeeder-pagetext": "Ви можете підписатися на такі RSS-канали:",
+	"bs-rssfeeder-recent-changes": "Нещодавні зміни",
+	"bs-rssfeeder-pages": "Сторінка",
+	"bs-rssfeeder-submit": "Показати",
+	"bs-rssfeeder-rss": "RSS-канал",
+	"bs-rssfeeder-rss-desc": "Створити свій власний RSS-канал",
+	"bs-extjs-rssfeeder-rss-title": "URL-адреса RSS",
+	"bs-rssfeeder-invalid-url": "Будь ласка, введіть дійсну URL-адресу.",
+	"action-rssfeeder-viewspecialpage": "перегляд спеціальної сторінки «{{int:rssfeeder}}»",
+	"bs-rssstandards-desc": "Будує RSS-стрічку на основі різних варіантів",
+	"bs-rssstandards-desc-rc": "Стрічка новин з оглядом нових редагувань у вікі",
+	"bs-rssstandards-title-page": "Сторінка",
+	"bs-rssstandards-desc-page": "Стрічка новин з оглядом нових редагувань сторінки.",
+	"bs-rssstandards-title-own": "Власний внесок",
+	"bs-rssstandards-desc-own": "Стрічка новин з оглядом Вашого власного внеску у вікі.",
+	"bs-rssstandards-title-cat": "Категорія",
+	"bs-rssstandards-desc-cat": "Стрічка новин з оглядом нових редагувань категорії.",
+	"bs-rssstandards-title-watch": "Список спостереження",
+	"bs-rssstandards-desc-watch": "Стрічка новин з оглядом з Ваших спостережуваних сторінок.",
+	"bs-rssstandards-link-text-watch": "Нові редагування за {{PLURAL:$1|останній день|останні $1 дні|останні $1 днів}}.",
+	"bs-rssstandards-desc-ns": "Стрічка новин з оглядом нових редагувань у просторі назв.",
+	"bs-rssstandards-changes-from": "Зміни {{GENDER:$1|зробив|зробила}}: $1",
+	"apihelp-bs-rss-standards-pages-store-description": "Виводить список доступних сторінок для RSSFeeder",
+	"apihelp-bs-rss-standards-pages-store-summary": "Вивести список доступних сторінок для RSSFeeder"
+}

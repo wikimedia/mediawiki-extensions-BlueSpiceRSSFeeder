@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hosseinblue",
+			"Lakzon"
+		]
+	},
+	"bs-rssstandards-desc": "خوراک‌های آراس‌اس بر پایه گزینه‌های مختلف می‌سازد",
+	"bs-rssstandards-desc-rc": "خوراک همراه یک نمای کلی از تغییرات اخیر در ویکی",
+	"bs-rssstandards-title-page": "وةڵگە(پەڕە)",
+	"bs-rssstandards-desc-page": "خوراک همراه یک نمای کلی از تغییرات اخیر یک صفحه",
+	"bs-rssstandards-title-own": "مشارکت‌کنندگان خود",
+	"bs-rssstandards-desc-own": "خوراک همراه یک نمای کلی از مشارکت‌های خودتان در ویکی",
+	"bs-rssstandards-title-cat": "ڕِزگ",
+	"bs-rssstandards-desc-cat": "خوراک همراه یک نمای کلی از تغییرات اخیر یک رده",
+	"bs-rssstandards-title-watch": "لیست پی‌گیریۀل",
+	"bs-rssstandards-desc-watch": "خوراک همراه یک نمای کلی از صفحات پی‌گیری‌تان",
+	"bs-rssstandards-link-text-watch": "تغییرات اخیر آخرین {{PLURAL:$1|روز|$1 روز}}.",
+	"bs-rssstandards-desc-ns": "خوراک همراه یک نمای کلی از تغییرات اخیر یک فضای نام.",
+	"bs-rssstandards-changes-from": "تغییرات {{GENDER:$1|توسط}}: $1"
+}

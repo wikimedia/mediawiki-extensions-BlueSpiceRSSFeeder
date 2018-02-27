@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"bs-rssfeeder-desc": "Додаток за извод на важечки RSS за секој додаток, со buildRss-функција",
+	"rssfeeder": "RSS-тековник",
+	"bs-rssfeeder-pagetext": "Можете да се претплатите на следниве RSS-тековници:",
+	"bs-rssfeeder-recent-changes": "Скорешни промени",
+	"bs-rssfeeder-pages": "Страница",
+	"bs-rssfeeder-submit": "Прикажи",
+	"bs-rssfeeder-rss": "RSS-тековник",
+	"bs-rssfeeder-rss-desc": "Направете ваш RSS-тековник",
+	"bs-extjs-rssfeeder-rss-title": "URL на RSS",
+	"bs-rssstandards-desc": "Составува RSS-тековници според разни можности",
+	"bs-rssstandards-desc-rc": "Тековник со преглед на скорешните промени на викито",
+	"bs-rssstandards-title-page": "Страница",
+	"bs-rssstandards-desc-page": "Тековник со преглед на скорешните промени на страницата.",
+	"bs-rssstandards-title-own": "Сопствени придонеси",
+	"bs-rssstandards-desc-own": "Тековник со преглед на вашите придонеси на викито",
+	"bs-rssstandards-title-cat": "Категорија",
+	"bs-rssstandards-desc-cat": "Тековник со преглед на скорешните промени во дадена категорија.",
+	"bs-rssstandards-title-watch": "Набљудувања",
+	"bs-rssstandards-desc-watch": "Тековник со преглед на вашите набљудувани страници.",
+	"bs-rssstandards-link-text-watch": "Скорешни промени во {{PLURAL:$1|последниов ден|последниве $1 дена}}.",
+	"bs-rssstandards-desc-ns": "Тековник со преглед на скорешните промени во даден именски простор.",
+	"bs-rssstandards-changes-from": "Промени {{GENDER:$1|од}}: $1"
+}
