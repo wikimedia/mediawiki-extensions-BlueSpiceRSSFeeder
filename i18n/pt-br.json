@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Eduardo Addad de Oliveira"
 		]
 	},
+	"bs-rssfeeder-desc": "Uma extensão para obter RSS válido, para qualquer extensão que tenha uma função buildRSS",
 	"rssfeeder": "RSS feeder",
 	"apihelp-bs-rssfeeder-tasks-description": "Fornece tarefas comuns para o RSSFeeder",
 	"apihelp-bs-rssfeeder-tasks-summary": "Fornece tarefas comuns para o RSSFeeder",
+	"bs-rssfeeder-pagetext": "Pode subscrever os seguintes <i>feeds</i> RSS:",
 	"bs-rssfeeder-recent-changes": "Mudanças recentes",
 	"bs-rssfeeder-pages": "Página",
 	"bs-rssfeeder-submit": "Exibir",
@@ -16,10 +19,17 @@
 	"bs-rssfeeder-invalid-url": "Por favor, informe um URL válido.",
 	"action-rssfeeder-viewspecialpage": "veja a página especial \"{{int:rssfeeder}}\"",
 	"bs-rssstandards-desc": "Construir RSS feeds baseado em diferentes opções",
+	"bs-rssstandards-desc-rc": "Feed que resume as mudanças recentes na wiki",
 	"bs-rssstandards-title-page": "Página",
+	"bs-rssstandards-desc-page": "Feed que resume as mudanças recentes de uma página",
 	"bs-rssstandards-title-own": "Contribuições próprias",
+	"bs-rssstandards-desc-own": "Feed que resume as suas contribuições na wiki.",
 	"bs-rssstandards-title-cat": "Categoria",
+	"bs-rssstandards-desc-cat": "Feed que resume as mudanças recentes de uma categoria.",
 	"bs-rssstandards-title-watch": "Páginas vigiadas",
+	"bs-rssstandards-desc-watch": "Feed que resume as suas páginas vigiadas.",
+	"bs-rssstandards-link-text-watch": "Mudanças recentes {{PLURAL:$1|no último dia|nos últimos $1 dias}}.",
+	"bs-rssstandards-desc-ns": "Feed que resume as mudanças recentes de uma página",
 	"bs-rssstandards-changes-from": "Mudanças {{GENDER:$1|por}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Retorna a Lista das páginas disponíveis para o RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Retorna a Lista das páginas disponíveis para o RSSFeeder"
