@@ -186,7 +186,7 @@ class RSSFeeder extends BsExtensionMW {
 	 * @return array
 	 */
 	public static function getRegisteredFeeds() {
-		wfRunHooks( 'BSRSSFeederGetRegisteredFeeds', array( &self::$aFeeds ) );
+		Hooks::run( 'BSRSSFeederGetRegisteredFeeds', array( &self::$aFeeds ) );
 		return self::$aFeeds;
 	}
 
