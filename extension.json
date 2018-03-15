@@ -6,12 +6,39 @@
 	"author": "Sebastian Ulbricht",
 	"descriptionmsg": "bs-rssfeeder-desc",
 	"type": "bluespice",
-	"bsgExtensions": {
-		"BlueSpiceRSSFeeder": {
-			"className": "RSSFeeder",
-			"extPath": "/BlueSpiceRSSFeeder"
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceRSSFeeder": {
+					"className": "RSSFeeder",
+					"extPath": "/BlueSpiceRSSFeeder"
+				}
+			},
+			"PermissionRegistry": {
+				"rssfeeder-viewspecialpage": {
+					"type": "global",
+					"roles": [
+						"editor",
+						"admin"
+					]
+				}
+			}
 		}
 	},
+	"GroupPermissions": {
+		"*": {
+			"rssfeeder-viewspecialpage": false
+		},
+		"user": {
+			"rssfeeder-viewspecialpage": true
+		},
+		"sysop": {
+			"rssfeeder-viewspecialpage": true
+		}
+	},
+	"AvailableRights": [
+		"rssfeeder-viewspecialpage"
+	],
 	"SpecialPages": {
 		"RSSFeeder": "SpecialRSSFeeder"
 	},
@@ -60,5 +87,5 @@
 		]
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }

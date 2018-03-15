@@ -48,8 +48,6 @@ class RSSFeeder extends BsExtensionMW {
 		$this->setHook( 'BSDashboardsUserDashboardPortalConfig' );
 		$this->setHook( 'BSRSSFeederGetRegisteredFeeds' );
 		$this->setHook( 'BeforePageDisplay' );
-
-		$this->mCore->registerPermission( 'rssfeeder-viewspecialpage', array('user'), array( 'type' => 'global' ) );
 	}
 
 	public static function getRSS( $iCount, $sUrl ) {
