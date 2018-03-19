@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nikosgranturismogt"
+		]
+	},
+	"bs-rssfeeder-pages": "Σελίδα",
+	"bs-rssfeeder-submit": "Εμφάνιση",
+	"bs-rssfeeder-rss": "Ροή RSS",
+	"bs-rssfeeder-rss-desc": "Δημιουργία της ροής RSS σας",
+	"bs-rssfeeder-invalid-url": "Παρακαλούμε παράσχετε μια έγκυρη διεύθυνση URL.",
+	"bs-rssstandards-title-page": "Σελίδα",
+	"bs-rssstandards-title-cat": "Κατηγορία",
+	"bs-rssstandards-title-watch": "Λίστα παρακολούθησης",
+	"bs-rssstandards-link-text-watch": "Πρόσφατες αλλαγές των τελευταίων {{PLURAL:$1|ημέρα|$1 ημέρες}}"
+}
