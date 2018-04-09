@@ -4,7 +4,8 @@
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Shirayuki",
 			"Beta16",
-			"Umherirrender"
+			"Umherirrender",
+			"Guycn2"
 		]
 	},
 	"bs-rssfeeder-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of rss feeder extension",
@@ -32,7 +33,7 @@
 	"bs-rssstandards-desc-watch": "Description of RSS feed of your watchted pages.\n{{Related|Bs-rssstandards-desc}}",
 	"bs-rssstandards-link-text-watch": "Option for recent changes RSS feed to specify the date range of the feed.\n\nParameters:\n* $1 - timespan in days till now (starting from 1 day till 365 days in steps)",
 	"bs-rssstandards-desc-ns": "Description of recent changes RSS feed from one specific namespace.\n{{Related|Bs-rssstandards-desc}}",
-	"bs-rssstandards-changes-from": "Text message for changes by: $1\\n*$1 is the username of the user who made the changes - use for GENDER distinction",
+	"bs-rssstandards-changes-from": "Text message for changes by: $1\n* $1 is the username of the user who made the changes - use for GENDER distinction",
 	"apihelp-bs-rss-standards-pages-store-description": "API Help description message for page list in RSSFeeder\n{{doc-apihelp-description|bs-rss-standards-pages-store}}",
 	"apihelp-bs-rss-standards-pages-store-summary": "API Help description message for page list in RSSFeeder\n{{doc-apihelp-summary|bs-rss-standards-pages-store}}"
 }
