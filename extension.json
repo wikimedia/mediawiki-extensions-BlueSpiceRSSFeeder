@@ -80,12 +80,6 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceRSSFeeder/resources"
 	},
-	"Hooks": {
-		"UnitTestsList": [
-			"RSSFeeder::onUnitTestsList",
-			"RSSStandards::onUnitTestsList"
-		]
-	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
 }

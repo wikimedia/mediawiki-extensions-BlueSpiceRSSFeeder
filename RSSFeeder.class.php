@@ -188,11 +188,6 @@ class RSSFeeder extends BsExtensionMW {
 		return self::$aFeeds;
 	}
 
-	public static function onUnitTestsList( array &$paths ) {
-		$paths[] = __DIR__ . '/tests/phpunit/';
-		return true;
-	}
-
 	/* Source code RSSStandards.class.php */
 
 	/**
