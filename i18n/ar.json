@@ -1,8 +1,36 @@
 {
 	"@metadata": {
 		"authors": [
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"ديفيد"
 		]
 	},
-	"action-rssfeeder-viewspecialpage": "عرض الصفحة الخاصة \"{{int:rssfeeder}}\""
+	"bs-rssfeeder-desc": "امتداد لإخراج RSS صالح لكل امتداد، يحتوي على وظيفة buildRss",
+	"rssfeeder": "تغذية RSS",
+	"apihelp-bs-rssfeeder-tasks-description": "يوفر المهام الشائعة لـRSSFeeder",
+	"apihelp-bs-rssfeeder-tasks-summary": "يوفر المهام الشائعة لـRSSFeeder",
+	"bs-rssfeeder-pagetext": "يمكنك الاشتراك في خلاصات RSS التالية:",
+	"bs-rssfeeder-recent-changes": "أحدث التغييرات",
+	"bs-rssfeeder-pages": "صفحة",
+	"bs-rssfeeder-submit": "أظهر",
+	"bs-rssfeeder-rss": "تغذية RSS",
+	"bs-rssfeeder-rss-desc": "قم بإنشاء موجز RSS خاص بك",
+	"bs-extjs-rssfeeder-rss-title": "مسار RSS",
+	"bs-rssfeeder-invalid-url": "يُرجَى تقديم مسار صالح.",
+	"action-rssfeeder-viewspecialpage": "عرض الصفحة الخاصة \"{{int:rssfeeder}}\"",
+	"bs-rssstandards-desc": "يبني آر إس إس على أساس خيارات مختلفة",
+	"bs-rssstandards-desc-rc": "تغذية مع لمحة عامة عن التغييرات الأخيرة في الويكي",
+	"bs-rssstandards-title-page": "صفحة",
+	"bs-rssstandards-desc-page": "تغذية مع نظرة عامة على التغييرات الأخيرة للصفحة.",
+	"bs-rssstandards-title-own": "المساهمات الخاصة",
+	"bs-rssstandards-desc-own": "تغذية مع نظرة عامة على مساهماتك الخاصة في الويكي.",
+	"bs-rssstandards-title-cat": "التصنيف",
+	"bs-rssstandards-desc-cat": "تغذية مع لمحة عامة عن التغييرات الأخيرة في التصنيف.",
+	"bs-rssstandards-title-watch": "قائمة المراقبة",
+	"bs-rssstandards-desc-watch": "تغذية مع نظرة عامة على صفحاتك المراقبة.",
+	"bs-rssstandards-link-text-watch": "أحدث التغييرات لآخر {{PLURAL:$1|يوم|$1 أيام}}.",
+	"bs-rssstandards-desc-ns": "تغذية مع لمحة عامة عن التغييرات الأخيرة في نطاق.",
+	"bs-rssstandards-changes-from": "التغييرات {{GENDER:$1|بواسطة}}: $1",
+	"apihelp-bs-rss-standards-pages-store-description": "إرجاع قائمة الصفحات المتاحة لـRSSFeeder",
+	"apihelp-bs-rss-standards-pages-store-summary": "إرجاع قائمة الصفحات المتاحة لـRSSFeeder"
 }
