@@ -60,7 +60,8 @@
 		"RSSItemCreator": "includes/RSSCreator.class.php",
 		"BSApiTasksRSSFeeder": "includes/api/BSApiTasksRSSFeeder.php",
 		"ApiRSSStandardsPagesStore": "includes/api/ApiRSSStandardsPagesStore.php",
-		"SpecialRSSFeeder": "includes/specials/SpecialRSSFeeder.class.php"
+		"SpecialRSSFeeder": "includes/specials/SpecialRSSFeeder.class.php",
+		"RSSAuthenticator": "includes/RSSAuthenticator.php"
 	},
 	"ResourceModules": {
 		"ext.bluespice.rssFeeder": {

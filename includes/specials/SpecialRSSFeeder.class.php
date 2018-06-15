@@ -13,6 +13,12 @@ class SpecialRSSFeeder extends BsSpecialPage {
 	 * @return type
 	 */
 	public function execute( $sParameter ) {
+		if( $this->getUser()->isAnon() ) {
+			//Try to log in user from request
+			$authenticator = new RSSAuthenticator( $this->getRequest(), $this->getContext() );
+			$authenticator->logInUser();
+		}
+
 		parent::execute( $sParameter );
 		$extension = false;
 
