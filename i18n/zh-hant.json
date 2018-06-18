@@ -30,7 +30,7 @@
 	"bs-rssstandards-title-watch": "監視清單",
 	"bs-rssstandards-desc-watch": "概述您所監視頁面的源料。",
 	"bs-rssstandards-link-text-watch": "最近 {{PLURAL:$1|1 天|$1 天}}的更改。",
-	"bs-rssstandards-desc-ns": "概述在名稱空間近期變更的源料。",
+	"bs-rssstandards-desc-ns": "概述在命名空間近期變更的源料。",
 	"bs-rssstandards-changes-from": "更改{{GENDER:$1|由}}：$1",
 	"apihelp-bs-rss-standards-pages-store-description": "為 RSSFeeder 回傳有效頁面的清單",
 	"apihelp-bs-rss-standards-pages-store-summary": "為 RSSFeeder 回傳有效頁面的清單"
