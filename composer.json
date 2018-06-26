@@ -1,5 +1,5 @@
 {
-	"name": "mediawiki/blue-spice-r-s-s-feeder",
+	"name": "bluespice/rssfeeder",
 	"type": "mediawiki-extension",
 	"description": "Create your own RSS feed",
 	"license": "GPL-3.0-only",
@@ -25,5 +25,8 @@
 		"fix": [
 			"minus-x fix ."
 		]
+	},
+	"extra": {
+		"installer-name": "BlueSpiceRSSFeeder"
 	}
 }
