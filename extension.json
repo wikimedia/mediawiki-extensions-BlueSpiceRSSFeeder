@@ -81,6 +81,9 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceRSSFeeder/resources"
 	},
+	"Hooks": {
+		"TitleReadWhitelist": "RSSFeeder::onTitleReadWhitelist"
+	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
 }

@@ -1018,4 +1018,18 @@ class RSSFeeder extends BsExtensionMW {
 
 		return $set;
 	}
+
+	/**
+	 * @param Title $title
+	 * @param User $user
+	 * @param bool $whitelisted
+	 * @return bool
+	 */
+	public static function onTitleReadWhitelist( $title, $user, &$whitelisted ) {
+		if( $title->isSpecial( 'RSSFeeder' ) === false ) {
+			return true;
+		}
+		$whitelisted = true;
+		return true;
+	}
 }
