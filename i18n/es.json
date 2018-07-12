@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Macofe"
+			"Macofe",
+			"AlimanRuna"
 		]
 	},
 	"bs-rssfeeder-desc": "Una extensión para obtener RSS válidos de cada una de las extensiones que incluyan la función «buildRSS»",
