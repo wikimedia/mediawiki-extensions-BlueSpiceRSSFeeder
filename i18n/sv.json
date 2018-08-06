@@ -27,5 +27,6 @@
 	"bs-rssstandards-desc-watch": "Flöde med en översikt av dina bevakade sidor.",
 	"bs-rssstandards-link-text-watch": "De senaste ändringarna från {{PLURAL:$1|den senaste dagen|de senaste $1 dagarna}}.",
 	"bs-rssstandards-desc-ns": "Flöde med en översikt av de senaste ändringarna i en namnrymd.",
-	"bs-rssstandards-changes-from": "Ändringar {{GENDER:$1|av}}: $1"
+	"bs-rssstandards-changes-from": "Ändringar {{GENDER:$1|av}}: $1",
+	"right-rssfeeder-viewspecialpage": "Ger åtkomst till specialsidan [[Special:RSSFeeder]]."
 }

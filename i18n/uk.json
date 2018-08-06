@@ -4,7 +4,8 @@
 			"Mykola Swarnyk",
 			"Olion",
 			"Piramidion",
-			"Ата"
+			"Ата",
+			"Vlad5250"
 		]
 	},
 	"bs-rssfeeder-desc": "Розширення, що дозволяє виводити RSS тим розширенням, які мають функцію buildRss",
@@ -34,5 +35,6 @@
 	"bs-rssstandards-desc-ns": "Стрічка новин з оглядом нових редагувань у просторі назв.",
 	"bs-rssstandards-changes-from": "Зміни {{GENDER:$1|зробив|зробила}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Виводить список доступних сторінок для RSSFeeder",
-	"apihelp-bs-rss-standards-pages-store-summary": "Вивести список доступних сторінок для RSSFeeder"
+	"apihelp-bs-rss-standards-pages-store-summary": "Вивести список доступних сторінок для RSSFeeder",
+	"right-rssfeeder-viewspecialpage": "доступ до спеціальної сторінки [[Special:RSSFeeder]]"
 }

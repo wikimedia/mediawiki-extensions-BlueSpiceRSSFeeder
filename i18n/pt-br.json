@@ -32,5 +32,6 @@
 	"bs-rssstandards-desc-ns": "Feed que resume as mudanças recentes de uma página",
 	"bs-rssstandards-changes-from": "Mudanças {{GENDER:$1|por}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Retorna a Lista das páginas disponíveis para o RSSFeeder",
-	"apihelp-bs-rss-standards-pages-store-summary": "Retorna a Lista das páginas disponíveis para o RSSFeeder"
+	"apihelp-bs-rss-standards-pages-store-summary": "Retorna a Lista das páginas disponíveis para o RSSFeeder",
+	"right-rssfeeder-viewspecialpage": "Concede acesso à página especial [[Special:RSSFeeder]]."
 }

@@ -34,5 +34,6 @@
 	"bs-rssstandards-desc-ns": "Flux avec un aperçu des modifications récentes dans un espace de noms.",
 	"bs-rssstandards-changes-from": "Modifications {{GENDER:$1|de}} : $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Retourner la  Liste des Pages disponibles pour RSSFeeder",
-	"apihelp-bs-rss-standards-pages-store-summary": "Renvoyer la liste des pages disponibles pour RSSFeeder"
+	"apihelp-bs-rss-standards-pages-store-summary": "Renvoyer la liste des pages disponibles pour RSSFeeder",
+	"right-rssfeeder-viewspecialpage": "Donne les droits d'accès à la page spéciale [[Special:RSSFeeder]]."
 }

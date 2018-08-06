@@ -32,5 +32,6 @@
 	"bs-rssstandards-desc-ns": "<i>Feed</i> que resume as mudanças recentes num espaço nominal.",
 	"bs-rssstandards-changes-from": "Alterações {{GENDER:$1|de}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Devolve uma lista das páginas disponíveis no RSSFeeder",
-	"apihelp-bs-rss-standards-pages-store-summary": "Devolver lista das páginas disponíveis para o RSSFeeder"
+	"apihelp-bs-rss-standards-pages-store-summary": "Devolver lista das páginas disponíveis para o RSSFeeder",
+	"right-rssfeeder-viewspecialpage": "Concede acesso à página especial [[Special:RSSFeeder]]."
 }

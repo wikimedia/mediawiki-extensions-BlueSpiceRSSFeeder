@@ -5,7 +5,8 @@
 			"Kaganer",
 			"Okras",
 			"Striking Blue",
-			"SuperPuperSteve"
+			"SuperPuperSteve",
+			"Vlad5250"
 		]
 	},
 	"bs-rssfeeder-desc": "Расширение, позволяющее выводить RSS для каждого расширения, имеющего функцию buildRss",
@@ -35,5 +36,6 @@
 	"bs-rssstandards-desc-ns": "Лента с обзором последних изменений в пространстве имён.",
 	"bs-rssstandards-changes-from": "Правки {{GENDER:$1|участника|учасьницы}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Возвращает список доступных страниц для RSSFeeder",
-	"apihelp-bs-rss-standards-pages-store-summary": "Вернуть список доступных страниц для RSSFeeder"
+	"apihelp-bs-rss-standards-pages-store-summary": "Вернуть список доступных страниц для RSSFeeder",
+	"right-rssfeeder-viewspecialpage": "доступ к служебной странице [[Special:RSSFeeder]]"
 }
