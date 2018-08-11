@@ -32,5 +32,6 @@
 	"bs-rssstandards-desc-ns": "تغذية مع لمحة عامة عن التغييرات الأخيرة في نطاق.",
 	"bs-rssstandards-changes-from": "التغييرات {{GENDER:$1|بواسطة}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "إرجاع قائمة الصفحات المتاحة لـRSSFeeder",
-	"apihelp-bs-rss-standards-pages-store-summary": "إرجاع قائمة الصفحات المتاحة لـRSSFeeder"
+	"apihelp-bs-rss-standards-pages-store-summary": "إرجاع قائمة الصفحات المتاحة لـRSSFeeder",
+	"right-rssfeeder-viewspecialpage": "يمنح الوصول إلى الصفحة الخاصة [[Special:RSSFeeder]]."
 }
