@@ -3,7 +3,8 @@
 		"authors": [
 			"Otokoume",
 			"Shirayuki",
-			"Yatalu"
+			"Yatalu",
+			"Suyama"
 		]
 	},
 	"bs-rssfeeder-desc": "buildRss 関数を持つ拡張機能それぞれについて有効な RSS フィードを出力する拡張機能",
@@ -27,5 +28,6 @@
 	"bs-rssstandards-desc-watch": "ウォッチリストに登録しているページの概要を含むフィード。",
 	"bs-rssstandards-link-text-watch": "過去{{PLURAL:$1|1日|$1日間}}の最近の更新",
 	"bs-rssstandards-desc-ns": "名前空間の最近の更新の概要を含むフィード。",
-	"bs-rssstandards-changes-from": "$1 {{GENDER:$1|によって}}変更"
+	"bs-rssstandards-changes-from": "$1 {{GENDER:$1|によって}}変更",
+	"right-rssfeeder-viewspecialpage": "特別ページ [[Special:RSSFeeder]] の利用を許可します。"
 }
