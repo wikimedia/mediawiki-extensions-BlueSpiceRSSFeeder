@@ -409,7 +409,7 @@ class RSSCreator {
 
 	/**
 	 * set the weekdays where the channel will not be updated
-	 * @param string $days a comma seperated list of weekdays (i.e. 'Monday, Saturday, Sunday')
+	 * @param string $days a comma separated list of weekdays (i.e. 'Monday, Saturday, Sunday')
 	 */
     public function setSkipDays($days) {
         if(!is_array($days)) {
@@ -422,7 +422,7 @@ class RSSCreator {
 
 	/**
 	 * set the hours where the channel will not be updated
-	 * @param string $hours a comma seperated list of hours (i.e. '23, 0, 1, 2, 3, 4, 12, 13')
+	 * @param string $hours a comma separated list of hours (i.e. '23, 0, 1, 2, 3, 4, 12, 13')
 	 */
     public function setSkipHours($hours) {
         if(!is_array($hours)) {
