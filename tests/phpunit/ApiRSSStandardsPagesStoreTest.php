@@ -8,6 +8,7 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
  * @group BlueSpice
  * @group BlueSpiceExtensions
  * @group BlueSpiceRSSStandards
+ * @group Database
  */
 class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 
