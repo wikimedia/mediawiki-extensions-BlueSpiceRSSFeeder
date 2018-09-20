@@ -18,8 +18,16 @@
 				"rssfeeder-viewspecialpage": {
 					"type": "global",
 					"roles": [
+						"accountmanager",
+						"admin",
+						"author",
+						"bot",
+						"commenter",
 						"editor",
-						"admin"
+						"maintenanceadmin",
+						"reader",
+						"reviewer",
+						"structuremanager"
 					]
 				}
 			}
