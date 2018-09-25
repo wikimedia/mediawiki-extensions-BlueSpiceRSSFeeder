@@ -11,7 +11,6 @@ Ext.define('BS.RSSStandards.form.field.TitleWithUrlCombo', {
 			proxy: {
 				extraParams: {
 					options: Ext.encode({
-						namespaces: bs.ns.filter.allBut( this.excludeIds ),
 						returnQuery: true
 					})
 				}

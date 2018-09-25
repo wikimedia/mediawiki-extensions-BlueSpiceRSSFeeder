@@ -32,5 +32,7 @@
 	"bs-rssstandards-changes-from": "Changes {{GENDER:$1|by}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Return List of available Pages for RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Return List of available Pages for RSSFeeder",
-	"right-rssfeeder-viewspecialpage": "Grants access to the [[Special:RSSFeeder]] special page."
+	"right-rssfeeder-viewspecialpage": "Grants access to the [[Special:RSSFeeder]] special page.",
+	"bs-rssstandards-title-rc": "Recent changes",
+	"bs-rssstandards-desc-rc": "Feed with an overview of recent changes on the wiki."
 }

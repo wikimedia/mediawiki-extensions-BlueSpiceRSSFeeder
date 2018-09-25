@@ -14,7 +14,7 @@ class RSSAuthenticator {
 	 */
 	protected $context;
 
-	public function __construct( \WebRequest $request, \RequestContext $context ) {
+	public function __construct( \WebRequest $request, \IContextSource $context ) {
 		$this->request = $request;
 		$this->context = $context;
 	}
