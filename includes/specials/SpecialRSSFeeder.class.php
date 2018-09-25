@@ -15,7 +15,7 @@ class SpecialRSSFeeder extends BsSpecialPage {
 	public function execute( $sParameter ) {
 		if( $this->getUser()->isAnon() ) {
 			//Try to log in user from request
-			$authenticator = new RSSAuthenticator( $this->getRequest(), $this->getContext() );
+			$authenticator = new RSSAuthenticator( $this->getRequest(), \ReqestContext::getMain() );
 			$authenticator->logInUser();
 		}
 

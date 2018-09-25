@@ -37,5 +37,7 @@
 	"bs-rssstandards-changes-from": "Text message for changes by: $1\n* $1 is the username of the user who made the changes - use for GENDER distinction",
 	"apihelp-bs-rss-standards-pages-store-description": "API Help description message for page list in RSSFeeder\n{{doc-apihelp-description|bs-rss-standards-pages-store}}",
 	"apihelp-bs-rss-standards-pages-store-summary": "API Help description message for page list in RSSFeeder\n{{doc-apihelp-summary|bs-rss-standards-pages-store}}",
-	"right-rssfeeder-viewspecialpage": "Grants access to the [[Special:RSSFeeder]] special page.\n{{doc-right|rssfeeder-viewspecialpage}}"
+	"right-rssfeeder-viewspecialpage": "Grants access to the [[Special:RSSFeeder]] special page.\n{{doc-right|rssfeeder-viewspecialpage}}",
+	"bs-rssstandards-title-rc": "Headline for recent changes RSS feed\n\n{{Identical|Recent changes}}",
+	"bs-rssstandards-desc-rc": "Description of recent changes RSS feed.\n{{Related|Bs-rssstandards-desc}}"
 }

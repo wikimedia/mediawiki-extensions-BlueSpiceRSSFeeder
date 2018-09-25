@@ -61,7 +61,8 @@
 		"BSApiTasksRSSFeeder": "includes/api/BSApiTasksRSSFeeder.php",
 		"ApiRSSStandardsPagesStore": "includes/api/ApiRSSStandardsPagesStore.php",
 		"SpecialRSSFeeder": "includes/specials/SpecialRSSFeeder.class.php",
-		"RSSAuthenticator": "includes/RSSAuthenticator.php"
+		"RSSAuthenticator": "includes/RSSAuthenticator.php",
+		"BlueSpice\\RSSFeeder\\Hook\\BSRSSFeederBeforeGetRecentChanges": "src/Hook/BSRSSFeederBeforeGetRecentChanges.php"
 	},
 	"ResourceModules": {
 		"ext.bluespice.rssFeeder": {
