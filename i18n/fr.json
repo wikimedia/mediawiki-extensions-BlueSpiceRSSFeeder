@@ -21,7 +21,7 @@
 	"bs-rssfeeder-invalid-url": "Veuillez fournir une URL valide.",
 	"action-rssfeeder-viewspecialpage": "afficher la page spéciale \"{{int:rssfeeder}}\"",
 	"bs-rssstandards-desc": "Construit un flux RSS basé sur différentes options",
-	"bs-rssstandards-desc-rc": "Flux avec un aperçu des modifications récentes dans le wiki",
+	"bs-rssstandards-desc-rc": "Flux avec un aperçu des modifications récentes du wiki.",
 	"bs-rssstandards-title-page": "Page",
 	"bs-rssstandards-desc-page": "Flux avec un aperçu des modifications récentes d’une page.",
 	"bs-rssstandards-title-own": "Vos contributions",
@@ -35,5 +35,6 @@
 	"bs-rssstandards-changes-from": "Modifications {{GENDER:$1|de}} : $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Retourner la  Liste des Pages disponibles pour RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Renvoyer la liste des pages disponibles pour RSSFeeder",
-	"right-rssfeeder-viewspecialpage": "Donne les droits d'accès à la page spéciale [[Special:RSSFeeder]]."
+	"right-rssfeeder-viewspecialpage": "Donne les droits d'accès à la page spéciale [[Special:RSSFeeder]].",
+	"bs-rssstandards-title-rc": "Modifications récentes"
 }
