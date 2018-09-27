@@ -270,16 +270,15 @@ class RSSFeeder extends BsExtensionMW {
 	protected function getRecentChanges( $conditions = [] ) {
 		$dbr = wfGetDB( DB_SLAVE );
 
-		$conditions = array_merge( [
-			'rc_timestamp > '. $dbr->timestamp( time() - intval( 7 * 86400 ) )
-		], $conditions );
-
 		$res = $dbr->select(
 			[ 'recentchanges' ],
 			[ '*' ],
 			$conditions,
 			__METHOD__,
-			[ 'ORDER BY' => 'rc_timestamp DESC' ]
+			[
+				'ORDER BY' => 'rc_timestamp DESC',
+				'LIMIT' => '10'
+			]
 		);
 
 		if ( $res ) {
