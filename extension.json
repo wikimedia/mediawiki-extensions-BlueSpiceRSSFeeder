@@ -62,6 +62,9 @@
 	"ExtensionMessagesFiles": {
 		"BlueSpiceRSSFeederAlias": "languages/SpecialRSSFeeder.alias.php"
 	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\RSSFeeder\\": "src/"
+	},
 	"AutoloadClasses": {
 		"RSSFeeder": "RSSFeeder.class.php",
 		"RSSCreator": "includes/RSSCreator.class.php",
@@ -91,7 +94,10 @@
 		"remoteExtPath": "BlueSpiceRSSFeeder/resources"
 	},
 	"Hooks": {
-		"TitleReadWhitelist": "RSSFeeder::onTitleReadWhitelist"
+		"TitleReadWhitelist": "RSSFeeder::onTitleReadWhitelist",
+		"SkinTemplateOutputPageBeforeExec": [
+			"\\BlueSpice\\RSSFeeder\\Hook\\SkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback"
+		]
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
