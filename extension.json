@@ -6,6 +6,9 @@
 	"author": "Sebastian Ulbricht",
 	"descriptionmsg": "bs-rssfeeder-desc",
 	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
 	"attributes": {
 		"BlueSpiceFoundation": {
 			"Extensions": {
