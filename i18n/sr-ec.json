@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Obsuser"
+			"Obsuser",
+			"BadDog"
 		]
 	},
-	"bs-rssfeeder-recent-changes": "Скорашње измене"
+	"bs-rssfeeder-recent-changes": "Скорашње измене",
+	"bs-rssstandards-desc-rc": "Фид са прегледом недавних промена на викију",
+	"bs-rssstandards-title-rc": "Недавне промене"
 }

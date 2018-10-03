@@ -17,5 +17,6 @@
 	"bs-rssstandards-title-cat": "Kategoria",
 	"bs-rssstandards-title-watch": "Obserwowane",
 	"bs-rssstandards-link-text-watch": "Ostatnie zmiany w {{PLURAL:$1|ostatnim dniu|ostatnich $1 dniach}}.",
-	"right-rssfeeder-viewspecialpage": "Przyznawanie dostępu do strony specjalnej [[Special:RSSFeeder]]."
+	"right-rssfeeder-viewspecialpage": "Przyznawanie dostępu do strony specjalnej [[Special:RSSFeeder]].",
+	"bs-rssstandards-title-rc": "Ostatnie zmiany"
 }

@@ -37,5 +37,6 @@
 	"bs-rssstandards-changes-from": "Правки {{GENDER:$1|участника|учасьницы}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Возвращает список доступных страниц для RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Вернуть список доступных страниц для RSSFeeder",
-	"right-rssfeeder-viewspecialpage": "доступ к служебной странице [[Special:RSSFeeder]]"
+	"right-rssfeeder-viewspecialpage": "доступ к служебной странице [[Special:RSSFeeder]]",
+	"bs-rssstandards-title-rc": "Свежие правки"
 }

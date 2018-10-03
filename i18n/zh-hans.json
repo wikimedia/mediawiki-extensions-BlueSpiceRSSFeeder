@@ -18,7 +18,7 @@
 	"bs-rssfeeder-invalid-url": "请提供有效的URL。",
 	"action-rssfeeder-viewspecialpage": "查看特殊页面“{{int:rssfeeder}}”",
 	"bs-rssstandards-desc": "基于不同选项构造RSS订阅",
-	"bs-rssstandards-desc-rc": "订阅wiki的最近更改的总览",
+	"bs-rssstandards-desc-rc": "订阅wiki的最近更改的总览。",
 	"bs-rssstandards-title-page": "页面",
 	"bs-rssstandards-desc-page": "订阅某页面的最近更改的总览。",
 	"bs-rssstandards-title-own": "自己的贡献",
@@ -31,5 +31,6 @@
 	"bs-rssstandards-desc-ns": "订阅某名字空间内最近更改的总览。",
 	"bs-rssstandards-changes-from": "更改{{GENDER:$1|自}}：$1",
 	"apihelp-bs-rss-standards-pages-store-description": "为RSSFeeder返回可用页面的列表",
-	"apihelp-bs-rss-standards-pages-store-summary": "为RSS订阅器返回可用页面列表"
+	"apihelp-bs-rss-standards-pages-store-summary": "为RSS订阅器返回可用页面列表",
+	"bs-rssstandards-title-rc": "最近更改"
 }
