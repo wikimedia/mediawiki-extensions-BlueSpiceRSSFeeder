@@ -17,5 +17,6 @@
 	"bs-rssstandards-title-cat": "Kategorie",
 	"bs-rssstandards-title-watch": "Iwwerwaachungslëscht",
 	"bs-rssstandards-link-text-watch": "Rezent Ännerungen {{PLURAL:$1|vum leschten Dag|aus de leschten $1 Deeg}}.",
-	"bs-rssstandards-changes-from": "Ännerunge {{GENDER:$1|vum}}: $1"
+	"bs-rssstandards-changes-from": "Ännerunge {{GENDER:$1|vum}}: $1",
+	"bs-rssstandards-title-rc": "Rezent Ännerungen"
 }
