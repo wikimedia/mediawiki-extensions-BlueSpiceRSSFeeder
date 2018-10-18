@@ -1,6 +1,6 @@
 <?php
 // Last review MRG (01.07.11 14:22)
-class SpecialRSSFeeder extends BsSpecialPage {
+class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 
 	public function __construct() {
 		parent::__construct( 'RSSFeeder', 'rssfeeder-viewspecialpage' );
@@ -81,7 +81,4 @@ class SpecialRSSFeeder extends BsSpecialPage {
 		return $oChannel->buildOutput();
 	}*/
 
-	protected function getGroupName() {
-		return 'bluespice';
-	}
 }
