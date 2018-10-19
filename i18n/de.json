@@ -20,7 +20,7 @@
 	"bs-rssfeeder-invalid-url": "Bitte gib eine gültige URL an.",
 	"action-rssfeeder-viewspecialpage": "die Spezialseite „{{int:rssfeeder}}“ anzusehen",
 	"bs-rssstandards-desc": "RSS-Feeds zu verschiedenen Bereichen des Wikis",
-	"bs-rssstandards-desc-rc": "Feed mit einem Überblick über die letzten Änderungen des Wikis.",
+	"bs-rssstandards-desc-rc": "Feed mit einem Überblick über die letzten Änderungen im Wiki",
 	"bs-rssstandards-title-page": "Seite",
 	"bs-rssstandards-desc-page": "Feed mit einem Überblick der letzten Änderungen auf einer Seite.",
 	"bs-rssstandards-title-own": "Eigene Beiträge",
