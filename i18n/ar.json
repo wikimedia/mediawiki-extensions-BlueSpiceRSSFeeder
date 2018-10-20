@@ -19,7 +19,7 @@
 	"bs-rssfeeder-invalid-url": "يُرجَى تقديم مسار صالح.",
 	"action-rssfeeder-viewspecialpage": "عرض الصفحة الخاصة \"{{int:rssfeeder}}\"",
 	"bs-rssstandards-desc": "يبني آر إس إس على أساس خيارات مختلفة",
-	"bs-rssstandards-desc-rc": "تحتوي الخلاصة على لمحة عامة للتغييرات الأخيرة على الويكي.",
+	"bs-rssstandards-desc-rc": "خلاصة مع لمحة عامة للتغييرات الأخيرة على الويكي.",
 	"bs-rssstandards-title-page": "صفحة",
 	"bs-rssstandards-desc-page": "تغذية مع نظرة عامة على التغييرات الأخيرة للصفحة.",
 	"bs-rssstandards-title-own": "المساهمات الخاصة",
