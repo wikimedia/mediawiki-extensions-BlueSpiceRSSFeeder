@@ -21,7 +21,7 @@
 	"bs-rssfeeder-invalid-url": "Veuillez fournir une URL valide.",
 	"action-rssfeeder-viewspecialpage": "afficher la page spéciale \"{{int:rssfeeder}}\"",
 	"bs-rssstandards-desc": "Construit un flux RSS basé sur différentes options",
-	"bs-rssstandards-desc-rc": "Flux avec un aperçu des modifications récentes du wiki.",
+	"bs-rssstandards-desc-rc": "Flux avec un aperçu sur les modifications récentes dans wiki",
 	"bs-rssstandards-title-page": "Page",
 	"bs-rssstandards-desc-page": "Flux avec un aperçu des modifications récentes d’une page.",
 	"bs-rssstandards-title-own": "Vos contributions",
