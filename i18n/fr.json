@@ -8,7 +8,7 @@
 		]
 	},
 	"bs-rssfeeder-desc": "Une extension pour obtenir un RSS valide pour chaque extension qui a une fonction buildRss",
-	"rssfeeder": "Alimentation RSS",
+	"rssfeeder": "Flux RSS",
 	"apihelp-bs-rssfeeder-tasks-description": "Fournit des tâches communes de la RSSFeeder",
 	"apihelp-bs-rssfeeder-tasks-summary": "Fournit les tâches communes pour le RSSFeeder",
 	"bs-rssfeeder-pagetext": "Vous pouvez vous abonner aux flux RSS suivants :",
