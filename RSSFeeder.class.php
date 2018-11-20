@@ -47,7 +47,6 @@ class RSSFeeder extends BsExtensionMW {
 		$this->setHook( 'BSDashboardsUserDashboardPortalPortlets' );
 		$this->setHook( 'BSDashboardsUserDashboardPortalConfig' );
 		$this->setHook( 'BSRSSFeederGetRegisteredFeeds' );
-		$this->setHook( 'BeforePageDisplay' );
 	}
 
 	public static function getRSS( $iCount, $sUrl ) {
@@ -189,20 +188,6 @@ class RSSFeeder extends BsExtensionMW {
 	}
 
 	/* Source code RSSStandards.class.php */
-
-	/**
-	 *
-	 * @param OutputPage $oOutputPage
-	 * @param SkinTemplate $oSkinTemplate
-	 * @return boolean
-	 */
-	public function onBeforePageDisplay( $oOutputPage, $oSkinTemplate ) {
-		if ( !SpecialPage::getTitleFor( 'RSSFeeder' )->equals( $oOutputPage->getTitle() ) ) {
-			return true;
-		}
-		$oOutputPage->addModules('ext.bluespice.rssStandards');
-		return true;
-	}
 
 	/**
 	 * Hook-Handler for BlueSpice hook BSRSSFeederGetRegisteredFeeds
