@@ -100,7 +100,8 @@
 		"TitleReadWhitelist": "RSSFeeder::onTitleReadWhitelist",
 		"SkinTemplateOutputPageBeforeExec": [
 			"\\BlueSpice\\RSSFeeder\\Hook\\SkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback"
-		]
+		],
+		"BeforePageDisplay": "\\BlueSpice\\RSSFeeder\\Hook\\BeforePageDisplay\\AddResources::callback"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
