@@ -15,7 +15,7 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 	public function execute( $sParameter ) {
 		if( $this->getUser()->isAnon() ) {
 			//Try to log in user from request
-			$authenticator = new RSSAuthenticator( $this->getRequest(), \ReqestContext::getMain() );
+			$authenticator = new RSSAuthenticator( $this->getRequest(), \RequestContext::getMain() );
 			$authenticator->logInUser();
 		}
 
