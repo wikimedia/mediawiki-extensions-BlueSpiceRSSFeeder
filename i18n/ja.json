@@ -4,7 +4,8 @@
 			"Otokoume",
 			"Shirayuki",
 			"Yatalu",
-			"Suyama"
+			"Suyama",
+			"Omotecho"
 		]
 	},
 	"bs-rssfeeder-desc": "buildRss 関数を持つ拡張機能それぞれについて有効な RSS フィードを出力する拡張機能",
@@ -17,7 +18,7 @@
 	"bs-rssfeeder-rss-desc": "自身のRSSフェードを作成",
 	"bs-extjs-rssfeeder-rss-title": "RSS の URL",
 	"bs-rssstandards-desc": "さまざまな指定に基づいて RSS フィードを構築する",
-	"bs-rssstandards-desc-rc": "ウィキの最近の更新の概要を含むフィード",
+	"bs-rssstandards-desc-rc": "ウィキの最近の更新をまとめたフィード",
 	"bs-rssstandards-title-page": "ページ",
 	"bs-rssstandards-desc-page": "ページの最近の更新の概要を含むフィード。",
 	"bs-rssstandards-title-own": "自身の投稿記録",

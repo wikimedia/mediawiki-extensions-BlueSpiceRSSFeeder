@@ -20,7 +20,7 @@
 	"bs-rssfeeder-invalid-url": "請提供有效的 URL。",
 	"action-rssfeeder-viewspecialpage": "檢視特殊頁面「{{int:rssfeeder}}」",
 	"bs-rssstandards-desc": "基於不同選項來建置 RSS 源料",
-	"bs-rssstandards-desc-rc": "概述在 wiki 上近期變更的源料。",
+	"bs-rssstandards-desc-rc": "在 wiki 上近期變更概要的源料。",
 	"bs-rssstandards-title-page": "頁面",
 	"bs-rssstandards-desc-page": "概述在頁面近期變更的源料。",
 	"bs-rssstandards-title-own": "我的貢獻",

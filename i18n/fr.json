@@ -8,7 +8,7 @@
 		]
 	},
 	"bs-rssfeeder-desc": "Une extension pour obtenir un RSS valide pour chaque extension qui a une fonction buildRss",
-	"rssfeeder": "Alimentation RSS",
+	"rssfeeder": "Flux RSS",
 	"apihelp-bs-rssfeeder-tasks-description": "Fournit des tâches communes de la RSSFeeder",
 	"apihelp-bs-rssfeeder-tasks-summary": "Fournit les tâches communes pour le RSSFeeder",
 	"bs-rssfeeder-pagetext": "Vous pouvez vous abonner aux flux RSS suivants :",
@@ -21,7 +21,7 @@
 	"bs-rssfeeder-invalid-url": "Veuillez fournir une URL valide.",
 	"action-rssfeeder-viewspecialpage": "afficher la page spéciale \"{{int:rssfeeder}}\"",
 	"bs-rssstandards-desc": "Construit un flux RSS basé sur différentes options",
-	"bs-rssstandards-desc-rc": "Flux avec un aperçu des modifications récentes du wiki.",
+	"bs-rssstandards-desc-rc": "Flux avec un aperçu sur les modifications récentes dans wiki",
 	"bs-rssstandards-title-page": "Page",
 	"bs-rssstandards-desc-page": "Flux avec un aperçu des modifications récentes d’une page.",
 	"bs-rssstandards-title-own": "Vos contributions",
