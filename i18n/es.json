@@ -33,5 +33,6 @@
 	"bs-rssstandards-changes-from": "Cambios {{GENDER:$1|de}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Devolver una lista de las páginas disponibles para RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Devolver una lista de las páginas disponibles para RSSFeeder",
-	"right-rssfeeder-viewspecialpage": "Otorga acceso a la página especial [[Special:RSSFeeder]]."
+	"right-rssfeeder-viewspecialpage": "Otorga acceso a la página especial [[Special:RSSFeeder]].",
+	"bs-rssstandards-title-rc": "Cambios recientes"
 }
