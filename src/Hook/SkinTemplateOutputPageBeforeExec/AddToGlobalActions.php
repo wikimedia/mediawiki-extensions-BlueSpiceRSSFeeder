@@ -9,7 +9,7 @@ class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
 	protected function doProcess() {
 		$oSpecialRssFeeder = \SpecialPageFactory::getPage( 'RSSFeeder' );
 
-		if( !$oSpecialRssFeeder ) {
+		if ( !$oSpecialRssFeeder ) {
 			return true;
 		}
 

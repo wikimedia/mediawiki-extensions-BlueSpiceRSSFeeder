@@ -17,9 +17,9 @@ abstract class BSRSSFeederBeforeGetRecentChanges extends \BlueSpice\Hook {
 
 	/**
 	 *
-	 * @param array $conditions
+	 * @param array &$conditions
 	 * @param string $feedType
-	 * @return boolean
+	 * @return bool
 	 */
 	public static function callback( &$conditions, $feedType ) {
 		$className = static::class;
@@ -36,7 +36,7 @@ abstract class BSRSSFeederBeforeGetRecentChanges extends \BlueSpice\Hook {
 	 *
 	 * @param \IContextSource $context
 	 * @param \Config $config
-	 * @param array $conditions
+	 * @param array &$conditions
 	 * @param string $feedType
 	 */
 	public function __construct( $context, $config, &$conditions, $feedType ) {

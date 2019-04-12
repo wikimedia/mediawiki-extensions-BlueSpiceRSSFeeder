@@ -21,7 +21,7 @@
  * @author     Markus Glaser <glaser@hallowelt.com>
  * @package    Bluespice_Extensions
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
 /**
@@ -34,7 +34,7 @@ class BSApiTasksRSSFeeder extends BSApiTasksBase {
 	 * Methods that can be called by task param
 	 * @var array
 	 */
-	protected $aTasks = array(
+	protected $aTasks = [
 		'getRSS' => [
 			'examples' => [
 				[
@@ -59,16 +59,16 @@ class BSApiTasksRSSFeeder extends BSApiTasksBase {
 				]
 			]
 		]
-	);
+	];
 
 	/**
 	 * Methods that can be executed even when the wiki is in read-mode, as
 	 * they do not alter the state/content of the wiki
 	 * @var array
 	 */
-	protected $aReadTasks = array(
+	protected $aReadTasks = [
 		'getRSS',
-	);
+	];
 
 	/**
 	 * Returns an array of tasks and their required permissions
@@ -76,9 +76,9 @@ class BSApiTasksRSSFeeder extends BSApiTasksBase {
 	 * @return array
 	 */
 	protected function getRequiredTaskPermissions() {
-		return array(
-			'getRSS' => array( 'read' )
-		);
+		return [
+			'getRSS' => [ 'read' ]
+		];
 	}
 
 	/**
@@ -87,13 +87,11 @@ class BSApiTasksRSSFeeder extends BSApiTasksBase {
 	 * @return stdClass Standard task API return
 	 */
 	protected function task_getRSS( $oTaskData ) {
-		global $wgParser;
 		$oReturn = $this->makeStandardReturn();
 
 		$iCount = isset( $oTaskData->count )
-			? (int) $oTaskData->count
-			: 10
-		;
+			? (int)$oTaskData->count
+			: 10;
 		if ( isset( $oTaskData->url ) && filter_var( $oTaskData->url, FILTER_VALIDATE_URL ) ) {
 			$sUrl = $oTaskData->url;
 		} else {
@@ -110,11 +108,11 @@ class BSApiTasksRSSFeeder extends BSApiTasksBase {
 
 		$params = new DerivativeRequest(
 			$this->getRequest(), // Fallback upon $wgRequest if you can't access context.
-			array(
+			[
 				'action' => 'parse',
 				'text' => $sTag,
 				'contentmodel' => 'wikitext'
-			)
+			]
 		);
 		$api = new ApiMain( $params );
 		$api->execute();
