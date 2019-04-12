@@ -22,7 +22,7 @@
  * @author     Leonid Verhovskij <verhovskij@hallowelt.com>
  * @package    Bluespice_Extensions
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
 class ApiRSSStandardsPagesStore extends BSApiWikiPageStore {
@@ -34,13 +34,13 @@ class ApiRSSStandardsPagesStore extends BSApiWikiPageStore {
 		$oTitle = Title::newFromID( $oRow->page_id );
 		$sPrefixedText = $oTitle->getPrefixedText();
 		$sFeedLink = $oSpecialRSS->getLinkUrl(
-			array(
+			[
 				'Page' => 'followPage',
 				'p'    => $oRow->page_title,
 				'ns'   => $oRow->page_namespace,
 				'u'    => $sUserName,
 				'h'    => $sUserToken
-			)
+			]
 		);
 
 		$oRow->type = 'wikipage';

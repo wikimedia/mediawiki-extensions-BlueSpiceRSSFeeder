@@ -43,7 +43,6 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 	protected function createStoreFixtureData() {
 		$this->insertPage( "RSSStandards Test Page" );
 		$this->insertPage( "Help:Just A Test Page" );
-		return;
 	}
 
 	protected function getModuleName() {
@@ -85,10 +84,10 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 	 * @dataProvider provideQueryData
 	 */
 	public function testQuery( $sQuery, $sDisplayText, $iPageNamespace, $iTotal ) {
-		$aParams = array(
+		$aParams = [
 			'action' => $this->getModuleName(),
 			'query' => $sQuery
-		);
+		];
 
 		$results = $this->doApiRequest( $aParams );
 		$response = $results[0];
@@ -146,10 +145,10 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	public function testFeedUrl() {
-		$aParams = array(
+		$aParams = [
 			'action' => $this->getModuleName(),
 			'query' => 'RSSStandards'
-		);
+		];
 
 		$results = $this->doApiRequest( $aParams );
 		$response = $results[0];

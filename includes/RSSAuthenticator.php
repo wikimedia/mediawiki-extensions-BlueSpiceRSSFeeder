@@ -23,27 +23,27 @@ class RSSAuthenticator {
 	 * Tries to log in user based on username and token
 	 * given in the request
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	public function logInUser() {
 		$userName = $this->request->getVal( 'u', '' );
-		if( !$userName ) {
+		if ( !$userName ) {
 			return false;
 		}
 
 		$requestToken = $this->request->getVal( 'h', '' );
-		if( !$requestToken ) {
+		if ( !$requestToken ) {
 			return false;
 		}
 
 		$user = \User::newFromName( $userName );
-		if( $user instanceof \User == false || $user->getId() == 0 ) {
-			//User does not exist
+		if ( $user instanceof \User == false || $user->getId() == 0 ) {
+			// User does not exist
 			return false;
 		}
 
 		$userToken = $user->getToken( /*static::TOKEN_SALT*/ );
-		if( $userToken != $requestToken ) {
+		if ( $userToken != $requestToken ) {
 			return false;
 		}
 
