@@ -25,7 +25,7 @@
  * @package    Bluespice_Extensions
  * @subpackage RSSFeeder
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
 
@@ -63,7 +63,7 @@ class RSSFeeder extends BsExtensionMW {
 	 * Hook Handler for BSDashboardsAdminDashboardPortalPortlets
 	 *
 	 * @param array &$aPortlets reference to array portlets
-	 * @return boolean always true to keep hook alive
+	 * @return bool always true to keep hook alive
 	 */
 	public function onBSDashboardsAdminDashboardPortalPortlets( &$aPortlets ) {
 		$aPortlets[] = [
@@ -85,8 +85,8 @@ class RSSFeeder extends BsExtensionMW {
 	 *
 	 * @param object $oCaller caller instance
 	 * @param array &$aPortalConfig reference to array portlet configs
-	 * @param boolean $bIsDefault default
-	 * @return boolean always true to keep hook alive
+	 * @param bool $bIsDefault default
+	 * @return bool always true to keep hook alive
 	 */
 	public function onBSDashboardsAdminDashboardPortalConfig( $oCaller, &$aPortalConfig, $bIsDefault ) {
 		$aPortalConfig[0][] = [
@@ -105,7 +105,7 @@ class RSSFeeder extends BsExtensionMW {
 	 * Hook Handler for BSDashboardsAdminDashboardPortalPortlets
 	 *
 	 * @param array &$aPortlets reference to array portlets
-	 * @return boolean always true to keep hook alive
+	 * @return bool always true to keep hook alive
 	 */
 	public function onBSDashboardsUserDashboardPortalPortlets( &$aPortlets ) {
 		$aPortlets[] = [
@@ -127,8 +127,8 @@ class RSSFeeder extends BsExtensionMW {
 	 *
 	 * @param object $oCaller caller instance
 	 * @param array &$aPortalConfig reference to array portlet configs
-	 * @param boolean $bIsDefault default
-	 * @return boolean always true to keep hook alive
+	 * @param bool $bIsDefault default
+	 * @return bool always true to keep hook alive
 	 */
 	public function onBSDashboardsUserDashboardPortalConfig( $oCaller, &$aPortalConfig, $bIsDefault ) {
 		$aPortalConfig[0][] = [
@@ -159,7 +159,7 @@ class RSSFeeder extends BsExtensionMW {
 	 * @param array $aParams the params to put to the method
 	 * @param string $sLinkBuilder the method to build the link to the feed
 	 */
-	public static function registerFeed($sName, $sTitle, $sDescription, $oObject, $sMethod, $aParams, $sLinkBuilder = false) {
+	public static function registerFeed( $sName, $sTitle, $sDescription, $oObject, $sMethod, $aParams, $sLinkBuilder = false ) {
 		self::$aFeeds[$sName] = [
 			'title' => $sTitle,
 			'description' => $sDescription,
@@ -174,8 +174,8 @@ class RSSFeeder extends BsExtensionMW {
 	 * unregister a feed plugin from the RSSFeeder
 	 * @param string $sName the unique name of the plugin
 	 */
-	public static function unregisterFeed($sName) {
-		unset(self::$aFeeds[$sName]);
+	public static function unregisterFeed( $sName ) {
+		unset( self::$aFeeds[$sName] );
 	}
 
 	/**
@@ -191,20 +191,20 @@ class RSSFeeder extends BsExtensionMW {
 
 	/**
 	 * Hook-Handler for BlueSpice hook BSRSSFeederGetRegisteredFeeds
-	 * @param Array $aFeed Feed array.
+	 * @param Array $aFeeds Feed array.
 	 * @return bool Always true.
 	 */
 	public function onBSRSSFeederGetRegisteredFeeds( $aFeeds ) {
-		RSSFeeder::registerFeed( 'recentchanges',
+		self::registerFeed( 'recentchanges',
 			wfMessage( 'bs-rssfeeder-recent-changes' )->plain(),
 			wfMessage( 'bs-rssstandards-desc-rc' )->plain(),
 			$this,
 			'buildRssRc',
-			NULL,
+			null,
 			'buildLinksRc'
 		);
 
-		RSSFeeder::registerFeed( 'followOwn',
+		self::registerFeed( 'followOwn',
 			wfMessage( 'bs-rssstandards-title-own' )->plain(),
 			wfMessage( 'bs-rssstandards-desc-own' )->plain(),
 			$this,
@@ -213,7 +213,7 @@ class RSSFeeder extends BsExtensionMW {
 			'buildLinksOwn'
 		);
 
-		RSSFeeder::registerFeed( 'followPage',
+		self::registerFeed( 'followPage',
 			wfMessage( 'bs-rssstandards-title-page' )->plain(),
 			wfMessage( 'bs-rssstandards-desc-page' )->plain(),
 			$this,
@@ -222,7 +222,7 @@ class RSSFeeder extends BsExtensionMW {
 			'buildLinksPage'
 		);
 
-		RSSFeeder::registerFeed( 'namespace',
+		self::registerFeed( 'namespace',
 			wfMessage( 'bs-ns' )->plain(),
 			wfMessage( 'bs-rssstandards-desc-ns' )->plain(),
 			$this,
@@ -231,7 +231,7 @@ class RSSFeeder extends BsExtensionMW {
 			'buildLinksNs'
 		);
 
-		RSSFeeder::registerFeed( 'category',
+		self::registerFeed( 'category',
 			wfMessage( 'bs-rssstandards-title-cat' )->plain(),
 			wfMessage( 'bs-rssstandards-desc-cat' )->plain(),
 			$this,
@@ -240,7 +240,7 @@ class RSSFeeder extends BsExtensionMW {
 			'buildLinksCat'
 		);
 
-		RSSFeeder::registerFeed( 'watchlist',
+		self::registerFeed( 'watchlist',
 			wfMessage( 'bs-rssstandards-title-watch' )->plain(),
 			wfMessage( 'bs-rssstandards-desc-watch' )->plain(),
 			$this,
@@ -253,7 +253,7 @@ class RSSFeeder extends BsExtensionMW {
 	}
 
 	protected function getRecentChanges( $conditions = [] ) {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		$res = $dbr->select(
 			[ 'recentchanges' ],
@@ -293,7 +293,7 @@ class RSSFeeder extends BsExtensionMW {
 				$title->getFullURL( 'diff=' . $row->rc_this_oldid . '&oldid=prev' ),
 				FeedUtils::formatDiff( $row )
 			);
-			$entry->setPubDate( wfTimestamp( TS_UNIX,$row->rc_timestamp ) );
+			$entry->setPubDate( wfTimestamp( TS_UNIX, $row->rc_timestamp ) );
 			$oChannel->addItem( $entry );
 		}
 
@@ -307,7 +307,7 @@ class RSSFeeder extends BsExtensionMW {
 		$iNSid = $request->getInt( 'ns', 0 );
 
 		if ( $iNSid != 0 ) {
-			$sPageName = $aNamespaces[$iNSid].':'.$sTitle;
+			$sPageName = $aNamespaces[$iNSid] . ':' . $sTitle;
 		} else {
 			$sPageName = $sTitle;
 		}
@@ -331,7 +331,7 @@ class RSSFeeder extends BsExtensionMW {
 				$title->getFullURL( 'diff=' . $row->rc_this_oldid . '&oldid=prev' ),
 				FeedUtils::formatDiff( $row )
 			);
-			$entry->setPubDate( wfTimestamp( TS_UNIX,$row->rc_timestamp ) );
+			$entry->setPubDate( wfTimestamp( TS_UNIX, $row->rc_timestamp ) );
 			$oChannel->addItem( $entry );
 		}
 
@@ -358,9 +358,9 @@ class RSSFeeder extends BsExtensionMW {
 				$entry = RSSItemCreator::createItem(
 					wfMessage( 'bs-rssstandards-changes-from', $obj->rc_user_text )->text(),
 					$title->getFullURL( 'diff=' . $obj->rc_this_oldid . '&oldid=prev' ),
-					FeedUtils::formatDiff($obj)
+					FeedUtils::formatDiff( $obj )
 				);
-				$entry->setPubDate( wfTimestamp( TS_UNIX,$obj->rc_timestamp ) );
+				$entry->setPubDate( wfTimestamp( TS_UNIX, $obj->rc_timestamp ) );
 				$channel->addItem( $entry );
 			}
 		}
@@ -371,7 +371,7 @@ class RSSFeeder extends BsExtensionMW {
 	public function buildRssCat() {
 		global $wgSitename;
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		$cat = $this->getRequest()->getVal( 'cat', '' );
 
@@ -382,7 +382,7 @@ class RSSFeeder extends BsExtensionMW {
 		);
 
 		$conditions = [
-			'r.rc_timestamp > '. $dbr->timestamp( time() - intval( 7 * 86400 ) )
+			'r.rc_timestamp > ' . $dbr->timestamp( time() - intval( 7 * 86400 ) )
 		];
 		\Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'category' ] );
 
@@ -397,7 +397,7 @@ class RSSFeeder extends BsExtensionMW {
 				$entry = RSSItemCreator::createItem(
 					$title->getPrefixedText(),
 					$title->getFullURL( 'diff=' . $obj->rc_this_oldid . '&oldid=prev' ),
-					FeedUtils::formatDiff($obj)
+					FeedUtils::formatDiff( $obj )
 				);
 
 				$entry->setPubDate( wfTimestamp( TS_UNIX, $obj->rc_timestamp ) );
@@ -412,10 +412,9 @@ class RSSFeeder extends BsExtensionMW {
 	public function buildRssNs( $aParams ) {
 		global $wgSitename, $wgLang;
 
-
 		$request = $this->getRequest();
 		if ( isset( $aParams['ns'] ) ) {
-			$ns = (int) $aParams['ns'];
+			$ns = (int)$aParams['ns'];
 		} else {
 			$ns = $request->getInt( 'ns', 0 );
 		}
@@ -434,12 +433,12 @@ class RSSFeeder extends BsExtensionMW {
 		\Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'namespace' ] );
 		$rc = $this->getRecentChanges( $conditions );
 
-		foreach( $rc as $obj ) {
+		foreach ( $rc as $obj ) {
 			$title = Title::makeTitle( $obj->rc_namespace, $obj->rc_title );
 			$entry = RSSItemCreator::createItem(
 				$title->getPrefixedText(),
 				$title->getFullURL( 'diff=' . $obj->rc_this_oldid . '&oldid=prev' ),
-				FeedUtils::formatDiff($obj)
+				FeedUtils::formatDiff( $obj )
 			);
 			$entry->setComments( $title->getTalkPage()->getFullURL() );
 			$entry->setPubDate( wfTimestamp( TS_UNIX, $obj->rc_timestamp ) );
@@ -453,21 +452,21 @@ class RSSFeeder extends BsExtensionMW {
 		$user = $this->getUser();
 
 		$channel = RSSCreator::createChannel(
-			SpecialPage::getTitleFor( 'Watchlist' ) . ' (' . $user->getName(). ')',
+			SpecialPage::getTitleFor( 'Watchlist' ) . ' (' . $user->getName() . ')',
 			'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'],
 			wfMessage( 'bs-rssstandards-desc-watch' )->plain()
 		);
 
 		$request = $this->getRequest();
 		$period = $request->getInt( 'days', 1 );
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
-		if( $user->isAnon() ) {
+		if ( $user->isAnon() ) {
 			return $channel->buildOutput();
 		}
 
 		$conditions = [
-			'r.rc_timestamp > '. $dbr->timestamp( time() - intval( 7 * 86400 ) ),
+			'r.rc_timestamp > ' . $dbr->timestamp( time() - intval( 7 * 86400 ) ),
 			'w.wl_user = ' . $user->getId()
 		];
 		\Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'watchlist' ] );
@@ -476,12 +475,12 @@ class RSSFeeder extends BsExtensionMW {
 				. 'WHERE ' . implode( ' AND ', $conditions )
 				. ' ORDER BY r.rc_timestamp DESC;' );
 
-		foreach( $rc as $obj ) {
+		foreach ( $rc as $obj ) {
 			$title = Title::makeTitle( $obj->rc_namespace, $obj->rc_title );
 			$entry = RSSItemCreator::createItem(
 				$title->getPrefixedText(),
 				$title->getFullURL( 'diff=' . $obj->rc_this_oldid . '&oldid=prev' ),
-				FeedUtils::formatDiff($obj)
+				FeedUtils::formatDiff( $obj )
 			);
 			$entry->setComments( $title->getTalkPage()->getFullURL() );
 			$entry->setPubDate( wfTimestamp( TS_UNIX, $obj->rc_timestamp ) );
@@ -503,9 +502,9 @@ class RSSFeeder extends BsExtensionMW {
 		$label->setText( wfMessage( 'bs-rssstandards-desc-rc' )->plain() );
 
 		$btn = new ViewFormElementButton();
-		$btn->setId('btnFeedRc');
-		$btn->setName('btnFeedRc');
-		$btn->setType('button');
+		$btn->setId( 'btnFeedRc' );
+		$btn->setName( 'btnFeedRc' );
+		$btn->setType( 'button' );
 		$btn->setValue(
 			SpecialPage::getTitleFor( 'RSSFeeder' )->getLocalUrl(
 				[
@@ -599,7 +598,7 @@ class RSSFeeder extends BsExtensionMW {
 		$oSpecialRSS = SpecialPage::getTitleFor( 'RSSFeeder' );
 		$sUserName   = $wgUser->getName();
 		$sUserToken  = $wgUser->getToken();
-		foreach( $aNamespaces as $key => $name ) {
+		foreach ( $aNamespaces as $key => $name ) {
 			$select->addData(
 				[
 					'value' => $oSpecialRSS->getLinkUrl(
@@ -637,7 +636,7 @@ class RSSFeeder extends BsExtensionMW {
 		$select->setName( 'selFeedCat' );
 		$select->setLabel( wfMessage( 'bs-rssstandards-title-cat' )->plain() );
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$res = $dbr->select(
 			'categorylinks',
 			'cl_to',
@@ -726,11 +725,11 @@ class RSSFeeder extends BsExtensionMW {
 	/**
 	 * @param Title $title
 	 * @param User $user
-	 * @param bool $whitelisted
+	 * @param bool &$whitelisted
 	 * @return bool
 	 */
 	public static function onTitleReadWhitelist( $title, $user, &$whitelisted ) {
-		if( $title->isSpecial( 'RSSFeeder' ) === false ) {
+		if ( $title->isSpecial( 'RSSFeeder' ) === false ) {
 			return true;
 		}
 		$whitelisted = true;

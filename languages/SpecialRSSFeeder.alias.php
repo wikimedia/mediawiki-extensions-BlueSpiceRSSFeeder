@@ -1,12 +1,12 @@
 <?php
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases['en'] = array(
-	'RSSFeeder' => array( 'RSSFeeder' ),
-);
+$specialPageAliases['en'] = [
+	'RSSFeeder' => [ 'RSSFeeder' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'RSSFeeder' => array( 'RSS Feeder' ),
-);
+$specialPageAliases['de'] = [
+	'RSSFeeder' => [ 'RSS Feeder' ],
+];

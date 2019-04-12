@@ -11,20 +11,20 @@ use BlueSpice\Tests\BSApiTasksTestBase;
  * @group BlueSpiceRSSFeeder
  */
 class BSApiTasksRSSFeederTest extends BSApiTasksTestBase {
-	protected function getModuleName () {
+	protected function getModuleName() {
 		return 'bs-rssfeeder-tasks';
 	}
 
-	function getTokens () {
-		return $this->getTokenList ( self::$users[ 'sysop' ] );
+	function getTokens() {
+		return $this->getTokenList( self::$users[ 'sysop' ] );
 	}
 
 	public function testInvalidUrl() {
 		$oData = $this->executeTask(
 			'getRSS',
-			array(
+			[
 				'url' => 'I want some rss'
-			)
+			]
 		);
 
 		$this->assertFalse( $oData->success, "The API responded success instead of failure" );
@@ -34,10 +34,10 @@ class BSApiTasksRSSFeederTest extends BSApiTasksTestBase {
 	public function testValidNonWhitelistedUrl() {
 		$oData = $this->executeTask(
 			'getRSS',
-			array(
+			[
 				'url' => 'http://some.rss.de',
 				'count' => 12
-			)
+			]
 		);
 
 		$this->assertTrue( $oData->success );
@@ -48,24 +48,23 @@ class BSApiTasksRSSFeederTest extends BSApiTasksTestBase {
 		$this->mergeMwGlobalArrayValue( 'wgRSSUrlWhitelist', [ "http://some.rss.de" ] );
 		$oData = $this->executeTask(
 			'getRSS',
-			array(
+			[
 				'url' => 'http://some.rss.de',
 				'count' => 12
-			)
+			]
 		);
 
 		$this->assertTrue( $oData->success );
 		$this->assertContains( 'Error', $oData->payload['html'], "There is no error message for the user" );
 	}
 
-
 	public function testActualUrl() {
 		$oData = $this->executeTask(
 			'getRSS',
-			array(
+			[
 				'url' => 'http://blog.bluespice.com/feed/',
 				'count' => 12
-			)
+			]
 		);
 
 		$this->assertTrue( $oData->success );
