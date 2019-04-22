@@ -17,6 +17,7 @@
 	"bs-extjs-rssfeeder-rss-title": "RSS URL",
 	"bs-rssfeeder-invalid-url": "유효한 URL을 제공해 주십시오.",
 	"action-rssfeeder-viewspecialpage": "특수 문서 \"{{int:rssfeeder}}\" 보기",
+	"bs-rssstandards-title-page": "문서",
 	"bs-rssstandards-title-cat": "분류",
 	"bs-rssstandards-title-watch": "주시문서 목록",
 	"bs-rssstandards-title-rc": "최근 바뀜"
