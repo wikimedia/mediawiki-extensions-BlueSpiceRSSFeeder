@@ -19,6 +19,7 @@
 	"bs-rssfeeder-rss-desc": "Maak uw eigen RSS-feed",
 	"bs-extjs-rssfeeder-rss-title": "RSS-URL",
 	"bs-rssfeeder-invalid-url": "Geef alstublieft een geldige URL op.",
+	"action-rssfeeder-viewspecialpage": "de speciale pagina  \"{{int:rssfeeder}}\" te bekijken",
 	"bs-rssstandards-desc": "Bouwt RSS feeds op basis van verschillende opties",
 	"bs-rssstandards-desc-rc": "Diervoeders met een overzicht over de recente wijzigingen in de wiki",
 	"bs-rssstandards-title-page": "Pagina",
