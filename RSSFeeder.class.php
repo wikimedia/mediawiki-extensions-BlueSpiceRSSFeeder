@@ -29,6 +29,8 @@
  * @filesource
  */
 
+use BlueSpice\Services;
+
 /**
  * the Preferences class
  * @package BlueSpice_Extensions
@@ -50,13 +52,17 @@ class RSSFeeder extends BsExtensionMW {
 	}
 
 	public static function getRSS( $iCount, $sUrl ) {
-		global $wgParser;
 		$oParserOpts = new ParserOptions;
 		$iCount = intval( $iCount );
 
 		$sTag = '<rss max="' . $iCount . '">' . $sUrl . '</rss>';
 
-		return $wgParser->parse( $sTag, RequestContext::getMain()->getTitle(), $oParserOpts )->getText();
+		$parserOutput = Services::getInstance()->getParser()->parse(
+			$sTag,
+			RequestContext::getMain()->getTitle(),
+			$oParserOpts
+		);
+		return $parserOutput->getText();
 	}
 
 	/**
