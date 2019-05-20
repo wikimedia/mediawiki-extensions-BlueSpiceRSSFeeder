@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eladk",
-			"Guycn2"
+			"Guycn2",
+			"Erelon"
 		]
 	},
 	"bs-rssfeeder-desc": "הרחבה ליצירת הזנות RSS תקינות עבור כל הרחבה שיש לה פונקציה של buildRss",
@@ -32,5 +33,6 @@
 	"bs-rssstandards-desc-ns": "הזנה עם סקירת השינויים האחרונים במרחב שם.",
 	"bs-rssstandards-changes-from": "שינויים שבוצעו על־ידי: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "החזרת רשימת הדפים הזמינים עבור ההרחבה RSSFeeder",
-	"apihelp-bs-rss-standards-pages-store-summary": "החזרת רשימת הדפים הזמינים עבור ההרחבה RSSFeeder"
+	"apihelp-bs-rss-standards-pages-store-summary": "החזרת רשימת הדפים הזמינים עבור ההרחבה RSSFeeder",
+	"bs-rssstandards-title-rc": "שינויים אחרונים"
 }

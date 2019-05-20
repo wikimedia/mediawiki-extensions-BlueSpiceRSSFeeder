@@ -23,5 +23,6 @@
 	"bs-rssstandards-link-text-watch": "Cambiamenti recenti {{PLURAL:$1|dell'ultimo giorno|degli ultimi $1 giorni}}.",
 	"bs-rssstandards-changes-from": "Modifiche {{GENDER:$1|di}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Restituisce l'elenco delle pagine disponibili per RSSFeeder",
+	"right-rssfeeder-viewspecialpage": "Accede alla pagina speciale [[Special:RSSFeeder]]",
 	"bs-rssstandards-title-rc": "Ultime modifiche"
 }

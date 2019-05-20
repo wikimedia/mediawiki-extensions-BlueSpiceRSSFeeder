@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
-			"佛壁灯"
+			"佛壁灯",
+			"科劳"
 		]
 	},
 	"bs-rssfeeder-desc": "为每个有buildRss-function功能的扩展输出有效RSS的扩展",
@@ -33,6 +34,6 @@
 	"bs-rssstandards-changes-from": "更改{{GENDER:$1|自}}：$1",
 	"apihelp-bs-rss-standards-pages-store-description": "为RSSFeeder返回可用页面的列表",
 	"apihelp-bs-rss-standards-pages-store-summary": "为RSS订阅器返回可用页面列表",
-	"right-rssfeeder-viewspecialpage": "授予访问特殊页面 [[Special:RSSFeeder]] 的权限。",
+	"right-rssfeeder-viewspecialpage": "访问页面 [[Special:RSSFeeder]] 的权限。",
 	"bs-rssstandards-title-rc": "最近更改"
 }
