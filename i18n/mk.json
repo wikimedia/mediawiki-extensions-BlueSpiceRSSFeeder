@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
 	"bs-rssfeeder-desc": "Додаток за извод на важечки RSS за секој додаток, со buildRss-функција",
@@ -13,6 +14,8 @@
 	"bs-rssfeeder-rss": "RSS-тековник",
 	"bs-rssfeeder-rss-desc": "Направете ваш RSS-тековник",
 	"bs-extjs-rssfeeder-rss-title": "URL на RSS",
+	"bs-rssfeeder-invalid-url": "Внесете важечка URL-адреса.",
+	"action-rssfeeder-viewspecialpage": "преглед на службената страница „{{int:rssfeeder}}“",
 	"bs-rssstandards-desc": "Составува RSS-тековници според разни можности",
 	"bs-rssstandards-desc-rc": "Тековник со преглед на скорешните промени на викито",
 	"bs-rssstandards-title-page": "Страница",
@@ -25,5 +28,6 @@
 	"bs-rssstandards-desc-watch": "Тековник со преглед на вашите набљудувани страници.",
 	"bs-rssstandards-link-text-watch": "Скорешни промени во {{PLURAL:$1|последниов ден|последниве $1 дена}}.",
 	"bs-rssstandards-desc-ns": "Тековник со преглед на скорешните промени во даден именски простор.",
-	"bs-rssstandards-changes-from": "Промени {{GENDER:$1|од}}: $1"
+	"bs-rssstandards-changes-from": "Промени {{GENDER:$1|од}}: $1",
+	"bs-rssstandards-title-rc": "Скорешни промени"
 }
