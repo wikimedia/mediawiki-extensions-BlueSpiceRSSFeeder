@@ -261,15 +261,17 @@ class RSSFeeder extends BsExtensionMW {
 	protected function getRecentChanges( $conditions = [] ) {
 		$dbr = wfGetDB( DB_REPLICA );
 
+		$info = RecentChange::getQueryInfo();
 		$res = $dbr->select(
-			[ 'recentchanges' ],
-			[ '*' ],
+			$info['tables'],
+			$info['fields'],
 			$conditions,
 			__METHOD__,
 			[
 				'ORDER BY' => 'rc_timestamp DESC',
 				'LIMIT' => '10'
-			]
+			],
+			$info['joins']
 		);
 
 		if ( $res ) {
