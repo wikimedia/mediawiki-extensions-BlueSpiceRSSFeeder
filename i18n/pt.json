@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Hamilton Abreu",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Mansil alfalb"
 		]
 	},
 	"bs-rssfeeder-desc": "Uma extensão para obter RSS válido, para qualquer extensão que tenha uma função buildRSS",
@@ -33,6 +34,6 @@
 	"bs-rssstandards-changes-from": "Alterações {{GENDER:$1|de}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Devolve uma lista das páginas disponíveis no RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Devolver lista das páginas disponíveis para o RSSFeeder",
-	"right-rssfeeder-viewspecialpage": "Concede acesso à página especial [[Special:RSSFeeder]].",
+	"right-rssfeeder-viewspecialpage": "Acesso à à página especial [[Special:RSSFeeder]].",
 	"bs-rssstandards-title-rc": "Mudanças recentes"
 }
