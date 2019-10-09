@@ -16,7 +16,7 @@
 	"bs-rssfeeder-rss-desc": "Create your own RSS feed",
 	"bs-extjs-rssfeeder-rss-title": "RSS URL",
 	"bs-rssfeeder-invalid-url": "Please provide a valid URL.",
-	"action-rssfeeder-viewspecialpage":"view the special page \"{{int:rssfeeder}}\"",
+	"action-rssfeeder-viewspecialpage": "view the special page \"{{int:rssfeeder}}\"",
 	"bs-rssstandards-desc": "Builds RSS feeds based on different options",
 	"bs-rssstandards-desc-rc": "Feed with an overview over the recent changes in the wiki",
 	"bs-rssstandards-title-page": "Page",
@@ -32,6 +32,6 @@
 	"bs-rssstandards-changes-from": "Changes {{GENDER:$1|by}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Return List of available Pages for RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Return List of available Pages for RSSFeeder",
-	"right-rssfeeder-viewspecialpage": "Grants access to the [[Special:RSSFeeder]] special page.",
+	"right-rssfeeder-viewspecialpage": "Access to the [[Special:RSSFeeder]] special page",
 	"bs-rssstandards-title-rc": "Recent changes"
 }

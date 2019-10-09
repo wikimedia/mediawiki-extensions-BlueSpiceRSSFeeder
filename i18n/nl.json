@@ -4,7 +4,8 @@
 			"Esketti",
 			"MrLeopold",
 			"SPQRobin",
-			"Siebrand"
+			"Siebrand",
+			"Mainframe98"
 		]
 	},
 	"bs-rssfeeder-desc": "Een uitbreiding van de output geldig RSS voor elke extensie, die heeft een buildRss-functie",
@@ -31,5 +32,7 @@
 	"bs-rssstandards-link-text-watch": "Recente wijzigingen van de laatste {{PLURAL:$1|dag|$1 dagen}}.",
 	"bs-rssstandards-desc-ns": "Diervoeders met een overzicht over de recente veranderingen in een naamruimte.",
 	"bs-rssstandards-changes-from": "Wijzigingen {{GENDER:$1|door}}: $1",
-	"apihelp-bs-rss-standards-pages-store-description": "Toon lijst van beschikbare pagina's voor RSSFeeder"
+	"apihelp-bs-rss-standards-pages-store-description": "Toon lijst van beschikbare pagina's voor RSSFeeder",
+	"bs-rssstandards-title-rc": "Recente wijzigingen",
+	"action-rssfeeder-viewspecialpage": "de speciale pagina  \"{{int:rssfeeder}}\" te bekijken"
 }

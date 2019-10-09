@@ -17,6 +17,7 @@
 	"bs-rssfeeder-rss": "RSS フィード",
 	"bs-rssfeeder-rss-desc": "自身のRSSフェードを作成",
 	"bs-extjs-rssfeeder-rss-title": "RSS の URL",
+	"action-rssfeeder-viewspecialpage": "特別ページ「{{int:rssfeeder}}」の閲覧",
 	"bs-rssstandards-desc": "さまざまな指定に基づいて RSS フィードを構築する",
 	"bs-rssstandards-desc-rc": "ウィキの最近の更新をまとめたフィード",
 	"bs-rssstandards-title-page": "ページ",
@@ -30,5 +31,5 @@
 	"bs-rssstandards-link-text-watch": "過去{{PLURAL:$1|1日|$1日間}}の最近の更新",
 	"bs-rssstandards-desc-ns": "名前空間の最近の更新の概要を含むフィード。",
 	"bs-rssstandards-changes-from": "$1 {{GENDER:$1|によって}}変更",
-	"right-rssfeeder-viewspecialpage": "特別ページ [[Special:RSSFeeder]] の利用を許可します。"
+	"right-rssfeeder-viewspecialpage": "特別ページ [[Special:RSSFeeder]] を利用"
 }
