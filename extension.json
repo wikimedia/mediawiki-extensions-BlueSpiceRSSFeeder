@@ -1,15 +1,15 @@
 {
 	"name": "BlueSpiceRSSFeeder",
 	"license-name": "GPL-3.0-only",
-	"version": "3.2.0-alpha",
+	"version": "3.3.0-alpha",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:RSSFeeder",
 	"author": "Sebastian Ulbricht",
 	"descriptionmsg": "bs-rssfeeder-desc",
 	"type": "bluespice",
 	"requires": {
-		"MediaWiki": ">= 1.34.0",
+		"MediaWiki": ">= 1.35.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 3.2"
+			"BlueSpiceFoundation": ">= 3.3"
 		}
 	},
 	"attributes": {
