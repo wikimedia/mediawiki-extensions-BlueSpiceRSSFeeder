@@ -17,5 +17,6 @@
 	"bs-extjs-rssfeeder-rss-title": "URL-адрес на RSS",
 	"bs-rssfeeder-invalid-url": "Моля, въведете валиден URL-адрес.",
 	"action-rssfeeder-viewspecialpage": "преглед на специалната страница „{{int:rssfeeder}}“",
+	"bs-rssstandards-title-page": "Страница",
 	"bs-rssstandards-title-rc": "Последни промени"
 }
