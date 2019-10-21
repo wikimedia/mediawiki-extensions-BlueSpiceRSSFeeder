@@ -9,6 +9,7 @@
 		<exclude name="MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName" />
 		<exclude name="MediaWiki.Usage.DbrQueryUsage.DbrQueryFound" />
 		<exclude name="MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment.NewLineComment" />
+		<exclude name="PSR12.Properties.ConstantVisibility.NotFound" />
 		<exclude name="Squiz.Scope.MethodScope.Missing" />
 		<exclude name="Generic.Files.LineLength.TooLong" />
 		<exclude name="Generic.Files.OneObjectStructurePerFile.MultipleFound" />
