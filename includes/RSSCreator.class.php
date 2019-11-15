@@ -76,7 +76,7 @@ class RSSCreator {
 	public static function createChannel( $title, $link, $description ) {
 		$title       = htmlentities( $title, ENT_QUOTES, 'UTF-8', false );
 		$description = htmlentities( $description, ENT_QUOTES, 'UTF-8', false );
-		$link = static::ensureLinkProtocol( $link );
+		$link = self::ensureLinkProtocol( $link );
 		if ( self::testURL( $link ) ) {
 			return new RSSCreator( $title, $link, $description );
 		}
@@ -455,6 +455,22 @@ class RSSCreator {
 	public function setWebmaster( $email_addr ) {
 		$this->channel['webMaster'] = $email_addr;
 	}
+
+	/**
+	 *
+	 * @param string $link
+	 * @return string
+	 */
+	public static function ensureLinkProtocol( $link ) {
+		$parts = wfParseUrl( $link );
+		// whenever the url comes without a scheme, wich is the default
+		if ( !empty( $parts['scheme'] ) ) {
+			return $link;
+		}
+		$protocol = \RequestContext::getMain()->getRequest()->getProtocol();
+		$delimiter = empty( $parts['delimiter'] ) ? '//' : '';
+		return "$protocol:$delimiter$link";
+	}
 }
 
 /**
@@ -502,7 +518,7 @@ class RSSItemCreator {
 	public static function createItem( $title, $link, $description ) {
 		$title       = htmlentities( $title, ENT_QUOTES, 'UTF-8', false );
 		$description = htmlentities( $description, ENT_QUOTES, 'UTF-8', false );
-		$link = static::ensureLinkProtocol( $link );
+		$link = RSSCreator::ensureLinkProtocol( $link );
 		if ( RSSCreator::testURL( $link ) ) {
 			return new RSSItemCreator( $title, $link, $description );
 		}
@@ -568,7 +584,7 @@ class RSSItemCreator {
 	 * @param string $url
 	 */
 	public function setComments( $url ) {
-		$this->comments = static::ensureLinkProtocol( $url );
+		$this->comments = RSSCreator::ensureLinkProtocol( $url );
 	}
 
 	/**
@@ -581,21 +597,5 @@ class RSSItemCreator {
 			'mail' => $mail,
 			'name' => $name
 		];
-	}
-
-	/**
-	 *
-	 * @param string $link
-	 * @return string
-	 */
-	private static function ensureLinkProtocol( $link ) {
-		$parts = wfParseUrl( $link );
-		// whenever the url comes without a scheme, wich is the default
-		if ( !empty( $parts['scheme'] ) ) {
-			return $link;
-		}
-		$protocol = \RequestContext::getMain()->getRequest()->getProtocol();
-		$delimiter = empty( $parts['delimiter'] ) ? '//' : '';
-		return "$protocol:$delimiter$link";
 	}
 }
