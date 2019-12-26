@@ -2,11 +2,38 @@
 	"@metadata": {
 		"authors": [
 			"MrSchipunov",
-			"Sayginer"
+			"Sayginer",
+			"BaRaN6161 TURK"
 		]
 	},
+	"bs-rssfeeder-desc": "BuildRss işlevine sahip her uzantı için geçerli RSS çıkışı sağlayan bir uzantı",
+	"rssfeeder": "RSS yayınlayıcı",
+	"apihelp-bs-rssfeeder-tasks-description": "RSSFeeder için ortak görevler sağlar",
+	"apihelp-bs-rssfeeder-tasks-summary": "RSSFeeder için ortak görevler sağlar",
+	"bs-rssfeeder-pagetext": "Aşağıdaki RSS yayınlarına abone olabilirsiniz:",
+	"bs-rssfeeder-recent-changes": "Son değişiklikler",
+	"bs-rssfeeder-pages": "Sayfa",
+	"bs-rssfeeder-submit": "Göster",
+	"bs-rssfeeder-rss": "RSS yayını",
+	"bs-rssfeeder-rss-desc": "Kendi RSS yayınızı oluşturun",
 	"bs-extjs-rssfeeder-rss-title": "RSS URL",
 	"bs-rssfeeder-invalid-url": "Geçerli bir URL veriniz.",
+	"action-rssfeeder-viewspecialpage": "\"{{int:rssfeeder}}\" özel sayfasını görüntüleyin",
+	"bs-rssstandards-desc": "Farklı seçeneklere dayalı RSS yayınları oluşturur",
+	"bs-rssstandards-desc-rc": "Wikideki son değişikliklere genel bakış içeren özet yayın",
+	"bs-rssstandards-title-page": "Sayfa",
+	"bs-rssstandards-desc-page": "Sayfanın son değişikliklerine genel bakış içeren özet akışı.",
+	"bs-rssstandards-title-own": "Kendi katkılar",
+	"bs-rssstandards-desc-own": "Wikiye kendi katkılarınız hakkında genel bir bakış ile yayınlayın.",
 	"bs-rssstandards-title-cat": "Kategori",
-	"bs-rssstandards-title-watch": "İzleme listesi"
+	"bs-rssstandards-desc-cat": "Bir kategorideki son değişikliklere genel bakış içeren özet akışı.",
+	"bs-rssstandards-title-watch": "İzleme listesi",
+	"bs-rssstandards-desc-watch": "İzlediğiniz sayfalara genel bir bakışla yayınlayın.",
+	"bs-rssstandards-link-text-watch": "Son {{PLURAL:$1|gün|$1 gün}} yakın zamanda yapılan değişiklikler.",
+	"bs-rssstandards-desc-ns": "Bir ad alanındaki son değişikliklere genel bakış içeren özet akışı.",
+	"bs-rssstandards-changes-from": "Değişikliği {{GENDER:$1|yapan}}: $1",
+	"apihelp-bs-rss-standards-pages-store-description": "RSSFeeder için kullanılabilir Sayfaların Dönüş Listesi",
+	"apihelp-bs-rss-standards-pages-store-summary": "RSSFeeder için kullanılabilir Sayfaların Dönüş Listesi",
+	"right-rssfeeder-viewspecialpage": "[[Special:RSSFeeder]] özel sayfasına erişim",
+	"bs-rssstandards-title-rc": "Son değişiklikler"
 }
