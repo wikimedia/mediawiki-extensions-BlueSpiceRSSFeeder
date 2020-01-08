@@ -14,6 +14,10 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 
 	protected $iFixtureTotal = 3;
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getStoreSchema() {
 		return [
 			'page_id' => [
@@ -45,16 +49,28 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 		$this->insertPage( "Help:Just A Test Page" );
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getModuleName() {
 		return 'bs-rss-standards-pages-store';
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function provideSingleFilterData() {
 		return [
 			'Filter by name' => [ 'string', 'ct', 'page_title', 'RSSStandards', 1 ]
 		];
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function provideMultipleFilterData() {
 		return [
 			'Filter by name and type' => [
@@ -78,6 +94,7 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	/**
+	 * @covers \ApiRSSStandardsPagesStore::makeData
 	 * @param $limit
 	 * @param $offset
 	 *
@@ -99,10 +116,22 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 			'Field "total" contains wrong value'
 		);
 
-		$this->assertEquals( $response['results'][0]['displayText'], $sDisplayText, 'Display text does not match' );
-		$this->assertEquals( $response['results'][0]['page_namespace'], $iPageNamespace, 'Namespace number does not match' );
+		$this->assertEquals(
+			$response['results'][0]['displayText'],
+			$sDisplayText,
+			'Display text does not match'
+		);
+		$this->assertEquals(
+			$response['results'][0]['page_namespace'],
+			$iPageNamespace,
+			'Namespace number does not match'
+		);
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function provideQueryData() {
 		return [
 			'page title prefix search' => [
@@ -144,6 +173,9 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 		];
 	}
 
+	/**
+	 * @covers \ApiRSSStandardsPagesStore::makeData
+	 */
 	public function testFeedUrl() {
 		$aParams = [
 			'action' => $this->getModuleName(),
@@ -160,11 +192,35 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 			'Field "total" contains wrong value'
 		);
 
-		$this->assertContains( "Special:RSSFeeder", $response['results'][0]['feedUrl'], 'Link to special page is missing' );
-		$this->assertContains( "&Page=", $response['results'][0]['feedUrl'], 'Type info (attribute Page) is missing' );
-		$this->assertContains( "&p=", $response['results'][0]['feedUrl'], 'Page info (attribute p) is missing' );
-		$this->assertContains( "&ns=", $response['results'][0]['feedUrl'], 'Namespace info (attribute ns) is missing' );
-		$this->assertContains( "&u=", $response['results'][0]['feedUrl'], 'User info (attribute u) is missing' );
-		$this->assertContains( "&h=", $response['results'][0]['feedUrl'], 'Token info (attribute h) is missing' );
+		$this->assertContains(
+			"Special:RSSFeeder",
+			$response['results'][0]['feedUrl'],
+			'Link to special page is missing'
+		);
+		$this->assertContains(
+			"&Page=",
+			$response['results'][0]['feedUrl'],
+			'Type info (attribute Page) is missing'
+		);
+		$this->assertContains(
+			"&p=",
+			$response['results'][0]['feedUrl'],
+			'Page info (attribute p) is missing'
+		);
+		$this->assertContains(
+			"&ns=",
+			$response['results'][0]['feedUrl'],
+			'Namespace info (attribute ns) is missing'
+		);
+		$this->assertContains(
+			"&u=",
+			$response['results'][0]['feedUrl'],
+			'User info (attribute u) is missing'
+		);
+		$this->assertContains(
+			"&h=",
+			$response['results'][0]['feedUrl'],
+			'Token info (attribute h) is missing'
+		);
 	}
 }

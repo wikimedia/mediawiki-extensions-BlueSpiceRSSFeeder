@@ -49,6 +49,12 @@ class RSSFeeder extends BsExtensionMW {
 		$this->setHook( 'BSRSSFeederGetRegisteredFeeds' );
 	}
 
+	/**
+	 *
+	 * @param int $iCount
+	 * @param string $sUrl
+	 * @return string
+	 */
 	public static function getRSS( $iCount, $sUrl ) {
 		global $wgParser;
 		$oParserOpts = new ParserOptions;
@@ -252,6 +258,11 @@ class RSSFeeder extends BsExtensionMW {
 		return true;
 	}
 
+	/**
+	 *
+	 * @param array $conditions
+	 * @return \stdClass|\Wikimedia\Rdbms\ResultWrapper
+	 */
 	protected function getRecentChanges( $conditions = [] ) {
 		$dbr = wfGetDB( DB_REPLICA );
 
@@ -386,10 +397,14 @@ class RSSFeeder extends BsExtensionMW {
 		];
 		\Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'category' ] );
 
-		$rc = $dbr->query( 'SELECT r.* from categorylinks AS c INNER JOIN page AS p ON c.cl_from = p.page_id INNER JOIN recentchanges AS r '
-				. 'ON r.rc_namespace = p.page_namespace AND r.rc_title = p.page_title '
-				. 'WHERE ' . implode( ' AND ', $conditions )
-				. ' ORDER BY r.rc_timestamp DESC;' );
+		// phpcs:ignore MediaWiki.Usage.DbrQueryUsage.DbrQueryFound
+		$rc = $dbr->query(
+			'SELECT r.* from categorylinks AS c '
+			. 'INNER JOIN page AS p ON c.cl_from = p.page_id INNER JOIN recentchanges AS r '
+			. 'ON r.rc_namespace = p.page_namespace AND r.rc_title = p.page_title '
+			. 'WHERE ' . implode( ' AND ', $conditions )
+			. ' ORDER BY r.rc_timestamp DESC;'
+		);
 
 		if ( $rc ) {
 			foreach ( $rc as $obj ) {
@@ -409,6 +424,11 @@ class RSSFeeder extends BsExtensionMW {
 		return $channel->buildOutput();
 	}
 
+	/**
+	 *
+	 * @param array $aParams
+	 * @return string
+	 */
 	public function buildRssNs( $aParams ) {
 		global $wgSitename, $wgLang;
 
@@ -448,6 +468,11 @@ class RSSFeeder extends BsExtensionMW {
 		return $channel->buildOutput();
 	}
 
+	/**
+	 *
+	 * @param string $par
+	 * @return string
+	 */
 	public function buildRssWatch( $par ) {
 		$user = $this->getUser();
 
@@ -471,9 +496,13 @@ class RSSFeeder extends BsExtensionMW {
 		];
 		\Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'watchlist' ] );
 
-		$rc = $dbr->query( 'SELECT r.* FROM watchlist AS w INNER JOIN recentchanges AS r ON w.wl_namespace = r.rc_namespace AND w.wl_title = r.rc_title '
-				. 'WHERE ' . implode( ' AND ', $conditions )
-				. ' ORDER BY r.rc_timestamp DESC;' );
+		// phpcs:ignore MediaWiki.Usage.DbrQueryUsage.DbrQueryFound
+		$rc = $dbr->query(
+			'SELECT r.* FROM watchlist AS w '
+			. 'INNER JOIN recentchanges AS r ON w.wl_namespace = r.rc_namespace AND w.wl_title = r.rc_title '
+			. 'WHERE ' . implode( ' AND ', $conditions )
+			. ' ORDER BY r.rc_timestamp DESC;'
+		);
 
 		foreach ( $rc as $obj ) {
 			$title = Title::makeTitle( $obj->rc_namespace, $obj->rc_title );
