@@ -105,7 +105,8 @@ class RSSCreator {
 		'title'          => false,
 		'link'           => false,
 		'description'    => false,
-		'categories'     => [], // enthält array(category => , domain => )
+		// enthält array(category => , domain => )
+		'categories'     => [],
 		'cloud'          => [
 			'domain'            => false,
 			'path'              => false,
@@ -120,24 +121,35 @@ class RSSCreator {
 			'link'        => false,
 			'title'       => false,
 			'url'         => false,
-			'description' => false,  // optional
-			'height'      => false,  // optional max 400px
-			'width'       => false, // optional max 144px
+			// optional
+			'description' => false,
+			// optional max 400px
+			'height'      => false,
+			// optional max 144px
+			'width'       => false,
 		],
 		// TODO MRG (01.07.11 14:29): wieso ist language hardcoded
 		// TODO SU (03.07.11 17:03): @MRG Das ist nur eine Standardbelegung.
-		'language'       => 'de-de', // RSS-, W3C- oder ISO639-Language-Code
-		'lastBuildDate'  => false, // RFC822-konforme Zeitangabe
+		// RSS-, W3C- oder ISO639-Language-Code
+		'language'       => 'de-de',
+		// RFC822-konforme Zeitangabe
+		'lastBuildDate'  => false,
 		'managingEditor' => [
 			'name'       => false,
 			'email_addr' => false
 		],
-		'pubDate'        => false, // RFC822-konforme Zeitangabe
-		'rating'         => false, // PICS-rating Label
-		'skipDays'       => [], // enthält die englischen Tagesnamen
-		'skipHours'      => [], // enthält numerische Stundenangaben
-		'ttl'            => 60, // Cachingdauer
-		 'webMaster'      => false // eMail-Addresse des Webmasters
+		// RFC822-konforme Zeitangabe
+		'pubDate'        => false,
+		// PICS-rating Label
+		'rating'         => false,
+		// enthält die englischen Tagesnamen
+		'skipDays'       => [],
+		// enthält numerische Stundenangaben
+		'skipHours'      => [],
+		// Cachingdauer
+		'ttl'            => 60,
+		// eMail-Addresse des Webmasters
+		'webMaster'      => false
 	];
 
 	/**
@@ -545,6 +557,12 @@ class RSSItemCreator {
 		$this->source = $url;
 	}
 
+	/**
+	 *
+	 * @param string $url
+	 * @param int $size
+	 * @param string $type
+	 */
 	public function setEnclosure( $url, $size, $type ) {
 		$this->enclosure = [ 'url'  => $url,
 								 'size' => $size,

@@ -8,9 +8,8 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 
 	/**
 	 *
-	 * @global OutputPage $this->getOutput()
-	 * @param type $sParameter
-	 * @return type
+	 * @param string $sParameter
+	 * @return null
 	 */
 	public function execute( $sParameter ) {
 		if ( $this->getUser()->isAnon() ) {
@@ -63,6 +62,11 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 		);
 	}
 
+	/**
+	 *
+	 * @param string $sParameter
+	 * @return array
+	 */
 	protected function parseParams( $sParameter ) {
 		$aParameters = [];
 		$aTokens = explode( '/', $sParameter );

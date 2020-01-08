@@ -107,7 +107,8 @@ class BSApiTasksRSSFeeder extends BSApiTasksBase {
 		$sTag = '<rss max="' . $iCount . '">' . $sUrl . '</rss>';
 
 		$params = new DerivativeRequest(
-			$this->getRequest(), // Fallback upon $wgRequest if you can't access context.
+			// Fallback upon $wgRequest if you can't access context.
+			$this->getRequest(),
 			[
 				'action' => 'parse',
 				'text' => $sTag,

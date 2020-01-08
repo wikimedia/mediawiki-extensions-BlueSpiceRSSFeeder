@@ -11,14 +11,26 @@ use BlueSpice\Tests\BSApiTasksTestBase;
  * @group BlueSpiceRSSFeeder
  */
 class BSApiTasksRSSFeederTest extends BSApiTasksTestBase {
+
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getModuleName() {
 		return 'bs-rssfeeder-tasks';
 	}
 
-	function getTokens() {
+	/**
+	 *
+	 * @return array
+	 */
+	public function getTokens() {
 		return $this->getTokenList( self::$users[ 'sysop' ] );
 	}
 
+	/**
+	 * @covers BSApiTasksRSSFeeder::task_getRSS
+	 */
 	public function testInvalidUrl() {
 		$oData = $this->executeTask(
 			'getRSS',
@@ -31,6 +43,9 @@ class BSApiTasksRSSFeederTest extends BSApiTasksTestBase {
 		$this->assertNotEmpty( $oData->message, "There was no error message" );
 	}
 
+	/**
+	 * @covers BSApiTasksRSSFeeder::task_getRSS
+	 */
 	public function testValidNonWhitelistedUrl() {
 		$oData = $this->executeTask(
 			'getRSS',
@@ -41,9 +56,16 @@ class BSApiTasksRSSFeederTest extends BSApiTasksTestBase {
 		);
 
 		$this->assertTrue( $oData->success );
-		$this->assertContains( 'class="error"', $oData->payload['html'], "There is no error message for the user" );
+		$this->assertContains(
+			'class="error"',
+			$oData->payload['html'],
+			"There is no error message for the user"
+		);
 	}
 
+	/**
+	 * @covers BSApiTasksRSSFeeder::task_getRSS
+	 */
 	public function testValidWhitelistedUnreachableUrl() {
 		$this->mergeMwGlobalArrayValue( 'wgRSSUrlWhitelist', [ "http://some.rss.de" ] );
 		$oData = $this->executeTask(
@@ -55,9 +77,16 @@ class BSApiTasksRSSFeederTest extends BSApiTasksTestBase {
 		);
 
 		$this->assertTrue( $oData->success );
-		$this->assertContains( 'Error', $oData->payload['html'], "There is no error message for the user" );
+		$this->assertContains(
+			'Error',
+			$oData->payload['html'],
+			"There is no error message for the user"
+		);
 	}
 
+	/**
+	 * @covers BSApiTasksRSSFeeder::task_getRSS
+	 */
 	public function testActualUrl() {
 		$oData = $this->executeTask(
 			'getRSS',
@@ -68,6 +97,10 @@ class BSApiTasksRSSFeederTest extends BSApiTasksTestBase {
 		);
 
 		$this->assertTrue( $oData->success );
-		$this->assertContains( 'class="plainlinks"', $oData->payload['html'], "There is rendered RSS" );
+		$this->assertContains(
+			'class="plainlinks"',
+			$oData->payload['html'],
+			"There is rendered RSS"
+		);
 	}
 }
