@@ -14,6 +14,11 @@ class RSSAuthenticator {
 	 */
 	protected $context;
 
+	/**
+	 *
+	 * @param \WebRequest $request
+	 * @param \IContextSource $context
+	 */
 	public function __construct( \WebRequest $request, \IContextSource $context ) {
 		$this->request = $request;
 		$this->context = $context;
@@ -42,7 +47,7 @@ class RSSAuthenticator {
 			return false;
 		}
 
-		$userToken = $user->getToken( /*static::TOKEN_SALT*/ );
+		$userToken = $user->getToken();
 		if ( $userToken != $requestToken ) {
 			return false;
 		}

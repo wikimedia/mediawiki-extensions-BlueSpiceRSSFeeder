@@ -27,6 +27,11 @@
 
 class ApiRSSStandardsPagesStore extends BSApiWikiPageStore {
 
+	/**
+	 *
+	 * @param \stdClass $oRow
+	 * @return \stdClass|bool
+	 */
 	public function makeDataSet( $oRow ) {
 		$oSpecialRSS = SpecialPage::getTitleFor( 'RSSFeeder' );
 		$sUserName   = $this->getUser()->getName();
