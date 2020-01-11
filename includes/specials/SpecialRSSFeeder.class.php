@@ -77,12 +77,4 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 		return $aParameters;
 	}
 
-	/*public function testRSS() {
-		$oChannel = RSSCreator::createChannel('Testchannel', 'http://localhost/rss', 'Dies ist ein TestChannel in RSS');
-		$oChannel->setImage('http://upload.wikimedia.org/wikipedia/mediawiki/b/bc/Wiki.png', 'MediaWiki', 'http://upload.wikimedia.org/wikipedia/mediawiki/b/bc/Wiki.png');
-		$item = RSSItemCreator::createItem('TestItem', 'http://localhost', 'dies ist ein TestItem.');
-		$oChannel->addItem($item);
-		return $oChannel->buildOutput();
-	}*/
-
 }
