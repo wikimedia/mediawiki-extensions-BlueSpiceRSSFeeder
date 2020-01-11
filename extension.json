@@ -74,6 +74,7 @@
 	"AutoloadClasses": {
 		"RSSFeeder": "RSSFeeder.class.php",
 		"RSSCreator": "includes/RSSCreator.class.php",
+		"RSSItemCreator": "includes/RSSItemCreator.php",
 		"RSSItemCreator": "includes/RSSCreator.class.php",
 		"BSApiTasksRSSFeeder": "includes/api/BSApiTasksRSSFeeder.php",
 		"ApiRSSStandardsPagesStore": "includes/api/ApiRSSStandardsPagesStore.php",
