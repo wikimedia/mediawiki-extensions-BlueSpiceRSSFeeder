@@ -1,6 +1,6 @@
 <?php
 /**
- * RSSCreator and RSSItemCreator
+ * RSSCreator
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -56,9 +56,11 @@ class RSSCreator {
 	 * @return bool
 	 */
 	public static function testURL( $url ) {
-		// TODO SU (04.07.11 12:10): nicht als foreach testen, sondern als |-Liste in RegEx. Ist effektiver.
+		// TODO SU (04.07.11 12:10): nicht als foreach testen, sondern als |-Liste in
+		// RegEx. Ist effektiver.
 		foreach ( self::$URISchemes as $scheme ) {
-			if ( preg_match( '/\A(?:\b' . $scheme . ':\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])\Z/i', $url ) ) {
+			$pattern = '/\A(?:\b' . $scheme . ':\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])\Z/i';
+			if ( preg_match( $pattern, $url ) ) {
 				return true;
 			}
 		}
@@ -185,7 +187,8 @@ class RSSCreator {
 	 * @param bool $cdata
 	 * @return DomNode
 	 */
-	protected function createElementOn( &$target, $tag, $attributes = false, $content = false, $cdata = false ) {
+	protected function createElementOn( &$target, $tag, $attributes = false, $content = false,
+		$cdata = false ) {
 		$_tag = $this->dom->createElement( $tag );
 		if ( is_array( $attributes ) ) {
 			foreach ( $attributes as $key => $value ) {
@@ -220,7 +223,11 @@ class RSSCreator {
 	 * @return string
 	 */
 	public function buildOutput() {
-		$rss = $this->createElementOn( $this->dom, 'rss', [ 'version' => '2.0', 'xmlns:dc' => 'http://purl.org/dc/elements/1.1/' ] );
+		$rss = $this->createElementOn(
+			$this->dom,
+			'rss',
+			[ 'version' => '2.0', 'xmlns:dc' => 'http://purl.org/dc/elements/1.1/' ]
+		);
 		// create Channel
 		$channel = $this->createElementOn( $rss, 'channel' );
 		$this->createElementOn( $channel, 'title', false, $this->channel['title'] );
@@ -229,7 +236,12 @@ class RSSCreator {
 		if ( count( $this->channel['categories'] ) ) {
 			foreach ( $this->channel['categories'] as $category ) {
 				if ( $category['domain'] ) {
-					$this->createElementOn( $channel, 'category', [ 'domain' => $category['domain'] ], $category['category'] );
+					$this->createElementOn(
+						$channel,
+						'category',
+						[ 'domain' => $category['domain'] ],
+						$category['category']
+					);
 				} else {
 					$this->createElementOn( $channel, 'category', false, $category['category'] );
 				}
@@ -258,9 +270,19 @@ class RSSCreator {
 		}
 		if ( $this->channel['managingEditor']['email_addr'] ) {
 			if ( !$this->channel['managingEditor']['name'] ) {
-				$this->createElementOn( $channel, 'managingEditor', false, $this->channel['managingEditor']['email_addr'] );
+				$this->createElementOn(
+					$channel,
+					'managingEditor',
+					false,
+					$this->channel['managingEditor']['email_addr']
+				);
 			} else {
-				$this->createElementOn( $channel, 'managingEditor', false, $this->channel['managingEditor']['email_addr'] . ' (' . $this->channel['managingEditor']['name'] . ')' );
+				$this->createElementOn(
+					$channel,
+					'managingEditor',
+					false,
+					"{$this->channel['managingEditor']['email_addr']} ({$this->channel['managingEditor']['name']})"
+				);
 			}
 		}
 		if ( $this->channel['pubDate'] ) {
@@ -270,10 +292,20 @@ class RSSCreator {
 			$this->createElementOn( $channel, 'rating', false, $this->channel['rating'] );
 		}
 		if ( count( $this->channel['skipDays'] ) ) {
-			$this->createElementOn( $channel, 'skipDays', false, implode( ',', $this->channel['skipDays'] ) );
+			$this->createElementOn(
+				$channel,
+				'skipDays',
+				false,
+				implode( ',', $this->channel['skipDays'] )
+			);
 		}
 		if ( count( $this->channel['skipHours'] ) ) {
-			$this->createElementOn( $channel, 'skipHours', false, implode( ',', $this->channel['skipHours'] ) );
+			$this->createElementOn(
+				$channel,
+				'skipHours',
+				false,
+				implode( ',', $this->channel['skipHours'] )
+			);
 		}
 		if ( $this->channel['ttl'] ) {
 			$this->createElementOn( $channel, 'ttl', false, $this->channel['ttl'] );
@@ -297,7 +329,12 @@ class RSSCreator {
 				if ( $item->category ) {
 					$cat = $item->category;
 					if ( $cat['domain'] ) {
-						$this->createElementOn( $_item, 'category', [ 'domain' => $cat['domain'] ], $cat['category'] );
+						$this->createElementOn(
+							$_item,
+							'category',
+							[ 'domain' => $cat['domain'] ],
+							$cat['category']
+						);
 					} else {
 						$this->createElementOn( $_item, 'category', false, $cat['category'] );
 					}
@@ -307,7 +344,12 @@ class RSSCreator {
 				}
 				if ( $item->guid ) {
 					$guid = $item->guid;
-					$this->createElementOn( $_item, 'guid', [ 'isPermaLink' => $guid['isPermaLink'] ], $guid['guid'] );
+					$this->createElementOn(
+						$_item,
+						'guid',
+						[ 'isPermaLink' => $guid['isPermaLink'] ],
+						$guid['guid']
+					);
 				}
 				if ( $item->comments ) {
 					$this->createElementOn( $_item, 'comments', false, $item->comments );
@@ -315,7 +357,12 @@ class RSSCreator {
 				if ( $item->author ) {
 					$author = $item->author;
 					if ( $author['name'] ) {
-						$this->createElementOn( $_item, 'author', false, $author['mail'] . ' (' . $author['name'] . ')' );
+						$this->createElementOn(
+							$_item,
+							'author',
+							false,
+							$author['mail'] . ' (' . $author['name'] . ')'
+						);
 					} else {
 						$this->createElementOn( $_item, 'author', false, $author['mail'] );
 					}
@@ -375,7 +422,8 @@ class RSSCreator {
 	 * @param int $height
 	 * @param int $width
 	 */
-	public function setImage( $link, $title, $url, $description = false, $height = false, $width = false ) {
+	public function setImage( $link, $title, $url, $description = false, $height = false,
+		$width = false ) {
 		$this->channel['image'] = [ 'link'        => $link,
 										'title'       => $title,
 										'url'         => $url,
@@ -482,138 +530,5 @@ class RSSCreator {
 		$protocol = \RequestContext::getMain()->getRequest()->getProtocol();
 		$delimiter = empty( $parts['delimiter'] ) ? '//' : '';
 		return "$protocol:$delimiter$link";
-	}
-}
-
-/**
- * the RSSItemCreator class
- *
- * RSSItemCreator builds RSS feed items following the RSS 2.0 specification.
- *
- * @package BlueSpice_Extensions
- * @subpackage RSSFeeder
- */
-class RSSItemCreator {
-	protected $title       = false;
-	protected $link        = false;
-	protected $description = false;
-
-	protected $source      = false;
-	protected $enclosure   = false;
-	protected $category    = false;
-	protected $pubDate     = false;
-	protected $guid        = false;
-	protected $comments    = false;
-	protected $author      = false;
-
-	/**
-	 * magic getter
-	 * @param string $name
-	 * @return mixed
-	 */
-	public function __get( $name ) {
-		if ( isset( $this->$name ) ) {
-			return $this->$name;
-		}
-		return false;
-	}
-
-	/**
-	 * Create a new RSS item from the given data and return a RSSItemCreator instance,
-	 * which hold this item.
-	 *
-	 * @param string $title the title of the item
-	 * @param string $link the link to the item
-	 * @param string $description the description of the item
-	 * @return RSSItemCreator returns false, when the given link don't pass the test for valid URLs
-	 */
-	public static function createItem( $title, $link, $description ) {
-		$title       = htmlentities( $title, ENT_QUOTES, 'UTF-8', false );
-		$description = htmlentities( $description, ENT_QUOTES, 'UTF-8', false );
-		$link = RSSCreator::ensureLinkProtocol( $link );
-		if ( RSSCreator::testURL( $link ) ) {
-			return new RSSItemCreator( $title, $link, $description );
-		}
-		return false;
-	}
-
-	/**
-	 * constructor of RSSItemCreator
-	 * @param string $title the title of the item
-	 * @param string $link the link to the item
-	 * @param string $description the description of the item
-	 */
-	protected function __construct( $title, $link, $description ) {
-		$this->title       = $title;
-		$this->link        = $link;
-		$this->description = $description;
-	}
-
-	/**
-	 * set the source of the item
-	 * @param string $url
-	 */
-	public function setSource( $url ) {
-		$this->source = $url;
-	}
-
-	/**
-	 *
-	 * @param string $url
-	 * @param int $size
-	 * @param string $type
-	 */
-	public function setEnclosure( $url, $size, $type ) {
-		$this->enclosure = [ 'url'  => $url,
-								 'size' => $size,
-								 'type' => $type ];
-	}
-
-	/**
-	 * set the category of the item
-	 * @param string $category
-	 * @param domain $domain
-	 */
-	public function setCategory( $category, $domain = false ) {
-		$this->category = [ 'categorie' => $category,
-								'domain'    => $domain ];
-	}
-
-	/**
-	 * set the timestamp for the publication date
-	 * @param int $timestamp
-	 */
-	public function setPubDate( $timestamp ) {
-		$this->pubDate = date( 'r', $timestamp );
-	}
-
-	/**
-	 * set the GUID
-	 * @param string $guid
-	 * @param bool $isPermaLink
-	 */
-	public function setGUID( $guid, $isPermaLink = 'true' ) {
-		$this->guid = [ 'guid'        => $guid,
-							'isPermaLink' => $isPermaLink ];
-	}
-
-	/**
-	 * set the comment URL
-	 * @param string $url
-	 */
-	public function setComments( $url ) {
-		$this->comments = RSSCreator::ensureLinkProtocol( $url );
-	}
-
-	/**
-	 * set the informations of the author of this item
-	 * @param string $mail
-	 * @param string $name
-	 */
-	public function setAuthor( $mail, $name = false ) {
-		$this->author = [
-			'mail' => $mail,
-			'name' => $name
-		];
 	}
 }

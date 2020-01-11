@@ -100,7 +100,8 @@ class RSSFeeder extends BsExtensionMW {
 	 * @param bool $bIsDefault default
 	 * @return bool always true to keep hook alive
 	 */
-	public function onBSDashboardsAdminDashboardPortalConfig( $oCaller, &$aPortalConfig, $bIsDefault ) {
+	public function onBSDashboardsAdminDashboardPortalConfig( $oCaller, &$aPortalConfig,
+		$bIsDefault ) {
 		$aPortalConfig[0][] = [
 			'type' => 'BS.RSSFeeder.RSSPortlet',
 			'config' => [
@@ -171,7 +172,8 @@ class RSSFeeder extends BsExtensionMW {
 	 * @param array $aParams the params to put to the method
 	 * @param string $sLinkBuilder the method to build the link to the feed
 	 */
-	public static function registerFeed( $sName, $sTitle, $sDescription, $oObject, $sMethod, $aParams, $sLinkBuilder = false ) {
+	public static function registerFeed( $sName, $sTitle, $sDescription, $oObject, $sMethod,
+		$aParams, $sLinkBuilder = false ) {
 		self::$aFeeds[$sName] = [
 			'title' => $sTitle,
 			'description' => $sDescription,
@@ -394,8 +396,9 @@ class RSSFeeder extends BsExtensionMW {
 
 		$cat = $this->getRequest()->getVal( 'cat', '' );
 
+		$msg = wfMessage( 'bs-rssstandards-title-cat' );
 		$channel = RSSCreator::createChannel(
-			$wgSitename . ' - ' . wfMessage( 'bs-rssstandards-title-cat' )->plain() . ' ' . addslashes( $cat ),
+			$wgSitename . ' - ' . $msg->plain() . ' ' . addslashes( $cat ),
 			'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'],
 			wfMessage( 'bs-rssstandards-desc-cat' )->plain()
 		);
