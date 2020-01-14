@@ -109,10 +109,9 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 		$results = $this->doApiRequest( $aParams );
 		$response = $results[0];
 
-		$this->assertAttributeEquals(
+		$this->assertSame(
 			$iTotal,
-			'total',
-			(object)$response,
+			$response['total'],
 			'Field "total" contains wrong value'
 		);
 
@@ -185,10 +184,9 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 		$results = $this->doApiRequest( $aParams );
 		$response = $results[0];
 
-		$this->assertAttributeEquals(
+		$this->assertSame(
 			1,
-			'total',
-			(object)$response,
+			$response['total'],
 			'Field "total" contains wrong value'
 		);
 
