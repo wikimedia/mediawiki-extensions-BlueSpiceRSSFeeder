@@ -368,7 +368,7 @@ class RSSFeeder extends BsExtensionMW {
 		);
 
 		$conditions = [
-			'rc_user' => $this->getUser()->getId()
+			'rc_actor' => $this->getUser()->getId()
 		];
 		\Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'followOwn' ] );
 		$rc = $this->getRecentChanges( $conditions );
