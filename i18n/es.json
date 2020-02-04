@@ -3,7 +3,8 @@
 		"authors": [
 			"Fitoschido",
 			"Macofe",
-			"AlimanRuna"
+			"AlimanRuna",
+			"DannyS712"
 		]
 	},
 	"bs-rssfeeder-desc": "Una extensión para obtener RSS válidos de cada una de las extensiones que incluyan la función «buildRSS»",
@@ -33,6 +34,6 @@
 	"bs-rssstandards-changes-from": "Cambios {{GENDER:$1|de}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Devolver una lista de las páginas disponibles para RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Devolver una lista de las páginas disponibles para RSSFeeder",
-	"right-rssfeeder-viewspecialpage": "Otorga acceso a la página especial [[Special:RSSFeeder]].",
+	"right-rssfeeder-viewspecialpage": "Acceso a la página especial [[Special:RSSFeeder]]",
 	"bs-rssstandards-title-rc": "Cambios recientes"
 }

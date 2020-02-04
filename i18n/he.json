@@ -3,7 +3,8 @@
 		"authors": [
 			"Eladk",
 			"Guycn2",
-			"Erelon"
+			"Erelon",
+			"Ghsuvr"
 		]
 	},
 	"bs-rssfeeder-desc": "הרחבה ליצירת הזנות RSS תקינות עבור כל הרחבה שיש לה פונקציה של buildRss",
@@ -20,7 +21,7 @@
 	"bs-rssfeeder-invalid-url": "נא לספק כתובת URL תקינה.",
 	"action-rssfeeder-viewspecialpage": "לצפות בדף המיוחד \"{{int:rssfeeder}}\"",
 	"bs-rssstandards-desc": "בניית הזנות RSS המבוססות על אפשרויות שונות",
-	"bs-rssstandards-desc-rc": "הזנה עם סקירת השינויים האחרונים באתר הוויקי",
+	"bs-rssstandards-desc-rc": "הזנה עם סקירת השינויים האחרונים בוויקי",
 	"bs-rssstandards-title-page": "דף",
 	"bs-rssstandards-desc-page": "הזנה עם סקירת השינויים האחרונים בדף.",
 	"bs-rssstandards-title-own": "התרומות שלך",

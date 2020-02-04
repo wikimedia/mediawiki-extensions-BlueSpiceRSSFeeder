@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Conky77"
+		]
+	},
+	"bs-rssfeeder-recent-changes": "Ùltimi canbiamenti",
+	"bs-rssstandards-link-text-watch": "Ùltimi canbiamenti inte {{PLURAL:$1|l'ùltimo dì|i ùltimi $1 dì}}",
+	"bs-rssstandards-title-rc": "Ùltimi canbiamenti"
+}
