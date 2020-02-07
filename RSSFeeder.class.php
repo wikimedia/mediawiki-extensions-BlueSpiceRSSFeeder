@@ -532,7 +532,6 @@ class RSSFeeder extends BsExtensionMW {
 	}
 
 	public function buildLinksRc() {
-		global $wgUser;
 		$set = new ViewFormElementFieldset();
 		$set->setLabel( wfMessage( 'bs-rssfeeder-recent-changes' )->plain() );
 
@@ -549,8 +548,8 @@ class RSSFeeder extends BsExtensionMW {
 			SpecialPage::getTitleFor( 'RSSFeeder' )->getLocalUrl(
 				[
 					'Page' => 'recentchanges',
-					'u'    => $wgUser->getName(),
-					'h'    => $wgUser->getToken()
+					'u'    => $this->getUser()->getName(),
+					'h'    => $this->getUser()->getToken()
 				]
 			)
 		);
@@ -591,7 +590,6 @@ class RSSFeeder extends BsExtensionMW {
 	}
 
 	public function buildLinksOwn() {
-		global $wgUser;
 		$set = new ViewFormElementFieldset();
 		$set->setLabel( wfMessage( 'bs-rssstandards-title-own' )->plain() );
 
@@ -601,9 +599,6 @@ class RSSFeeder extends BsExtensionMW {
 		$label->setText( wfMessage( 'bs-rssstandards-desc-own' )->plain() );
 
 		$oSpecialRSS = SpecialPage::getTitleFor( 'RSSFeeder' );
-		$sUserName   = $wgUser->getName();
-		$sUserToken  = $wgUser->getToken();
-
 		$btn = new ViewFormElementButton();
 		$btn->setId( 'btnFeedOwn' );
 		$btn->setName( 'btnFeedOwn' );
@@ -612,8 +607,8 @@ class RSSFeeder extends BsExtensionMW {
 			$oSpecialRSS->getLocalUrl(
 				[
 					'Page' => 'followOwn',
-					'u'    => $sUserName,
-					'h'    => $sUserToken
+					'u'    => $this->getUser()->getName(),
+					'h'    => $this->getUser()->getToken()
 				]
 			)
 		);
@@ -625,7 +620,6 @@ class RSSFeeder extends BsExtensionMW {
 	}
 
 	public function buildLinksNs() {
-		global $wgUser;
 		$set = new ViewFormElementFieldset();
 		$set->setLabel( wfMessage( 'bs-ns' )->plain() );
 
@@ -636,8 +630,8 @@ class RSSFeeder extends BsExtensionMW {
 
 		$aNamespaces = BsNamespaceHelper::getNamespacesForSelectOptions( [ NS_SPECIAL, NS_MEDIA ] );
 		$oSpecialRSS = SpecialPage::getTitleFor( 'RSSFeeder' );
-		$sUserName   = $wgUser->getName();
-		$sUserToken  = $wgUser->getToken();
+		$sUserName   = $this->getUser()->getName();
+		$sUserToken  = $this->getUser()->getToken();
 		foreach ( $aNamespaces as $key => $name ) {
 			$select->addData(
 				[
@@ -666,8 +660,6 @@ class RSSFeeder extends BsExtensionMW {
 	}
 
 	public function buildLinksCat() {
-		global $wgUser;
-
 		$set = new ViewFormElementFieldset();
 		$set->setLabel( wfMessage( 'bs-rssstandards-title-cat' )->plain() );
 
@@ -689,8 +681,8 @@ class RSSFeeder extends BsExtensionMW {
 		);
 
 		$oSpecialRSS = SpecialPage::getTitleFor( 'RSSFeeder' );
-		$sUserName   = $wgUser->getName();
-		$sUserToken  = $wgUser->getToken();
+		$sUserName   = $this->getUser()->getName();
+		$sUserToken  = $this->getUser()->getToken();
 		foreach ( $res as $row ) {
 			$select->addData(
 				[
@@ -720,7 +712,6 @@ class RSSFeeder extends BsExtensionMW {
 	}
 
 	public function buildLinksWatch() {
-		global $wgUser;
 		$aRssWatchlistDays = [ 1, 3, 5, 7, 14, 30, 60, 90, 180, 365 ];
 
 		$set = new ViewFormElementFieldset();
@@ -732,8 +723,8 @@ class RSSFeeder extends BsExtensionMW {
 		$select->setLabel( wfMessage( 'bs-rssstandards-title-watch' )->plain() );
 
 		$oSpecialRSS = SpecialPage::getTitleFor( 'RSSFeeder' );
-		$sUserName   = $wgUser->getName();
-		$sUserToken  = $wgUser->getToken();
+		$sUserName   = $this->getUser()->getName();
+		$sUserToken  = $this->getUser()->getToken();
 		foreach ( $aRssWatchlistDays as $day ) {
 			$select->addData(
 				[
