@@ -1,8 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
-			"पर्वत सुबेदी"
+			"पर्वत सुबेदी",
+			"हिमाल सुबेदी"
 		]
 	},
-	"bs-rssstandards-title-watch": "अवलोकनसूची"
+	"bs-rssfeeder-pages": "पृष्ठ",
+	"bs-rssfeeder-submit": "देखाउनुहोस्",
+	"bs-rssstandards-title-page": "पृष्ठ",
+	"bs-rssstandards-title-own": "मेरा याेगदानहरू",
+	"bs-rssstandards-title-cat": "श्रेणी",
+	"bs-rssstandards-title-watch": "अवलोकनसूची",
+	"bs-rssstandards-link-text-watch": "अन्तिम हालसालैका पृष्ठहरू {{PLURAL:$1|दिन|$1 दिनहरू}}",
+	"bs-rssstandards-changes-from": "{{GENDER:$1|द्वारा}}: $1 परिवर्तन",
+	"bs-rssstandards-title-rc": "नयाँ परिवर्तनहरू"
 }
