@@ -7,7 +7,9 @@ use BlueSpice\SkinData;
 
 class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
 	protected function doProcess() {
-		$oSpecialRssFeeder = \SpecialPageFactory::getPage( 'RSSFeeder' );
+		$oSpecialRssFeeder = \MediaWiki\MediaWikiServices::getInstance()
+			->getSpecialPageFactory()
+			->getPage( 'RSSFeeder' );
 
 		if ( !$oSpecialRssFeeder ) {
 			return true;
