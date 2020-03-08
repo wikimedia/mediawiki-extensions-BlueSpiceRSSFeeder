@@ -58,7 +58,7 @@ class RSSFeeder extends BsExtensionMW {
 	 * @return string
 	 */
 	public static function getRSS( $iCount, $sUrl ) {
-		$oParserOpts = new ParserOptions;
+		$oParserOpts = ParserOptions::newFromAnon();
 		$iCount = intval( $iCount );
 
 		$sTag = '<rss max="' . $iCount . '">' . $sUrl . '</rss>';

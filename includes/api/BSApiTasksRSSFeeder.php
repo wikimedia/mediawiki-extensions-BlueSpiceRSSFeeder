@@ -101,7 +101,7 @@ class BSApiTasksRSSFeeder extends BSApiTasksBase {
 			return $oReturn;
 		}
 
-		$oParserOpts = new ParserOptions;
+		$oParserOpts = new ParserOptions( $this->getUser() );
 		$iCount = intval( $iCount );
 
 		$sTag = '<rss max="' . $iCount . '">' . $sUrl . '</rss>';
