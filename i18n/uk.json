@@ -36,6 +36,6 @@
 	"bs-rssstandards-changes-from": "Зміни {{GENDER:$1|зробив|зробила}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Виводить список доступних сторінок для RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Вивести список доступних сторінок для RSSFeeder",
-	"right-rssfeeder-viewspecialpage": "доступ до спеціальної сторінки [[Special:RSSFeeder]]",
+	"right-rssfeeder-viewspecialpage": "Доступ до спеціальної сторінки [[Special:RSSFeeder]]",
 	"bs-rssstandards-title-rc": "Нові редагування"
 }
