@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Omotecho",
 			"Otokoume",
 			"Shirayuki",
-			"Yatalu",
 			"Suyama",
-			"Omotecho"
+			"Yatalu"
 		]
 	},
 	"bs-rssfeeder-desc": "buildRss 関数を持つ拡張機能それぞれについて有効な RSS フィードを出力する拡張機能",

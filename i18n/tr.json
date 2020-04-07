@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"BaRaN6161 TURK",
 			"MrSchipunov",
-			"Sayginer",
-			"BaRaN6161 TURK"
+			"Sayginer"
 		]
 	},
 	"bs-rssfeeder-desc": "BuildRss işlevine sahip her uzantı için geçerli RSS çıkışı sağlayan bir uzantı",
