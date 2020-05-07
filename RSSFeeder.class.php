@@ -77,7 +77,7 @@ class RSSFeeder extends BsExtensionMW {
 			'config' => [
 				'title' => wfMessage( 'bs-rssfeeder-rss' )->plain(),
 				'height' => 660,
-				'rssurl' => 'http://blog.bluespice.com/feed/'
+				'rssurl' => 'https://blog.bluespice.com/feed/'
 			],
 			'title' => wfMessage( 'bs-rssfeeder-rss' )->plain(),
 			'description' => wfMessage( 'bs-rssfeeder-rss-desc' )->plain()
@@ -101,7 +101,7 @@ class RSSFeeder extends BsExtensionMW {
 			'config' => [
 				'title' => wfMessage( 'bs-rssfeeder-rss' )->plain(),
 				'height' => 610,
-				'rssurl' => 'http://blog.bluespice.com/feed/'
+				'rssurl' => 'https://blog.bluespice.com/feed/'
 			]
 		];
 
@@ -120,7 +120,7 @@ class RSSFeeder extends BsExtensionMW {
 			'config' => [
 				'title' => wfMessage( 'bs-rssfeeder-rss' )->plain(),
 				'height' => 610,
-				'rssurl' => 'http://blog.bluespice.com/feed/'
+				'rssurl' => 'https://blog.bluespice.com/feed/'
 			],
 			'title' => wfMessage( 'bs-rssfeeder-rss' )->plain(),
 			'description' => wfMessage( 'bs-rssfeeder-rss-desc' )->plain()
@@ -143,7 +143,7 @@ class RSSFeeder extends BsExtensionMW {
 			'config' => [
 				'title' => wfMessage( 'bs-rssfeeder-rss' )->plain(),
 				'height' => 610,
-				'rssurl' => 'http://blog.bluespice.com/feed/'
+				'rssurl' => 'https://blog.bluespice.com/feed/'
 			]
 		];
 
