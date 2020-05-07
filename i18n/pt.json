@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Hamilton Abreu",
-			"Vitorvicentevalente",
-			"Mansil alfalb"
+			"Mansil alfalb",
+			"Vitorvicentevalente"
 		]
 	},
 	"bs-rssfeeder-desc": "Uma extensão para obter RSS válido, para qualquer extensão que tenha uma função buildRSS",

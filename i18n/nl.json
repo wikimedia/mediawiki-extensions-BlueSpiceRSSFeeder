@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Esketti",
+			"Mainframe98",
 			"MrLeopold",
 			"SPQRobin",
-			"Siebrand",
-			"Mainframe98"
+			"Siebrand"
 		]
 	},
 	"bs-rssfeeder-desc": "Een uitbreiding van de output geldig RSS voor elke extensie, die heeft een buildRss-functie",

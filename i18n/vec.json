@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Conky77"
+			"Conky77",
+			"Fierodelveneto"
 		]
 	},
-	"bs-rssfeeder-recent-changes": "Ùltimi canbiamenti",
-	"bs-rssstandards-link-text-watch": "Ùltimi canbiamenti inte {{PLURAL:$1|l'ùltimo dì|i ùltimi $1 dì}}",
-	"bs-rssstandards-title-rc": "Ùltimi canbiamenti"
+	"bs-rssfeeder-recent-changes": "Canbiamenti in ultima",
+	"bs-rssstandards-link-text-watch": "Canbiamenti in ultima in te {{PLURAL:$1|l'ultimo dì|i ultimi $1 dì}}",
+	"bs-rssstandards-title-rc": "Canbiamenti in ultima"
 }

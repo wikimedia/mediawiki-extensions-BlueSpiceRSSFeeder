@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Lokal Profil",
-			"WikiPhoenix",
-			"Technic2"
+			"Technic2",
+			"WikiPhoenix"
 		]
 	},
 	"bs-rssfeeder-desc": "Ett tillägg för att mata ut giltig RSS för alla tillägg som har en buildRss-funktion.",
