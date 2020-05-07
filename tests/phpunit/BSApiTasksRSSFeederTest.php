@@ -91,7 +91,7 @@ class BSApiTasksRSSFeederTest extends BSApiTasksTestBase {
 		$oData = $this->executeTask(
 			'getRSS',
 			[
-				'url' => 'http://blog.bluespice.com/feed/',
+				'url' => 'https://blog.bluespice.com/feed/',
 				'count' => 12
 			]
 		);
