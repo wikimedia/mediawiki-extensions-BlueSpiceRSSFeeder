@@ -101,8 +101,8 @@
 	},
 	"Hooks": {
 		"TitleReadWhitelist": "RSSFeeder::onTitleReadWhitelist",
-		"SkinTemplateOutputPageBeforeExec": [
-			"\\BlueSpice\\RSSFeeder\\Hook\\SkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback"
+		"ChameleonSkinTemplateOutputPageBeforeExec": [
+			"\\BlueSpice\\RSSFeeder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback"
 		],
 		"BeforePageDisplay": "\\BlueSpice\\RSSFeeder\\Hook\\BeforePageDisplay\\AddResources::callback"
 	},
