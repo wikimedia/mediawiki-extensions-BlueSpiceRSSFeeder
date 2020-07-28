@@ -1,11 +1,11 @@
 <?php
 
-namespace BlueSpice\RSSFeeder\Hook\SkinTemplateOutputPageBeforeExec;
+namespace BlueSpice\RSSFeeder\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
+use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\SkinData;
 
-class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
+class AddToGlobalActions extends ChameleonSkinTemplateOutputPageBeforeExec {
 	protected function doProcess() {
 		$oSpecialRssFeeder = \MediaWiki\MediaWikiServices::getInstance()
 			->getSpecialPageFactory()
