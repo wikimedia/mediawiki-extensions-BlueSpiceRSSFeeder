@@ -29,7 +29,7 @@
  * @filesource
  */
 
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 /**
  * the Preferences class
@@ -63,7 +63,7 @@ class RSSFeeder extends BsExtensionMW {
 
 		$sTag = '<rss max="' . $iCount . '">' . $sUrl . '</rss>';
 
-		$parserOutput = Services::getInstance()->getParser()->parse(
+		$parserOutput = MediaWikiServices::getInstance()->getParser()->parse(
 			$sTag,
 			RequestContext::getMain()->getTitle(),
 			$oParserOpts
