@@ -44,8 +44,6 @@ class RSSFeeder extends BsExtensionMW {
 		$this->setHook( 'BSDashboardsAdminDashboardPortalConfig' );
 		$this->setHook( 'BSDashboardsUserDashboardPortalPortlets' );
 		$this->setHook( 'BSDashboardsUserDashboardPortalConfig' );
-		$this->setHook( 'BSDashboardsUserDashboardPortalPortlets' );
-		$this->setHook( 'BSDashboardsUserDashboardPortalConfig' );
 		$this->setHook( 'BSRSSFeederGetRegisteredFeeds' );
 	}
 
