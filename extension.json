@@ -100,7 +100,7 @@
 		"remoteExtPath": "BlueSpiceRSSFeeder/resources"
 	},
 	"Hooks": {
-		"TitleReadWhitelist": "RSSFeeder::onTitleReadWhitelist",
+		"TitleReadWhitelist": "\\BlueSpice\\RSSFeeder\\Hook\\TitleReadWhitelist\\AddRSSFeeder::callback",
 		"ChameleonSkinTemplateOutputPageBeforeExec": [
 			"\\BlueSpice\\RSSFeeder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback"
 		],
@@ -108,7 +108,8 @@
 		"BSDashboardsAdminDashboardPortalPortlets": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsAdminDashboardPortalPortlets\\AddPortlets::callback",
 		"BSDashboardsAdminDashboardPortalConfig": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsAdminDashboardPortalConfig\\AddConfigs::callback",
 		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsUserDashboardPortalPortlets\\AddPortlets::callback",
-		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsUserDashboardPortalConfig\\AddConfigs::callback"
+		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsUserDashboardPortalConfig\\AddConfigs::callback",
+		"BSRSSFeederGetRegisteredFeeds": "\\BlueSpice\\RSSFeeder\\Hook\\BSRSSFeederGetRegisteredFeeds\\RegisterFeeds::callback"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
