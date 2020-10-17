@@ -104,10 +104,11 @@
 		"ChameleonSkinTemplateOutputPageBeforeExec": [
 			"\\BlueSpice\\RSSFeeder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback"
 		],
-		"BeforePageDisplay": [
-			"\\BlueSpice\\RSSFeeder\\Hook\\BeforePageDisplay\\AddResources::callback",
-			"\\BlueSpice\\RSSFeeder\\Hook\\BeforePageDisplay\\AddDashboardResources::callback"
-		]
+		"BeforePageDisplay": "\\BlueSpice\\RSSFeeder\\Hook\\BeforePageDisplay\\AddResources::callback",
+		"BSDashboardsAdminDashboardPortalPortlets": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsAdminDashboardPortalPortlets\\AddPortlets::callback",
+		"BSDashboardsAdminDashboardPortalConfig": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsAdminDashboardPortalConfig\\AddConfigs::callback",
+		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsUserDashboardPortalPortlets\\AddPortlets::callback",
+		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsUserDashboardPortalConfig\\AddConfigs::callback"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
