@@ -104,7 +104,10 @@
 		"SkinTemplateOutputPageBeforeExec": [
 			"\\BlueSpice\\RSSFeeder\\Hook\\SkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback"
 		],
-		"BeforePageDisplay": "\\BlueSpice\\RSSFeeder\\Hook\\BeforePageDisplay\\AddResources::callback"
+		"BeforePageDisplay": [
+			"\\BlueSpice\\RSSFeeder\\Hook\\BeforePageDisplay\\AddResources::callback",
+			"\\BlueSpice\\RSSFeeder\\Hook\\BeforePageDisplay\\AddDashboardResources::callback"
+		]
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
