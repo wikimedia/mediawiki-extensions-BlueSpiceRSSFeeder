@@ -24,9 +24,6 @@ class AddDashboardResources extends BeforePageDisplay {
 		$title = $this->out->getTitle();
 
 		foreach ( $this->pages as $spPage ) {
-			if ( !$this->getServices()->getSpecialPageFactory()->exists( $spPage ) ) {
-				continue;
-			}
 			if ( !$title->equals( SpecialPage::getTitleFor( $spPage ) ) ) {
 				continue;
 			}
