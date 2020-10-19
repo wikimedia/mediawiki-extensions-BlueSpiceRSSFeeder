@@ -1,9 +1,13 @@
 <?php
 // Last review MRG (01.07.11 14:22)
+use BlueSpice\RSSFeeder\IRSSFeed;
+use BlueSpice\RSSFeeder\RSSFeedManager;
+use MediaWiki\MediaWikiServices;
+
 class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 
 	public function __construct() {
-		parent::__construct( 'RSSFeeder', 'rssfeeder-viewspecialpage' );
+		parent::__construct( 'RSSFeeder' );
 	}
 
 	/**
@@ -31,15 +35,22 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 		if ( isset( $sParameter['Page'] ) ) {
 			$extension = $sParameter['Page'];
 		}
-		$rssFeeds = RSSFeeder::getRegisteredFeeds();
-		if ( $extension && is_array( $rssFeeds[$extension] ) ) {
+
+		/** @var RSSFeedManager $feedsManager */
+		$feedsManager = MediaWikiServices::getInstance()->getService(
+			'BSRSSFeederFeedManagerFactory'
+		)->makeManager( $this->getContext(), $this->getUser() );
+
+		$requestedFeed = $feedsManager->getFeed( $extension );
+		if ( $requestedFeed ) {
 			$this->getOutput()->disable();
-			$runner = $rssFeeds[$extension]['method'];
 			header( 'Content-Type: application/xml; charset=UTF-8' );
-			echo $rssFeeds[$extension]['object']->$runner( $sParameter );
+			echo $requestedFeed->getRss();
 			return;
 		}
 
+		$feeds = $feedsManager->getFeeds();
+		$this->addFeedCallbacks( $feeds );
 		$this->getOutput()->addModuleStyles( 'ext.bluespice.rssFeeder' );
 
 		$form = new ViewBaseForm();
@@ -52,13 +63,12 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 
 		$form->addItem( $label );
 
-		foreach ( $rssFeeds as $name => $feed ) {
-			$func = $feed['buildLinks'];
-			$form->addItem( $feed['object']->$func() );
+		foreach ( $feeds as $feed ) {
+			$form->addItem( $feed->getViewElement() );
 		}
 
 		$this->getOutput()->addHTML(
-				$form->execute()
+			$form->execute()
 		);
 	}
 
@@ -75,6 +85,21 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 			$aParameters[$vKeyValuePairs[0]] = $vKeyValuePairs[1];
 		}
 		return $aParameters;
+	}
+
+	/**
+	 * @param array $feeds
+	 */
+	private function addFeedCallbacks( array $feeds ) {
+		$cbs = [];
+		/** @var IRSSFeed $feed */
+		foreach ( $feeds as $feed ) {
+			if ( $feed->getJSHandler() ) {
+				$cbs[$feed->getId()] = $feed->getJSHandler();
+			}
+		}
+
+		$this->getOutput()->addJsConfigVars( 'bsRSSFeederFeedCallbacks', $cbs );
 	}
 
 }

@@ -19,43 +19,25 @@
 					"className": "RSSFeeder",
 					"extPath": "/BlueSpiceRSSFeeder"
 				}
-			},
-			"PermissionRegistry": {
-				"rssfeeder-viewspecialpage": {
-					"type": "global",
-					"roles": [
-						"accountmanager",
-						"admin",
-						"author",
-						"bot",
-						"commenter",
-						"editor",
-						"maintenanceadmin",
-						"reader",
-						"reviewer",
-						"structuremanager"
-					]
-				}
+			}
+		},
+		"BlueSpiceRSSFeeder": {
+			"Feeds": {
+				"recentchanges": "BlueSpice\\RSSFeeder\\RSSFeed\\RecentChanges::factory",
+				"followOwn": "BlueSpice\\RSSFeeder\\RSSFeed\\FollowOwn::factory",
+				"followPage": "BlueSpice\\RSSFeeder\\RSSFeed\\FollowPage::factory",
+				"namespace": "BlueSpice\\RSSFeeder\\RSSFeed\\NamespaceFeed::factory",
+				"category": "BlueSpice\\RSSFeeder\\RSSFeed\\Category::factory",
+				"watchlist": "BlueSpice\\RSSFeeder\\RSSFeed\\Watchlist::factory"
 			}
 		}
 	},
-	"GroupPermissions": {
-		"*": {
-			"rssfeeder-viewspecialpage": false
-		},
-		"user": {
-			"rssfeeder-viewspecialpage": true
-		},
-		"sysop": {
-			"rssfeeder-viewspecialpage": true
-		}
-	},
-	"AvailableRights": [
-		"rssfeeder-viewspecialpage"
-	],
 	"SpecialPages": {
 		"RSSFeeder": "SpecialRSSFeeder"
 	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
 	"APIModules": {
 		"bs-rssfeeder-tasks": "BSApiTasksRSSFeeder",
 		"bs-rss-standards-pages-store": "ApiRSSStandardsPagesStore"
@@ -108,8 +90,7 @@
 		"BSDashboardsAdminDashboardPortalPortlets": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsAdminDashboardPortalPortlets\\AddPortlets::callback",
 		"BSDashboardsAdminDashboardPortalConfig": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsAdminDashboardPortalConfig\\AddConfigs::callback",
 		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsUserDashboardPortalPortlets\\AddPortlets::callback",
-		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsUserDashboardPortalConfig\\AddConfigs::callback",
-		"BSRSSFeederGetRegisteredFeeds": "\\BlueSpice\\RSSFeeder\\Hook\\BSRSSFeederGetRegisteredFeeds\\RegisterFeeds::callback"
+		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsUserDashboardPortalConfig\\AddConfigs::callback"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2

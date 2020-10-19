@@ -48,7 +48,7 @@ class RSSAuthenticator {
 		}
 
 		$userToken = $user->getToken();
-		if ( $userToken != $requestToken ) {
+		if ( $userToken !== $requestToken ) {
 			return false;
 		}
 
