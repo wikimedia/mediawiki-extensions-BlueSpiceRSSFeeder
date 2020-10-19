@@ -23,7 +23,7 @@ abstract class BSRSSFeederGetRegisteredFeeds extends Hook {
 		$hookHandler = new $clasname(
 			null,
 			null,
-			$feeds,
+			$feeds
 		);
 		return $hookHandler->process();
 	}
