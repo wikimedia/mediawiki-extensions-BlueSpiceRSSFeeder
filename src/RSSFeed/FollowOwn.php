@@ -41,7 +41,7 @@ class FollowOwn extends RecentChanges {
 	 */
 	protected function getConditions() {
 		$conditions = [
-			'rc_user' => $this->user->getId()
+			'rc_actor' => $this->user->getId()
 		];
 		Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'followOwn' ] );
 
