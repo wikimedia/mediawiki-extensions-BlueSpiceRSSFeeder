@@ -71,7 +71,7 @@ class Watchlist extends RecentChanges {
 		$request = $this->context->getRequest();
 		$period = $request->getVal( 'days', 1 );
 		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
-
+		$prefix = $this->context->getConfig()->get( 'DBprefix' );
 		$conditions = [
 			'r.rc_timestamp > ' . $dbr->timestamp( time() - intval( $period * 86400 ) ),
 			'w.wl_user = ' . $this->user->getId()
@@ -80,8 +80,9 @@ class Watchlist extends RecentChanges {
 
 		// phpcs:ignore MediaWiki.Usage.DbrQueryUsage.DbrQueryFound
 		$rc = $dbr->query(
-			'SELECT r.* FROM watchlist AS w '
-			. 'INNER JOIN recentchanges AS r ON w.wl_namespace = r.rc_namespace AND w.wl_title = r.rc_title '
+			"SELECT r.* FROM {$prefix}watchlist AS w "
+			. "INNER JOIN {$prefix}recentchanges AS r "
+			. "ON w.wl_namespace = r.rc_namespace AND w.wl_title = r.rc_title "
 			. 'WHERE ' . implode( ' AND ', $conditions )
 			. ' ORDER BY r.rc_timestamp DESC;'
 		);
