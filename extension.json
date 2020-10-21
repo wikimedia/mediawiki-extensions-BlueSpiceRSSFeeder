@@ -16,7 +16,7 @@
 		"BlueSpiceFoundation": {
 			"Extensions": {
 				"BlueSpiceRSSFeeder": {
-					"className": "RSSFeeder",
+					"className": "\\BlueSpice\\RSSFeeder\\Extension",
 					"extPath": "/BlueSpiceRSSFeeder"
 				}
 			}
@@ -54,14 +54,12 @@
 		"BlueSpice\\RSSFeeder\\": "src/"
 	},
 	"AutoloadClasses": {
-		"RSSFeeder": "RSSFeeder.class.php",
 		"RSSCreator": "includes/RSSCreator.class.php",
 		"RSSItemCreator": "includes/RSSItemCreator.php",
 		"BSApiTasksRSSFeeder": "includes/api/BSApiTasksRSSFeeder.php",
 		"ApiRSSStandardsPagesStore": "includes/api/ApiRSSStandardsPagesStore.php",
 		"SpecialRSSFeeder": "includes/specials/SpecialRSSFeeder.class.php",
-		"RSSAuthenticator": "includes/RSSAuthenticator.php",
-		"BlueSpice\\RSSFeeder\\Hook\\BSRSSFeederBeforeGetRecentChanges": "src/Hook/BSRSSFeederBeforeGetRecentChanges.php"
+		"RSSAuthenticator": "includes/RSSAuthenticator.php"
 	},
 	"ResourceModules": {
 		"ext.bluespice.rssFeeder": {
