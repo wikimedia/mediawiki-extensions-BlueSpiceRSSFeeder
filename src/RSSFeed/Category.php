@@ -64,11 +64,13 @@ class Category extends RecentChanges {
 		$conditions = [
 			'r.rc_timestamp > ' . $dbr->timestamp( time() - intval( 7 * 86400 ) )
 		];
+		$prefix = $this->context->getConfig()->get( 'DBprefix' );
 		Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'category' ] );
 		// phpcs:ignore MediaWiki.Usage.DbrQueryUsage.DbrQueryFound
 		$rc = $dbr->query(
-			'SELECT r.* from categorylinks AS c '
-			. 'INNER JOIN page AS p ON c.cl_from = p.page_id INNER JOIN recentchanges AS r '
+			"SELECT r.* from {$prefix}categorylinks AS c "
+			. "INNER JOIN {$prefix}page AS p ON c.cl_from = p.page_id "
+			. "INNER JOIN {$prefix}recentchanges AS r "
 			. 'ON r.rc_namespace = p.page_namespace AND r.rc_title = p.page_title '
 			. 'WHERE ' . implode( ' AND ', $conditions )
 			. ' ORDER BY r.rc_timestamp DESC;'
