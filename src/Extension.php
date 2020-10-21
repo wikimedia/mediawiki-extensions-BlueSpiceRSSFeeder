@@ -29,31 +29,9 @@
  * @filesource
  */
 
-use MediaWiki\MediaWikiServices;
+namespace BlueSpice\RSSFeeder;
 
-/**
- * the Preferences class
- * @package BlueSpice_Extensions
- * @subpackage RSSFeeder
- */
-class RSSFeeder extends BsExtensionMW {
-	/**
-	 *
-	 * @param int $iCount
-	 * @param string $sUrl
-	 * @return string
-	 */
-	public static function getRSS( $iCount, $sUrl ) {
-		$oParserOpts = ParserOptions::newFromAnon();
-		$iCount = intval( $iCount );
+use BlueSpice\Extension as ExtensionBase;
 
-		$sTag = '<rss max="' . $iCount . '">' . $sUrl . '</rss>';
-
-		$parserOutput = MediaWikiServices::getInstance()->getParser()->parse(
-			$sTag,
-			RequestContext::getMain()->getTitle(),
-			$oParserOpts
-		);
-		return $parserOutput->getText();
-	}
+class Extension extends ExtensionBase {
 }
