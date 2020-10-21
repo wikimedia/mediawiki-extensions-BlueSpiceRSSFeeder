@@ -80,9 +80,11 @@ class Watchlist extends RecentChanges {
 
 		// phpcs:ignore MediaWiki.Usage.DbrQueryUsage.DbrQueryFound
 		$rc = $dbr->query(
-			"SELECT r.* FROM {$prefix}watchlist AS w "
+			"SELECT r.*, c.* FROM {$prefix}watchlist AS w "
 			. "INNER JOIN {$prefix}recentchanges AS r "
 			. "ON w.wl_namespace = r.rc_namespace AND w.wl_title = r.rc_title "
+			. "INNER JOIN {$prefix}comment AS c "
+			. "ON r.rc_comment_id = c.comment_id "
 			. 'WHERE ' . implode( ' AND ', $conditions )
 			. ' ORDER BY r.rc_timestamp DESC;'
 		);
