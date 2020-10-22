@@ -3,6 +3,7 @@
 use BlueSpice\RSSFeeder\IRSSFeed;
 use BlueSpice\RSSFeeder\RSSFeedManager;
 use MediaWiki\MediaWikiServices;
+use Wikimedia\AtEase\AtEase;
 
 class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 
@@ -44,8 +45,10 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 		$requestedFeed = $feedsManager->getFeed( $extension );
 		if ( $requestedFeed ) {
 			$this->getOutput()->disable();
+			AtEase::suppressWarnings();
 			header( 'Content-Type: application/xml; charset=UTF-8' );
 			echo $requestedFeed->getRss();
+			AtEase::restoreWarnings();
 			return;
 		}
 
