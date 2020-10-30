@@ -38,5 +38,7 @@
 	"apihelp-bs-rss-standards-pages-store-description": "API Help description message for page list in RSSFeeder\n{{doc-apihelp-description|bs-rss-standards-pages-store}}",
 	"apihelp-bs-rss-standards-pages-store-summary": "API Help description message for page list in RSSFeeder\n{{doc-apihelp-summary|bs-rss-standards-pages-store}}",
 	"right-rssfeeder-viewspecialpage": "Grants access to the [[Special:RSSFeeder]] special page.\n{{doc-right|rssfeeder-viewspecialpage}}",
-	"bs-rssstandards-title-rc": "Headline for recent changes RSS feed\n\n{{Identical|Recent changes}}"
+	"bs-rssstandards-title-rc": "Headline for recent changes RSS feed\n\n{{Identical|Recent changes}}",
+	"bs-rss-feeder-pref-url-whitelist": "ConfigManager label for variable $bsgRSSUrlWhitelist",
+	"bs-rss-feeder-pref-max-redirects": "ConfigManager label for variable $bsgRSSUrlNumberOfAllowedRedirects"
 }

@@ -17,7 +17,11 @@
 			"Extensions": {
 				"BlueSpiceRSSFeeder": {
 					"className": "RSSFeeder",
-					"extPath": "/BlueSpiceRSSFeeder"
+					"extPath": "/BlueSpiceRSSFeeder",
+					"configDefinitions": {
+						"RSSUrlWhitelist": "BlueSpice\\RSSFeeder\\ConfigDefinition\\URLWhitelist::getInstance",
+						"RSSUrlNumberOfAllowedRedirects": "BlueSpice\\RSSFeeder\\ConfigDefinition\\MaxRedirects::getInstance"
+					}
 				}
 			}
 		},
@@ -80,6 +84,15 @@
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceRSSFeeder/resources"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"RSSUrlNumberOfAllowedRedirects": {
+			"value": 0
+		},
+		"RSSUrlWhitelist": {
+			"value": []
+		}
 	},
 	"Hooks": {
 		"TitleReadWhitelist": "RSSFeeder::onTitleReadWhitelist",
