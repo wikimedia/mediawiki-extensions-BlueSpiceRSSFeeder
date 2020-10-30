@@ -33,5 +33,7 @@
 	"apihelp-bs-rss-standards-pages-store-description": "Return List of available Pages for RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Return List of available Pages for RSSFeeder",
 	"right-rssfeeder-viewspecialpage": "Access to the [[Special:RSSFeeder]] special page",
-	"bs-rssstandards-title-rc": "Recent changes"
+	"bs-rssstandards-title-rc": "Recent changes",
+	"bs-rss-feeder-pref-url-whitelist": "URL whitelist",
+	"bs-rss-feeder-pref-max-redirects": "Maximum number of allowed redirects"
 }
