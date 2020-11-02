@@ -2,7 +2,7 @@
 
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
-use Hooks;
+use MediaWiki\MediaWikiServices;
 use Title;
 use ViewFormElementSelectbox;
 
@@ -65,7 +65,13 @@ class Category extends RecentChanges {
 			'r.rc_timestamp > ' . $dbr->timestamp( time() - intval( 7 * 86400 ) )
 		];
 		$prefix = $this->context->getConfig()->get( 'DBprefix' );
-		Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'category' ] );
+		MediaWikiServices::getInstance()->getHookContainer()->run(
+			'BSRSSFeederBeforeGetRecentChanges',
+			[
+				&$conditions,
+				'category'
+			]
+		);
 		// phpcs:ignore MediaWiki.Usage.DbrQueryUsage.DbrQueryFound
 		$rc = $dbr->query(
 			"SELECT r.* from {$prefix}categorylinks AS c "

@@ -4,7 +4,7 @@ namespace BlueSpice\RSSFeeder\RSSFeed;
 
 use FatalError;
 use FeedUtils;
-use Hooks;
+use MediaWiki\MediaWikiServices;
 use MWException;
 use RSSItemCreator;
 use Title;
@@ -66,7 +66,13 @@ class RecentChanges extends TitleBasedFeed {
 	 */
 	protected function getConditions() {
 		$conditions = [];
-		Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'recentchanges' ] );
+		MediaWikiServices::getInstance()->getHookContainer()->run(
+			'BSRSSFeederBeforeGetRecentChanges',
+			[
+				&$conditions,
+				'recentchanges'
+			]
+		);
 
 		return $conditions;
 	}

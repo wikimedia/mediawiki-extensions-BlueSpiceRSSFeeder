@@ -3,7 +3,7 @@
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
 use ConfigException;
-use Hooks;
+use MediaWiki\MediaWikiServices;
 use RSSCreator;
 use SpecialPage;
 use Title;
@@ -76,7 +76,13 @@ class Watchlist extends RecentChanges {
 			'r.rc_timestamp > ' . $dbr->timestamp( time() - intval( $period * 86400 ) ),
 			'w.wl_user = ' . $this->user->getId()
 		];
-		Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'watchlist' ] );
+		MediaWikiServices::getInstance()->getHookContainer()->run(
+			'BSRSSFeederBeforeGetRecentChanges',
+			[
+				&$conditions,
+				'watchlist'
+			]
+		);
 
 		// phpcs:ignore MediaWiki.Usage.DbrQueryUsage.DbrQueryFound
 		$rc = $dbr->query(

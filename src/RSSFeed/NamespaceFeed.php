@@ -3,7 +3,7 @@
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
 use BsNamespaceHelper;
-use Hooks;
+use MediaWiki\MediaWikiServices;
 use Title;
 use ViewFormElementSelectbox;
 
@@ -68,7 +68,13 @@ class NamespaceFeed extends RecentChanges {
 		$conditions = [
 			'rc_namespace' => $titleObject->getNamespace(),
 		];
-		Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'namespace' ] );
+		MediaWikiServices::getInstance()->getHookContainer()->run(
+			'BSRSSFeederBeforeGetRecentChanges',
+			[
+				&$conditions,
+				'namespace'
+			]
+		);
 		$rc = $this->getRecentChanges( $conditions );
 
 		$channel = $this->getChannel( $this->context->getLanguage()->getNsText( $nsId ) );

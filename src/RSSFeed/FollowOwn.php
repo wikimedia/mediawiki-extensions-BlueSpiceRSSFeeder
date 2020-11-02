@@ -2,7 +2,7 @@
 
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
-use Hooks;
+use MediaWiki\MediaWikiServices;
 
 class FollowOwn extends RecentChanges {
 
@@ -43,7 +43,13 @@ class FollowOwn extends RecentChanges {
 		$conditions = [
 			'rc_actor' => $this->user->getId()
 		];
-		Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'followOwn' ] );
+		MediaWikiServices::getInstance()->getHookContainer()->run(
+			'BSRSSFeederBeforeGetRecentChanges',
+			[
+				&$conditions,
+				'followOwn'
+			]
+		);
 
 		return $conditions;
 	}
