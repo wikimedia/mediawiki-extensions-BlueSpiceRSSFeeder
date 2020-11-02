@@ -3,6 +3,7 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"MrSchipunov",
+			"MuratTheTurkish",
 			"Sayginer"
 		]
 	},
@@ -35,5 +36,7 @@
 	"apihelp-bs-rss-standards-pages-store-description": "RSSFeeder için kullanılabilir Sayfaların Dönüş Listesi",
 	"apihelp-bs-rss-standards-pages-store-summary": "RSSFeeder için kullanılabilir Sayfaların Dönüş Listesi",
 	"right-rssfeeder-viewspecialpage": "[[Special:RSSFeeder]] özel sayfasına erişim",
-	"bs-rssstandards-title-rc": "Son değişiklikler"
+	"bs-rssstandards-title-rc": "Son değişiklikler",
+	"bs-rss-feeder-pref-url-whitelist": "URL beyaz listesi",
+	"bs-rss-feeder-pref-max-redirects": "İzin verilen maksimum yönlendirme sayısı"
 }
