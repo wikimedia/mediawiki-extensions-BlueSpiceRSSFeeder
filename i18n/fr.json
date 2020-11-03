@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alno",
 			"Gomoko",
 			"Orikrin1998",
 			"Verdy p",
@@ -38,6 +39,6 @@
 	"apihelp-bs-rss-standards-pages-store-summary": "Renvoyer la liste des pages disponibles pour RSSFeeder",
 	"right-rssfeeder-viewspecialpage": "Accès à la page spéciale [[Special:RSSFeeder]]",
 	"bs-rssstandards-title-rc": "Modifications récentes",
-	"bs-rss-feeder-pref-url-whitelist": "Liste blanche d’URL",
+	"bs-rss-feeder-pref-url-whitelist": "Liste blanche d’URLs",
 	"bs-rss-feeder-pref-max-redirects": "Nombre maximum de redirections autorisées"
 }
