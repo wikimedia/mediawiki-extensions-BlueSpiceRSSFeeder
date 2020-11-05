@@ -33,5 +33,7 @@
 	"bs-rssstandards-changes-from": "Endringer {{GENDER:$1|av}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Returner liste over tilgjengelige sider for RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Returner liste over tilgjengelige sider for RSSFeeder",
-	"bs-rssstandards-title-rc": "Nylige endringer"
+	"bs-rssstandards-title-rc": "Nylige endringer",
+	"bs-rss-feeder-pref-url-whitelist": "URL-hviteliste",
+	"bs-rss-feeder-pref-max-redirects": "Maksimalt antall tillatte omdirigeringer"
 }
