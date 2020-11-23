@@ -35,5 +35,6 @@
 	"apihelp-bs-rss-standards-pages-store-summary": "Retorna a Lista das páginas disponíveis para o RSSFeeder",
 	"right-rssfeeder-viewspecialpage": "Acesso à página especial [[Special:RSSFeeder]].",
 	"bs-rssstandards-title-rc": "Mudanças recentes",
+	"bs-rss-feeder-pref-url-whitelist": "Lista branca de URLs",
 	"bs-rss-feeder-pref-max-redirects": "Número máximo de redirecionamentos permitidos"
 }
