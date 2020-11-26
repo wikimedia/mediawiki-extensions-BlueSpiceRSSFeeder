@@ -23,6 +23,17 @@ Ext.onReady( function() {
 			if ( link ) {
 				location.href = link;
 			}
+		},
+		recentchanges: function() {
+			if ( Ext.get('rcUnique').dom.checked ) {
+				location.href = Ext.get('rcUnique').dom.value;
+			} else {
+				location.href = Ext.get('rcUnique')
+					.dom
+					.parentElement
+					.querySelector( 'button' )
+					.value;
+			}
 		}
 	};
 
@@ -33,7 +44,6 @@ Ext.onReady( function() {
 		} );
 
 	buttons.on( 'click', function( e ) {
-		var id = $( this ).attr( 'id');
 		if ( callbacks.hasOwnProperty( id ) ) {
 			bs.util.runCallback( callbacks[id] );
 			return;
