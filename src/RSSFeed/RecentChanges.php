@@ -7,6 +7,7 @@ use FeedUtils;
 use MWException;
 use RSSItemCreator;
 use Title;
+use ViewFormElementInput;
 
 class RecentChanges extends TitleBasedFeed {
 
@@ -34,6 +35,15 @@ class RecentChanges extends TitleBasedFeed {
 	/**
 	 * @inheritDoc
 	 */
+	public function getViewElement() {
+		$set = parent::getViewElement();
+		$set->addItem( $this->getRCUniqueCheckbox() );
+		return $set;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
 	public function getRss() {
 		$rc = $this->getRecentChanges( $this->getConditions() );
 		$channel = $this->getChannel();
@@ -47,6 +57,13 @@ class RecentChanges extends TitleBasedFeed {
 		}
 
 		return $channel->buildOutput();
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getJSHandler() {
+		return 'bs.rssfeeder.handler.recentchanges';
 	}
 
 	/**
@@ -66,6 +83,11 @@ class RecentChanges extends TitleBasedFeed {
 	protected function getConditions() {
 		$conditions = [];
 		\Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'recentchanges' ] );
+		$request = $this->context->getRequest();
+		$rcUnique = $request->getInt( 'rc_unique', false );
+		if ( $rcUnique ) {
+			$conditions[] = $this->getRCUniqueConditions( $conditions );
+		}
 
 		return $conditions;
 	}
@@ -108,4 +130,46 @@ class RecentChanges extends TitleBasedFeed {
 
 		return $res ?: (object)null;
 	}
+
+	/**
+	 * @return ViewFormElementInput
+	 */
+	protected function getRCUniqueCheckbox() {
+		$checkbox = new ViewFormElementInput();
+		$checkbox->setId( 'rcUnique' );
+		$checkbox->setName( 'rc_unique' );
+		$checkbox->setType( 'checkbox' );
+		$checkbox->setValue( $this->getFeedURL( [ 'rc_unique' => true ] ) );
+		$checkbox->setLabel(
+			$this->context->msg( 'bs-rssfeeder-rcunique-checkbox' )->plain()
+		);
+
+		return $checkbox;
+	}
+
+	/**
+	 * @param array $conditions
+	 * @return string
+	 */
+	protected function getRCUniqueConditions( array $conditions = [] ) {
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$uniqueRecordsIdsResult = $dbr->select(
+			[ 'recentchanges' ],
+			[ 'MAX(rc_id) as id' ],
+			$conditions,
+			__METHOD__,
+			[
+				'GROUP BY' => 'rc_title, rc_namespace',
+				'ORDER BY' => 'id DESC',
+				'LIMIT' => '10'
+			]
+		);
+		$rcUniqueIds = [];
+		foreach ( $uniqueRecordsIdsResult as $rc ) {
+			$rcUniqueIds[] = $rc->id;
+		}
+		$cond = 'rc_id IN (' . implode( ',', $rcUniqueIds ) . ')';
+		return $cond;
+	}
+
 }
