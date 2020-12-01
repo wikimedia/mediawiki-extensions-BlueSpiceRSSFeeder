@@ -38,5 +38,6 @@
 	"right-rssfeeder-viewspecialpage": "[[Special:RSSFeeder]] özel sayfasına erişim",
 	"bs-rssstandards-title-rc": "Son değişiklikler",
 	"bs-rss-feeder-pref-url-whitelist": "URL beyaz listesi",
-	"bs-rss-feeder-pref-max-redirects": "İzin verilen maksimum yönlendirme sayısı"
+	"bs-rss-feeder-pref-max-redirects": "İzin verilen maksimum yönlendirme sayısı",
+	"bs-rssfeeder-rcunique-checkbox": "Çiftleri gizle"
 }
