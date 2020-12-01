@@ -9,6 +9,12 @@ use ViewFormElementSelectbox;
 class Category extends RecentChanges {
 
 	/**
+	 * period for querying recent changes from db. Days
+	 * @var int
+	 */
+	private $period = 7;
+
+	/**
 	 * @inheritDoc
 	 */
 	public function getId() {
@@ -50,6 +56,7 @@ class Category extends RecentChanges {
 
 		$set->addItem( $select );
 		$set->addItem( $this->getSubmitButton() );
+		$set->addItem( $this->getRCUniqueCheckbox() );
 
 		return $set;
 	}
@@ -61,17 +68,8 @@ class Category extends RecentChanges {
 		$request = $this->context->getRequest();
 		$cat = $request->getVal( 'cat', '' );
 		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
-		$conditions = [
-			'r.rc_timestamp > ' . $dbr->timestamp( time() - intval( 7 * 86400 ) )
-		];
+		$conditions = $this->getConditions();
 		$prefix = $this->context->getConfig()->get( 'DBprefix' );
-		MediaWikiServices::getInstance()->getHookContainer()->run(
-			'BSRSSFeederBeforeGetRecentChanges',
-			[
-				&$conditions,
-				'category'
-			]
-		);
 		// phpcs:ignore MediaWiki.Usage.DbrQueryUsage.DbrQueryFound
 		$rc = $dbr->query(
 			"SELECT r.* from {$prefix}categorylinks AS c "
@@ -93,6 +91,33 @@ class Category extends RecentChanges {
 		$dbr->freeResult( $rc );
 
 		return $channel->buildOutput();
+	}
+
+	/**
+	 * @return array
+	 */
+	protected function getConditions() {
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$rcTimestamp = $dbr->timestamp( time() - intval( $this->period * 86400 ) );
+
+		$rcUnique = $this->context->getRequest()->getVal( 'rc_unique', false );
+		$conditions = [ 'r.rc_timestamp > ' . $rcTimestamp ];
+		if ( $rcUnique ) {
+			$rcUniqueIds = $this->getUniqueRecentChangesIds( [ 'rc_timestamp > ' . $rcTimestamp ] );
+			$conditions = [
+				'r.rc_id IN (' . implode( ',', $rcUniqueIds ) . ')'
+			];
+		}
+
+		MediaWikiServices::getInstance()->getHookContainer()->run(
+			'BSRSSFeederBeforeGetRecentChanges',
+			[
+				&$conditions,
+				$this->getId()
+			]
+		);
+
+		return $conditions;
 	}
 
 	/**

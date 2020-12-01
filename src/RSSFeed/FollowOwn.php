@@ -2,8 +2,6 @@
 
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
-use MediaWiki\MediaWikiServices;
-
 class FollowOwn extends RecentChanges {
 
 	/**
@@ -39,18 +37,7 @@ class FollowOwn extends RecentChanges {
 	/**
 	 * @inheritDoc
 	 */
-	protected function getConditions() {
-		$conditions = [
-			'rc_actor' => $this->user->getId()
-		];
-		MediaWikiServices::getInstance()->getHookContainer()->run(
-			'BSRSSFeederBeforeGetRecentChanges',
-			[
-				&$conditions,
-				'followOwn'
-			]
-		);
-
-		return $conditions;
+	protected function getFeedConditions() {
+		return [ 'rc_user' => $this->user->getId() ];
 	}
 }

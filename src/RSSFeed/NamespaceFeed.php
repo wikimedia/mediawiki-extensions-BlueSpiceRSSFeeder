@@ -3,7 +3,6 @@
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
 use BsNamespaceHelper;
-use MediaWiki\MediaWikiServices;
 use Title;
 use ViewFormElementSelectbox;
 
@@ -53,6 +52,7 @@ class NamespaceFeed extends RecentChanges {
 
 		$set->addItem( $select );
 		$set->addItem( $btn );
+		$set->addItem( $this->getRCUniqueCheckbox() );
 
 		return $set;
 	}
@@ -63,18 +63,7 @@ class NamespaceFeed extends RecentChanges {
 	public function getRss() {
 		$request = $this->context->getRequest();
 		$nsId = $request->getInt( 'ns', NS_MAIN );
-		$titleObject = Title::makeTitle( $nsId, 'Dummy' );
-
-		$conditions = [
-			'rc_namespace' => $titleObject->getNamespace(),
-		];
-		MediaWikiServices::getInstance()->getHookContainer()->run(
-			'BSRSSFeederBeforeGetRecentChanges',
-			[
-				&$conditions,
-				'namespace'
-			]
-		);
+		$conditions = $this->getConditions();
 		$rc = $this->getRecentChanges( $conditions );
 
 		$channel = $this->getChannel( $this->context->getLanguage()->getNsText( $nsId ) );
@@ -89,6 +78,17 @@ class NamespaceFeed extends RecentChanges {
 		}
 
 		return $channel->buildOutput();
+	}
+
+	/**
+	 * @return array
+	 */
+	protected function getFeedConditions() {
+		$request = $this->context->getRequest();
+		$nsId = $request->getInt( 'ns', NS_MAIN );
+		$titleObject = Title::makeTitle( $nsId, 'Dummy' );
+
+		return [ 'rc_namespace' => $titleObject->getNamespace() ];
 	}
 
 	/**

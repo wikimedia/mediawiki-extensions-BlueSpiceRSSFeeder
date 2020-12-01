@@ -74,6 +74,7 @@
 		},
 		"ext.bluespice.rssStandards": {
 			"scripts": "bluespice.rssStandards.js",
+			"styles": "bluespice.rssFeederForm.less",
 			"dependencies": [
 				"ext.bluespice.extjs"
 			]
