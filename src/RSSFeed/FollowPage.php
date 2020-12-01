@@ -2,7 +2,6 @@
 
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
-use MediaWiki\MediaWikiServices;
 use Title;
 use ViewTagElement;
 
@@ -54,18 +53,7 @@ class FollowPage extends RecentChanges {
 		$page = $request->getVal( 'p', '' );
 		$nsId = $request->getInt( 'ns', 0 );
 		$titleObject = Title::makeTitle( $nsId, $page );
-
-		$conditions = [
-			'rc_namespace' => $titleObject->getNamespace(),
-			'rc_title' => $titleObject->getDBkey(),
-		];
-		MediaWikiServices::getInstance()->getHookContainer()->run(
-			'BSRSSFeederBeforeGetRecentChanges',
-			[
-				&$conditions,
-				'followPage'
-			]
-		);
+		$conditions = $this->getConditions();
 		$rc = $this->getRecentChanges( $conditions );
 
 		$channel = $this->getChannel( $titleObject->getPrefixedText() );
@@ -78,6 +66,21 @@ class FollowPage extends RecentChanges {
 		}
 
 		return $channel->buildOutput();
+	}
+
+	/**
+	 * @return array
+	 */
+	protected function getFeedConditions() {
+		$request = $this->context->getRequest();
+		$page = $request->getVal( 'p', '' );
+		$nsId = $request->getInt( 'ns', 0 );
+		$titleObject = Title::makeTitle( $nsId, $page );
+
+		return [
+			'rc_namespace' => $titleObject->getNamespace(),
+			'rc_title' => $titleObject->getDBkey()
+		];
 	}
 
 	/**
