@@ -2,8 +2,6 @@
 
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
-use Hooks;
-
 class FollowOwn extends RecentChanges {
 
 	/**
@@ -39,12 +37,7 @@ class FollowOwn extends RecentChanges {
 	/**
 	 * @inheritDoc
 	 */
-	protected function getConditions() {
-		$conditions = [
-			'rc_user' => $this->user->getId()
-		];
-		Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'followOwn' ] );
-
-		return $conditions;
+	protected function getFeedConditions() {
+		return [ 'rc_user' => $this->user->getId() ];
 	}
 }

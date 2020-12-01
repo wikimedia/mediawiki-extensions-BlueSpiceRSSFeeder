@@ -54,11 +54,8 @@ class FollowPage extends RecentChanges {
 		$nsId = $request->getInt( 'ns', 0 );
 		$titleObject = Title::makeTitle( $nsId, $page );
 
-		$conditions = [
-			'rc_namespace' => $titleObject->getNamespace(),
-			'rc_title' => $titleObject->getDBkey(),
-		];
-		\Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'followPage' ] );
+		$conditions = $this->getConditions();
+
 		$rc = $this->getRecentChanges( $conditions );
 
 		$channel = $this->getChannel( $titleObject->getPrefixedText() );
@@ -74,8 +71,23 @@ class FollowPage extends RecentChanges {
 	}
 
 	/**
-	 * @inheritDoc
+	 * @return array
 	 */
+	protected function getFeedConditions() {
+		$request = $this->context->getRequest();
+		$page = $request->getVal( 'p', '' );
+		$nsId = $request->getInt( 'ns', 0 );
+		$titleObject = Title::makeTitle( $nsId, $page );
+
+		return [
+			'rc_namespace' => $titleObject->getNamespace(),
+			'rc_title' => $titleObject->getDBkey()
+		];
+	}
+
+	/**
+		* @inheritDoc
+		*/
 	protected function getItemTitle( $title, $row ) {
 		return $this->context->msg(
 			'bs-rssstandards-changes-from'

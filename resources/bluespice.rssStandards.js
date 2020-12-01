@@ -7,34 +7,31 @@ Ext.onReady( function() {
 
 	bs.rssfeeder.handler = {
 		namespace: function() {
-			location.href = Ext.get( 'selFeedNs' ).dom.value;
+			return Ext.get( 'selFeedNs' ).dom.value;
 		},
 		watchlist: function() {
-			location.href = Ext.get('selFeedWatch').dom.value;
+			return Ext.get('selFeedWatch').dom.value;
 		},
 		category: function() {
-			location.href = Ext.get('selFeedCat').dom.value;
+			return Ext.get('selFeedCat').dom.value;
 		},
 		page: function() {
 			if ( !combo.getValue() ) {
-				return;
+				return null;
 			}
-			var link = combo.getValue().data.feedUrl;
-			if ( link ) {
-				location.href = link;
-			}
-		},
-		recentchanges: function() {
-			if ( Ext.get('rcUnique').dom.checked ) {
-				location.href = Ext.get('rcUnique').dom.value;
-			} else {
-				location.href = Ext.get('rcUnique')
-					.dom
-					.parentElement
-					.querySelector( 'button' )
-					.value;
+			if ( combo.getValue().data.feedUrl ) {
+				return combo.getValue().data.feedUrl;
 			}
 		}
+	};
+
+	var handleUniqueRCCheckbox = function( feedId, link ) {
+		if ( link && feedId && Ext.get( 'RcUnique_' + feedId ) ) {
+			if ( Ext.get( 'RcUnique_' + feedId ).dom.checked ) {
+				link = link + '&rc_unique=1';
+			}
+		}
+		return link;
 	};
 
 	var buttons = $( '#RSSFeederForm' ).find( 'button' ),
@@ -44,10 +41,14 @@ Ext.onReady( function() {
 		} );
 
 	buttons.on( 'click', function( e ) {
+		var id = e.target.id;
+		var link =  $( this ).val();
 		if ( callbacks.hasOwnProperty( id ) ) {
-			bs.util.runCallback( callbacks[id] );
-			return;
+			link = bs.util.runCallback( callbacks[id] );
 		}
-		location.href = $( this ).val();
+		link = handleUniqueRCCheckbox( id, link );
+		if ( link ) {
+			location.href = link;
+		}
 	} );
 } );

@@ -54,6 +54,7 @@ class Watchlist extends RecentChanges {
 
 		$set->addItem( $select );
 		$set->addItem( $this->getSubmitButton() );
+		$set->addItem( $this->getRCUniqueCheckbox() );
 
 		return $set;
 	}
@@ -66,16 +67,9 @@ class Watchlist extends RecentChanges {
 		if ( $this->user->isAnon() ) {
 			return $channel->buildOutput();
 		}
-
-		$request = $this->context->getRequest();
-		$period = $request->getVal( 'days', 1 );
 		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$prefix = $this->context->getConfig()->get( 'DBprefix' );
-		$conditions = [
-			'r.rc_timestamp > ' . $dbr->timestamp( time() - intval( $period * 86400 ) ),
-			'w.wl_user = ' . $this->user->getId()
-		];
-		\Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, 'watchlist' ] );
+		$conditions = $this->getConditions();
 
 		// phpcs:ignore MediaWiki.Usage.DbrQueryUsage.DbrQueryFound
 		$rc = $dbr->query(
@@ -98,6 +92,33 @@ class Watchlist extends RecentChanges {
 		$dbr->freeResult( $rc );
 
 		return $channel->buildOutput();
+	}
+
+	/**
+	 * @return array
+	 */
+	protected function getConditions() {
+		$period = $this->context->getRequest()->getVal( 'days', 1 );
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$rcTimestamp = $dbr->timestamp( time() - intval( $period * 86400 ) );
+
+		$rcUnique = $this->context->getRequest()->getVal( 'rc_unique', false );
+		if ( $rcUnique ) {
+			$rcUniqueIds = $this->getUniqueRecentChangesIds( [ 'rc_timestamp > ' . $rcTimestamp ] );
+			$conditions = [
+				'w.wl_user = ' . $this->user->getId(),
+				'r.rc_id IN (' . implode( ',', $rcUniqueIds ) . ')'
+			];
+		} else {
+			$conditions = [
+				'w.wl_user = ' . $this->user->getId(),
+				'r.rc_timestamp > ' . $rcTimestamp
+			];
+		}
+
+		\Hooks::run( 'BSRSSFeederBeforeGetRecentChanges', [ &$conditions, $this->getId() ] );
+
+		return $conditions;
 	}
 
 	/**
