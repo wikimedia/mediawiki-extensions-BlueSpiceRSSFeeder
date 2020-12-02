@@ -35,5 +35,6 @@
 	"right-rssfeeder-viewspecialpage": "Tràse jndr'à pàgena speciale [[Special:RSSFeeder]]",
 	"bs-rssstandards-title-rc": "Urteme cangiaminde",
 	"bs-rss-feeder-pref-url-whitelist": "Elenghe vianghe de le URL",
-	"bs-rss-feeder-pref-max-redirects": "Numere massime de redirezionaminde permesse"
+	"bs-rss-feeder-pref-max-redirects": "Numere massime de redirezionaminde permesse",
+	"bs-rssfeeder-rcunique-checkbox": "Scunne le duplicate"
 }
