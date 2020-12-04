@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Javiero",
 			"Mirin"
 		]
 	},
@@ -10,5 +11,6 @@
 	"bs-rssfeeder-rss-desc": "Krei vian propran RSS-abonfluon",
 	"bs-extjs-rssfeeder-rss-title": "Retadreso de RSS-abonfluo",
 	"bs-rssstandards-title-page": "Paĝo",
-	"bs-rssstandards-title-cat": "Kategorio"
+	"bs-rssstandards-title-cat": "Kategorio",
+	"bs-rssfeeder-rcunique-checkbox": "Kaŝu duoblojn"
 }
