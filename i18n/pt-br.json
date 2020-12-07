@@ -36,5 +36,6 @@
 	"right-rssfeeder-viewspecialpage": "Acesso à página especial [[Special:RSSFeeder]].",
 	"bs-rssstandards-title-rc": "Mudanças recentes",
 	"bs-rss-feeder-pref-url-whitelist": "Lista branca de URLs",
-	"bs-rss-feeder-pref-max-redirects": "Número máximo de redirecionamentos permitidos"
+	"bs-rss-feeder-pref-max-redirects": "Número máximo de redirecionamentos permitidos",
+	"bs-rssfeeder-rcunique-checkbox": "Ocultar duplas"
 }
