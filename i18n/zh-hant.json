@@ -37,5 +37,6 @@
 	"right-rssfeeder-viewspecialpage": "存取特殊頁面 [[Special:RSSFeeder]] 的權限。",
 	"bs-rssstandards-title-rc": "近期變更",
 	"bs-rss-feeder-pref-url-whitelist": "URL 白名單",
-	"bs-rss-feeder-pref-max-redirects": "允許重新導向的最大值"
+	"bs-rss-feeder-pref-max-redirects": "允許重新導向的最大值",
+	"bs-rssfeeder-rcunique-checkbox": "隱藏重複"
 }
