@@ -3,6 +3,7 @@
 		"authors": [
 			"Facenapalm",
 			"Kaganer",
+			"Kareyac",
 			"Okras",
 			"Striking Blue",
 			"SuperPuperSteve",
@@ -38,5 +39,6 @@
 	"apihelp-bs-rss-standards-pages-store-description": "Возвращает список доступных страниц для RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Вернуть список доступных страниц для RSSFeeder",
 	"right-rssfeeder-viewspecialpage": "доступ к служебной странице [[Special:RSSFeeder]]",
-	"bs-rssstandards-title-rc": "Свежие правки"
+	"bs-rssstandards-title-rc": "Свежие правки",
+	"bs-rssfeeder-rcunique-checkbox": "Скрыть повторы"
 }
