@@ -60,7 +60,7 @@ class RecentChanges extends TitleBasedFeed {
 
 	/**
 	 * @param Title $title
-	 * @param object $row
+	 * @param \stdClass $row
 	 * @return string
 	 */
 	protected function getItemTitle( $title, $row ) {
@@ -96,7 +96,7 @@ class RecentChanges extends TitleBasedFeed {
 
 	/**
 	 * @param Title $title
-	 * @param object $row
+	 * @param \stdClass $row
 	 * @return RSSItemCreator|false
 	 */
 	protected function getEntry( $title, $row ) {
@@ -118,7 +118,7 @@ class RecentChanges extends TitleBasedFeed {
 
 	/**
 	 * @param array $conditions
-	 * @return object
+	 * @return \stdClass
 	 */
 	protected function getRecentChanges( $conditions = [] ) {
 		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
