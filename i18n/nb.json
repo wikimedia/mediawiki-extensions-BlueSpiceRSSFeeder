@@ -35,5 +35,6 @@
 	"right-rssfeeder-viewspecialpage": "Tilgang til spesialsiden [[Special:RSSFeeder]].",
 	"bs-rssstandards-title-rc": "Nylige endringer",
 	"bs-rss-feeder-pref-url-whitelist": "URL-hviteliste",
-	"bs-rss-feeder-pref-max-redirects": "Maksimalt antall tillatte omdirigeringer"
+	"bs-rss-feeder-pref-max-redirects": "Maksimalt antall tillatte omdirigeringer",
+	"bs-rssfeeder-rcunique-checkbox": "Skjul dubletter"
 }
