@@ -95,9 +95,6 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 
 	/**
 	 * @covers \ApiRSSStandardsPagesStore::makeData
-	 * @param $limit
-	 * @param $offset
-	 *
 	 * @dataProvider provideQueryData
 	 */
 	public function testQuery( $sQuery, $sDisplayText, $iPageNamespace, $iTotal ) {
