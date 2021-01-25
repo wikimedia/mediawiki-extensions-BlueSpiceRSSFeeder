@@ -2,7 +2,7 @@
 
 namespace BlueSpice\RSSFeeder\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
+use BlueSpice\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\SkinData;
 
 class AddToGlobalActions extends ChameleonSkinTemplateOutputPageBeforeExec {
