@@ -14,7 +14,6 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 	/**
 	 *
 	 * @param string $sParameter
-	 * @return null
 	 */
 	public function execute( $sParameter ) {
 		if ( $this->getUser()->isAnon() ) {
