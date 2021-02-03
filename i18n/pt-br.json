@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Felipe L. Ewald",
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Felipe L. Ewald"
 		]
 	},
 	"bs-rssfeeder-desc": "Uma extensão para obter RSS válido, para qualquer extensão que tenha uma função buildRSS",
@@ -34,5 +34,8 @@
 	"apihelp-bs-rss-standards-pages-store-description": "Retorna a Lista das páginas disponíveis para o RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Retorna a Lista das páginas disponíveis para o RSSFeeder",
 	"right-rssfeeder-viewspecialpage": "Acesso à página especial [[Special:RSSFeeder]].",
-	"bs-rssstandards-title-rc": "Mudanças recentes"
+	"bs-rssstandards-title-rc": "Mudanças recentes",
+	"bs-rss-feeder-pref-url-whitelist": "Lista branca de URLs",
+	"bs-rss-feeder-pref-max-redirects": "Número máximo de redirecionamentos permitidos",
+	"bs-rssfeeder-rcunique-checkbox": "Ocultar duplas"
 }

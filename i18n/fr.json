@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alno",
 			"Gomoko",
 			"Orikrin1998",
+			"Verdy p",
 			"Wladek92",
 			"Wyz"
 		]
@@ -36,5 +38,8 @@
 	"apihelp-bs-rss-standards-pages-store-description": "Retourner la  Liste des Pages disponibles pour RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Renvoyer la liste des pages disponibles pour RSSFeeder",
 	"right-rssfeeder-viewspecialpage": "Accès à la page spéciale [[Special:RSSFeeder]]",
-	"bs-rssstandards-title-rc": "Modifications récentes"
+	"bs-rssstandards-title-rc": "Modifications récentes",
+	"bs-rss-feeder-pref-url-whitelist": "Liste blanche d’hyperliens (URL)",
+	"bs-rss-feeder-pref-max-redirects": "Nombre maximum de redirections autorisées",
+	"bs-rssfeeder-rcunique-checkbox": "Masquer les doublons"
 }

@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nikosgranturismogt"
+			"NikosLikomitros",
+			"Nikosgranturismogt",
+			"Norhorn"
 		]
 	},
 	"bs-rssfeeder-pages": "Σελίδα",
@@ -12,5 +14,6 @@
 	"bs-rssstandards-title-page": "Σελίδα",
 	"bs-rssstandards-title-cat": "Κατηγορία",
 	"bs-rssstandards-title-watch": "Λίστα παρακολούθησης",
-	"bs-rssstandards-link-text-watch": "Πρόσφατες αλλαγές των τελευταίων {{PLURAL:$1|ημέρα|$1 ημέρες}}"
+	"bs-rssstandards-link-text-watch": "Πρόσφατες αλλαγές των τελευταίων {{PLURAL:$1|ημέρα|$1 ημέρες}}",
+	"bs-rssfeeder-rcunique-checkbox": "Απόκρυψη διπλότυπων"
 }

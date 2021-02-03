@@ -21,5 +21,7 @@
 	"bs-rssstandards-title-watch": "주시문서 목록",
 	"bs-rssstandards-title-rc": "최근 바뀜",
 	"bs-rssstandards-title-page": "문서",
-	"right-rssfeeder-viewspecialpage": "[[Special:RSSFeeder]] 특수 문서로 접근"
+	"right-rssfeeder-viewspecialpage": "[[Special:RSSFeeder]] 특수 문서로 접근",
+	"bs-rss-feeder-pref-url-whitelist": "URL 화이트리스트",
+	"bs-rss-feeder-pref-max-redirects": "최대 허용 넘겨주기 수"
 }

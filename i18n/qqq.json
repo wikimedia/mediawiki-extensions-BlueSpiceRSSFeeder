@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
-			"Shirayuki",
 			"Beta16",
-			"Umherirrender",
 			"Guycn2",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Shirayuki",
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Umherirrender"
 		]
 	},
 	"bs-rssfeeder-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of rss feeder extension",
@@ -24,13 +24,13 @@
 	"action-rssfeeder-viewspecialpage": "placeholder to describe that view of special page \"{{int:rssfeeder}}\" is restricted for the current user.\n\n{{Doc-action|rssfeeder-viewspecialpage}}",
 	"bs-rssstandards-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of rss standars extension",
 	"bs-rssstandards-desc-rc": "Description of recent changes RSS feed.\n{{Related|Bs-rssstandards-desc}}",
-	"bs-rssstandards-title-page": "Headline for page RSS feed\\n{{Identical|Page}}",
+	"bs-rssstandards-title-page": "Headline for page RSS feed\n{{Identical|Page}}",
 	"bs-rssstandards-desc-page": "Description of recent changes RSS feed from one specific page.\n{{Related|Bs-rssstandards-desc}}",
 	"bs-rssstandards-title-own": "Headline for own contributions RSS feed\n\n{{Identical|Own contributions}}",
 	"bs-rssstandards-desc-own": "Description of RSS feed for your own made contributions to the wiki.\n{{Related|Bs-rssstandards-desc}}",
-	"bs-rssstandards-title-cat": "Headline for category RSS feed\\n{{Identical|Category}}",
+	"bs-rssstandards-title-cat": "Headline for category RSS feed\n{{Identical|Category}}",
 	"bs-rssstandards-desc-cat": "Description of recent changes RSS feed from one specific category.\n{{Related|Bs-rssstandards-desc}}",
-	"bs-rssstandards-title-watch": "Headline for watchlist RSS feed\\n{{Identical|Watchlist}}",
+	"bs-rssstandards-title-watch": "Headline for watchlist RSS feed\n{{Identical|Watchlist}}",
 	"bs-rssstandards-desc-watch": "Description of RSS feed of your watchted pages.\n{{Related|Bs-rssstandards-desc}}",
 	"bs-rssstandards-link-text-watch": "Option for recent changes RSS feed to specify the date range of the feed.\n\nParameters:\n* $1 - timespan in days till now (starting from 1 day till 365 days in steps)",
 	"bs-rssstandards-desc-ns": "Description of recent changes RSS feed from one specific namespace.\n{{Related|Bs-rssstandards-desc}}",

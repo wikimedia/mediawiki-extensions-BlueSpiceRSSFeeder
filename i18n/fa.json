@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajam",
 			"Alirezaaa",
+			"Amir1arch",
 			"Huji"
 		]
 	},
@@ -26,5 +28,7 @@
 	"bs-rssstandards-desc-watch": "خوراک همراه یک نمای کلی از صفحات پی‌گیری‌تان",
 	"bs-rssstandards-link-text-watch": "تغییرات اخیر آخرین {{PLURAL:$1|روز|$1 روز}}.",
 	"bs-rssstandards-desc-ns": "خوراک همراه یک نمای کلی از تغییرات اخیر یک فضای نام.",
-	"bs-rssstandards-changes-from": "تغییرات {{GENDER:$1|توسط}}: $1"
+	"bs-rssstandards-changes-from": "تغییرات {{GENDER:$1|توسط}}: $1",
+	"bs-rssstandards-title-rc": "تغییرات اخیر",
+	"bs-rss-feeder-pref-url-whitelist": "لیست سفید نشانی‌ها"
 }

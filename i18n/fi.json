@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Silvonen"
+			"Moj",
+			"Silvonen",
+			"Yupik"
 		]
 	},
 	"bs-rssstandards-title-page": "Sivu",
-	"bs-rssstandards-title-cat": "Luokka"
+	"bs-rssstandards-title-cat": "Luokka",
+	"bs-rssfeeder-submit": "Näytä",
+	"bs-rssfeeder-rss": "RSS-syöte"
 }
