@@ -17,12 +17,12 @@
 			"Extensions": {
 				"BlueSpiceRSSFeeder": {
 					"className": "\\BlueSpice\\RSSFeeder\\Extension",
-					"extPath": "/BlueSpiceRSSFeeder",
-					"configDefinitions": {
-						"RSSUrlWhitelist": "BlueSpice\\RSSFeeder\\ConfigDefinition\\URLWhitelist::getInstance",
-						"RSSUrlNumberOfAllowedRedirects": "BlueSpice\\RSSFeeder\\ConfigDefinition\\MaxRedirects::getInstance"
-					}
+					"extPath": "/BlueSpiceRSSFeeder"
 				}
+			},
+			"ConfigDefinitionRegistry": {
+				"RSSUrlWhitelist": "BlueSpice\\RSSFeeder\\ConfigDefinition\\URLWhitelist::getInstance",
+				"RSSUrlNumberOfAllowedRedirects": "BlueSpice\\RSSFeeder\\ConfigDefinition\\MaxRedirects::getInstance"
 			}
 		},
 		"BlueSpiceRSSFeeder": {
