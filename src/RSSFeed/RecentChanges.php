@@ -93,6 +93,11 @@ class RecentChanges extends TitleBasedFeed {
 	 * @return RSSItemCreator|false
 	 */
 	protected function getEntry( $title, $row ) {
+		// fake old fields for FeedUtils::formatDiff, because its currently
+		// broken for new fields
+		$row->rc_comment_text = !empty( $row->comment_text ) ? $row->comment_text : '';
+		$row->rc_comment_data = !empty( $row->comment_data ) ? $row->comment_data : null;
+
 		$entry = RSSItemCreator::createItem(
 			$this->getItemTitle( $title, $row ),
 			$title->getFullURL( 'diff=' . $row->rc_this_oldid . '&oldid=prev' ),
@@ -112,13 +117,16 @@ class RecentChanges extends TitleBasedFeed {
 	protected function getRecentChanges( $conditions = [] ) {
 		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$res = $dbr->select(
-			[ 'recentchanges' ],
+			[ 'recentchanges', 'comment' ],
 			[ '*' ],
 			$conditions,
 			__METHOD__,
 			[
 				'ORDER BY' => 'rc_timestamp DESC',
 				'LIMIT' => '10'
+			],
+			[
+				'comment' => [ 'LEFT OUTER JOIN', 'rc_comment_id = comment_id' ],
 			]
 		);
 
