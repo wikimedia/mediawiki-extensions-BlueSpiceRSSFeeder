@@ -1,17 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alno",
 			"Gomoko",
 			"Orikrin1998",
+			"Verdy p",
 			"Wladek92",
 			"Wyz"
 		]
 	},
-	"bs-rssfeeder-desc": "Une extension pour obtenir un RSS valide pour chaque extension qui a une fonction buildRss",
-	"rssfeeder": "Flux RSS",
-	"apihelp-bs-rssfeeder-tasks-description": "Fournit des tâches communes de la RSSFeeder",
-	"apihelp-bs-rssfeeder-tasks-summary": "Fournit les tâches communes pour le RSSFeeder",
-	"bs-rssfeeder-pagetext": "Vous pouvez vous abonner aux flux RSS suivants :",
+	"bs-rssfeeder-desc": "Une extension qui permet de sortir un RSS valide pour chaque extension ayant une fonction buildRss",
+	"rssfeeder": "Alimenteur de flux RSS",
+	"apihelp-bs-rssfeeder-tasks-description": "Fournit des tâches communes pour l’Alimenteur de flux RSS",
+	"apihelp-bs-rssfeeder-tasks-summary": "Fournit les tâches communes pour l’Alimenteur de flux RSS",
+	"bs-rssfeeder-pagetext": "Vous pouvez vous abonner aux flux RSS suivants :",
 	"bs-rssfeeder-recent-changes": "Modifications récentes",
 	"bs-rssfeeder-pages": "Page",
 	"bs-rssfeeder-submit": "Afficher",
@@ -19,12 +21,12 @@
 	"bs-rssfeeder-rss-desc": "Créer votre propre flux RSS",
 	"bs-extjs-rssfeeder-rss-title": "URL du flux RSS",
 	"bs-rssfeeder-invalid-url": "Veuillez fournir une URL valide.",
-	"action-rssfeeder-viewspecialpage": "afficher la page spéciale \"{{int:rssfeeder}}\"",
+	"action-rssfeeder-viewspecialpage": "afficher la page spéciale « {{int:rssfeeder}} »",
 	"bs-rssstandards-desc": "Construit un flux RSS basé sur différentes options",
 	"bs-rssstandards-desc-rc": "Flux avec un aperçu sur les modifications récentes dans wiki",
 	"bs-rssstandards-title-page": "Page",
 	"bs-rssstandards-desc-page": "Flux avec un aperçu des modifications récentes d’une page.",
-	"bs-rssstandards-title-own": "Vos contributions",
+	"bs-rssstandards-title-own": "Vos propres contributions",
 	"bs-rssstandards-desc-own": "Flux avec un aperçu de vos propres contributions sur le wiki.",
 	"bs-rssstandards-title-cat": "Catégorie",
 	"bs-rssstandards-desc-cat": "Flux avec un aperçu des modifications récentes dans une catégorie.",
@@ -32,9 +34,12 @@
 	"bs-rssstandards-desc-watch": "Flux avec un aperçu de vos pages suivies.",
 	"bs-rssstandards-link-text-watch": "Modifications récentes {{PLURAL:$1|du dernier jour|des derniers $1 jours}}.",
 	"bs-rssstandards-desc-ns": "Flux avec un aperçu des modifications récentes dans un espace de noms.",
-	"bs-rssstandards-changes-from": "Modifications {{GENDER:$1|de}} : $1",
-	"apihelp-bs-rss-standards-pages-store-description": "Retourner la  Liste des Pages disponibles pour RSSFeeder",
-	"apihelp-bs-rss-standards-pages-store-summary": "Renvoyer la liste des pages disponibles pour RSSFeeder",
+	"bs-rssstandards-changes-from": "Modifications{{GENDER:$1|}} par : $1",
+	"apihelp-bs-rss-standards-pages-store-description": "Retourne la liste des pages disponibles pour RSSFeeder",
+	"apihelp-bs-rss-standards-pages-store-summary": "Retourne la liste des pages disponibles pour RSSFeeder",
 	"right-rssfeeder-viewspecialpage": "Accès à la page spéciale [[Special:RSSFeeder]]",
-	"bs-rssstandards-title-rc": "Modifications récentes"
+	"bs-rssstandards-title-rc": "Modifications récentes",
+	"bs-rss-feeder-pref-url-whitelist": "Liste blanche d’hyperliens (URL)",
+	"bs-rss-feeder-pref-max-redirects": "Nombre maximum de redirections autorisées",
+	"bs-rssfeeder-rcunique-checkbox": "Masquer les doublons"
 }

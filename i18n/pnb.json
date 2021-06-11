@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abbas dhothar"
+		]
+	},
+	"bs-rssstandards-link-text-watch": "Recent changes of the last {{PLURAL:$1|دن|$1 دن}}.",
+	"bs-rssstandards-changes-from": "تبدیلیاں {{GENDER:$1|دیاں}}: $1",
+	"bs-rssstandards-title-rc": "حالیہ تبدیلیاں",
+	"bs-rssfeeder-rcunique-checkbox": "دوہراں لُکاؤ"
+}
