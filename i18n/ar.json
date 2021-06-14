@@ -34,5 +34,6 @@
 	"apihelp-bs-rss-standards-pages-store-description": "إرجاع قائمة الصفحات المتاحة لـRSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "إرجاع قائمة الصفحات المتاحة لـRSSFeeder",
 	"right-rssfeeder-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:RSSFeeder]]",
-	"bs-rssstandards-title-rc": "أحدث التغييرات"
+	"bs-rssstandards-title-rc": "أحدث التغييرات",
+	"bs-rss-feeder-pref-max-redirects": "العدد الأقصى للتحويلات المسموح بها"
 }
