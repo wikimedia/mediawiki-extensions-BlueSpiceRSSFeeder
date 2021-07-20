@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Mykola Swarnyk",
 			"Olion",
 			"Piramidion",
@@ -37,5 +38,8 @@
 	"apihelp-bs-rss-standards-pages-store-description": "Виводить список доступних сторінок для RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Вивести список доступних сторінок для RSSFeeder",
 	"right-rssfeeder-viewspecialpage": "Доступ до спеціальної сторінки [[Special:RSSFeeder]]",
-	"bs-rssstandards-title-rc": "Нові редагування"
+	"bs-rssstandards-title-rc": "Нові редагування",
+	"bs-rss-feeder-pref-url-whitelist": "Білий список URL-адрес",
+	"bs-rss-feeder-pref-max-redirects": "Максимальна кількість дозволених переадресацій",
+	"bs-rssfeeder-rcunique-checkbox": "Сховати дублі"
 }
