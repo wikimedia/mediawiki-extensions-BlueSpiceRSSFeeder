@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Selven"
+			"Selven",
+			"Stefano"
 		]
 	},
+	"rssfeeder": "Feeder RSS",
 	"apihelp-bs-rssfeeder-tasks-description": "Fornisce attività comuni per il RSSFeeder",
 	"apihelp-bs-rssfeeder-tasks-summary": "Fornisce attività comuni per il RSSFeeder",
 	"bs-rssfeeder-pagetext": "Puoi iscriverti ai seguenti feed RSS:",
