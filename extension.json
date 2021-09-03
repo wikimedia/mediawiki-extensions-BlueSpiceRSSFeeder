@@ -93,6 +93,11 @@
 			"value": []
 		}
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "\\BlueSpice\\RSSFeeder\\HookHandler\\Main"
+		}
+	},
 	"Hooks": {
 		"TitleReadWhitelist": "\\BlueSpice\\RSSFeeder\\Hook\\TitleReadWhitelist\\AddRSSFeeder::callback",
 		"ChameleonSkinTemplateOutputPageBeforeExec": [
@@ -102,7 +107,8 @@
 		"BSDashboardsAdminDashboardPortalPortlets": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsAdminDashboardPortalPortlets\\AddPortlets::callback",
 		"BSDashboardsAdminDashboardPortalConfig": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsAdminDashboardPortalConfig\\AddConfigs::callback",
 		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsUserDashboardPortalPortlets\\AddPortlets::callback",
-		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsUserDashboardPortalConfig\\AddConfigs::callback"
+		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsUserDashboardPortalConfig\\AddConfigs::callback",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "main"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
