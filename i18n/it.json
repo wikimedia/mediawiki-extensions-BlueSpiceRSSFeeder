@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Selven"
+			"Selven",
+			"Stefano"
 		]
 	},
 	"apihelp-bs-rssfeeder-tasks-description": "Fornisce attività comuni per il RSSFeeder",
@@ -24,5 +25,6 @@
 	"bs-rssstandards-changes-from": "Modifiche {{GENDER:$1|di}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Restituisce l'elenco delle pagine disponibili per RSSFeeder",
 	"bs-rssstandards-title-rc": "Ultime modifiche",
-	"right-rssfeeder-viewspecialpage": "Accede alla pagina speciale [[Special:RSSFeeder]]"
+	"right-rssfeeder-viewspecialpage": "Accede alla pagina speciale [[Special:RSSFeeder]]",
+	"rssfeeder": "Feeder RSS"
 }
