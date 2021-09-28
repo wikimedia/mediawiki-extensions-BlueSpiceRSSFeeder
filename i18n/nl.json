@@ -5,6 +5,7 @@
 			"Mainframe98",
 			"McDutchie",
 			"MrLeopold",
+			"Romaine",
 			"SPQRobin",
 			"Siebrand"
 		]
@@ -35,5 +36,7 @@
 	"bs-rssstandards-changes-from": "Wijzigingen {{GENDER:$1|door}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Toon lijst van beschikbare pagina's voor RSSFeeder",
 	"bs-rssstandards-title-rc": "Recente wijzigingen",
-	"action-rssfeeder-viewspecialpage": "de speciale pagina  \"{{int:rssfeeder}}\" te bekijken"
+	"action-rssfeeder-viewspecialpage": "de speciale pagina  \"{{int:rssfeeder}}\" te bekijken",
+	"bs-rss-feeder-pref-url-whitelist": "URL-whitelist",
+	"bs-rssfeeder-rcunique-checkbox": "Verbergt dubbelen"
 }
