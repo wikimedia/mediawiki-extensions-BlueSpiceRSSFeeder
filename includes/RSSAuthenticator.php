@@ -1,7 +1,7 @@
 <?php
 
 class RSSAuthenticator {
-	const TOKEN_SALT = 'rss_salt';
+	public const TOKEN_SALT = 'rss_salt';
 	/**
 	 *
 	 * @var \WebRequest
