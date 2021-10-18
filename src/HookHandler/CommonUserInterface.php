@@ -5,7 +5,7 @@ namespace BlueSpice\RSSFeeder\HookHandler;
 use BlueSpice\RSSFeeder\GlobalActionsTool;
 use MWStake\MediaWiki\Component\CommonUserInterface\Hook\MWStakeCommonUIRegisterSkinSlotComponents;
 
-class Main implements MWStakeCommonUIRegisterSkinSlotComponents {
+class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents {
 
 	/**
 	 * @inheritDoc
