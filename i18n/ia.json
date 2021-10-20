@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-rssfeeder-desc": "Un extension que produce RSS valide pro omne extension que ha un function buildRss",
+	"rssfeeder": "Syndicator RSS",
+	"apihelp-bs-rssfeeder-tasks-description": "Forni processos commun pro RSSFeeder",
+	"apihelp-bs-rssfeeder-tasks-summary": "Forni processos commun pro RSSFeeder",
+	"bs-rssfeeder-pagetext": "Tu pote abonar te al sequente canales RSS:",
+	"bs-rssfeeder-recent-changes": "Modificationes recente",
+	"bs-rssfeeder-pages": "Pagina",
+	"bs-rssfeeder-submit": "Monstrar",
+	"bs-rssfeeder-rss": "Syndication RSS",
+	"bs-rssfeeder-rss-desc": "Crear tu proprie syndication RSS",
+	"bs-extjs-rssfeeder-rss-title": "URL de RSS",
+	"bs-rssfeeder-invalid-url": "Per favor forni un URL valide.",
+	"action-rssfeeder-viewspecialpage": "vider le pagina special \"{{int:rssfeeder}}\"",
+	"bs-rssstandards-desc": "Construe syndicationes RSS a base de varie optiones",
+	"bs-rssstandards-desc-rc": "Canal con un vista general del modificationes recente in le wiki",
+	"bs-rssstandards-title-page": "Pagina",
+	"bs-rssstandards-desc-page": "Canal con un vista general del modificationes recente de un pagina.",
+	"bs-rssstandards-title-own": "Proprie contributiones",
+	"bs-rssstandards-desc-own": "Canal con un vista general del contributiones que tu ha apportate al wiki.",
+	"bs-rssstandards-title-cat": "Categoria",
+	"bs-rssstandards-desc-cat": "Canal con un vista general del modificationes recente in un categoria.",
+	"bs-rssstandards-title-watch": "Observatorio",
+	"bs-rssstandards-desc-watch": "Canal con un vista general de tu paginas sub observation.",
+	"bs-rssstandards-link-text-watch": "Modificationes recente del ultime {{PLURAL:$1|die|$1 dies}}.",
+	"bs-rssstandards-desc-ns": "Canal con un vista general del modificationes recente in un spatio de nomines.",
+	"bs-rssstandards-changes-from": "Modificationes de: $1",
+	"apihelp-bs-rss-standards-pages-store-description": "Retornar un lista de paginas disponibile pro RSSFeeder",
+	"apihelp-bs-rss-standards-pages-store-summary": "Retornar un lista de paginas disponibile pro RSSFeeder",
+	"right-rssfeeder-viewspecialpage": "Accesso al pagina special [[Special:RSSFeeder]]",
+	"bs-rssstandards-title-rc": "Modificationes recente",
+	"bs-rss-feeder-pref-url-whitelist": "Lista de URLs permittite",
+	"bs-rss-feeder-pref-max-redirects": "Numero maxime de redirectiones permittite",
+	"bs-rssfeeder-rcunique-checkbox": "Celar duplicatos"
+}
