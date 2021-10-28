@@ -4,6 +4,7 @@
 			"AlimanRuna",
 			"DannyS712",
 			"Fitoschido",
+			"Jakeukalane",
 			"Macofe"
 		]
 	},
@@ -20,7 +21,7 @@
 	"bs-rssfeeder-invalid-url": "Proporciona un URL válido.",
 	"action-rssfeeder-viewspecialpage": "ver la página especial «{{int:rssfeeder}}»",
 	"bs-rssstandards-desc": "Genera suministros RSS basados en diferentes opciones",
-	"bs-rssstandards-desc-rc": "Suministro que resume los cambios recientes del wiki",
+	"bs-rssstandards-desc-rc": "Suministro que resume los cambios recientes de la wiki",
 	"bs-rssstandards-title-page": "Página",
 	"bs-rssstandards-desc-page": "Suministro que resume los cambios recientes de una página.",
 	"bs-rssstandards-title-own": "Contribuciones propias",
