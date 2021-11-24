@@ -3,7 +3,8 @@
 		"authors": [
 			"Liuxinyu970226",
 			"佛壁灯",
-			"科劳"
+			"科劳",
+			"Xiplus"
 		]
 	},
 	"bs-rssfeeder-desc": "为每个有buildRss-function功能的扩展输出有效RSS的扩展",
@@ -30,7 +31,7 @@
 	"bs-rssstandards-title-watch": "监视列表",
 	"bs-rssstandards-desc-watch": "订阅您监视的页面的总览。",
 	"bs-rssstandards-link-text-watch": "最近{{PLURAL:$1|$1天}}的更改。",
-	"bs-rssstandards-desc-ns": "订阅某名字空间内最近更改的总览。",
+	"bs-rssstandards-desc-ns": "订阅某命名空间内最近更改的总览。",
 	"bs-rssstandards-changes-from": "更改{{GENDER:$1|自}}：$1",
 	"apihelp-bs-rss-standards-pages-store-description": "为RSSFeeder返回可用页面的列表",
 	"apihelp-bs-rss-standards-pages-store-summary": "为RSS订阅器返回可用页面列表",

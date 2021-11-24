@@ -6,7 +6,8 @@
 			"McDutchie",
 			"MrLeopold",
 			"SPQRobin",
-			"Siebrand"
+			"Siebrand",
+			"Romaine"
 		]
 	},
 	"bs-rssfeeder-desc": "Een extensie om geldige RSS uit te voeren voor elke extensie die een functie buildRss heeft",
@@ -35,5 +36,7 @@
 	"bs-rssstandards-desc-ns": "Feed met een overzicht van de recente wijzigingen in een naamruimte.",
 	"bs-rssstandards-changes-from": "Wijzigingen {{GENDER:$1|door}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Toon lijst van beschikbare pagina's voor RSSFeeder",
-	"bs-rssstandards-title-rc": "Recente wijzigingen"
+	"bs-rssstandards-title-rc": "Recente wijzigingen",
+	"bs-rss-feeder-pref-url-whitelist": "URL-whitelist",
+	"bs-rssfeeder-rcunique-checkbox": "Verbergt dubbelen"
 }
