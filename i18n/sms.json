@@ -4,7 +4,10 @@
 			"Yupik"
 		]
 	},
+	"bs-rssfeeder-recent-changes": "Võõrâs muttâz",
 	"bs-rssfeeder-submit": "Čuäʹjet",
 	"action-rssfeeder-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:rssfeeder}}\"",
-	"bs-rssstandards-title-cat": "Kategoria"
+	"bs-rssstandards-title-cat": "Kategoria",
+	"bs-rssstandards-title-watch": "Valvvâmlistt",
+	"bs-rssstandards-title-rc": "Võõrâs muttâz"
 }
