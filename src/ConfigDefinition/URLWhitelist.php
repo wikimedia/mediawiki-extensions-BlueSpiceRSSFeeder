@@ -42,4 +42,12 @@ class URLWhitelist extends ArraySetting implements IOverwriteGlobal {
 	public function getGlobalName() {
 		return 'wgRSSUrlWhitelist';
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
+	public function getHelpMessageKey() {
+		return 'bs-rss-feeder-pref-url-allow-help';
+	}
 }
