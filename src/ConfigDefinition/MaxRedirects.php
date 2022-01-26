@@ -33,4 +33,12 @@ class MaxRedirects extends IntSetting implements IOverwriteGlobal {
 	public function getGlobalName() {
 		return 'wgRSSUrlNumberOfAllowedRedirects';
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
+	public function getHelpMessageKey() {
+		return 'bs-rss-feeder-pref-max-redirects-help';
+	}
 }
