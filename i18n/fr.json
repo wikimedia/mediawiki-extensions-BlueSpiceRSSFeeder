@@ -41,5 +41,7 @@
 	"bs-rssstandards-title-rc": "Modifications récentes",
 	"bs-rss-feeder-pref-url-whitelist": "Liste blanche d’hyperliens (URL)",
 	"bs-rss-feeder-pref-max-redirects": "Nombre maximum de redirections autorisées",
-	"bs-rssfeeder-rcunique-checkbox": "Masquer les doublons"
+	"bs-rssfeeder-rcunique-checkbox": "Masquer les doublons",
+	"bs-rss-feeder-pref-url-allow-help": "Hyperliens URL autorisés pour les flux RSS qui peuvent être utilisés dans les tableaux de bord",
+	"bs-rss-feeder-pref-max-redirects-help": "Nombre de redirections à suivre. Ne devrait être utilisé que lorsque les URLs cibles sont de confiance."
 }
