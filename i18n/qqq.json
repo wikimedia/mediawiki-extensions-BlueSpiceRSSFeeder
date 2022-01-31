@@ -44,5 +44,4 @@
 	"bs-rssfeeder-rcunique-checkbox": "Label for \"hide recent changes doubles\" checkbox",
 	"bs-rss-feeder-pref-url-allow-help": "Help message in config, where permitted URLs for RSS feed can be defined",
 	"bs-rss-feeder-pref-max-redirects-help": "Help message in config, for maximum number of redirects to follow"
-
 }

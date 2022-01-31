@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Syman51"
+		]
+	},
+	"bs-rss-feeder-pref-url-allow-help": "URL dibatasi untuk RSS Feed yang digunakan pada dasbor",
+	"bs-rss-feeder-pref-max-redirects-help": "Banyaknya pengalihan yang diikuti. Hanya harus digunakan ketika URL terpercaya"
+}
