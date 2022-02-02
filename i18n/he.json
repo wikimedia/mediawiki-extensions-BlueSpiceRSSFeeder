@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Eladk",
 			"Erelon",
 			"Ghsuvr",
@@ -37,6 +38,6 @@
 	"apihelp-bs-rss-standards-pages-store-description": "החזרת רשימת הדפים הזמינים עבור ההרחבה RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "החזרת רשימת הדפים הזמינים עבור ההרחבה RSSFeeder",
 	"bs-rssstandards-title-rc": "שינויים אחרונים",
-	"bs-rss-feeder-pref-url-allow-help": "כתובות URL מאושרות לעדכוני RSS שניתנים לשימוש בלוחות בקרה",
-	"bs-rss-feeder-pref-max-redirects-help": "מספר ההפניות מחדש למעקב. צריך לשמש רק כאשר כתובות היעד מהימנות."
+	"bs-rss-feeder-pref-url-allow-help": "כתובות URL מאושרות לעדכוני RSS שאפשר להשתמש בהן בלוחות בקרה",
+	"bs-rss-feeder-pref-max-redirects-help": "מספר ההפניות למעקב. צריך לשמש רק כאשר כתובות היעד מהימנות"
 }
