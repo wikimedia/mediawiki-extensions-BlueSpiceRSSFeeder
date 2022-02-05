@@ -88,7 +88,6 @@ class Category extends RecentChanges {
 			}
 			$channel->addItem( $this->getEntry( $title, $row ) );
 		}
-		$dbr->freeResult( $rc );
 
 		return $channel->buildOutput();
 	}

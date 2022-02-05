@@ -92,7 +92,6 @@ class Watchlist extends RecentChanges {
 			$entry->setComments( $title->getTalkPage()->getFullURL() );
 			$channel->addItem( $entry );
 		}
-		$dbr->freeResult( $rc );
 
 		return $channel->buildOutput();
 	}
