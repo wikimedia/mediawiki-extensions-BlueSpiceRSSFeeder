@@ -6,6 +6,7 @@
 			"McDutchie",
 			"MrLeopold",
 			"Romaine",
+			"Rots61",
 			"SPQRobin",
 			"Siebrand"
 		]
@@ -13,6 +14,7 @@
 	"bs-rssfeeder-desc": "Een extensie om geldige RSS uit te voeren voor elke extensie die een functie buildRss heeft",
 	"rssfeeder": "RSS-invoer",
 	"apihelp-bs-rssfeeder-tasks-description": "Biedt algemene taken aan voor de RSSFeeder",
+	"apihelp-bs-rssfeeder-tasks-summary": "Biedt algemene taken aan voor de RSSFeeder",
 	"bs-rssfeeder-pagetext": "U kunt zich abonneren op de volgende RSS-feeds:",
 	"bs-rssfeeder-recent-changes": "Recente wijzigingen",
 	"bs-rssfeeder-pages": "Pagina",
@@ -36,7 +38,10 @@
 	"bs-rssstandards-desc-ns": "Feed met een overzicht van de recente wijzigingen in een naamruimte.",
 	"bs-rssstandards-changes-from": "Wijzigingen {{GENDER:$1|door}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Toon lijst van beschikbare pagina's voor RSSFeeder",
+	"apihelp-bs-rss-standards-pages-store-summary": "Toon lijst van beschikbare pagina's voor RSSFeeder",
+	"right-rssfeeder-viewspecialpage": "Toegang tot de speciale pagina; [[Special:RSSFeeder]]",
 	"bs-rssstandards-title-rc": "Recente wijzigingen",
 	"bs-rss-feeder-pref-url-whitelist": "URL-whitelist",
+	"bs-rss-feeder-pref-max-redirects": "Maximaal aantal toegestane doorverwijzingen.",
 	"bs-rssfeeder-rcunique-checkbox": "Verbergt dubbelen"
 }
