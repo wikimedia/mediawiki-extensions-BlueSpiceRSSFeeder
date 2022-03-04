@@ -3,7 +3,8 @@
 		"authors": [
 			"Cwlin0416",
 			"Kly",
-			"LNDDYL"
+			"LNDDYL",
+			"Winston Sung"
 		]
 	},
 	"bs-rssfeeder-desc": "替帶有 buildRss-function 的各擴充功能輸出有效 RSS 之擴充功能，",
@@ -11,7 +12,7 @@
 	"apihelp-bs-rssfeeder-tasks-description": "為 RSSFeeder 提供一般任務",
 	"apihelp-bs-rssfeeder-tasks-summary": "為 RSSFeeder 提供一般任務",
 	"bs-rssfeeder-pagetext": "您可以訂閱下列 RSS 源料：",
-	"bs-rssfeeder-recent-changes": "最近變更",
+	"bs-rssfeeder-recent-changes": "近期變更",
 	"bs-rssfeeder-pages": "頁面",
 	"bs-rssfeeder-submit": "顯示",
 	"bs-rssfeeder-rss": "RSS 源料",
