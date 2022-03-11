@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Eladk",
 			"Erelon",
 			"Ghsuvr",
 			"Guycn2",
-			"מקף",
-			"Amire80"
+			"מקף"
 		]
 	},
 	"bs-rssfeeder-desc": "הרחבה ליצירת הזנות RSS תקינות עבור כל הרחבה שיש לה פונקציה של buildRss",
