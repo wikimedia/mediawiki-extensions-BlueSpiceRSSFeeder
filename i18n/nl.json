@@ -6,6 +6,7 @@
 			"McDutchie",
 			"MrLeopold",
 			"Romaine",
+			"Rots61",
 			"SPQRobin",
 			"Siebrand"
 		]
@@ -38,5 +39,9 @@
 	"bs-rssstandards-title-rc": "Recente wijzigingen",
 	"action-rssfeeder-viewspecialpage": "de speciale pagina  \"{{int:rssfeeder}}\" te bekijken",
 	"bs-rss-feeder-pref-url-whitelist": "URL-whitelist",
-	"bs-rssfeeder-rcunique-checkbox": "Verbergt dubbelen"
+	"bs-rssfeeder-rcunique-checkbox": "Verbergt dubbelen",
+	"apihelp-bs-rssfeeder-tasks-summary": "Biedt algemene taken aan voor de RSSFeeder",
+	"apihelp-bs-rss-standards-pages-store-summary": "Toon lijst van beschikbare pagina's voor RSSFeeder",
+	"right-rssfeeder-viewspecialpage": "Toegang tot de speciale pagina; [[Special:RSSFeeder]]",
+	"bs-rss-feeder-pref-max-redirects": "Maximaal aantal toegestane doorverwijzingen."
 }
