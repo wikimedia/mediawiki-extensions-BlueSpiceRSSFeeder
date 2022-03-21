@@ -37,7 +37,5 @@
 	"apihelp-bs-rss-standards-pages-store-description": "Devolver una lista de las páginas disponibles para RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Devolver una lista de las páginas disponibles para RSSFeeder",
 	"right-rssfeeder-viewspecialpage": "Acceso a la página especial [[Special:RSSFeeder]]",
-	"bs-rssstandards-title-rc": "Cambios recientes",
-	"bs-rss-feeder-pref-url-allow-help": "Permitted URLs Para RSS alimenta que puede ser utilizado en salpicaderos",
-	"bs-rss-feeder-pref-max-redirects-help": "Número de redirige para seguir. Sólo tendría que ser utilizado cuándo el objetivo URLs está confiado en"
+	"bs-rssstandards-title-rc": "Cambios recientes"
 }
