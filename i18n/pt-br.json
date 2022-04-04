@@ -4,7 +4,8 @@
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
 			"Felipe L. Ewald",
-			"Juan90264"
+			"Juan90264",
+			"YuriNikolai"
 		]
 	},
 	"bs-rssfeeder-desc": "Uma extensão para obter RSS válido, para qualquer extensão que tenha uma função buildRSS",
@@ -40,5 +41,6 @@
 	"bs-rss-feeder-pref-url-whitelist": "Lista branca de URLs",
 	"bs-rss-feeder-pref-max-redirects": "Número máximo de redirecionamentos permitidos",
 	"bs-rssfeeder-rcunique-checkbox": "Ocultar duplas",
-	"bs-rss-feeder-pref-url-allow-help": "URLs permitidos para feed RSS que podem ser usados ​​em painéis"
+	"bs-rss-feeder-pref-url-allow-help": "URLs permitidos para feed RSS que podem ser usados ​​em painéis",
+	"bs-rss-feeder-pref-max-redirects-help": "Número de redireções a seguir. Somente deve ser utilizado quando as URLs alvo são confiáveis"
 }
