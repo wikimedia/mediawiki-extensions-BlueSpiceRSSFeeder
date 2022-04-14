@@ -4,6 +4,7 @@
 			"Adam N.",
 			"AlimanRuna",
 			"DannyS712",
+			"DiegoAmbrocio",
 			"Fitoschido",
 			"Jakeukalane",
 			"Macofe"
@@ -37,5 +38,10 @@
 	"apihelp-bs-rss-standards-pages-store-description": "Devolver una lista de las páginas disponibles para RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Devolver una lista de las páginas disponibles para RSSFeeder",
 	"right-rssfeeder-viewspecialpage": "Acceso a la página especial [[Special:RSSFeeder]]",
-	"bs-rssstandards-title-rc": "Cambios recientes"
+	"bs-rssstandards-title-rc": "Cambios recientes",
+	"bs-rss-feeder-pref-url-whitelist": "Lista blanca de URLs",
+	"bs-rss-feeder-pref-max-redirects": "Número máximo de redireccionamientos permitidos",
+	"bs-rssfeeder-rcunique-checkbox": "Ocultar dobles",
+	"bs-rss-feeder-pref-url-allow-help": "URLs permitidas para el feed RSS que se puede utilizar en los cuadros de mando",
+	"bs-rss-feeder-pref-max-redirects-help": "Número de redirecciones a seguir. Sólo debe utilizarse cuando las URL de destino son de confianza"
 }
