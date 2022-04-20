@@ -4,6 +4,7 @@
 			"Ajam",
 			"Alirezaaa",
 			"Amir1arch",
+			"Beginneruser",
 			"Huji"
 		]
 	},
@@ -24,8 +25,8 @@
 	"bs-rssstandards-desc-own": "خوراک همراه یک نمای کلی از مشارکت‌های خودتان در ویکی",
 	"bs-rssstandards-title-cat": "رده",
 	"bs-rssstandards-desc-cat": "خوراک همراه یک نمای کلی از تغییرات اخیر یک رده",
-	"bs-rssstandards-title-watch": "فهرست پی‌گیری",
-	"bs-rssstandards-desc-watch": "خوراک همراه یک نمای کلی از صفحات پی‌گیری‌تان",
+	"bs-rssstandards-title-watch": "فهرست پیگیری",
+	"bs-rssstandards-desc-watch": "خوراک همراه یک نمای کلی از صفحه‌های پیگیری‌تان",
 	"bs-rssstandards-link-text-watch": "تغییرات اخیر آخرین {{PLURAL:$1|روز|$1 روز}}.",
 	"bs-rssstandards-desc-ns": "خوراک همراه یک نمای کلی از تغییرات اخیر یک فضای نام.",
 	"bs-rssstandards-changes-from": "تغییرات {{GENDER:$1|توسط}}: $1",
