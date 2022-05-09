@@ -4,9 +4,12 @@
 			"Mehtab ahmed"
 		]
 	},
+	"bs-rssfeeder-recent-changes": "تازيون تبديليون",
 	"bs-rssfeeder-pages": "صفحو",
+	"bs-rssfeeder-submit": "ڏيکاريو",
 	"bs-rssstandards-title-page": "صفحو",
 	"bs-rssstandards-title-own": "پنھنجون ڀاڱيداريون",
+	"bs-rssstandards-title-watch": "نظر۾فھرست",
 	"bs-rssstandards-link-text-watch": "گذريل {{PLURAL:$1|ڏينھن|$1 ڏينھن}} ۾ تازيون تبديليون.",
-	"bs-rssfeeder-submit": "ڏيکاريو"
+	"bs-rssstandards-title-rc": "تازيون تبديليون"
 }
