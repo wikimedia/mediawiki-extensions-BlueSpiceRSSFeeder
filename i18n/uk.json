@@ -2,13 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"DDPAT",
+			"Ice bulldog",
 			"Mykola Swarnyk",
 			"Olion",
 			"Piramidion",
+			"Samflint",
 			"Vlad5250",
-			"Ата",
-			"Ice bulldog",
-			"Samflint"
+			"Ата"
 		]
 	},
 	"bs-rssfeeder-desc": "Розширення, що дозволяє виводити RSS тим розширенням, які мають функцію buildRss",
