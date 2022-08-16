@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fohanno"
+			"Fohanno",
+			"Huñvreüs"
 		]
 	},
-	"bs-rssfeeder-desc": "Krouiñ ho kwazh RSS deoc'h-c'hwi",
+	"bs-rssfeeder-desc": "Un astenn evit produiñ RSS mat evit an holl astennoù, enni ur arc’hwel buildRss",
 	"bs-rssfeeder-recent-changes": "Kemmoù graet nevez zo",
 	"bs-rssfeeder-pages": "Pajenn",
 	"bs-rssfeeder-submit": "Diskouez",
