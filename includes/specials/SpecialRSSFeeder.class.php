@@ -53,7 +53,8 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 
 		$feeds = $feedsManager->getFeeds();
 		$this->addFeedCallbacks( $feeds );
-		$this->getOutput()->addModuleStyles( 'ext.bluespice.rssFeeder' );
+		$this->getOutput()->addModuleStyles( 'ext.bluespice.rssFeeder.styles' );
+		$this->getOutput()->addModules( 'ext.bluespice.rssStandards' );
 
 		$form = new ViewBaseForm();
 		$form->setId( 'RSSFeederForm' );
