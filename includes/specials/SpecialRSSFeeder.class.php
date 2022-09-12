@@ -2,7 +2,6 @@
 // Last review MRG (01.07.11 14:22)
 use BlueSpice\RSSFeeder\IRSSFeed;
 use BlueSpice\RSSFeeder\RSSFeedManager;
-use MediaWiki\MediaWikiServices;
 use Wikimedia\AtEase\AtEase;
 
 class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
@@ -37,9 +36,8 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 		}
 
 		/** @var RSSFeedManager $feedsManager */
-		$feedsManager = MediaWikiServices::getInstance()->getService(
-			'BSRSSFeederFeedManagerFactory'
-		)->makeManager( $this->getContext(), $this->getUser() );
+		$feedsManager = $this->services->getService( 'BSRSSFeederFeedManagerFactory' )
+			->makeManager( $this->getContext(), $this->getUser() );
 
 		$requestedFeed = $feedsManager->getFeed( $extension );
 		if ( $requestedFeed ) {
