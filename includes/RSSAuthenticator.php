@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class RSSAuthenticator {
 	public const TOKEN_SALT = 'rss_salt';
 	/**
@@ -41,7 +43,8 @@ class RSSAuthenticator {
 			return false;
 		}
 
-		$user = \User::newFromName( $userName );
+		$user = MediaWikiServices::getInstance()->getUserFactory()
+			->newFromName( $userName );
 		if ( $user instanceof \User == false || $user->getId() == 0 ) {
 			// User does not exist
 			return false;
