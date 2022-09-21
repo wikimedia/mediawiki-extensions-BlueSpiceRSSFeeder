@@ -89,7 +89,7 @@ class Watchlist extends RecentChanges {
 				continue;
 			}
 			$entry = $this->getEntry( $title, $row );
-			$entry->setComments( $title->getTalkPage()->getFullURL() );
+			$entry->setComments( $title->getTalkPageIfDefined()->getFullURL() );
 			$channel->addItem( $entry );
 		}
 
