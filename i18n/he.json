@@ -4,7 +4,9 @@
 			"Eladk",
 			"Erelon",
 			"Ghsuvr",
-			"Guycn2"
+			"Guycn2",
+			"Amire80",
+			"מקף"
 		]
 	},
 	"bs-rssfeeder-desc": "הרחבה ליצירת הזנות RSS תקינות עבור כל הרחבה שיש לה פונקציה של buildRss",
@@ -35,5 +37,9 @@
 	"bs-rssstandards-changes-from": "שינויים שבוצעו על־ידי: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "החזרת רשימת הדפים הזמינים עבור ההרחבה RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "החזרת רשימת הדפים הזמינים עבור ההרחבה RSSFeeder",
-	"bs-rssstandards-title-rc": "שינויים אחרונים"
+	"right-rssfeeder-viewspecialpage": "גישה לדף המיוחד [[Special:RSSFeeder]]",
+	"bs-rssstandards-title-rc": "שינויים אחרונים",
+	"bs-rss-feeder-pref-url-whitelist": "רשימת כתובות מותרות",
+	"bs-rss-feeder-pref-max-redirects": "המספר ההפניות המרבי",
+	"bs-rssfeeder-rcunique-checkbox": "הסתר כפולות"
 }
