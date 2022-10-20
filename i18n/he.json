@@ -37,7 +37,11 @@
 	"bs-rssstandards-changes-from": "שינויים שבוצעו על־ידי: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "החזרת רשימת הדפים הזמינים עבור ההרחבה RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "החזרת רשימת הדפים הזמינים עבור ההרחבה RSSFeeder",
+	"right-rssfeeder-viewspecialpage": "גישה לדף המיוחד [[Special:RSSFeeder]]",
 	"bs-rssstandards-title-rc": "שינויים אחרונים",
+	"bs-rss-feeder-pref-url-whitelist": "רשימת כתובות מותרות",
+	"bs-rss-feeder-pref-max-redirects": "המספר ההפניות המרבי",
+	"bs-rssfeeder-rcunique-checkbox": "הסתר כפולות",
 	"bs-rss-feeder-pref-url-allow-help": "כתובות URL מאושרות לעדכוני RSS שאפשר להשתמש בהן בלוחות בקרה",
 	"bs-rss-feeder-pref-max-redirects-help": "מספר ההפניות למעקב. צריך לשמש רק כאשר כתובות היעד מהימנות"
 }
