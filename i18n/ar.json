@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Meno25",
 			"ديفيد",
 			"محمد أحمد عبد الفتاح"
 		]
@@ -35,5 +36,9 @@
 	"apihelp-bs-rss-standards-pages-store-summary": "إرجاع قائمة الصفحات المتاحة لـRSSFeeder",
 	"right-rssfeeder-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:RSSFeeder]]",
 	"bs-rssstandards-title-rc": "أحدث التغييرات",
-	"bs-rss-feeder-pref-max-redirects": "العدد الأقصى للتحويلات المسموح بها"
+	"bs-rss-feeder-pref-max-redirects": "العدد الأقصى للتحويلات المسموح بها",
+	"bs-rss-feeder-pref-url-whitelist": "القائمة البيضاء لعناوين URL",
+	"bs-rssfeeder-rcunique-checkbox": "إخفاء الزوجي",
+	"bs-rss-feeder-pref-url-allow-help": "عناوين URL المسموح بها لتغذية RSS التي يمكن استخدامها في لوحات المعلومات",
+	"bs-rss-feeder-pref-max-redirects-help": "عدد عمليات إعادة التوجيه التي يجب اتباعها. يجب استخدامه فقط عندما تكون عناوين URL المستهدفة موثوقة"
 }
