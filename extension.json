@@ -66,15 +66,18 @@
 		"RSSAuthenticator": "includes/RSSAuthenticator.php"
 	},
 	"ResourceModules": {
+		"ext.bluespice.rssFeeder.styles": {
+			"styles": [ 
+				"bluespice.rssFeeder.css"
+			]
+		},
 		"ext.bluespice.rssFeeder": {
-			"styles": "bluespice.rssFeeder.css",
 			"messages": [
 				"bs-extjs-rssfeeder-rss-title"
 			]
 		},
 		"ext.bluespice.rssStandards": {
 			"scripts": "bluespice.rssStandards.js",
-			"styles": "bluespice.rssFeederForm.less",
 			"dependencies": [
 				"ext.bluespice.extjs"
 			]
@@ -103,7 +106,6 @@
 		"ChameleonSkinTemplateOutputPageBeforeExec": [
 			"\\BlueSpice\\RSSFeeder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback"
 		],
-		"BeforePageDisplay": "\\BlueSpice\\RSSFeeder\\Hook\\BeforePageDisplay\\AddResources::callback",
 		"BSDashboardsAdminDashboardPortalPortlets": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsAdminDashboardPortalPortlets\\AddPortlets::callback",
 		"BSDashboardsAdminDashboardPortalConfig": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsAdminDashboardPortalConfig\\AddConfigs::callback",
 		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsUserDashboardPortalPortlets\\AddPortlets::callback",
