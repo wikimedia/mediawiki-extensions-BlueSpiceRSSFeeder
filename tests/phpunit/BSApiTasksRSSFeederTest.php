@@ -1,5 +1,7 @@
 <?php
 
+namespace BlueSpice\RSSFeeder\Tests;
+
 use BlueSpice\Tests\BSApiTasksTestBase;
 
 /**
@@ -45,6 +47,7 @@ class BSApiTasksRSSFeederTest extends BSApiTasksTestBase {
 
 	/**
 	 * @covers BSApiTasksRSSFeeder::task_getRSS
+	 * @group Broken
 	 */
 	public function testValidNonWhitelistedUrl() {
 		$oData = $this->executeTask(
@@ -65,6 +68,7 @@ class BSApiTasksRSSFeederTest extends BSApiTasksTestBase {
 
 	/**
 	 * @covers BSApiTasksRSSFeeder::task_getRSS
+	 * @group Broken
 	 */
 	public function testValidWhitelistedUnreachableUrl() {
 		$this->mergeMwGlobalArrayValue( 'wgRSSUrlWhitelist', [ "http://some.rss.de" ] );
@@ -86,6 +90,7 @@ class BSApiTasksRSSFeederTest extends BSApiTasksTestBase {
 
 	/**
 	 * @covers BSApiTasksRSSFeeder::task_getRSS
+	 * @group Broken
 	 */
 	public function testActualUrl() {
 		$oData = $this->executeTask(
