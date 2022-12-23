@@ -57,6 +57,9 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\RSSFeeder\\": "src/"
 	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\RSSFeeder\\Tests\\": "tests/phpunit"
+	},
 	"AutoloadClasses": {
 		"RSSCreator": "includes/RSSCreator.class.php",
 		"RSSItemCreator": "includes/RSSItemCreator.php",
