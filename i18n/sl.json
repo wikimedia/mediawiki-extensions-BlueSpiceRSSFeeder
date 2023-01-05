@@ -16,5 +16,9 @@
 	"bs-rssfeeder-rss-desc": "Ustvarite svoj vir RSS",
 	"bs-extjs-rssfeeder-rss-title": "Povezava RSS",
 	"bs-rssstandards-title-page": "Stran",
-	"bs-rssstandards-title-cat": "Kategorija"
+	"bs-rssstandards-title-cat": "Kategorija",
+	"bs-rssstandards-desc-page": "Vir s pregledom zadnjih sprememb strani.",
+	"bs-rssstandards-desc-cat": "Vir s pregledom zadnjih sprememb v kategoriji.",
+	"bs-rssstandards-link-text-watch": "Zadnje spremembe {{PLURAL:$1|zadnjega dne|zadnjih $1 dni}}.",
+	"bs-rssstandards-title-rc": "Zadnje spremembe"
 }
