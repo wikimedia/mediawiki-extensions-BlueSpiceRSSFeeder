@@ -3,6 +3,7 @@
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
 use BsNamespaceHelper;
+use MediaWiki\MediaWikiServices;
 use Title;
 use ViewFormElementSelectbox;
 
@@ -73,7 +74,10 @@ class NamespaceFeed extends RecentChanges {
 				continue;
 			}
 			$entry = $this->getEntry( $title, $row );
-			$entry->setComments( $title->getTalkPageIfDefined()->getFullURL() );
+			$talkPageTarget = MediaWikiServices::getInstance()->getNamespaceInfo()
+				->getTalkPage( $title );
+			$talkPage = Title::newFromLinkTarget( $talkPageTarget );
+			$entry->setComments( $talkPage->getFullURL() );
 			$channel->addItem( $entry );
 		}
 
