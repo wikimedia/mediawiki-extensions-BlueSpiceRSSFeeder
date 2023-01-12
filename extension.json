@@ -67,7 +67,7 @@
 	},
 	"ResourceModules": {
 		"ext.bluespice.rssFeeder.styles": {
-			"styles": [ 
+			"styles": [
 				"bluespice.rssFeeder.css"
 			]
 		},
