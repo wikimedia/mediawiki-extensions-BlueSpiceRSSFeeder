@@ -187,32 +187,32 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 			'Field "total" contains wrong value'
 		);
 
-		$this->assertContains(
+		$this->assertStringContainsString(
 			"Special:RSSFeeder",
 			$response['results'][0]['feedUrl'],
 			'Link to special page is missing'
 		);
-		$this->assertContains(
+		$this->assertStringContainsString(
 			"&Page=",
 			$response['results'][0]['feedUrl'],
 			'Type info (attribute Page) is missing'
 		);
-		$this->assertContains(
+		$this->assertStringContainsString(
 			"&p=",
 			$response['results'][0]['feedUrl'],
 			'Page info (attribute p) is missing'
 		);
-		$this->assertContains(
+		$this->assertStringContainsString(
 			"&ns=",
 			$response['results'][0]['feedUrl'],
 			'Namespace info (attribute ns) is missing'
 		);
-		$this->assertContains(
+		$this->assertStringContainsString(
 			"&u=",
 			$response['results'][0]['feedUrl'],
 			'User info (attribute u) is missing'
 		);
-		$this->assertContains(
+		$this->assertStringContainsString(
 			"&h=",
 			$response['results'][0]['feedUrl'],
 			'Token info (attribute h) is missing'
