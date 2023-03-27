@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Moj",
+			"Pyscowicz",
 			"Silvonen",
 			"Yupik"
 		]
@@ -9,5 +10,6 @@
 	"bs-rssstandards-title-page": "Sivu",
 	"bs-rssstandards-title-cat": "Luokka",
 	"bs-rssfeeder-submit": "Näytä",
-	"bs-rssfeeder-rss": "RSS-syöte"
+	"bs-rssfeeder-rss": "RSS-syöte",
+	"bs-rssfeeder-rss-desc": "Luo oma RSS-syöte"
 }
