@@ -3,11 +3,13 @@
 		"authors": [
 			"Moj",
 			"Silvonen",
-			"Yupik"
+			"Yupik",
+			"Pyscowicz"
 		]
 	},
 	"bs-rssfeeder-submit": "Näytä",
 	"bs-rssfeeder-rss": "RSS-syöte",
+	"bs-rssfeeder-rss-desc": "Luo oma RSS-syöte",
 	"bs-rssstandards-title-page": "Sivu",
 	"bs-rssstandards-title-cat": "Luokka"
 }
