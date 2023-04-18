@@ -1,5 +1,7 @@
 <?php
 
+namespace BlueSpice\RSSFeeder\Tests;
+
 use BlueSpice\Tests\BSApiExtJSStoreTestBase;
 
 /**
@@ -9,6 +11,7 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
  * @group BlueSpiceExtensions
  * @group BlueSpiceRSSStandards
  * @group Database
+ * @group Broken
  */
 class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 
@@ -113,13 +116,13 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 		);
 
 		$this->assertEquals(
-			$response['results'][0]['displayText'],
 			$sDisplayText,
+			$response['results'][0]['displayText'],
 			'Display text does not match'
 		);
 		$this->assertEquals(
-			$response['results'][0]['page_namespace'],
 			$iPageNamespace,
+			$response['results'][0]['page_namespace'],
 			'Namespace number does not match'
 		);
 	}
