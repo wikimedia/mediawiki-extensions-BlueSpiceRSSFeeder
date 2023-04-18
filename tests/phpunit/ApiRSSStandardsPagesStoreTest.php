@@ -95,14 +95,12 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 
 	/**
 	 * @covers \ApiRSSStandardsPagesStore::makeData
+	 * @param $limit
+	 * @param $offset
+	 *
 	 * @dataProvider provideQueryData
-	 * @param string $sQuery
-	 * @param string $prefixedText
-	 * @param string $displayText
-	 * @param int $iPageNamespace
-	 * @param int $iTotal
 	 */
-	public function testQuery( $sQuery, $prefixedText, $displayText, $iPageNamespace, $iTotal ) {
+	public function testQuery( $sQuery, $sDisplayText, $iPageNamespace, $iTotal ) {
 		$aParams = [
 			'action' => $this->getModuleName(),
 			'query' => $sQuery
@@ -118,17 +116,10 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 		);
 
 		$this->assertEquals(
-			$response['results'][0]['prefixedText'],
-			$prefixedText,
-			'Prefixed text does not match'
-		);
-
-		$this->assertEquals(
 			$response['results'][0]['displayText'],
-			$displayText,
+			$sDisplayText,
 			'Display text does not match'
 		);
-
 		$this->assertEquals(
 			$response['results'][0]['page_namespace'],
 			$iPageNamespace,
@@ -145,13 +136,11 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 			'page title prefix search' => [
 				'RSS',
 				'RSSStandards Test Page',
-				'RSSStandards Test Page',
 				0,
 				1
 			],
 			'page title infix search' => [
 				'Standards',
-				'RSSStandards Test Page',
 				'RSSStandards Test Page',
 				0,
 				1
@@ -159,28 +148,24 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 			'page title case insensitiveness' => [
 				'rss',
 				'RSSStandards Test Page',
-				'RSSStandards Test Page',
 				0,
 				1
 			],
 			'namespace and title prefix' => [
 				'Help:Just',
 				'Help:Just A Test Page',
-				'Just A Test Page',
 				NS_HELP,
 				1
 			],
 			'namespace and title infix' => [
 				'Help:Test',
 				'Help:Just A Test Page',
-				'Just A Test Page',
 				NS_HELP,
 				1
 			],
 			'namespace case insensitive' => [
 				'help:just',
 				'Help:Just A Test Page',
-				'Just A Test Page',
 				NS_HELP,
 				1
 			]

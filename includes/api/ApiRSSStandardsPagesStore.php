@@ -38,7 +38,6 @@ class ApiRSSStandardsPagesStore extends BSApiWikiPageStore {
 		$sUserToken  = $this->getUser()->getToken();
 		$oTitle = Title::newFromID( $oRow->page_id );
 		$sPrefixedText = $oTitle->getPrefixedText();
-		$displayText = $oTitle->getText();
 		$sFeedLink = $oSpecialRSS->getLinkUrl(
 			[
 				'Page' => 'followPage',
@@ -51,7 +50,7 @@ class ApiRSSStandardsPagesStore extends BSApiWikiPageStore {
 
 		$oRow->type = 'wikipage';
 		$oRow->prefixedText = $sPrefixedText;
-		$oRow->displayText = $displayText;
+		$oRow->displayText = $sPrefixedText;
 		$oRow->feedUrl = $sFeedLink;
 
 		return parent::makeDataSet( $oRow );
