@@ -25,5 +25,10 @@
 	"bs-rssstandards-title-watch": "Stebimų sąrašas",
 	"bs-rssstandards-desc-watch": "Srautas su stebimųjų puslapių apžvalga.",
 	"bs-rssstandards-link-text-watch": "Naujausi pakeitimai per {{PLURAL:$1|dieną|$1 dienas}}.",
-	"bs-rssstandards-changes-from": "{{GENDER:$1|Pakeitimai}}: $1"
+	"bs-rssstandards-changes-from": "{{GENDER:$1|Pakeitimai}}: $1",
+	"right-rssfeeder-viewspecialpage": "Prieiga prie [[Special:RSSFeeder]] specialaus puslapio",
+	"bs-rssstandards-title-rc": "Naujausi keitimai",
+	"bs-rss-feeder-pref-url-whitelist": "URL baltasis sąrašas",
+	"bs-rss-feeder-pref-max-redirects": "Didžiausias leidžiamų peradresavimų skaičius",
+	"bs-rssfeeder-rcunique-checkbox": "Slėpti dublikatus"
 }
