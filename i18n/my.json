@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dr Lotus Black",
 			"Ninjastrikers"
 		]
 	},
-	"bs-rssfeeder-pages": "စာမျက်နှာ"
+	"bs-rssfeeder-pages": "စာမျက်နှာ",
+	"bs-rssstandards-title-cat": "ကဏ္ဍ"
 }
