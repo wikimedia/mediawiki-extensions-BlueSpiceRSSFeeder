@@ -11,6 +11,7 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
  * @group BlueSpiceExtensions
  * @group BlueSpiceRSSStandards
  * @group Database
+ * @covers \ApiRSSStandardsPagesStore
  */
 class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 
