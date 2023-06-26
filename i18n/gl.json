@@ -7,7 +7,6 @@
 	},
 	"bs-rssfeeder-desc": "Unha extensión para obter RSS válidos para cada extensión, que ten unha función buildRss",
 	"rssfeeder": "Fonte de novas RSS",
-	"apihelp-bs-rssfeeder-tasks-description": "Proporciona tarefas comúns para o RSSFeeder",
 	"apihelp-bs-rssfeeder-tasks-summary": "Proporciona tarefas comúns para o RSSFeeder",
 	"bs-rssfeeder-pagetext": "Pode subscribirse ás seguintes canles RSS:",
 	"bs-rssfeeder-recent-changes": "Cambios recentes",
@@ -31,6 +30,5 @@
 	"bs-rssstandards-link-text-watch": "Cambios recentes {{PLURAL:$1|do último día|dos últimos $1 días}}.",
 	"bs-rssstandards-desc-ns": "Canle que resume os cambios recentes dun espazo de nomes.",
 	"bs-rssstandards-changes-from": "Cambios {{GENDER:$1|de}}: $1",
-	"apihelp-bs-rss-standards-pages-store-description": "Devolve a Lista das Páxinas dispoñibles para o RSSFeeder",
 	"apihelp-bs-rss-standards-pages-store-summary": "Devolver a lista das páxinas dispoñibles para o RSSFeeder"
 }
