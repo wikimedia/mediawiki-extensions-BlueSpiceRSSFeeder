@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fwolff"
+			"Fwolff",
+			"Rooiratel"
 		]
 	},
-	"bs-rssfeeder-rss": "RSS-nuusvoer"
+	"bs-rssfeeder-rss": "RSS-nuusvoer",
+	"bs-rssstandards-title-cat": "Kategorie"
 }
