@@ -18,10 +18,28 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 		if ( $this->getUser()->isAnon() ) {
 			// Try to log in user from request
 			$authenticator = new RSSAuthenticator( $this->getRequest(), \RequestContext::getMain() );
-			$authenticator->logInUser();
+			$userAuthenticated = $authenticator->logInUser();
+		} else {
+			$userAuthenticated = true;
 		}
 
 		parent::execute( $sParameter );
+
+		$feedsManager = $this->services->getService( 'BSRSSFeederFeedManagerFactory' )
+			->makeManager( $this->getContext(), $this->getUser() );
+
+		$this->showFeed( $sParameter, $feedsManager );
+
+		if ( $userAuthenticated ) {
+			$this->showConfig( $feedsManager );
+		}
+	}
+
+	/**
+	 * @param string $sParameter
+	 * @param RSSFeedManager $feedsManager
+	 */
+	private function showFeed( $sParameter, RSSFeedManager $feedsManager ) {
 		$extension = false;
 
 		if ( $sParameter ) {
@@ -35,10 +53,6 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 			$extension = $sParameter['Page'];
 		}
 
-		/** @var RSSFeedManager $feedsManager */
-		$feedsManager = $this->services->getService( 'BSRSSFeederFeedManagerFactory' )
-			->makeManager( $this->getContext(), $this->getUser() );
-
 		$requestedFeed = $feedsManager->getFeed( $extension );
 		if ( $requestedFeed ) {
 			$this->getOutput()->disable();
@@ -48,7 +62,12 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 			AtEase::restoreWarnings();
 			return;
 		}
+	}
 
+	/**
+	 * @param RSSFeedManager $feedsManager
+	 */
+	private function showConfig( RSSFeedManager $feedsManager ) {
 		$feeds = $feedsManager->getFeeds();
 		$this->addFeedCallbacks( $feeds );
 		$this->getOutput()->addModuleStyles( 'ext.bluespice.rssFeeder.styles' );
