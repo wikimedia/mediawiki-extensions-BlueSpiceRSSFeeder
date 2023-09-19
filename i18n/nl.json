@@ -8,7 +8,8 @@
 			"Romaine",
 			"Rots61",
 			"SPQRobin",
-			"Siebrand"
+			"Siebrand",
+			"Amire80"
 		]
 	},
 	"bs-rssfeeder-desc": "Een extensie om geldige RSS uit te voeren voor elke extensie die een functie buildRss heeft",
@@ -23,7 +24,7 @@
 	"bs-rssfeeder-rss-desc": "Maak uw eigen RSS-feed",
 	"bs-extjs-rssfeeder-rss-title": "RSS-URL",
 	"bs-rssfeeder-invalid-url": "Geef alstublieft een geldige URL op.",
-	"action-rssfeeder-viewspecialpage": "de speciale pagina  \"{{int:rssfeeder}}\" te bekijken",
+	"action-rssfeeder-viewspecialpage": "de speciale pagina \"{{int:rssfeeder}}\" te bekijken",
 	"bs-rssstandards-desc": "Bouwt RSS-feeds op basis van verschillende opties",
 	"bs-rssstandards-desc-rc": "Feed met een overzicht van de recente wijzigingen op de wiki",
 	"bs-rssstandards-title-page": "Pagina",
