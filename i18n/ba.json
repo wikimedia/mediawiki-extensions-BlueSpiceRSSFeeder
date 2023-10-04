@@ -25,7 +25,7 @@
 	"bs-rssstandards-desc-cat": "Категорияла һуңғы үҙгәрештәргә күҙәтеү теҙмәһе.",
 	"bs-rssstandards-title-watch": "Күҙәтеү исемлеге",
 	"bs-rssstandards-desc-watch": "Һеҙҙең күҙәтеү исемлеген күҙәтеү теҙмәһе.",
-	"bs-rssstandards-link-text-watch": "{{PLURAL:$1|}}{{PLURAL:$1|Һуңғы көндәге|һуңғы $1 көндәге}} үҙгәртеүҙәр.",
+	"bs-rssstandards-link-text-watch": "{{PLURAL:$1|Һуңғы көндәге|һуңғы $1 көндәге}} үҙгәртеүҙәр.",
 	"bs-rssstandards-desc-ns": "Исемдәр арауығындағы һуңғы үҙгәртеүҙәргә күҙәтеү теҙмәһе.",
 	"bs-rssstandards-changes-from": "{{GENDER:$1|Ҡатнашыусы}} төҙәтеүе: $1"
 }
