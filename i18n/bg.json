@@ -18,5 +18,6 @@
 	"bs-rssfeeder-invalid-url": "Моля, въведете валиден URL адрес.",
 	"action-rssfeeder-viewspecialpage": "преглед на специалната страница „{{int:rssfeeder}}“",
 	"bs-rssstandards-title-page": "Страница",
+	"bs-rssstandards-title-watch": "Списък за наблюдение",
 	"bs-rssstandards-title-rc": "Последни промени"
 }
