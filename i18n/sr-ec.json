@@ -2,10 +2,18 @@
 	"@metadata": {
 		"authors": [
 			"BadDog",
+			"Kizule",
 			"Obsuser"
 		]
 	},
 	"bs-rssfeeder-recent-changes": "Скорашње измене",
+	"bs-rssfeeder-pages": "Страница",
+	"bs-rssfeeder-submit": "Прикажи",
 	"bs-rssstandards-desc-rc": "Фид са прегледом недавних промена на викију",
-	"bs-rssstandards-title-rc": "Недавне промене"
+	"bs-rssstandards-title-page": "Страница",
+	"bs-rssstandards-title-cat": "Категорија",
+	"bs-rssstandards-title-watch": "Списак надгледања",
+	"bs-rssstandards-changes-from": "Измене {{GENDER:$1|корисника|кориснице}}: $1",
+	"bs-rssstandards-title-rc": "Недавне промене",
+	"bs-rss-feeder-pref-max-redirects": "Максималан број дозвољених преусмерења"
 }
