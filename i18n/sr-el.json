@@ -3,6 +3,13 @@
 		"authors": []
 	},
 	"bs-rssfeeder-recent-changes": "Skorašnje izmene",
+	"bs-rssfeeder-pages": "Stranica",
+	"bs-rssfeeder-submit": "Prikaži",
 	"bs-rssstandards-desc-rc": "Fid sa pregledom nedavnih promena na vikiju",
-	"bs-rssstandards-title-rc": "Nedavne promene"
+	"bs-rssstandards-title-page": "Stranica",
+	"bs-rssstandards-title-cat": "Kategorija",
+	"bs-rssstandards-title-watch": "Spisak nadgledanja",
+	"bs-rssstandards-changes-from": "Izmene {{GENDER:$1|korisnika|korisnice}}: $1",
+	"bs-rssstandards-title-rc": "Nedavne promene",
+	"bs-rss-feeder-pref-max-redirects": "Maksimalan broj dozvoljenih preusmerenja"
 }
