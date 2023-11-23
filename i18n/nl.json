@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Esketti",
 			"Mainframe98",
 			"McDutchie",
@@ -8,8 +9,7 @@
 			"Romaine",
 			"Rots61",
 			"SPQRobin",
-			"Siebrand",
-			"Amire80"
+			"Siebrand"
 		]
 	},
 	"bs-rssfeeder-desc": "Een extensie om geldige RSS uit te voeren voor elke extensie die een functie buildRss heeft",

@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Alojz.tic",
-			"Skalcaa",
-			"Eleassar"
+			"Eleassar",
+			"Skalcaa"
 		]
 	},
 	"bs-rssfeeder-desc": "Razširitev, ki izgradi veljaven RSS za vsako razširitev, ki vsebuje funkcijo buildRss.",
