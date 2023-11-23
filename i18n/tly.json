@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patriot Kor"
+			"Patriot Kor",
+			"Гусейн"
 		]
 	},
-	"bs-rssfeeder-recent-changes": "Oxonə dəqişon",
-	"bs-rssstandards-title-rc": "Oxonə dəqişon"
+	"bs-rssfeeder-recent-changes": "Oxonə ovaxtətijon",
+	"bs-rssstandards-title-rc": "Oxonə ovaxtətijon"
 }

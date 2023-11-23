@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"John Smith Ri",
 			"Liuxinyu970226",
 			"Xiplus",
 			"佛壁灯",
-			"科劳",
-			"John Smith Ri"
+			"科劳"
 		]
 	},
 	"bs-rssfeeder-desc": "为每个有buildRss-function功能的扩展输出有效RSS的扩展",

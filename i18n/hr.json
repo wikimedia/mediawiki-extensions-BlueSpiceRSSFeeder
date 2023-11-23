@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bugoslav"
+			"Bugoslav",
+			"Ponor"
 		]
 	},
-	"bs-rssfeeder-rss-desc": "Stvorite Vaš vlastiti kanal RSS-a"
+	"bs-rssfeeder-rss-desc": "Stvorite svoj vlastiti kanal RSS-a"
 }
