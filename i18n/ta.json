@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"ElangoRamanujam"
+			"ElangoRamanujam",
+			"Fahimrazick"
 		]
 	},
 	"bs-rssfeeder-recent-changes": "அண்மைய மாற்றங்கள்",
 	"bs-rssfeeder-pages": "பக்கம்",
-	"bs-rssfeeder-submit": "காட்டுக",
+	"bs-rssfeeder-submit": "காட்டு",
 	"bs-rssstandards-title-page": "பக்கம்",
 	"bs-rssstandards-title-cat": "பகுப்பு"
 }
