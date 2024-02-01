@@ -34,5 +34,7 @@
 	"bs-rssstandards-title-rc": "Urteme cangiaminde",
 	"bs-rss-feeder-pref-url-whitelist": "Elenghe vianghe de le URL",
 	"bs-rss-feeder-pref-max-redirects": "Numere massime de redirezionaminde permesse",
-	"bs-rssfeeder-rcunique-checkbox": "Scunne le duplicate"
+	"bs-rssfeeder-rcunique-checkbox": "Scunne le duplicate",
+	"bs-rss-feeder-pref-url-allow-help": "URL permesse pu RSS feed ca ponne essere audate jndr'à le cruscotte",
+	"bs-rss-feeder-pref-max-redirects-help": "Numere de le redirezionamiende da seguì. Avesse sulamende essere ausate quanne le URL de destinazione sò secure"
 }
