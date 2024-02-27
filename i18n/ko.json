@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dr1t jg",
 			"Hwangjy9",
 			"Revi",
 			"Ykhwong"
@@ -23,5 +24,7 @@
 	"right-rssfeeder-viewspecialpage": "[[Special:RSSFeeder]] 특수 문서로 접근",
 	"bs-rssstandards-title-rc": "최근 바뀜",
 	"bs-rss-feeder-pref-url-whitelist": "URL 화이트리스트",
-	"bs-rss-feeder-pref-max-redirects": "최대 허용 넘겨주기 수"
+	"bs-rss-feeder-pref-max-redirects": "최대 허용 넘겨주기 수",
+	"bs-rssfeeder-desc": "buildRss 기능을 가진 모든 확장 프로그램에서 유효한 RSS 출력 확장 프로그램",
+	"apihelp-bs-rssfeeder-tasks-summary": "RSSFeeder의 공통 작업을 제공함"
 }
