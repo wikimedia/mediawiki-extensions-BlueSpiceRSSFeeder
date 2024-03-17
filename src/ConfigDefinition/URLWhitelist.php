@@ -15,7 +15,7 @@ class URLWhitelist extends ArraySetting implements IOverwriteGlobal {
 	public function getPaths() {
 		return [
 			static::MAIN_PATH_FEATURE . '/' . static::FEATURE_ADMINISTRATION . '/BlueSpiceRSSFeeder',
-			static::MAIN_PATH_EXTENSION . '/BlueSpiceRSSFeeder/' . static::FEATURE_ADMINISTRATION ,
+			static::MAIN_PATH_EXTENSION . '/BlueSpiceRSSFeeder/' . static::FEATURE_ADMINISTRATION,
 			static::MAIN_PATH_PACKAGE . '/' . static::PACKAGE_FREE . '/BlueSpiceRSSFeeder',
 		];
 	}

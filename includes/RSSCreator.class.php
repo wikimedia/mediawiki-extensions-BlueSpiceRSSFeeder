@@ -42,12 +42,12 @@ class RSSCreator {
 	 * @var array
 	 */
 	protected static $URISchemes = [
-		'aaa','aaas','acap','cap','cid','crid','data','dav','dict','dns','fax','file','ftp','go',
-		'gopher','h323','http','https','iax','icap','im','imap','info','ipp','iris','iris\.beep',
-		'iris\.xpc','iris\.xpcs','iris\.lwz','ldap','mailto','mid','modem','msrp','msrps','mtqp',
-		'mupdate','news','nfs','nntp','opaquelocktoken','pop','pres','rtsp','service','shttp',
-		'sieve','sip','sips','snmp','soap\.beep','soap\.beeps','tag','tel','telnet','tftp',
-		'thismessage','tip','tv','urn','vemmi','xmlrpc\.beep','xmlrpc\.beeps','xmpp','z39\.50r','z39\.50s'
+		'aaa', 'aaas', 'acap', 'cap', 'cid', 'crid', 'data', 'dav', 'dict', 'dns', 'fax', 'file', 'ftp', 'go',
+		'gopher', 'h323', 'http', 'https', 'iax', 'icap', 'im', 'imap', 'info', 'ipp', 'iris', 'iris\.beep',
+		'iris\.xpc', 'iris\.xpcs', 'iris\.lwz', 'ldap', 'mailto', 'mid', 'modem', 'msrp', 'msrps', 'mtqp',
+		'mupdate', 'news', 'nfs', 'nntp', 'opaquelocktoken', 'pop', 'pres', 'rtsp', 'service', 'shttp',
+		'sieve', 'sip', 'sips', 'snmp', 'soap\.beep', 'soap\.beeps', 'tag', 'tel', 'telnet', 'tftp',
+		'thismessage', 'tip', 'tv', 'urn', 'vemmi', 'xmlrpc\.beep', 'xmlrpc\.beeps', 'xmpp', 'z39\.50r', 'z39\.50s'
 	];
 
 	/**
