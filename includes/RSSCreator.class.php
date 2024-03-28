@@ -27,6 +27,8 @@
  * @filesource
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * the RSSCreator class
  *
@@ -522,7 +524,8 @@ class RSSCreator {
 	 * @return string
 	 */
 	public static function ensureLinkProtocol( $link ) {
-		$parts = wfParseUrl( $link );
+		$urlUtils = MediaWikiServices::getInstance()->getUrlUtils();
+		$parts = $urlUtils->parse( $link );
 		// whenever the url comes without a scheme, wich is the default
 		if ( !empty( $parts['scheme'] ) ) {
 			return $link;
