@@ -101,9 +101,6 @@
 	},
 	"Hooks": {
 		"TitleReadWhitelist": "\\BlueSpice\\RSSFeeder\\Hook\\TitleReadWhitelist\\AddRSSFeeder::callback",
-		"ChameleonSkinTemplateOutputPageBeforeExec": [
-			"\\BlueSpice\\RSSFeeder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback"
-		],
 		"BSDashboardsAdminDashboardPortalPortlets": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsAdminDashboardPortalPortlets\\AddPortlets::callback",
 		"BSDashboardsAdminDashboardPortalConfig": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsAdminDashboardPortalConfig\\AddConfigs::callback",
 		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\RSSFeeder\\Hook\\BSDashboardsUserDashboardPortalPortlets\\AddPortlets::callback",
