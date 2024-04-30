@@ -1,14 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jon Harald S\u00f8by"
+			"Jon Harald Søby"
 		]
 	},
-	"bs-rssfeeder-desc": "En utvidelse for \u00e5 gi en gyldig RSS-mating for hver p\u00e5minnelse som har en buildRss-funksjon",
+	"bs-rssfeeder-desc": "En utvidelse for å gi en gyldig RSS-mating for hver påminnelse som har en buildRss-funksjon",
 	"rssfeeder": "RSS-mater",
 	"apihelp-bs-rssfeeder-tasks-description": "Gir felles oppgaver for RSSFeeder",
 	"apihelp-bs-rssfeeder-tasks-summary": "Gir felles oppgaver for RSSFeeder",
-	"bs-rssfeeder-pagetext": "Du kan abonnere p\u00e5 f\u00f8lgende RSS-matinger:",
+	"bs-rssfeeder-pagetext": "Du kan abonnere på følgende RSS-matinger:",
 	"bs-rssfeeder-recent-changes": "Siste endringer",
 	"bs-rssfeeder-pages": "Side",
 	"bs-rssfeeder-submit": "Vis",
@@ -16,18 +16,18 @@
 	"bs-rssfeeder-rss-desc": "Opprett din egen RSS-mating",
 	"bs-extjs-rssfeeder-rss-title": "RSS-URL",
 	"bs-rssfeeder-invalid-url": "Angi en gyldig URL.",
-	"action-rssfeeder-viewspecialpage": "vise spesialsiden \u00ab{{int:rssfeeder}}\u00bb",
-	"bs-rssstandards-desc": "Bygg RSS-matinger basert p\u00e5 forskjellige alternativer",
-	"bs-rssstandards-desc-rc": "Mating med en oversikt over siste endringer p\u00e5 wikien",
+	"action-rssfeeder-viewspecialpage": "vise spesialsiden «{{int:rssfeeder}}»",
+	"bs-rssstandards-desc": "Bygg RSS-matinger basert på forskjellige alternativer",
+	"bs-rssstandards-desc-rc": "Mating med en oversikt over siste endringer på wikien",
 	"bs-rssstandards-title-page": "Side",
-	"bs-rssstandards-desc-page": "Mating med en oversikt over siste endringer p\u00e5 en side.",
+	"bs-rssstandards-desc-page": "Mating med en oversikt over siste endringer på en side.",
 	"bs-rssstandards-title-own": "Egne bidrag",
 	"bs-rssstandards-desc-own": "Mating med en oversikt av dine egne bidrag til wikien.",
 	"bs-rssstandards-title-cat": "Kategori",
 	"bs-rssstandards-desc-cat": "Mating med en oversikt over nylige endringer i en kategori.",
-	"bs-rssstandards-title-watch": "Overv\u00e5kningsliste",
-	"bs-rssstandards-desc-watch": "Mating med en oversikt over sider du overv\u00e5ker.",
-	"bs-rssstandards-link-text-watch": "Nylige endringer {{PLURAL:$1|det siste d\u00f8gnet|de siste $1 dagene}}.",
+	"bs-rssstandards-title-watch": "Overvåkningsliste",
+	"bs-rssstandards-desc-watch": "Mating med en oversikt over sider du overvåker.",
+	"bs-rssstandards-link-text-watch": "Nylige endringer {{PLURAL:$1|det siste døgnet|de siste $1 dagene}}.",
 	"bs-rssstandards-desc-ns": "Mating med en oversikt over nylige endringer i et navnerom.",
 	"bs-rssstandards-changes-from": "Endringer {{GENDER:$1|av}}: $1",
 	"apihelp-bs-rss-standards-pages-store-description": "Returner liste over tilgjengelige sider for RSSFeeder",
@@ -38,5 +38,5 @@
 	"bs-rss-feeder-pref-max-redirects": "Maksimalt antall tillatte omdirigeringer",
 	"bs-rssfeeder-rcunique-checkbox": "Skjul dubletter",
 	"bs-rss-feeder-pref-url-allow-help": "Tillatte URL-er for RSS-matinger som kan brukes i kontrollpanel",
-	"bs-rss-feeder-pref-max-redirects-help": "Antall omdirigeringer som skal f\u00f8lges. B\u00f8r kun brukes n\u00e5r m\u00e5l-URL-ene er p\u00e5litelige"
+	"bs-rss-feeder-pref-max-redirects-help": "Antall omdirigeringer som skal følges. Bør kun brukes når mål-URL-ene er pålitelige"
 }
