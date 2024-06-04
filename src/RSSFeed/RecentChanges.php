@@ -4,6 +4,7 @@ namespace BlueSpice\RSSFeeder\RSSFeed;
 
 use FeedUtils;
 use MediaWiki\MediaWikiServices;
+use RecentChange;
 use RSSItemCreator;
 use Title;
 use ViewFormElementInput;
@@ -122,16 +123,17 @@ class RecentChanges extends TitleBasedFeed {
 	 */
 	protected function getRecentChanges( $conditions = [] ) {
 		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
-		$conditions[] = 'rc_comment_id = comment_id';
+		$rcQuery = RecentChange::getQueryInfo();
 		$res = $dbr->select(
-			[ 'recentchanges', 'comment' ],
-			[ '*' ],
-			$conditions,
+			$rcQuery['tables'],
+			$rcQuery['fields'],
+			[],
 			__METHOD__,
 			[
 				'ORDER BY' => 'rc_timestamp DESC',
 				'LIMIT' => '10'
-			]
+			],
+			$rcQuery['joins']
 		);
 
 		return $res ?: (object)null;
