@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceRSSFeeder",
 	"license-name": "GPL-3.0-only",
-	"version": "4.5.0-alpha",
+	"version": "4.5.0",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceRSSFeeder",
 	"author": "Sebastian Ulbricht",
 	"descriptionmsg": "bs-rssfeeder-desc",
