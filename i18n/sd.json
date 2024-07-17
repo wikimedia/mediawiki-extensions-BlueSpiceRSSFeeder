@@ -11,5 +11,6 @@
 	"bs-rssstandards-title-own": "پنھنجون ڀاڱيداريون",
 	"bs-rssstandards-title-watch": "نظر۾فھرست",
 	"bs-rssstandards-link-text-watch": "گذريل {{PLURAL:$1|ڏينھن|$1 ڏينھن}} ۾ تازيون تبديليون.",
-	"bs-rssstandards-title-rc": "تازيون تبديليون"
+	"bs-rssstandards-title-rc": "تازيون تبديليون",
+	"bs-rssstandards-title-cat": "زمرو"
 }
