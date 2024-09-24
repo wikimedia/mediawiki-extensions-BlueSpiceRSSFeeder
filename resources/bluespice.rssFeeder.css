@@ -57,6 +57,12 @@
 	float: right;
 }
 
+#RSSFeederForm button:focus,
+#RSSFeederForm input[type="checkbox"]:focus,
+#RSSFeederForm .selectbox:focus {
+	outline: var(--bs-focus-ring-width) solid var(--bs-focus-ring-color);
+}
+
 #divFeedPage {
 	display: inline-block;
 }
