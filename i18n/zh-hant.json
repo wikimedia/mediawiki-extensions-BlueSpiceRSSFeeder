@@ -40,7 +40,5 @@
 	"bs-rssstandards-title-rc": "近期變更",
 	"bs-rss-feeder-pref-url-whitelist": "URL 白名單",
 	"bs-rss-feeder-pref-max-redirects": "允許重新導向的最大值",
-	"bs-rssfeeder-rcunique-checkbox": "隱藏重複",
-	"bs-rss-feeder-pref-url-allow-help": "可在儀表板中使用的 RSS 來源的允許 URL",
-	"bs-rss-feeder-pref-max-redirects-help": "要遵循的重定向數量。僅當目標 URL 可信時才應使用"
+	"bs-rssfeeder-rcunique-checkbox": "隱藏重複"
 }
