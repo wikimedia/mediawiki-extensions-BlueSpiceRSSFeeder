@@ -4,9 +4,9 @@ namespace BlueSpice\RSSFeeder\RSSFeed;
 
 use ConfigException;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use RSSCreator;
 use SpecialPage;
-use Title;
 use ViewFormElementSelectbox;
 
 class Watchlist extends RecentChanges {

@@ -4,7 +4,7 @@ namespace BlueSpice\RSSFeeder\RSSFeed;
 
 use BsNamespaceHelper;
 use MediaWiki\MediaWikiServices;
-use Title;
+use MediaWiki\Title\Title;
 use ViewFormElementSelectbox;
 
 class NamespaceFeed extends RecentChanges {

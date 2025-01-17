@@ -2,7 +2,7 @@
 
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
-use Title;
+use MediaWiki\Title\Title;
 
 abstract class TitleBasedFeed extends FeedBase {
 	/**
