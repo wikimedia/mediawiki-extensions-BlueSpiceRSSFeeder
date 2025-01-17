@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Title\Title;
+
 /**
  * Provides rss-standards extjs store api for BlueSpice.
  *

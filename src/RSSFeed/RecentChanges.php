@@ -4,9 +4,9 @@ namespace BlueSpice\RSSFeeder\RSSFeed;
 
 use FeedUtils;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use RecentChange;
 use RSSItemCreator;
-use Title;
 use ViewFormElementInput;
 
 class RecentChanges extends TitleBasedFeed {

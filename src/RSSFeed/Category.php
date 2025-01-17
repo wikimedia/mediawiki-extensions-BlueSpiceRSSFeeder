@@ -3,7 +3,7 @@
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
 use MediaWiki\MediaWikiServices;
-use Title;
+use MediaWiki\Title\Title;
 use ViewFormElementSelectbox;
 
 class Category extends RecentChanges {

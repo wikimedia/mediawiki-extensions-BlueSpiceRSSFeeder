@@ -2,7 +2,7 @@
 
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
-use Title;
+use MediaWiki\Title\Title;
 use ViewTagElement;
 
 class FollowPage extends RecentChanges {
