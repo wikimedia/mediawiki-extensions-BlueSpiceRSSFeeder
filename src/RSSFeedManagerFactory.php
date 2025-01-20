@@ -4,8 +4,8 @@ namespace BlueSpice\RSSFeeder;
 
 use IContextSource;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\User;
 use Psr\Log\LoggerInterface;
-use User;
 
 class RSSFeedManagerFactory {
 	/** @var LoggerInterface */
