@@ -27,6 +27,7 @@
  * @filesource
  */
 
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 
 /**
@@ -530,7 +531,7 @@ class RSSCreator {
 		if ( !empty( $parts['scheme'] ) ) {
 			return $link;
 		}
-		$protocol = \RequestContext::getMain()->getRequest()->getProtocol();
+		$protocol = RequestContext::getMain()->getRequest()->getProtocol();
 		$delimiter = empty( $parts['delimiter'] ) ? '//' : '';
 		return "$protocol:$delimiter$link";
 	}
