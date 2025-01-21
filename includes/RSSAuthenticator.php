@@ -2,13 +2,14 @@
 
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Request\WebRequest;
 use MediaWiki\User\User;
 
 class RSSAuthenticator {
 	public const TOKEN_SALT = 'rss_salt';
 	/**
 	 *
-	 * @var \WebRequest
+	 * @var WebRequest
 	 */
 	protected $request;
 
@@ -20,10 +21,10 @@ class RSSAuthenticator {
 
 	/**
 	 *
-	 * @param \WebRequest $request
+	 * @param WebRequest $request
 	 * @param \IContextSource $context
 	 */
-	public function __construct( \WebRequest $request, \IContextSource $context ) {
+	public function __construct( WebRequest $request, \IContextSource $context ) {
 		$this->request = $request;
 		$this->context = $context;
 	}
