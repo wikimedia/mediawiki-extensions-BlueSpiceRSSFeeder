@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\User;
 
@@ -13,7 +14,7 @@ class RSSAuthenticator {
 
 	/**
 	 *
-	 * @var \RequestContext
+	 * @var RequestContext
 	 */
 	protected $context;
 

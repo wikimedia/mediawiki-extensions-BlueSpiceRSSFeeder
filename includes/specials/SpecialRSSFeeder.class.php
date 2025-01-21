@@ -2,6 +2,7 @@
 // Last review MRG (01.07.11 14:22)
 use BlueSpice\RSSFeeder\IRSSFeed;
 use BlueSpice\RSSFeeder\RSSFeedManager;
+use MediaWiki\Context\RequestContext;
 use Wikimedia\AtEase\AtEase;
 
 class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
@@ -17,7 +18,7 @@ class SpecialRSSFeeder extends \BlueSpice\SpecialPage {
 	public function execute( $sParameter ) {
 		if ( $this->getUser()->isAnon() ) {
 			// Try to log in user from request
-			$authenticator = new RSSAuthenticator( $this->getRequest(), \RequestContext::getMain() );
+			$authenticator = new RSSAuthenticator( $this->getRequest(), RequestContext::getMain() );
 			$userAuthenticated = $authenticator->logInUser();
 		} else {
 			$userAuthenticated = true;
