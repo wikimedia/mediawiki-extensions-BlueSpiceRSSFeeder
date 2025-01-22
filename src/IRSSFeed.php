@@ -2,7 +2,7 @@
 
 namespace BlueSpice\RSSFeeder;
 
-use Message;
+use MediaWiki\Message\Message;
 use ViewFormElementFieldset;
 
 interface IRSSFeed {
