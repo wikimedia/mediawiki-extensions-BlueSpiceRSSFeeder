@@ -3,6 +3,7 @@
 namespace BlueSpice\RSSFeeder\Hook;
 
 use MediaWiki\Config\Config;
+use MediaWiki\Context\IContextSource;
 
 abstract class BSRSSFeederBeforeGetRecentChanges extends \BlueSpice\Hook {
 	/**
@@ -36,7 +37,7 @@ abstract class BSRSSFeederBeforeGetRecentChanges extends \BlueSpice\Hook {
 
 	/**
 	 *
-	 * @param \IContextSource $context
+	 * @param IContextSource $context
 	 * @param Config $config
 	 * @param array &$conditions
 	 * @param string $feedType
