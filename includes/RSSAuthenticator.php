@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Context\IContextSource;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Request\WebRequest;
@@ -22,9 +23,9 @@ class RSSAuthenticator {
 	/**
 	 *
 	 * @param WebRequest $request
-	 * @param \IContextSource $context
+	 * @param IContextSource $context
 	 */
-	public function __construct( WebRequest $request, \IContextSource $context ) {
+	public function __construct( WebRequest $request, IContextSource $context ) {
 		$this->request = $request;
 		$this->context = $context;
 	}
