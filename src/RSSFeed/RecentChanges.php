@@ -3,11 +3,9 @@
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
 use FeedUtils;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use RecentChange;
 use RSSItemCreator;
-use ViewFormElementInput;
 
 class RecentChanges extends TitleBasedFeed {
 
@@ -30,15 +28,6 @@ class RecentChanges extends TitleBasedFeed {
 	 */
 	public function getDescription() {
 		return $this->context->msg( 'bs-rssstandards-desc-rc' );
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	public function getViewElement() {
-		$set = parent::getViewElement();
-		$set->addItem( $this->getRCUniqueCheckbox() );
-		return $set;
 	}
 
 	/**
@@ -73,7 +62,7 @@ class RecentChanges extends TitleBasedFeed {
 	 */
 	protected function getConditions() {
 		$conditions = $this->getFeedConditions();
-		MediaWikiServices::getInstance()->getHookContainer()->run(
+		$this->services->getHookContainer()->run(
 			'BSRSSFeederBeforeGetRecentChanges',
 			[
 				&$conditions,
@@ -137,20 +126,6 @@ class RecentChanges extends TitleBasedFeed {
 		);
 
 		return $res ?: (object)null;
-	}
-
-	/**
-	 * @return ViewFormElementInput
-	 */
-	protected function getRCUniqueCheckbox() {
-		$checkbox = new ViewFormElementInput();
-		$checkbox->setId( 'RcUnique_' . $this->getId() );
-		$checkbox->setType( 'checkbox' );
-		$checkbox->setLabel(
-			$this->context->msg( 'bs-rssfeeder-rcunique-checkbox' )->plain()
-		);
-
-		return $checkbox;
 	}
 
 	/**

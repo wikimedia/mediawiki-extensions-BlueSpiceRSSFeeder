@@ -3,11 +3,9 @@
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
 use ConfigException;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use RSSCreator;
-use ViewFormElementSelectbox;
 
 class Watchlist extends RecentChanges {
 
@@ -30,34 +28,6 @@ class Watchlist extends RecentChanges {
 	 */
 	public function getDescription() {
 		return $this->context->msg( 'bs-rssstandards-desc-watch' );
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	public function getViewElement() {
-		$watchlistDays = [ 1, 3, 5, 7, 14, 30, 60, 90, 180, 365 ];
-
-		$set = $this->getViewElementFieldset();
-
-		$select = new ViewFormElementSelectbox();
-		$select->setId( 'selFeedWatch' );
-		$select->setName( 'selFeedWatch' );
-		$select->setLabel( $this->getDisplayName()->plain() );
-
-		foreach ( $watchlistDays as $day ) {
-			$select->addData( [
-				'value' => $this->getFeedURL( [ 'days' => $day ] ),
-				'label' => $this->context->msg( 'bs-rssstandards-link-text-watch' )
-					->params( $day )->text()
-			] );
-		}
-
-		$set->addItem( $select );
-		$set->addItem( $this->getSubmitButton() );
-		$set->addItem( $this->getRCUniqueCheckbox() );
-
-		return $set;
 	}
 
 	/**
@@ -89,7 +59,7 @@ class Watchlist extends RecentChanges {
 				continue;
 			}
 			$entry = $this->getEntry( $title, $row );
-			$talkPageTarget = MediaWikiServices::getInstance()->getNamespaceInfo()
+			$talkPageTarget = $this->services->getNamespaceInfo()
 				->getTalkPage( $title );
 			$talkPage = Title::newFromLinkTarget( $talkPageTarget );
 			$entry->setComments( $talkPage->getFullURL() );
@@ -121,7 +91,7 @@ class Watchlist extends RecentChanges {
 			];
 		}
 
-		MediaWikiServices::getInstance()->getHookContainer()->run(
+		$this->services->getHookContainer()->run(
 			'BSRSSFeederBeforeGetRecentChanges',
 			[
 				&$conditions,
@@ -150,12 +120,5 @@ class Watchlist extends RecentChanges {
 	 */
 	protected function getItemTitle( $title, $row ) {
 		return $title->getPrefixedText();
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	public function getJSHandler() {
-		return 'bs.rssfeeder.handler.watchlist';
 	}
 }
