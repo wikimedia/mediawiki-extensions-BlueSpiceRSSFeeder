@@ -3,7 +3,6 @@
 namespace BlueSpice\RSSFeeder;
 
 use MediaWiki\Message\Message;
-use ViewFormElementFieldset;
 
 interface IRSSFeed {
 
@@ -26,21 +25,8 @@ interface IRSSFeed {
 	public function getDescription();
 
 	/**
-	 * Get Configuration/URL generator form
-	 * @return ViewFormElementFieldset
-	 */
-	public function getViewElement();
-
-	/**
 	 * Get RSS feed output
 	 * @return string
 	 */
 	public function getRss();
-
-	/**
-	 * Get a JS function to be called after element is loaded
-	 *
-	 * @return string
-	 */
-	public function getJSHandler();
 }

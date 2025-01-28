@@ -2,10 +2,7 @@
 
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
-use BsNamespaceHelper;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
-use ViewFormElementSelectbox;
 
 class NamespaceFeed extends RecentChanges {
 
@@ -33,34 +30,6 @@ class NamespaceFeed extends RecentChanges {
 	/**
 	 * @inheritDoc
 	 */
-	public function getViewElement() {
-		$set = $this->getViewElementFieldset();
-
-		$select = new ViewFormElementSelectbox();
-		$select->setId( 'selFeedNs' );
-		$select->setName( 'selFeedNs' );
-		$select->setLabel( $this->getDisplayName()->plain() );
-
-		$namespaces = BsNamespaceHelper::getNamespacesForSelectOptions( [ NS_SPECIAL, NS_MEDIA ] );
-		foreach ( $namespaces as $key => $name ) {
-			$select->addData( [
-				'value' => $this->getFeedURL( [ 'ns' => $key ] ),
-				'label' => $name
-			] );
-		}
-
-		$btn = $this->getSubmitButton();
-
-		$set->addItem( $select );
-		$set->addItem( $btn );
-		$set->addItem( $this->getRCUniqueCheckbox() );
-
-		return $set;
-	}
-
-	/**
-	 * @inheritDoc
-	 */
 	public function getRss() {
 		$request = $this->context->getRequest();
 		$nsId = $request->getInt( 'ns', NS_MAIN );
@@ -74,7 +43,7 @@ class NamespaceFeed extends RecentChanges {
 				continue;
 			}
 			$entry = $this->getEntry( $title, $row );
-			$talkPageTarget = MediaWikiServices::getInstance()->getNamespaceInfo()
+			$talkPageTarget = $this->services->getNamespaceInfo()
 				->getTalkPage( $title );
 			$talkPage = Title::newFromLinkTarget( $talkPageTarget );
 			$entry->setComments( $talkPage->getFullURL() );
@@ -93,12 +62,5 @@ class NamespaceFeed extends RecentChanges {
 		$titleObject = Title::makeTitle( $nsId, 'Dummy' );
 
 		return [ 'rc_namespace' => $titleObject->getNamespace() ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	public function getJSHandler() {
-		return 'bs.rssfeeder.handler.namespace';
 	}
 }
