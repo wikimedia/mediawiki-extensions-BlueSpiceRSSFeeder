@@ -24,6 +24,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
+use MediaWiki\Api\ApiMain;
+
 /**
  * ShoutBox Api class
  * @package BlueSpice_Extensions
