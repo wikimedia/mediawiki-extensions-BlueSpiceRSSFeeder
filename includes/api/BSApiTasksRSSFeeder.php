@@ -25,6 +25,7 @@
  */
 
 use MediaWiki\Api\ApiMain;
+use MediaWiki\Parser\ParserOptions;
 
 /**
  * ShoutBox Api class
