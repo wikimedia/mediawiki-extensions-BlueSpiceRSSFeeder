@@ -16,9 +16,6 @@
 	"bs-rssfeeder-recent-changes": "Headline for recent changes\n{{Identical|Recent changes}}",
 	"bs-rssfeeder-pages": "Headline for page\n{{Identical|Page}}",
 	"bs-rssfeeder-submit": "Button label for show\n{{Identical|Show}}",
-	"bs-rssfeeder-rss": "Used in [[Special:AdminDashboard]] and [[Special:UserDashboard]], headline for rss feed portlet.\n{{Identical|RSS feed}}",
-	"bs-rssfeeder-rss-desc": "Used in [[Special:AdminDashboard]] and [[Special:UserDashboard]], description of rss feed portlet",
-	"bs-extjs-rssfeeder-rss-title": "Used in [[Special:AdminDashboard]] and [[Special:UserDashboard]], label for rss URL.",
 	"bs-rssfeeder-invalid-url": "Error message when URL is not provided in the API",
 	"action-rssfeeder-viewspecialpage": "placeholder to describe that view of special page \"{{int:rssfeeder}}\" is restricted for the current user.\n\n{{Doc-action|rssfeeder-viewspecialpage}}",
 	"bs-rssstandards-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of rss standars extension",
@@ -39,7 +36,7 @@
 	"bs-rssstandards-title-rc": "Headline for recent changes RSS feed\n\n{{Identical|Recent changes}}",
 	"bs-rss-feeder-pref-url-whitelist": "ConfigManager label for variable $bsgRSSUrlWhitelist",
 	"bs-rss-feeder-pref-max-redirects": "ConfigManager label for variable $bsgRSSUrlNumberOfAllowedRedirects",
-	"bs-rssfeeder-rcunique-checkbox": "Label for \"hide recent changes doubles\" checkbox",
+	"bs-rssfeeder-rcunique-checkbox": "Label for \"Hide duplicates\" checkbox",
 	"bs-rss-feeder-pref-url-allow-help": "Help message in config, where permitted URLs for RSS feed can be defined",
 	"bs-rss-feeder-pref-max-redirects-help": "Help message in config, for maximum number of redirects to follow"
 }

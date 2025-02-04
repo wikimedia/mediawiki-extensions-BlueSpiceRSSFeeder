@@ -1,0 +1,9 @@
+#bs-rssfeeder-special-rssfeeder-container .special-rssfeeder-heading {
+	font-size: 1.2rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#bs-rssfeeder-special-rssfeeder-container .oo-ui-fieldLayout-header {
+	flex-grow: 0.1;
+}

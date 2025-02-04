@@ -3,7 +3,6 @@
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
 use MediaWiki\Title\Title;
-use ViewTagElement;
 
 class FollowPage extends RecentChanges {
 
@@ -31,28 +30,10 @@ class FollowPage extends RecentChanges {
 	/**
 	 * @inheritDoc
 	 */
-	public function getViewElement() {
-		$set = $this->getViewElementFieldset();
-
-		$div = new ViewTagElement();
-		$div->setAutoElement( 'div' );
-		$div->setId( 'divFeedPage' );
-
-		$btn = $this->getSubmitButton();
-
-		$set->addItem( $div );
-		$set->addItem( $btn );
-		return $set;
-	}
-
-	/**
-	 * @inheritDoc
-	 */
 	public function getRss() {
 		$request = $this->context->getRequest();
 		$page = $request->getVal( 'p', '' );
-		$nsId = $request->getInt( 'ns', 0 );
-		$titleObject = Title::makeTitle( $nsId, $page );
+		$titleObject = Title::newFromText( $page );
 		$conditions = $this->getConditions();
 		$rc = $this->getRecentChanges( $conditions );
 
@@ -90,12 +71,5 @@ class FollowPage extends RecentChanges {
 		return $this->context->msg(
 			'bs-rssstandards-changes-from'
 		)->params( $row->rc_user_text )->text();
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	public function getJSHandler() {
-		return 'bs.rssfeeder.handler.page';
 	}
 }

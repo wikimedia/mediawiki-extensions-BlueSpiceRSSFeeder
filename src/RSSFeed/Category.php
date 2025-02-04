@@ -2,9 +2,7 @@
 
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
-use ViewFormElementSelectbox;
 
 class Category extends RecentChanges {
 
@@ -33,32 +31,6 @@ class Category extends RecentChanges {
 	 */
 	public function getDescription() {
 		return $this->context->msg( 'bs-rssstandards-desc-cat' );
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	public function getViewElement() {
-		$set = $this->getViewElementFieldset();
-
-		$select = new ViewFormElementSelectbox();
-		$select->setId( 'selFeedCat' );
-		$select->setName( 'selFeedCat' );
-		$select->setLabel( $this->getDisplayName()->plain() );
-
-		$categories = $this->getCategories();
-		foreach ( $categories as $category ) {
-			$select->addData( [
-				'value' => $this->getFeedURL( [ 'cat' => $category ] ),
-				'label' => $category
-			] );
-		}
-
-		$set->addItem( $select );
-		$set->addItem( $this->getSubmitButton() );
-		$set->addItem( $this->getRCUniqueCheckbox() );
-
-		return $set;
 	}
 
 	/**
@@ -108,7 +80,7 @@ class Category extends RecentChanges {
 			];
 		}
 
-		MediaWikiServices::getInstance()->getHookContainer()->run(
+		$this->services->getHookContainer()->run(
 			'BSRSSFeederBeforeGetRecentChanges',
 			[
 				&$conditions,
@@ -120,40 +92,9 @@ class Category extends RecentChanges {
 	}
 
 	/**
-	 * @return array
-	 */
-	private function getCategories() {
-		$categories = [];
-		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
-		$res = $dbr->select(
-			'categorylinks',
-			'cl_to',
-			[],
-			__METHOD__,
-			[
-				'GROUP BY' => 'cl_to',
-				'ORDER BY' => 'cl_to',
-			]
-		);
-
-		foreach ( $res as $row ) {
-			$categories[] = $row->cl_to;
-		}
-
-		return $categories;
-	}
-
-	/**
 	 * @inheritDoc
 	 */
 	protected function getItemTitle( $title, $row ) {
 		return $title->getPrefixedText();
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	public function getJSHandler() {
-		return 'bs.rssfeeder.handler.category';
 	}
 }
