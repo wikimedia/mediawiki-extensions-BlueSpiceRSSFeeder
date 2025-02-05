@@ -10,8 +10,5 @@
 	"bs-rssfeeder-pagetext": "Do kanns heh di Kannähl met <i>RSS</i> abbonnehre:",
 	"bs-rssfeeder-recent-changes": "{{int:recentchanges}}",
 	"bs-rssfeeder-pages": "Sigg",
-	"bs-rssfeeder-submit": "Aanzeije!",
-	"bs-rssfeeder-rss": "<i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Rich Site Summary → Really Simple Syndication\">RSS</i> Kannaal",
-	"bs-rssfeeder-rss-desc": "Donn Dinge eije <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Rich Site Summary → Really Simple Syndication\">RSS</i> Kannaal aanlähje",
-	"bs-extjs-rssfeeder-rss-title": "Dem <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Rich Site Summary → Really Simple Syndication\">RSS</i> Kannaal singe <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Uniform Ressource Locator\">URL</i>"
+	"bs-rssfeeder-submit": "Aanzeije!"
 }
