@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Csega",
-			"Hanna Tardos"
+			"Hanna Tardos",
+			"Karmantomi"
 		]
 	},
 	"bs-rssfeeder-recent-changes": "Friss változtatások",
@@ -13,5 +14,6 @@
 	"bs-rssstandards-title-cat": "Kategória",
 	"bs-rssstandards-title-watch": "Figyelőlista",
 	"bs-rss-feeder-pref-url-whitelist": "URL fehérlista",
-	"bs-rss-feeder-pref-max-redirects": "Engedélyezett átirányítások maximális száma"
+	"bs-rss-feeder-pref-max-redirects": "Engedélyezett átirányítások maximális száma",
+	"bs-rss-feeder-pref-url-allow-help": "Engedélyezett URL-ek az RSS-hírcsatornákhoz, amelyek használhatók"
 }

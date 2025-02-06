@@ -26,5 +26,6 @@
 	"bs-rss-feeder-pref-url-whitelist": "URL 화이트리스트",
 	"bs-rss-feeder-pref-max-redirects": "최대 허용 넘겨주기 수",
 	"bs-rssfeeder-desc": "buildRss 기능을 가진 모든 확장 프로그램에서 유효한 RSS 출력 확장 프로그램",
-	"apihelp-bs-rssfeeder-tasks-summary": "RSSFeeder의 공통 작업을 제공함"
+	"apihelp-bs-rssfeeder-tasks-summary": "RSSFeeder의 공통 작업을 제공함",
+	"bs-rssfeeder-rcunique-checkbox": "중복 항목 숨기기"
 }
