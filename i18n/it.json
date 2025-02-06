@@ -21,5 +21,6 @@
 	"bs-rssstandards-link-text-watch": "Cambiamenti recenti {{PLURAL:$1|dell'ultimo giorno|degli ultimi $1 giorni}}.",
 	"bs-rssstandards-changes-from": "Modifiche {{GENDER:$1|di}}: $1",
 	"right-rssfeeder-viewspecialpage": "Accede alla pagina speciale [[Special:RSSFeeder]]",
-	"bs-rssstandards-title-rc": "Ultime modifiche"
+	"bs-rssstandards-title-rc": "Ultime modifiche",
+	"bs-rssfeeder-rcunique-checkbox": "Nascondi duplicati"
 }

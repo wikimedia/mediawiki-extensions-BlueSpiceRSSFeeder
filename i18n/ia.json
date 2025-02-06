@@ -32,6 +32,6 @@
 	"bs-rss-feeder-pref-url-whitelist": "Lista de URLs permittite",
 	"bs-rss-feeder-pref-max-redirects": "Numero maxime de redirectiones permittite",
 	"bs-rssfeeder-rcunique-checkbox": "Celar duplicatos",
-	"bs-rss-feeder-pref-url-allow-help": "URLs permittite pro syndication RSS que pote esser usate in tabulieros de instrumentos",
+	"bs-rss-feeder-pref-url-allow-help": "URLs permittite pro syndication RSS que pote esser usate",
 	"bs-rss-feeder-pref-max-redirects-help": "Numero de redirectiones a sequer. Debe solo esser usate si le URLs de destination es digne de fide."
 }
