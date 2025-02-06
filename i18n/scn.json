@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajeje Brazorf"
+			"Ajeje Brazorf",
+			"Gmelfi"
 		]
 	},
 	"bs-rssfeeder-recent-changes": "Ùrtimi canciamenti",
@@ -12,5 +13,6 @@
 	"bs-rssstandards-title-own": "Li mè cuntribbuti",
 	"bs-rssstandards-title-cat": "Catigurìa",
 	"bs-rssstandards-title-watch": "Lista taliata",
-	"bs-rssstandards-title-rc": "Ùrtimi canciamenti"
+	"bs-rssstandards-title-rc": "Ùrtimi canciamenti",
+	"bs-rss-feeder-pref-url-allow-help": "URL pirmissi pi feed RSS ca ponnu èssiri usati"
 }
