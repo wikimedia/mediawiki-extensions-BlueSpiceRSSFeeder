@@ -26,6 +26,7 @@
 
 use MediaWiki\Api\ApiMain;
 use MediaWiki\Parser\ParserOptions;
+use MediaWiki\Request\DerivativeRequest;
 
 /**
  * ShoutBox Api class
