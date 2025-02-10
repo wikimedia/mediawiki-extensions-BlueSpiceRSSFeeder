@@ -2,7 +2,7 @@
 
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
-use ConfigException;
+use MediaWiki\Config\ConfigException;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use RSSCreator;

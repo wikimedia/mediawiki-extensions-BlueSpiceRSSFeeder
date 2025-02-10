@@ -3,7 +3,7 @@
 namespace BlueSpice\RSSFeeder\RSSFeed;
 
 use BlueSpice\RSSFeeder\IRSSFeed;
-use ConfigException;
+use MediaWiki\Config\ConfigException;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\User;
