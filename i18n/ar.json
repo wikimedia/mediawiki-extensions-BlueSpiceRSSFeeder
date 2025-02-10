@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Cigaryno",
 			"Meno25",
 			"ديفيد",
 			"محمد أحمد عبد الفتاح"
@@ -33,7 +34,7 @@
 	"bs-rssstandards-title-rc": "أحدث التغييرات",
 	"bs-rss-feeder-pref-url-whitelist": "القائمة البيضاء لعناوين URL",
 	"bs-rss-feeder-pref-max-redirects": "العدد الأقصى للتحويلات المسموح بها",
-	"bs-rssfeeder-rcunique-checkbox": "إخفاء الزوجي",
-	"bs-rss-feeder-pref-url-allow-help": "عناوين URL المسموح بها لتغذية RSS التي يمكن استخدامها في لوحات المعلومات",
+	"bs-rssfeeder-rcunique-checkbox": "إخفاء الزوجيات",
+	"bs-rss-feeder-pref-url-allow-help": "عناوين URL المسموح بها لخلاصات RSS التي يمكن استخدامها",
 	"bs-rss-feeder-pref-max-redirects-help": "عدد عمليات إعادة التوجيه التي يجب اتباعها. يجب استخدامه فقط عندما تكون عناوين URL المستهدفة موثوقة"
 }
