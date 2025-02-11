@@ -3,7 +3,8 @@
 		"authors": [
 			"Meno25",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Cigaryno"
 		]
 	},
 	"bs-rssfeeder-desc": "امتداد لإخراج RSS صالح لكل امتداد، يحتوي على وظيفة buildRss",
@@ -13,9 +14,6 @@
 	"bs-rssfeeder-recent-changes": "أحدث التغييرات",
 	"bs-rssfeeder-pages": "صفحة",
 	"bs-rssfeeder-submit": "أظهر",
-	"bs-rssfeeder-rss": "تغذية RSS",
-	"bs-rssfeeder-rss-desc": "قم بإنشاء موجز RSS خاص بك",
-	"bs-extjs-rssfeeder-rss-title": "مسار RSS",
 	"bs-rssfeeder-invalid-url": "يُرجَى تقديم مسار صالح.",
 	"action-rssfeeder-viewspecialpage": "عرض الصفحة الخاصة \"{{int:rssfeeder}}\"",
 	"bs-rssstandards-desc": "يبني آر إس إس على أساس خيارات مختلفة",
@@ -36,7 +34,7 @@
 	"bs-rssstandards-title-rc": "أحدث التغييرات",
 	"bs-rss-feeder-pref-url-whitelist": "القائمة البيضاء لعناوين URL",
 	"bs-rss-feeder-pref-max-redirects": "العدد الأقصى للتحويلات المسموح بها",
-	"bs-rssfeeder-rcunique-checkbox": "إخفاء الزوجي",
-	"bs-rss-feeder-pref-url-allow-help": "عناوين URL المسموح بها لتغذية RSS التي يمكن استخدامها في لوحات المعلومات",
+	"bs-rssfeeder-rcunique-checkbox": "إخفاء الزوجيات",
+	"bs-rss-feeder-pref-url-allow-help": "عناوين URL المسموح بها لخلاصات RSS التي يمكن استخدامها",
 	"bs-rss-feeder-pref-max-redirects-help": "عدد عمليات إعادة التوجيه التي يجب اتباعها. يجب استخدامه فقط عندما تكون عناوين URL المستهدفة موثوقة"
 }
