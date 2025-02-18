@@ -72,16 +72,32 @@ class Watchlist extends RecentChanges {
 		$prefix = $this->context->getConfig()->get( 'DBprefix' );
 		$conditions = $this->getConditions();
 
-		// phpcs:ignore MediaWiki.Usage.DbrQueryUsage.DbrQueryFound
-		$rc = $dbr->query(
-			"SELECT r.*, c.* FROM {$prefix}watchlist AS w "
-			. "INNER JOIN {$prefix}recentchanges AS r "
-			. "ON w.wl_namespace = r.rc_namespace AND w.wl_title = r.rc_title "
-			. "INNER JOIN {$prefix}comment AS c "
-			. "ON r.rc_comment_id = c.comment_id "
-			. 'WHERE ' . implode( ' AND ', $conditions )
-			. ' ORDER BY r.rc_timestamp DESC;'
-		);
+		$rc = $dbr->newSelectQueryBuilder()
+			->select( [
+				'r.*',
+				'rc_comment_text' => 'c.comment_text',
+				'rc_comment_data' => 'c.comment_data'
+			] )
+			->from(
+				$prefix . 'watchlist',
+				'w'
+			)
+			->join(
+				$prefix . 'recentchanges',
+				'r',
+				[
+					'w.wl_namespace = r.rc_namespace',
+					'w.wl_title = r.rc_title'
+				]
+			)
+			->join(
+				$prefix . 'comment',
+				'c',
+				'r.rc_comment_id = c.comment_id'
+			)
+			->where( $conditions )
+			->orderBy( 'r.rc_timestamp', 'DESC' )
+			->fetchResultSet();
 
 		foreach ( $rc as $row ) {
 			$title = Title::makeTitle( $row->rc_namespace, $row->rc_title );
@@ -110,10 +126,10 @@ class Watchlist extends RecentChanges {
 		$rcUnique = $this->context->getRequest()->getVal( 'rc_unique', false );
 		if ( $rcUnique ) {
 			$rcUniqueIds = $this->getUniqueRecentChangesIds( [ 'rc_timestamp > ' . $rcTimestamp ] );
-			$conditions = [
-				'w.wl_user = ' . $this->user->getId(),
-				'r.rc_id IN (' . implode( ',', $rcUniqueIds ) . ')'
-			];
+			$conditions = [ 'w.wl_user = ' . $this->user->getId() ];
+			if ( !empty( $rcUniqueIds ) ) {
+				$conditions[] = 'rc_id IN (' . implode( ',', $rcUniqueIds ) . ')';
+			}
 		} else {
 			$conditions = [
 				'w.wl_user = ' . $this->user->getId(),
