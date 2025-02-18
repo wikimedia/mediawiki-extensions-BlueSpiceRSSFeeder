@@ -42,16 +42,37 @@ class Category extends RecentChanges {
 		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$conditions = $this->getConditions();
 		$prefix = $this->context->getConfig()->get( 'DBprefix' );
-		// phpcs:ignore MediaWiki.Usage.DbrQueryUsage.DbrQueryFound
-		$rc = $dbr->query(
-			"SELECT r.* from {$prefix}categorylinks AS c "
-			. "INNER JOIN {$prefix}page AS p ON c.cl_from = p.page_id "
-			. "INNER JOIN {$prefix}recentchanges AS r "
-			. 'ON r.rc_namespace = p.page_namespace AND r.rc_title = p.page_title '
-			. 'WHERE ' . implode( ' AND ', $conditions )
-			. ' ORDER BY r.rc_timestamp DESC;'
-		);
-
+		$rc = $dbr->newSelectQueryBuilder()
+			->select( [
+				'r.*',
+				'rc_comment_text' => 'c.comment_text',
+				'rc_comment_data' => 'c.comment_data'
+			] )
+			->from(
+				$prefix . 'categorylinks',
+				'catlinks'
+			)
+			->join(
+				$prefix . 'page',
+				'p',
+				'catlinks.cl_from = p.page_id'
+			)
+			->join(
+				$prefix . 'recentchanges',
+				'r',
+				[
+					'r.rc_namespace = p.page_namespace',
+					'r.rc_title = p.page_title'
+				]
+			)
+			->join(
+				$prefix . 'comment',
+				'c',
+				'r.rc_comment_id = c.comment_id'
+			)
+			->where( $conditions )
+			->orderBy( 'r.rc_timestamp', 'DESC' )
+			->fetchResultSet();
 		$channel = $this->getChannel( addslashes( $cat ) );
 		foreach ( $rc as $row ) {
 			$title = Title::makeTitle( $row->rc_namespace, $row->rc_title );
@@ -75,9 +96,14 @@ class Category extends RecentChanges {
 		$conditions = [ 'r.rc_timestamp > ' . $rcTimestamp ];
 		if ( $rcUnique ) {
 			$rcUniqueIds = $this->getUniqueRecentChangesIds( [ 'rc_timestamp > ' . $rcTimestamp ] );
-			$conditions = [
-				'r.rc_id IN (' . implode( ',', $rcUniqueIds ) . ')'
-			];
+			if ( !empty( $rcUniqueIds ) ) {
+				$conditions = [ 'r.rc_id IN (' . implode( ',', $rcUniqueIds ) . ')' ];
+			}
+		}
+
+		$category = $this->context->getRequest()->getVal( 'cat', '' );
+		if ( $category ) {
+			$conditions[] = 'catlinks.cl_to = ' . $dbr->addQuotes( $category );
 		}
 
 		$this->services->getHookContainer()->run(
