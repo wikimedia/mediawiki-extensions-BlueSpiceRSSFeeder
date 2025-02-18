@@ -38,6 +38,6 @@ class FollowOwn extends RecentChanges {
 	 * @inheritDoc
 	 */
 	protected function getFeedConditions() {
-		return [ 'rc_user' => $this->user->getId() ];
+		return [ 'recentchanges_actor.actor_user' => $this->user->getId() ];
 	}
 }
