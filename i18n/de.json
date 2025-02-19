@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"AnnaTheProgrammer777",
 			"Hwboehm",
 			"Metalhead64",
 			"Mglaser"
@@ -36,7 +37,7 @@
 	"bs-rssstandards-title-rc": "Letzte Änderungen",
 	"bs-rss-feeder-pref-url-whitelist": "URL Whitelist",
 	"bs-rss-feeder-pref-max-redirects": "Maximale Zahl erlaubter Weiterleitungen",
-	"bs-rssfeeder-rcunique-checkbox": "Doppelte ausblenden",
+	"bs-rssfeeder-rcunique-checkbox": "Duplikate ausblenden",
 	"bs-rss-feeder-pref-url-allow-help": "Erlaubte URLS für RSS-Feed, die in Dashboards verwendet werden können",
 	"bs-rss-feeder-pref-max-redirects-help": "Anzahl von Weiterleitungen, die verfolgt werden sollen. Sollte nur bei vertrauenswürdigen URLs verwendet werden"
 }
