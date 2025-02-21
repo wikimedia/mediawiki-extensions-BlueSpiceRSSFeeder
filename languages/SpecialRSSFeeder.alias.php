@@ -3,7 +3,7 @@ $specialPageAliases = [];
 
 /** English */
 $specialPageAliases['en'] = [
-	'RSSFeeder' => [ 'RSSFeeder' ],
+	'RSSFeeder' => [ 'RSSFeeder', 'RSS Feeder' ],
 ];
 
 /** German (Deutsch) */
