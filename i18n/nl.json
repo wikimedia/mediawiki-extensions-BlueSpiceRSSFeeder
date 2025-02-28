@@ -38,7 +38,7 @@
 	"bs-rssstandards-title-rc": "Recente wijzigingen",
 	"bs-rss-feeder-pref-url-whitelist": "URL-whitelist",
 	"bs-rss-feeder-pref-max-redirects": "Maximaal aantal toegestane doorverwijzingen.",
-	"bs-rssfeeder-rcunique-checkbox": "Verbergt dubbelen",
-	"bs-rss-feeder-pref-url-allow-help": "Toegestane URL's voor RSS-feeds die op dashboards kunnen worden gebruikt",
+	"bs-rssfeeder-rcunique-checkbox": "Duplicaten verbergen",
+	"bs-rss-feeder-pref-url-allow-help": "Toegestane URL’s voor RSS-feeds die kunnen worden gebruikt",
 	"bs-rss-feeder-pref-max-redirects-help": "Aantal te volgen doorverwijzingen. Mag alleen worden gebruikt als de doel-URL's vertrouwd zijn."
 }
