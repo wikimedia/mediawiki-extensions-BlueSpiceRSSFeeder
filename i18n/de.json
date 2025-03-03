@@ -3,6 +3,7 @@
 		"authors": [
 			"AnnaTheProgrammer777",
 			"Hwboehm",
+			"Justman10000",
 			"Metalhead64",
 			"Mglaser"
 		]
@@ -35,6 +36,6 @@
 	"bs-rss-feeder-pref-url-whitelist": "URL Whitelist",
 	"bs-rss-feeder-pref-max-redirects": "Maximale Zahl erlaubter Weiterleitungen",
 	"bs-rssfeeder-rcunique-checkbox": "Duplikate ausblenden",
-	"bs-rss-feeder-pref-url-allow-help": "Erlaubte URLS für RSS-Feed, die in Dashboards verwendet werden können",
+	"bs-rss-feeder-pref-url-allow-help": "Zugelassene URLs für RSS-Feeds, die verwendet werden können",
 	"bs-rss-feeder-pref-max-redirects-help": "Anzahl von Weiterleitungen, die verfolgt werden sollen. Sollte nur bei vertrauenswürdigen URLs verwendet werden"
 }
