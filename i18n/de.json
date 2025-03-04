@@ -4,7 +4,8 @@
 			"AnnaTheProgrammer777",
 			"Hwboehm",
 			"Metalhead64",
-			"Mglaser"
+			"Mglaser",
+			"Justman10000"
 		]
 	},
 	"bs-rssfeeder-desc": "Ergänzt eine Erweiterung zur Ausgabe von gültigem RSS für jede Erweiterung mit buildRss-Funktion",
@@ -14,9 +15,6 @@
 	"bs-rssfeeder-recent-changes": "Letzte Änderungen",
 	"bs-rssfeeder-pages": "Seite",
 	"bs-rssfeeder-submit": "Anzeigen",
-	"bs-rssfeeder-rss": "RSS-Feed",
-	"bs-rssfeeder-rss-desc": "Erstelle deinen eigenen RSS-Feed",
-	"bs-extjs-rssfeeder-rss-title": "RSS-URL",
 	"bs-rssfeeder-invalid-url": "Bitte gib eine gültige URL an.",
 	"action-rssfeeder-viewspecialpage": "die Spezialseite „{{int:rssfeeder}}“ anzusehen",
 	"bs-rssstandards-desc": "RSS-Feeds zu verschiedenen Bereichen des Wikis",
@@ -38,6 +36,6 @@
 	"bs-rss-feeder-pref-url-whitelist": "URL Whitelist",
 	"bs-rss-feeder-pref-max-redirects": "Maximale Zahl erlaubter Weiterleitungen",
 	"bs-rssfeeder-rcunique-checkbox": "Duplikate ausblenden",
-	"bs-rss-feeder-pref-url-allow-help": "Erlaubte URLS für RSS-Feed, die in Dashboards verwendet werden können",
+	"bs-rss-feeder-pref-url-allow-help": "Zugelassene URLs für RSS-Feeds, die verwendet werden können",
 	"bs-rss-feeder-pref-max-redirects-help": "Anzahl von Weiterleitungen, die verfolgt werden sollen. Sollte nur bei vertrauenswürdigen URLs verwendet werden"
 }

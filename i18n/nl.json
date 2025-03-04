@@ -18,9 +18,6 @@
 	"bs-rssfeeder-recent-changes": "Recente wijzigingen",
 	"bs-rssfeeder-pages": "Pagina",
 	"bs-rssfeeder-submit": "Weergeven",
-	"bs-rssfeeder-rss": "RSS-invoer",
-	"bs-rssfeeder-rss-desc": "Maak uw eigen RSS-feed",
-	"bs-extjs-rssfeeder-rss-title": "RSS-URL",
 	"bs-rssfeeder-invalid-url": "Geef alstublieft een geldige URL op.",
 	"action-rssfeeder-viewspecialpage": "de speciale pagina \"{{int:rssfeeder}}\" te bekijken",
 	"bs-rssstandards-desc": "Bouwt RSS-feeds op basis van verschillende opties",
@@ -41,7 +38,7 @@
 	"bs-rssstandards-title-rc": "Recente wijzigingen",
 	"bs-rss-feeder-pref-url-whitelist": "URL-whitelist",
 	"bs-rss-feeder-pref-max-redirects": "Maximaal aantal toegestane doorverwijzingen.",
-	"bs-rssfeeder-rcunique-checkbox": "Verbergt dubbelen",
-	"bs-rss-feeder-pref-url-allow-help": "Toegestane URL's voor RSS-feeds die op dashboards kunnen worden gebruikt",
+	"bs-rssfeeder-rcunique-checkbox": "Duplicaten verbergen",
+	"bs-rss-feeder-pref-url-allow-help": "Toegestane URL’s voor RSS-feeds die kunnen worden gebruikt",
 	"bs-rss-feeder-pref-max-redirects-help": "Aantal te volgen doorverwijzingen. Mag alleen worden gebruikt als de doel-URL's vertrouwd zijn."
 }
