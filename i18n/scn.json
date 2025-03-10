@@ -2,16 +2,17 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
+			"GianAntonucci",
 			"Gmelfi"
 		]
 	},
-	"bs-rssfeeder-recent-changes": "Ùrtimi canciamenti",
+	"bs-rssfeeder-recent-changes": "Ùrtimi canci",
 	"bs-rssfeeder-pages": "Pàggina",
 	"bs-rssfeeder-submit": "Ammustra",
 	"bs-rssstandards-title-page": "Pàggina",
 	"bs-rssstandards-title-own": "Li mè cuntribbuti",
 	"bs-rssstandards-title-cat": "Catigurìa",
 	"bs-rssstandards-title-watch": "Lista taliata",
-	"bs-rssstandards-title-rc": "Ùrtimi canciamenti",
+	"bs-rssstandards-title-rc": "Ùrtimi canci",
 	"bs-rss-feeder-pref-url-allow-help": "URL pirmissi pi feed RSS ca ponnu èssiri usati"
 }
