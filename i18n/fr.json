@@ -6,7 +6,8 @@
 			"Orikrin1998",
 			"Verdy p",
 			"Wladek92",
-			"Wyz"
+			"Wyz",
+			"JLTRY"
 		]
 	},
 	"bs-rssfeeder-desc": "Une extension qui permet de sortir un RSS valide pour chaque extension ayant une fonction buildRss",
@@ -16,9 +17,6 @@
 	"bs-rssfeeder-recent-changes": "Modifications récentes",
 	"bs-rssfeeder-pages": "Page",
 	"bs-rssfeeder-submit": "Afficher",
-	"bs-rssfeeder-rss": "Flux RSS",
-	"bs-rssfeeder-rss-desc": "Créer votre propre flux RSS",
-	"bs-extjs-rssfeeder-rss-title": "URL du flux RSS",
 	"bs-rssfeeder-invalid-url": "Veuillez fournir une URL valide.",
 	"action-rssfeeder-viewspecialpage": "afficher la page spéciale « {{int:rssfeeder}} »",
 	"bs-rssstandards-desc": "Construit un flux RSS basé sur différentes options",
@@ -40,6 +38,6 @@
 	"bs-rss-feeder-pref-url-whitelist": "Liste blanche d’hyperliens (URL)",
 	"bs-rss-feeder-pref-max-redirects": "Nombre maximum de redirections autorisées",
 	"bs-rssfeeder-rcunique-checkbox": "Masquer les doublons",
-	"bs-rss-feeder-pref-url-allow-help": "Hyperliens URL autorisés pour les flux RSS qui peuvent être utilisés dans les tableaux de bord",
+	"bs-rss-feeder-pref-url-allow-help": "URL autorisées pour les flux RSS pouvant être utilisés",
 	"bs-rss-feeder-pref-max-redirects-help": "Nombre de redirections à suivre. Ne devrait être utilisé que lorsque les URL cibles sont de confiance."
 }
