@@ -72,6 +72,7 @@ class Category extends RecentChanges {
 			)
 			->where( $conditions )
 			->orderBy( 'r.rc_timestamp', 'DESC' )
+			->caller( __METHOD__ )
 			->fetchResultSet();
 		$channel = $this->getChannel( addslashes( $cat ) );
 		foreach ( $rc as $row ) {
