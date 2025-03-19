@@ -67,6 +67,7 @@ class Watchlist extends RecentChanges {
 			)
 			->where( $conditions )
 			->orderBy( 'r.rc_timestamp', 'DESC' )
+			->caller( __METHOD__ )
 			->fetchResultSet();
 
 		foreach ( $rc as $row ) {
