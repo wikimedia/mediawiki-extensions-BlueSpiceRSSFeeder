@@ -3,9 +3,9 @@
 		"authors": [
 			"AnnaTheProgrammer777",
 			"Hwboehm",
+			"Justman10000",
 			"Metalhead64",
-			"Mglaser",
-			"Justman10000"
+			"Mglaser"
 		]
 	},
 	"bs-rssfeeder-desc": "Ergänzt eine Erweiterung zur Ausgabe von gültigem RSS für jede Erweiterung mit buildRss-Funktion",
