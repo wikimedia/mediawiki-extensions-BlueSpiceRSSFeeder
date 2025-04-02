@@ -3,11 +3,11 @@
 		"authors": [
 			"Alno",
 			"Gomoko",
+			"JLTRY",
 			"Orikrin1998",
 			"Verdy p",
 			"Wladek92",
-			"Wyz",
-			"JLTRY"
+			"Wyz"
 		]
 	},
 	"bs-rssfeeder-desc": "Une extension qui permet de sortir un RSS valide pour chaque extension ayant une fonction buildRss",
