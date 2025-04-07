@@ -27,7 +27,7 @@
 	"bs-rssstandards-desc-own": "Dopolnite s pregledom vaših lastnih prispevkov v vikiju.",
 	"bs-rssstandards-title-cat": "Kategorija",
 	"bs-rssstandards-desc-cat": "Vir s pregledom zadnjih sprememb v kategoriji.",
-	"bs-rssstandards-title-watch": "Spisek nadzorov",
+	"bs-rssstandards-title-watch": "Nadzorni seznam",
 	"bs-rssstandards-desc-watch": "Vir s pregledom opazovanih strani.",
 	"bs-rssstandards-link-text-watch": "Zadnje spremembe {{PLURAL:$1|zadnjega dne|zadnjih $1 dni}}.",
 	"bs-rssstandards-desc-ns": "Vir s pregledom zadnjih sprememb v imenskem prostoru.",
