@@ -8,8 +8,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"BlueSpice\\RSSFeeder\\": "src",
-			"BlueSpice\\RSSFeeder\\Tests\\": "tests/phpunit"
+			"BlueSpice\\RSSFeeder\\": "src"
 		}
 	},
 	"require-dev": {
