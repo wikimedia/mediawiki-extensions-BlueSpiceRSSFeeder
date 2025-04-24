@@ -8,7 +8,8 @@
 			"Striking Blue",
 			"SuperPuperSteve",
 			"Tanzun",
-			"Vlad5250"
+			"Vlad5250",
+			"Yurina Tatiana"
 		]
 	},
 	"bs-rssfeeder-desc": "Расширение, позволяющее выводить RSS для каждого расширения, имеющего функцию buildRss",
@@ -41,7 +42,7 @@
 	"apihelp-bs-rss-standards-pages-store-summary": "Вернуть список доступных страниц для RSSFeeder",
 	"right-rssfeeder-viewspecialpage": "доступ к служебной странице [[Special:RSSFeeder]]",
 	"bs-rssstandards-title-rc": "Свежие правки",
-	"bs-rssfeeder-rcunique-checkbox": "Скрыть повторы",
+	"bs-rssfeeder-rcunique-checkbox": "Скрыть дубликаты",
 	"bs-rss-feeder-pref-url-allow-help": "URL-адреса, разрешённые для RSS-каналов и используемые на информационных панелях",
 	"bs-rss-feeder-pref-max-redirects-help": "Количество переадресаций, которые нужно выполнить. Следует использовать только в том случае, если целевые URL-адреса являются достоверными."
 }
