@@ -15,7 +15,7 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
  */
 class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 
-	protected $iFixtureTotal = 3;
+	protected $iFixtureTotal = 2;
 
 	/**
 	 *
