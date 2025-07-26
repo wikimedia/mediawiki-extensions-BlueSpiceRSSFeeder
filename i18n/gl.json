@@ -2,30 +2,38 @@
 	"@metadata": {
 		"authors": [
 			"Banjo",
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
 	"bs-rssfeeder-desc": "Unha extensión para obter RSS válidos para cada extensión, que ten unha función buildRss",
 	"rssfeeder": "Fonte de novas RSS",
 	"apihelp-bs-rssfeeder-tasks-summary": "Proporciona tarefas comúns para o RSSFeeder",
-	"bs-rssfeeder-pagetext": "Pode subscribirse ás seguintes canles RSS:",
+	"bs-rssfeeder-pagetext": "Podes subscribirte ás seguintes canles RSS:",
 	"bs-rssfeeder-recent-changes": "Cambios recentes",
 	"bs-rssfeeder-pages": "Páxina",
 	"bs-rssfeeder-submit": "Amosar",
-	"bs-rssfeeder-invalid-url": "Por favor, indique unha URL válida.",
-	"action-rssfeeder-viewspecialpage": "ver a páxina especial \"{{int:rssfeeder}}\"",
-	"bs-rssstandards-desc": "Xera canles RSS baseados en diferentes opcións",
-	"bs-rssstandards-desc-rc": "Canle que resume os cambios recentes da wiki",
+	"bs-rssfeeder-invalid-url": "Indica un enderezo URL válido.",
+	"action-rssfeeder-viewspecialpage": "ver a páxina especial «{{int:rssfeeder}}»",
+	"bs-rssstandards-desc": "Xera canles RSS en base a diferentes opcións",
+	"bs-rssstandards-desc-rc": "Canle que resume os cambios recentes do wiki",
 	"bs-rssstandards-title-page": "Páxina",
 	"bs-rssstandards-desc-page": "Canle que resume os cambios recentes dunha páxina.",
 	"bs-rssstandards-title-own": "Contribucións propias",
-	"bs-rssstandards-desc-own": "Canle que resume as súas contribucións á wiki.",
+	"bs-rssstandards-desc-own": "Canle que resume as túas contribucións ao wiki.",
 	"bs-rssstandards-title-cat": "Categoría",
 	"bs-rssstandards-desc-cat": "Canle que resume os cambios recentes dunha categoría.",
 	"bs-rssstandards-title-watch": "Lista de vixilancia",
-	"bs-rssstandards-desc-watch": "Canle que resume as súas páxinas vixiadas.",
+	"bs-rssstandards-desc-watch": "Canle que resume as túas páxinas vixiadas.",
 	"bs-rssstandards-link-text-watch": "Cambios recentes {{PLURAL:$1|do último día|dos últimos $1 días}}.",
 	"bs-rssstandards-desc-ns": "Canle que resume os cambios recentes dun espazo de nomes.",
 	"bs-rssstandards-changes-from": "Cambios {{GENDER:$1|de}}: $1",
-	"apihelp-bs-rss-standards-pages-store-summary": "Devolver a lista das páxinas dispoñibles para o RSSFeeder"
+	"apihelp-bs-rss-standards-pages-store-summary": "Devolve a lista das páxinas dispoñibles para o RSSFeeder",
+	"right-rssfeeder-viewspecialpage": "Acceso á páxina especial [[Special:RSSFeeder]]",
+	"bs-rssstandards-title-rc": "Cambios recentes",
+	"bs-rss-feeder-pref-url-whitelist": "Lista branca de enderezos URL",
+	"bs-rss-feeder-pref-max-redirects": "Número máximo de redireccións permitidas",
+	"bs-rssfeeder-rcunique-checkbox": "Agochar os duplicados",
+	"bs-rss-feeder-pref-url-allow-help": "Enderezos URL permitidos para as fontes de novas RSS que se poden usar",
+	"bs-rss-feeder-pref-max-redirects-help": "Número de redireccións a seguir. Só se debe usar cando os enderezos URL de destino sexan de confianza."
 }
