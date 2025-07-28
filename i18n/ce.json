@@ -12,5 +12,22 @@
 	"bs-rssstandards-title-own": "Сан къинхьегам",
 	"bs-rssstandards-title-cat": "Категори",
 	"bs-rssstandards-title-watch": "Тергаме могӀам",
-	"bs-rssstandards-title-rc": "Керла нисдарш"
+	"bs-rssstandards-title-rc": "Керла нисдарш",
+	"rssfeeder": "RSS кечйархо",
+	"apihelp-bs-rssfeeder-tasks-summary": "RSSFeeder -на йукъара тӀедехкарш ло",
+	"bs-rssfeeder-invalid-url": "Дехар до, нийса URL йазйе.",
+	"action-rssfeeder-viewspecialpage": "белхан агӀоне хьажар «{{int:rssfeeder}}»",
+	"bs-rssstandards-desc": "Тайп-тайпанчу опцешна тӀе а тевжаш, RSS-каналаш кхуллу",
+	"bs-rssstandards-desc-rc": "Вики тӀехь тӀаьххьара бина хийцамаш гойтуш йолу лента",
+	"bs-rssstandards-desc-page": "АгӀонан тӀехь хиллачу тӀаьххьарчу хийцамашна йукъара гайтам болуш лента.",
+	"bs-rssstandards-desc-own": "Вики чохь биначу хьан къинхьегаман йукъара гайтам болу лента.",
+	"bs-rssstandards-desc-cat": "Категорехь тӀаьххьара бина хийцамаш гойтуш йолу лента.",
+	"bs-rssstandards-desc-watch": "Хьан тергаман могӀамехь йолчу агӀонийн йукъара гайтам болу лента.",
+	"bs-rssstandards-link-text-watch": "ТӀаьххьарчу {{PLURAL:$1|дийнахь хилла хийцамаш}}.",
+	"bs-rssstandards-desc-ns": "ЦӀерийн меттигехь тӀаьххьара хиллачу хийцамашна йукъара гайтам болуш лента.",
+	"bs-rssstandards-changes-from": "{{GENDER:$1|Декъашхочун}} хийцамаш: $1",
+	"apihelp-bs-rss-standards-pages-store-summary": "RSSFeeder -на лерина агӀонийн могӀам йухаберзабе",
+	"right-rssfeeder-viewspecialpage": "белхан [[Special:RSSFeeder]] агӀонна тӀекхачар",
+	"bs-rss-feeder-pref-url-whitelist": "URL кӀайн могӀам",
+	"bs-rssfeeder-rcunique-checkbox": "Дубликаташ къайлайаха"
 }
