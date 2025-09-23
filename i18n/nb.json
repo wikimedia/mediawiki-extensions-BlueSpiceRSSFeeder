@@ -11,9 +11,6 @@
 	"bs-rssfeeder-recent-changes": "Siste endringer",
 	"bs-rssfeeder-pages": "Side",
 	"bs-rssfeeder-submit": "Vis",
-	"bs-rssfeeder-rss": "RSS-mating",
-	"bs-rssfeeder-rss-desc": "Opprett din egen RSS-mating",
-	"bs-extjs-rssfeeder-rss-title": "RSS-URL",
 	"bs-rssfeeder-invalid-url": "Angi en gyldig URL.",
 	"action-rssfeeder-viewspecialpage": "vise spesialsiden «{{int:rssfeeder}}»",
 	"bs-rssstandards-desc": "Bygg RSS-matinger basert på forskjellige alternativer",
@@ -35,6 +32,6 @@
 	"bs-rss-feeder-pref-url-whitelist": "URL-hviteliste",
 	"bs-rss-feeder-pref-max-redirects": "Maksimalt antall tillatte omdirigeringer",
 	"bs-rssfeeder-rcunique-checkbox": "Skjul dubletter",
-	"bs-rss-feeder-pref-url-allow-help": "Tillatte URL-er for RSS-matinger som kan brukes i kontrollpanel",
+	"bs-rss-feeder-pref-url-allow-help": "Tillatte URL-er for RSS-matinger som kan brukes",
 	"bs-rss-feeder-pref-max-redirects-help": "Antall omdirigeringer som skal følges. Bør kun brukes når mål-URL-ene er pålitelige"
 }
