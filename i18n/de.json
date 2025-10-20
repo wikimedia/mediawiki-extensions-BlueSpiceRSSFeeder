@@ -26,7 +26,7 @@
 	"bs-rssstandards-title-cat": "Kategorie",
 	"bs-rssstandards-desc-cat": "Feed mit einem Überblick der letzten Änderungen in einer Kategorie.",
 	"bs-rssstandards-title-watch": "Beobachtungsliste",
-	"bs-rssstandards-desc-watch": "Feed mit einem Überblick deiner beobachteten Seiten.",
+	"bs-rssstandards-desc-watch": "Feed mit einem Überblick {{#FORMAL:deiner|Ihrer}} beobachteten Seiten.",
 	"bs-rssstandards-link-text-watch": "Änderungen {{PLURAL:$1|des letzten Tages|der letzten $1 Tage}}",
 	"bs-rssstandards-desc-ns": "Feed mit einem Überblick der letzten Änderungen in einem Namensraum.",
 	"bs-rssstandards-changes-from": "Änderung {{GENDER:$1|von}}: $1",

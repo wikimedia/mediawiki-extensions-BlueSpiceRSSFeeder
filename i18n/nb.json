@@ -35,6 +35,6 @@
 	"bs-rss-feeder-pref-url-whitelist": "URL-hviteliste",
 	"bs-rss-feeder-pref-max-redirects": "Maksimalt antall tillatte omdirigeringer",
 	"bs-rssfeeder-rcunique-checkbox": "Skjul dubletter",
-	"bs-rss-feeder-pref-url-allow-help": "Tillatte URL-er for RSS-matinger som kan brukes i kontrollpanel",
+	"bs-rss-feeder-pref-url-allow-help": "Tillatte URL-er for RSS-matinger som kan brukes",
 	"bs-rss-feeder-pref-max-redirects-help": "Antall omdirigeringer som skal følges. Bør kun brukes når mål-URL-ene er pålitelige"
 }
