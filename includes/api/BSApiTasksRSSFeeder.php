@@ -101,7 +101,7 @@ class BSApiTasksRSSFeeder extends BSApiTasksBase {
 		} else {
 			$oReturn->message = wfMessage(
 				'bs-rssfeeder-invalid-url'
-			)->plain();
+			)->text();
 			return $oReturn;
 		}
 
