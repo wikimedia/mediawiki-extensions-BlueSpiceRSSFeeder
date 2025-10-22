@@ -46,13 +46,13 @@ abstract class FeedBase implements IRSSFeed {
 	 */
 	protected function getChannel( $displayName = null ) {
 		if ( !$displayName ) {
-			$displayName = $this->getDisplayName()->plain();
+			$displayName = $this->getDisplayName()->text();
 		}
 		$sitename = $this->services->getMainConfig()->get( 'Sitename' );
 		return RSSCreator::createChannel(
 			RSSCreator::xmlEncode( $sitename . ' - ' . $displayName ),
 			'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'],
-			$this->getDescription()->plain()
+			$this->getDescription()->text()
 		);
 	}
 }

@@ -128,7 +128,7 @@ class Watchlist extends RecentChanges {
 		return RSSCreator::createChannel(
 			SpecialPage::getTitleFor( 'Watchlist' ) . ' (' . $this->user->getName() . ')',
 			'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'],
-			$this->getDescription()->plain()
+			$this->getDescription()->text()
 		);
 	}
 
