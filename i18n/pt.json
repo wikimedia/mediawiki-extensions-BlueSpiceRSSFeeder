@@ -36,7 +36,7 @@
 	"bs-rssstandards-title-rc": "Mudanças recentes",
 	"bs-rss-feeder-pref-url-whitelist": "Lista de URLs permitidos",
 	"bs-rss-feeder-pref-max-redirects": "Número máximo de redirecionamentos permitidos",
-	"bs-rssfeeder-rcunique-checkbox": "Ocultar duplicações",
-	"bs-rss-feeder-pref-url-allow-help": "URLs permitidos para <i>feed</i> RSS que podem ser usados ​​em painéis de controlo",
+	"bs-rssfeeder-rcunique-checkbox": "Ocultar duplicados",
+	"bs-rss-feeder-pref-url-allow-help": "URLs permitidos para <i>feed</i> RSS que podem ser utilizados",
 	"bs-rss-feeder-pref-max-redirects-help": "Número de redirecionamentos a serem seguidos. Só deve ser usado quando as URLs de destino são de confiança"
 }
