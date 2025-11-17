@@ -4,6 +4,7 @@
 			"BaRaN6161 TURK",
 			"MrSchipunov",
 			"MuratTheTurkish",
+			"SaldırganSincap",
 			"Sayginer"
 		]
 	},
@@ -34,5 +35,5 @@
 	"bs-rssstandards-title-rc": "Son değişiklikler",
 	"bs-rss-feeder-pref-url-whitelist": "URL beyaz listesi",
 	"bs-rss-feeder-pref-max-redirects": "İzin verilen maksimum yönlendirme sayısı",
-	"bs-rssfeeder-rcunique-checkbox": "Çiftleri gizle"
+	"bs-rssfeeder-rcunique-checkbox": "Yinelenleri gizle"
 }
