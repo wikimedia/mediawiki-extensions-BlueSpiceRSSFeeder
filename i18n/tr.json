@@ -4,7 +4,8 @@
 			"BaRaN6161 TURK",
 			"MrSchipunov",
 			"MuratTheTurkish",
-			"Sayginer"
+			"Sayginer",
+			"SaldırganSincap"
 		]
 	},
 	"bs-rssfeeder-desc": "BuildRss işlevine sahip her uzantı için geçerli RSS çıkışı sağlayan bir uzantı",
@@ -39,5 +40,5 @@
 	"bs-rssstandards-title-rc": "Son değişiklikler",
 	"bs-rss-feeder-pref-url-whitelist": "URL beyaz listesi",
 	"bs-rss-feeder-pref-max-redirects": "İzin verilen maksimum yönlendirme sayısı",
-	"bs-rssfeeder-rcunique-checkbox": "Çiftleri gizle"
+	"bs-rssfeeder-rcunique-checkbox": "Yinelenleri gizle"
 }
