@@ -3,6 +3,7 @@
 		"authors": [
 			"John Smith Ri",
 			"Liuxinyu970226",
+			"Peterxy12",
 			"Xiplus",
 			"佛壁灯",
 			"科劳"
@@ -33,5 +34,9 @@
 	"apihelp-bs-rss-standards-pages-store-summary": "为RSS订阅器返回可用页面列表",
 	"right-rssfeeder-viewspecialpage": "访问页面 [[Special:RSSFeeder]] 的权限。",
 	"bs-rssstandards-title-rc": "最近更改",
-	"bs-rss-feeder-pref-url-whitelist": "网址白名单"
+	"bs-rss-feeder-pref-url-whitelist": "网址白名单",
+	"bs-rss-feeder-pref-max-redirects": "允许重定向的最大值",
+	"bs-rssfeeder-rcunique-checkbox": "隐藏重复",
+	"bs-rss-feeder-pref-url-allow-help": "可使用的RSS订阅的允许网址",
+	"bs-rss-feeder-pref-max-redirects-help": "需追踪的重定向的数量。仅应在目标网址可信赖时使用。"
 }
