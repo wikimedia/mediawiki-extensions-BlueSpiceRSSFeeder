@@ -41,7 +41,7 @@
 	"bs-rssstandards-title-rc": "Headline for recent changes RSS feed\n\n{{Identical|Recent changes}}",
 	"bs-rss-feeder-pref-url-whitelist": "ConfigManager label for variable $bsgRSSUrlWhitelist",
 	"bs-rss-feeder-pref-max-redirects": "ConfigManager label for variable $bsgRSSUrlNumberOfAllowedRedirects",
-	"bs-rssfeeder-rcunique-checkbox": "Label for \"hide recent changes doubles\" checkbox",
+	"bs-rssfeeder-rcunique-checkbox": "Label for \"Hide duplicates\" checkbox",
 	"bs-rss-feeder-pref-url-allow-help": "Help message in config, where permitted URLs for RSS feed can be defined",
 	"bs-rss-feeder-pref-max-redirects-help": "Help message in config, for maximum number of redirects to follow"
 }

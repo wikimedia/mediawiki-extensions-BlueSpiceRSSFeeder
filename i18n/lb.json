@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Volvox"
 		]
 	},
 	"rssfeeder": "RSS Feeder",
@@ -11,7 +12,7 @@
 	"bs-rssfeeder-pages": "Säit",
 	"bs-rssfeeder-submit": "Weisen",
 	"bs-extjs-rssfeeder-rss-title": "RSS-URL",
-	"bs-rssfeeder-invalid-url": "Gitt wgl. en valabel URL un.",
+	"bs-rssfeeder-invalid-url": "Gitt wgl. eng valabel URL un.",
 	"action-rssfeeder-viewspecialpage": "d'Spezialsäit \"{{int:rssfeeder}}\" ze kucken",
 	"bs-rssstandards-title-page": "Säit",
 	"bs-rssstandards-title-own": "Eege Kontributiounen",

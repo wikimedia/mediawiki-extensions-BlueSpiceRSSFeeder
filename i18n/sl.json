@@ -29,7 +29,7 @@
 	"bs-rssstandards-desc-rc": "Vir s pregledom zadnjih sprememb v vikiju.",
 	"bs-rssstandards-title-own": "Lastni prispevki",
 	"bs-rssstandards-desc-own": "Dopolnite s pregledom vaših lastnih prispevkov v vikiju.",
-	"bs-rssstandards-title-watch": "Spisek nadzorov",
+	"bs-rssstandards-title-watch": "Nadzorni seznam",
 	"bs-rssstandards-desc-watch": "Vir s pregledom opazovanih strani.",
 	"bs-rssstandards-desc-ns": "Vir s pregledom zadnjih sprememb v imenskem prostoru.",
 	"bs-rssstandards-changes-from": "Spremembe {{GENDER:$1|osebe}}: $1",

@@ -36,7 +36,7 @@
 	"bs-rssstandards-title-rc": "Recent changes",
 	"bs-rss-feeder-pref-url-whitelist": "URL whitelist",
 	"bs-rss-feeder-pref-max-redirects": "Maximum number of allowed redirects",
-	"bs-rssfeeder-rcunique-checkbox": "Hide doubles",
-	"bs-rss-feeder-pref-url-allow-help": "Permitted URLs for RSS feed that can be used in dashboards",
+	"bs-rssfeeder-rcunique-checkbox": "Hide duplicates",
+	"bs-rss-feeder-pref-url-allow-help": "Permitted URLs for RSS feed that can be used",
 	"bs-rss-feeder-pref-max-redirects-help": "Number of redirects to follow. Should only be used when the target URLs are trusted"
 }

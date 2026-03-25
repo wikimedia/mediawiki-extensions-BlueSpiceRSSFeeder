@@ -43,7 +43,7 @@
 	"bs-rssstandards-title-rc": "Нові редагування",
 	"bs-rss-feeder-pref-url-whitelist": "Білий список URL-адрес",
 	"bs-rss-feeder-pref-max-redirects": "Максимальна кількість дозволених переадресацій",
-	"bs-rssfeeder-rcunique-checkbox": "Сховати дублі",
-	"bs-rss-feeder-pref-url-allow-help": "Дозволені URL-адреси для RSS-каналу, які можна використовувати на інформаційних панелях",
+	"bs-rssfeeder-rcunique-checkbox": "Сховати дублікати",
+	"bs-rss-feeder-pref-url-allow-help": "Дозволені URL-адреси для RSS-каналу, які можна використовувати",
 	"bs-rss-feeder-pref-max-redirects-help": "Кількість перенаправлень. Слід використовувати лише тоді, коли цільові URL-адреси є надійними"
 }
