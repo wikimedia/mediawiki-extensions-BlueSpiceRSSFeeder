@@ -4,6 +4,7 @@
 			"Dr1t jg",
 			"Hwangjy9",
 			"Revi",
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
@@ -21,5 +22,6 @@
 	"bs-rssstandards-title-rc": "최근 바뀜",
 	"bs-rss-feeder-pref-url-whitelist": "URL 화이트리스트",
 	"bs-rss-feeder-pref-max-redirects": "최대 허용 넘겨주기 수",
-	"bs-rssfeeder-rcunique-checkbox": "중복 항목 숨기기"
+	"bs-rssfeeder-rcunique-checkbox": "중복 항목 숨기기",
+	"bs-rssstandards-title-own": "내 기여"
 }
