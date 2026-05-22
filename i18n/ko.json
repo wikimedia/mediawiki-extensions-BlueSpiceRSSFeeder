@@ -23,5 +23,19 @@
 	"bs-rss-feeder-pref-url-whitelist": "URL 화이트리스트",
 	"bs-rss-feeder-pref-max-redirects": "최대 허용 넘겨주기 수",
 	"bs-rssfeeder-rcunique-checkbox": "중복 항목 숨기기",
-	"bs-rssstandards-title-own": "내 기여"
+	"bs-rssstandards-title-own": "내 기여",
+	"bs-rssfeeder-desc": "모든 확장 기능에 대해 유효한 RSS 피드를 출력하는 확장 기능으로, buildRss 함수가 퐆함되어 있습니다",
+	"apihelp-bs-rssfeeder-tasks-summary": "RSSFeeder의 공통 작업을 제공합니다",
+	"bs-rssstandards-desc": "다양한 옵션에 따른 RSS 피드를 생성합니다",
+	"bs-rssstandards-desc-rc": "위키의 최근 변경 사항에 대한 개요를 제공하는 피드입니다",
+	"bs-rssstandards-desc-page": "문서의 최근 변경 사항에 대한 개요를 제공하는 피드입니다.",
+	"bs-rssstandards-desc-own": "본인이 위키에 기여한 내용을 한눈에 볼 수 있는 피드입니다.",
+	"bs-rssstandards-desc-cat": "분류의 최근 변경 사항에 대한 개요를 제공하는 피드입니다.",
+	"bs-rssstandards-desc-watch": "주시 중인 문서에 대한 개요를 제공하는 피드입니다.",
+	"bs-rssstandards-link-text-watch": "최근 {{PLURAL:$1|$1일}} 동안의 변경 사항입니다.",
+	"bs-rssstandards-desc-ns": "이름공간의 최근 변경 사항에 대한 개요를 제공하는 피드입니다",
+	"bs-rssstandards-changes-from": "변경한 {{GENDER:$1|사용자}}: $1",
+	"apihelp-bs-rss-standards-pages-store-summary": "RSSFeeder에서 사용 가능한 문서 목록을 반환합니다",
+	"bs-rss-feeder-pref-url-allow-help": "RSS 피드에 사용 가능한 허용된 URL",
+	"bs-rss-feeder-pref-max-redirects-help": "따라갈 넘겨주기 횟수입니다. 대상 URL이 신뢰할 수 있는 경우에만 사용해야 합니다"
 }
