@@ -24,7 +24,7 @@
 	"bs-rssstandards-title-watch": "주시문서 목록",
 	"right-rssfeeder-viewspecialpage": "[[Special:RSSFeeder]] 특수 문서로 접근",
 	"bs-rssstandards-title-rc": "최근 바뀜",
-	"bs-rss-feeder-pref-url-whitelist": "URL 화이트리스트",
+	"bs-rss-feeder-pref-url-whitelist": "URL 허용 목록",
 	"bs-rss-feeder-pref-max-redirects": "최대 허용 넘겨주기 수",
 	"bs-rssfeeder-desc": "모든 확장 기능에 대해 유효한 RSS 피드를 출력하는 확장 기능으로, buildRss 함수가 퐆함되어 있습니다",
 	"apihelp-bs-rssfeeder-tasks-summary": "RSSFeeder의 공통 작업을 제공합니다",
