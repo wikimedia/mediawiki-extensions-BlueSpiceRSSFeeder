@@ -11,7 +11,7 @@
 			"Siebrand"
 		]
 	},
-	"bs-rssfeeder-desc": "Een extensie om geldige RSS uit te voeren voor elke extensie die een functie buildRss heeft",
+	"bs-rssfeeder-desc": "Een uitbreiding om geldige RSS uit te voeren voor elke uitbreiding die een functie buildRss heeft",
 	"rssfeeder": "RSS-invoer",
 	"apihelp-bs-rssfeeder-tasks-description": "Biedt algemene taken aan voor de RSSFeeder",
 	"apihelp-bs-rssfeeder-tasks-summary": "Biedt algemene taken aan voor de RSSFeeder",
