@@ -11,7 +11,7 @@
 			"Siebrand"
 		]
 	},
-	"bs-rssfeeder-desc": "Een extensie om geldige RSS uit te voeren voor elke extensie die een functie buildRss heeft",
+	"bs-rssfeeder-desc": "Een uitbreiding om geldige RSS uit te voeren voor elke uitbreiding die een functie buildRss heeft",
 	"rssfeeder": "RSS-invoer",
 	"apihelp-bs-rssfeeder-tasks-summary": "Biedt algemene taken aan voor de RSSFeeder",
 	"bs-rssfeeder-pagetext": "U kunt zich abonneren op de volgende RSS-feeds:",
@@ -36,7 +36,7 @@
 	"apihelp-bs-rss-standards-pages-store-summary": "Lijst weergeven van beschikbare pagina's voor RSSFeeder",
 	"right-rssfeeder-viewspecialpage": "Toegang tot de speciale pagina; [[Special:RSSFeeder]]",
 	"bs-rssstandards-title-rc": "Recente wijzigingen",
-	"bs-rss-feeder-pref-url-whitelist": "URL-whitelist",
+	"bs-rss-feeder-pref-url-whitelist": "Url-toelatingslijst",
 	"bs-rss-feeder-pref-max-redirects": "Maximaal aantal toegestane doorverwijzingen.",
 	"bs-rssfeeder-rcunique-checkbox": "Duplicaten verbergen",
 	"bs-rss-feeder-pref-url-allow-help": "Toegestane URL’s voor RSS-feeds die kunnen worden gebruikt",
