@@ -1,5 +1,6 @@
 <?php
 
+use BlueSpice\RSSFeeder\RSSTokenProvider;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
@@ -21,13 +22,20 @@ class RSSAuthenticator {
 	protected $context;
 
 	/**
+	 * @var RSSTokenProvider
+	 */
+	protected $tokenProvider;
+
+	/**
 	 *
 	 * @param WebRequest $request
 	 * @param IContextSource $context
+	 * @param RSSTokenProvider $tokenProvider
 	 */
-	public function __construct( WebRequest $request, IContextSource $context ) {
+	public function __construct( WebRequest $request, IContextSource $context, RSSTokenProvider $tokenProvider ) {
 		$this->request = $request;
 		$this->context = $context;
+		$this->tokenProvider = $tokenProvider;
 	}
 
 	/**
@@ -54,8 +62,7 @@ class RSSAuthenticator {
 			return false;
 		}
 
-		$userToken = $user->getToken();
-		if ( $userToken !== $requestToken ) {
+		if ( !$this->tokenProvider->isValidToken( $requestToken, $user ) ) {
 			return false;
 		}
 

@@ -37,7 +37,10 @@
 		}
 	},
 	"SpecialPages": {
-		"RSSFeeder": "BlueSpice\\RSSFeeder\\Special\\RSSFeeder"
+		"RSSFeeder": {
+			"class": "BlueSpice\\RSSFeeder\\Special\\RSSFeeder",
+			"services": [ "BSRSSFeederTokenProvider" ]
+		}
 	},
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
