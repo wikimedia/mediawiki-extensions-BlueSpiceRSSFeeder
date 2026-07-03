@@ -15,7 +15,13 @@ return [
 			LoggerFactory::getInstance( 'rssfeeder' ),
 			$services
 		);
-	}
+	},
+	'BSRSSFeederTokenProvider' => static function ( MediaWikiServices $services ) {
+		return new \BlueSpice\RSSFeeder\RSSTokenProvider(
+			$services->getUserOptionsLookup(),
+			$services->getUserOptionsManager()
+		);
+	},
 ];
 
 // @codeCoverageIgnoreEnd

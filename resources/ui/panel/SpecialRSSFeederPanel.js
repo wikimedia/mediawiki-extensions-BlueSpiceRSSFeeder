@@ -3,6 +3,7 @@ bs.util.registerNamespace( 'ext.bluespice.rssfeeder.ui.panel' );
 ext.bluespice.rssfeeder.ui.panel.SpecialRSSFeederPanel = function ( cfg ) {
 	ext.bluespice.rssfeeder.ui.panel.SpecialRSSFeederPanel.super.apply( this, cfg );
 	this.$element = $( '<div>' );
+	this.authConfig = mw.config.get( 'bsRSSFeederUserAuth' );
 
 	this.setup();
 };
@@ -49,11 +50,10 @@ ext.bluespice.rssfeeder.ui.panel.SpecialRSSFeederPanel.prototype.setupRecentChan
 	} );
 
 	button.on( 'click', () => {
-		const url = mw.util.getUrl( 'Special:RSSFeeder', {
+		const url = mw.util.getUrl( 'Special:RSSFeeder', this.decorateWithAuth( {
 			Page: 'recentchanges',
-			u: mw.config.get( 'wgUserName' ),
 			rc_unique: checkbox.isSelected() ? 1 : 0 // eslint-disable-line camelcase
-		} );
+		} ) );
 
 		window.location.href = url;
 	} );
@@ -88,11 +88,10 @@ ext.bluespice.rssfeeder.ui.panel.SpecialRSSFeederPanel.prototype.setupFollowOwnP
 	} );
 
 	button.on( 'click', () => {
-		const url = mw.util.getUrl( 'Special:RSSFeeder', {
+		const url = mw.util.getUrl( 'Special:RSSFeeder', this.decorateWithAuth( {
 			Page: 'followOwn',
-			u: mw.config.get( 'wgUserName' ),
 			rc_unique: checkbox.isSelected() ? 1 : 0 // eslint-disable-line camelcase
-		} );
+		} ) );
 
 		window.location.href = url;
 	} );
@@ -126,11 +125,10 @@ ext.bluespice.rssfeeder.ui.panel.SpecialRSSFeederPanel.prototype.setupFollowPage
 	} );
 
 	button.on( 'click', () => {
-		const url = mw.util.getUrl( 'Special:RSSFeeder', {
+		const url = mw.util.getUrl( 'Special:RSSFeeder', this.decorateWithAuth( {
 			Page: 'followPage',
-			p: titleInputWidget.getValue(),
-			u: mw.config.get( 'wgUserName' )
-		} );
+			p: titleInputWidget.getValue()
+		} ) );
 
 		window.location.href = url;
 	} );
@@ -170,12 +168,11 @@ ext.bluespice.rssfeeder.ui.panel.SpecialRSSFeederPanel.prototype.setupNamespaceF
 	} );
 
 	button.on( 'click', () => {
-		const url = mw.util.getUrl( 'Special:RSSFeeder', {
+		const url = mw.util.getUrl( 'Special:RSSFeeder', this.decorateWithAuth( {
 			Page: 'namespace',
 			ns: namespaceInputWidget.getValue(),
-			u: mw.config.get( 'wgUserName' ),
 			rc_unique: checkbox.isSelected() ? 1 : 0 // eslint-disable-line camelcase
-		} );
+		} ) );
 
 		window.location.href = url;
 	} );
@@ -222,12 +219,11 @@ ext.bluespice.rssfeeder.ui.panel.SpecialRSSFeederPanel.prototype.setupCategoryPa
 			categoryInput.slice( Math.max( 0, colonPosition + 1 ) ) :
 			categoryInput;
 
-		const url = mw.util.getUrl( 'Special:RSSFeeder', {
+		const url = mw.util.getUrl( 'Special:RSSFeeder', this.decorateWithAuth( {
 			Page: 'category',
 			cat: category,
-			u: mw.config.get( 'wgUserName' ),
 			rc_unique: checkbox.isSelected() ? 1 : 0 // eslint-disable-line camelcase
-		} );
+		} ) );
 
 		window.location.href = url;
 	} );
@@ -315,12 +311,11 @@ ext.bluespice.rssfeeder.ui.panel.SpecialRSSFeederPanel.prototype.setupWatchlistP
 	} );
 
 	button.on( 'click', () => {
-		const url = mw.util.getUrl( 'Special:RSSFeeder', {
+		const url = mw.util.getUrl( 'Special:RSSFeeder', this.decorateWithAuth( {
 			Page: 'watchlist',
-			u: mw.config.get( 'wgUserName' ),
 			days: dropdownWidget.getMenu().findSelectedItem().getData(),
 			rc_unique: checkbox.isSelected() ? 1 : 0 // eslint-disable-line camelcase
-		} );
+		} ) );
 
 		window.location.href = url;
 	} );
@@ -361,4 +356,8 @@ ext.bluespice.rssfeeder.ui.panel.SpecialRSSFeederPanel.prototype.basePanel = fun
 	);
 
 	return panel;
+};
+
+ext.bluespice.rssfeeder.ui.panel.SpecialRSSFeederPanel.prototype.decorateWithAuth = function ( params ) {
+	return Object.assign( {}, params, this.authConfig );
 };
