@@ -3,6 +3,7 @@
 namespace BlueSpice\RSSFeeder\Special;
 
 use BlueSpice\RSSFeeder\RSSFeedManager;
+use BlueSpice\RSSFeeder\RSSTokenProvider;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
@@ -12,7 +13,12 @@ use Wikimedia\AtEase\AtEase;
 
 class RSSFeeder extends SpecialPage {
 
-	public function __construct() {
+	/**
+	 * @param RSSTokenProvider $tokenProvider
+	 */
+	public function __construct(
+		private readonly RSSTokenProvider $tokenProvider
+	) {
 		parent::__construct( 'RSSFeeder' );
 	}
 
@@ -22,7 +28,9 @@ class RSSFeeder extends SpecialPage {
 	public function execute( $subpage ) {
 		if ( $this->getUser()->isAnon() ) {
 			// Try to log in user from request
-			$authenticator = new RSSAuthenticator( $this->getRequest(), RequestContext::getMain() );
+			$authenticator = new RSSAuthenticator(
+				$this->getRequest(), RequestContext::getMain(), $this->tokenProvider
+			);
 			$userAuthenticated = $authenticator->logInUser();
 		} else {
 			$userAuthenticated = true;
@@ -74,6 +82,7 @@ class RSSFeeder extends SpecialPage {
 
 		$out->addModuleStyles( 'ext.bluespice.rssfeeder.styles' );
 		$out->addModules( [ 'ext.bluespice.rssfeeder.specialRSSFeeder' ] );
+		$out->addJsConfigVars( 'bsRSSFeederUserAuth', $this->getUserAuth() );
 		$out->addHTML( Html::element( 'div', [ 'id' => 'bs-rssfeeder-special-rssfeeder-container' ] ) );
 	}
 
@@ -89,5 +98,17 @@ class RSSFeeder extends SpecialPage {
 			$parsedParams[$vKeyValuePairs[0]] = $vKeyValuePairs[1];
 		}
 		return $parsedParams;
+	}
+
+	/**
+	 * @return array
+	 */
+	private function getUserAuth(): array {
+		$token = $this->tokenProvider->getRSSToken( $this->getUser() );
+
+		return [
+			'h' => $token,
+			'u' => $this->getUser()->getName()
+		];
 	}
 }
