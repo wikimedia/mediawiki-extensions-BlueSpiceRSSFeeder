@@ -343,10 +343,10 @@ ext.bluespice.rssfeeder.ui.panel.SpecialRSSFeederPanel.prototype.basePanel = fun
 
 	const heading = document.createElement( 'h3' );
 	heading.className = 'special-rssfeeder-heading';
-	heading.innerText = mw.msg( headingMessageKey ); // eslint-disable-line mediawiki/msg-doc
+	heading.innerText = mw.msg( headingMessageKey );
 
 	const description = new OO.ui.LabelWidget( {
-		label: mw.message( descriptionMessageKey ).text() // eslint-disable-line mediawiki/msg-doc
+		label: mw.message( descriptionMessageKey ).text()
 	} );
 
 	panel.$element.append(
