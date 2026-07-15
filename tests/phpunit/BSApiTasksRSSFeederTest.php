@@ -15,7 +15,6 @@ use BlueSpice\Tests\BSApiTasksTestBase;
 class BSApiTasksRSSFeederTest extends BSApiTasksTestBase {
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getModuleName() {
@@ -23,7 +22,6 @@ class BSApiTasksRSSFeederTest extends BSApiTasksTestBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getTokens() {

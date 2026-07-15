@@ -1,52 +1,28 @@
 <?php
-/**
- * RSSItemCreator
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, version 3.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this program; if not, write to the Free Software Foundation, Inc.,
- * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- *
- * This file is part of BlueSpice MediaWiki
- * For further information visit https://bluespice.com
- *
- * @author     Sebastian Ulbricht <sebastian.ulbricht@dragon-design.hk>
- *
- * @package    Bluespice_Extensions
- * @subpackage RSSFeeder
- * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
- * @filesource
- */
 
-/**
- * the RSSItemCreator class
- *
- * RSSItemCreator builds RSS feed items following the RSS 2.0 specification.
- *
- * @package BlueSpice_Extensions
- * @subpackage RSSFeeder
- */
 class RSSItemCreator {
-	protected $title       = false;
-	protected $link        = false;
+
+	/** @var string|false */
+	protected $title = false;
+	/** @var string|false */
+	protected $link = false;
+	/** @var string|false */
 	protected $description = false;
 
-	protected $source      = false;
-	protected $enclosure   = false;
-	protected $category    = false;
-	protected $pubDate     = false;
-	protected $guid        = false;
-	protected $comments    = false;
-	protected $author      = false;
+	/** @var string|false */
+	protected $source = false;
+	/** @var array|false */
+	protected $enclosure = false;
+	/** @var array|false */
+	protected $category = false;
+	/** @var string|false */
+	protected $pubDate = false;
+	/** @var array|false */
+	protected $guid = false;
+	/** @var string|false */
+	protected $comments = false;
+	/** @var array|false */
+	protected $author = false;
 
 	/**
 	 * magic getter
@@ -100,7 +76,6 @@ class RSSItemCreator {
 	}
 
 	/**
-	 *
 	 * @param string $url
 	 * @param int $size
 	 * @param string $type

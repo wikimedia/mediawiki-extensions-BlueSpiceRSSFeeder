@@ -15,10 +15,10 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
  */
 class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 
+	/** @var int */
 	protected $iFixtureTotal = 2;
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getStoreSchema() {
@@ -53,7 +53,6 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getModuleName() {
@@ -61,7 +60,6 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function provideSingleFilterData() {
@@ -71,7 +69,6 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function provideMultipleFilterData() {
@@ -140,7 +137,6 @@ class BSApiRSSStandardsPagesStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function provideQueryData() {
