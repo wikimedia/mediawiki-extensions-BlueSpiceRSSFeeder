@@ -7,19 +7,16 @@ use MediaWiki\Context\IContextSource;
 
 abstract class BSRSSFeederBeforeGetRecentChanges extends \BlueSpice\Hook {
 	/**
-	 *
 	 * @var array
 	 */
 	protected $conditions;
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $feedType;
 
 	/**
-	 *
 	 * @param array &$conditions
 	 * @param string $feedType
 	 * @return bool
@@ -36,7 +33,6 @@ abstract class BSRSSFeederBeforeGetRecentChanges extends \BlueSpice\Hook {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @param Config $config
 	 * @param array &$conditions

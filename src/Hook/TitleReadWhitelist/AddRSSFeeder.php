@@ -7,7 +7,6 @@ use BlueSpice\Hook\TitleReadWhitelist;
 class AddRSSFeeder extends TitleReadWhitelist {
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function skipProcessing() {
@@ -15,7 +14,6 @@ class AddRSSFeeder extends TitleReadWhitelist {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function doProcess() {

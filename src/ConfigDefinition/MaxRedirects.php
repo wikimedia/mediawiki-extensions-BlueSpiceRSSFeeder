@@ -8,7 +8,6 @@ use BlueSpice\ConfigDefinition\IOverwriteGlobal;
 class MaxRedirects extends IntSetting implements IOverwriteGlobal {
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getPaths() {
@@ -20,7 +19,6 @@ class MaxRedirects extends IntSetting implements IOverwriteGlobal {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
@@ -35,7 +33,6 @@ class MaxRedirects extends IntSetting implements IOverwriteGlobal {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHelpMessageKey() {

@@ -9,7 +9,6 @@ use HTMLMultiSelectPlusAdd;
 class URLWhitelist extends ArraySetting implements IOverwriteGlobal {
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getPaths() {
@@ -21,7 +20,6 @@ class URLWhitelist extends ArraySetting implements IOverwriteGlobal {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
@@ -29,7 +27,6 @@ class URLWhitelist extends ArraySetting implements IOverwriteGlobal {
 	}
 
 	/**
-	 *
 	 * @return HTMLMultiSelectPlusAdd
 	 */
 	public function getHtmlFormField() {
@@ -44,7 +41,6 @@ class URLWhitelist extends ArraySetting implements IOverwriteGlobal {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHelpMessageKey() {
