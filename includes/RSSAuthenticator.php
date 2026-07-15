@@ -10,13 +10,11 @@ use MediaWiki\User\User;
 class RSSAuthenticator {
 	public const TOKEN_SALT = 'rss_salt';
 	/**
-	 *
 	 * @var WebRequest
 	 */
 	protected $request;
 
 	/**
-	 *
 	 * @var RequestContext
 	 */
 	protected $context;
@@ -27,7 +25,6 @@ class RSSAuthenticator {
 	protected $tokenProvider;
 
 	/**
-	 *
 	 * @param WebRequest $request
 	 * @param IContextSource $context
 	 * @param RSSTokenProvider $tokenProvider
