@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"bs-rssfeeder-desc": "Kordhin soo saarta RSS sax ah oo loogu talagalay kordhin kasta oo leh shaqada buildRss.",
+	"rssfeeder": "Quudiyaha RSS",
+	"apihelp-bs-rssfeeder-tasks-summary": "Waxay bixisaa hawlo guud oo loogu talagalay RSSFeeder",
+	"bs-rssfeeder-pagetext": "Waxaad iska diiwaangelin kartaa quudiyeyaasha RSS ee soo socda:",
+	"bs-rssfeeder-recent-changes": "Isbedelada dhow",
+	"bs-rssfeeder-pages": "Bog",
+	"bs-rssfeeder-submit": "Muuji",
+	"bs-rssfeeder-invalid-url": "Fadlan bixi URL sax ah.",
+	"action-rssfeeder-viewspecialpage": "eeg bogga gaarka ah \"{{int:rssfeeder}}\"",
+	"bs-rssstandards-desc": "Waxay dhistaa quudiyeyaasha RSS iyadoo lagu salaynayo xulashooyin kala duwan",
+	"bs-rssstandards-desc-rc": "Quudiye leh dulmar ku saabsan isbeddelladii u dambeeyay ee wiki-ga",
+	"bs-rssstandards-title-page": "Bog",
+	"bs-rssstandards-desc-page": "Quudiye leh dulmar ku saabsan isbeddelladii u dambeeyay ee bogga.",
+	"bs-rssstandards-title-own": "Wax ku biirinnadayda",
+	"bs-rssstandards-desc-own": "Quudiye leh dulmar ku saabsan wax ku biirinnadaada aad ku samaysay wiki-ga.",
+	"bs-rssstandards-title-cat": "Qeybta",
+	"bs-rssstandards-desc-cat": "Quudiye leh dulmar ku saabsan isbeddelladii u dambeeyay ee qayb.",
+	"bs-rssstandards-title-watch": "Liiska la socodka",
+	"bs-rssstandards-desc-watch": "Quudiye leh dulmar ku saabsan bogagga aad daawanayso.",
+	"bs-rssstandards-link-text-watch": "Isbeddelladii u dambeeyay ee {{PLURAL:$1|maalintii|$1 maalmood}} ee la soo dhaafay.",
+	"bs-rssstandards-desc-ns": "Quudiye leh dulmar ku saabsan isbeddelladii u dambeeyay ee meel magaca.",
+	"bs-rssstandards-changes-from": "Isbeddellada {{GENDER:$1| sameeyay}}: $1",
+	"apihelp-bs-rss-standards-pages-store-summary": "Soo celi liiska bogagga la heli karo ee RSSFeeder",
+	"right-rssfeeder-viewspecialpage": "Helitaanka bogga gaarka ah [[Special:RSSFeeder]]",
+	"bs-rssstandards-title-rc": "Isbedelada dhow",
+	"bs-rss-feeder-pref-url-whitelist": "Liiska cad ee URL-ka",
+	"bs-rss-feeder-pref-max-redirects": "Tirada ugu badan ee jiheeyayaasha la oggol yahay",
+	"bs-rssfeeder-rcunique-checkbox": "Qari nuqullada",
+	"bs-rss-feeder-pref-url-allow-help": "URL-yada la oggol yahay ee quudiyaha RSS ee la isticmaali karo",
+	"bs-rss-feeder-pref-max-redirects-help": "Tirada jiheeyayaasha la raacayo. Waa in loo isticmaalaa oo keliya marka URL-yada bartilmaameedka ah lagu kalsoon yahay."
+}
