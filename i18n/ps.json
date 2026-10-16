@@ -3,8 +3,23 @@
 		"authors": [
 			"Af420",
 			"Amjad Khan",
-			"Baloch Khan"
+			"Baloch Khan",
+			"شاه زمان پټان"
 		]
 	},
-	"bs-rssfeeder-recent-changes": "وروستي بدلونونه"
+	"bs-rssfeeder-recent-changes": "وروستي بدلونونه",
+	"bs-rssfeeder-pages": "مخ",
+	"bs-rssfeeder-submit": "ښودل",
+	"bs-rssfeeder-invalid-url": "مهرباني وکړئ يو باوري وېبتړ ورکړئ.",
+	"action-rssfeeder-viewspecialpage": "\"{{int:rssfeeder}}\" ځانگړی مخ کتل",
+	"bs-rssstandards-title-page": "مخ",
+	"bs-rssstandards-title-own": "خپلې ونډې",
+	"bs-rssstandards-title-cat": "وېشنيزه",
+	"bs-rssstandards-title-watch": "کتنلړ",
+	"bs-rssstandards-changes-from": "د $1: له‌خوا شوي بدلونونه",
+	"right-rssfeeder-viewspecialpage": "[[Special:RSSFeeder]] ځانگړي مخ ته لاسرسی",
+	"bs-rssstandards-title-rc": "وروستي بدلونونه",
+	"bs-rss-feeder-pref-url-whitelist": "د وېبتړ سپينلړ",
+	"bs-rss-feeder-pref-max-redirects": "د اجازه ورکړل شويو مخگرځو ډېر شمېر",
+	"bs-rssfeeder-rcunique-checkbox": "دوه‌گوني پټول"
 }
